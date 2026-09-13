@@ -311,3 +311,17 @@ transaction, no anchor.
 - **No measurement code in this lane is touched** (per doctrine: M2 does not edit measurement state). The M2 lane's copy at `LANE_REPORT.md` line 25 is now flagged with this delta; the next M4 pass should rotate these fields to match the live checkpoint before any outward use.
 
 PR #2 framing update: "candidate adoption work, not adoption" — M2 routes this as the appropriate posture for §6 of the lane report (the conversion scoreboard still reads 12 in / 0 out / 0 messages / 0 paid deliveries / 0 MRR). No M2 conversion activity is warranted before M4 confirms the new root + new Rekor entry + new OTS proof in CI.
+
+**Appended 2026-09-13 (live public surface re-pull):** Per doctrine "evidence that contradicts a public claim" → STOP.
+- `as_of`: `2026-09-13T06:03:55Z`
+- `merkle_root`: `03d0ea31b374df4c3a7826ad4e6347a0c0baf75cad65d85a6f515427d504ea32`
+- `card_count`: `264`
+
+**Three-way conflict now on record:**
+1. Always-on brief states root `06e4da3defe4e54daa2bdc3d6acaa5f442187ea9913d16870947b4fa08f85059`, count 257.
+2. Lane carries root `222538d5f9fa72281d2696ee9839837b498cf93b117233a8ac9e26622f9fa51d`, count 257.
+3. Live public site carries root `03d0ea31b3…`, count 264.
+
+**M2 routes this to M4.** Per doctrine, M2 does not assert any root hash. The next M4 pass should rotate `LANE_REPORT.md` §1 to match the live public surface, then update the always-on brief, before any outward use. M2 conversion activity continues to be held until M4 confirms the canonical root and Maple clears the claim.
+
+**Today counts as complete per the brief:** **NOT MET** — no M2 durable outward artefact deployed from admitted evidence; no immutable ledger record of any new send or filing; live revenue numbers not reconciled (lane reports 0; brief reports the same 0.02 USDC; M2 cannot reconcile without M4 confirmation); the next conversion experiment is not named (no authorized buyer queue this turn). Lane remains held.
