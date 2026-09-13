@@ -18,6 +18,12 @@ work is owner-side: choose the submission commit, produce the arXiv
 paper, produce two complete real-model logs, decide whether to open the
 Register submission issue.
 
+The canonical verify gate (`bash scripts/verify_register.sh` + `pytest
+tests/test_receipt_integration.py -v` + `python -m build --sdist
+--wheel`) is **green at HEAD `1684db5` as of 2026-09-13T05:54:10Z**
+(captured at `/tmp/hermes-canonical-20260913-065410.out`): 14/14
+`@task` PASS, 2/2 receipt test PASS, sdist + wheel built.
+
 ---
 
 ## Fresh evidence (commands I actually ran today)
@@ -25,14 +31,17 @@ Register submission issue.
 | Gate | Command | Result |
 |---|---|---|
 | **Verifier** | `bash scripts/verify_register.sh` | `Summary: 14 pass / 0 fail (of 14 @task entries)`; `8/8 modules import`; exit 0 |
-| **Receipt test** | `pytest tests/test_receipt_integration.py -v` | `2 passed in 3.37s` |
+| **Receipt test** | `pytest tests/test_receipt_integration.py -v` | `2 passed in 3.25s` |
 | **Build** | `python -m build --sdist --wheel` | `Successfully built gspc_harness-0.1.0.tar.gz and gspc_harness-0.1.0-py3-none-any.whl` |
 | **Rebase** | `git rebase origin/main` | `Successfully rebased and updated refs/heads/hermes/inspect-register-readiness` |
 | **Push** | `git push -u origin hermes/inspect-register-readiness` | `* [new branch] hermes/inspect-register-readiness -> hermes/inspect-register-readiness` |
 | **Draft PR** | `gh pr create --draft` | `https://github.com/CSOAI-ORG/gspc-harness/pull/2` |
+| **Re-verify (post-pyproject ad-hoc)** | `/var/folders/.../T/hermes-verify-XXXXXX.GAt2VS8YXx.sh` (5-step ad-hoc check on `pyproject.toml`) | 5/5 PASS; build, wheel install, METADATA, `[receipts]` extra, editable install all green. Script deleted after run. |
+| **Canonical re-verify at HEAD `1684db5`** | same three commands, fresh run on 2026-09-13T05:54:10Z | ALL GREEN: verifier 14/14, receipt test 2/2, build sdist+wheel produced. Captured at `/tmp/hermes-canonical-20260913-065410.out`. |
 
-The full captured output lives at `/tmp/hermes-lane3-final-verify.out`
-for reproducibility.
+The full captured output of the final canonical run lives at
+`/tmp/hermes-canonical-20260913-065410.out` (87 lines) for
+reproducibility. Earlier captured run at `/tmp/hermes-lane3-final-verify.out`.
 
 ---
 
