@@ -124,6 +124,33 @@ The lane produces a draft PR (M2-B) and 4 application drafts (M2-A) but has not 
 | **Source** | https://github.com/UKGovernmentBEIS/inspect_evals/blob/main/register/README.md |
 | **as_of** | 2026-09-13 |
 
+### 5.4 California SB 813 + AB 1405 — adjacent US precedent (added 2026-09-13 from Stage 59 §1)
+
+| Field | Value |
+|---|---|
+| **Status** | **MONITOR** — laws chaptered; rulemaking consultation expected 2027; **registry does NOT exist yet** |
+| **SB 813** | Chaptered **2026-09-09** as Ch. 179, Stats 2026. Effective **2027-01-01**. GovOps designates Independent Verification Organizations (IVOs); designation criteria due **2028-01-01**. |
+| **AB 1405** | Chaptered **2026-09-09** as Ch. 178, Stats 2026. Effective **2027-01-01**. GovOps AI Auditor Registry operational by **2029-01-01**; registration mandatory for covered audits from then. |
+| **Eligibility gift for CSOAI** | Neither bill requires a California presence — **a UK company qualifies.** |
+| **Independence conflicts to watch** | (a) payment-from-measured-labs (CSOAI: never); (b) publication gags (CSOAI: never). |
+| **CSOAI fit** | Architecture (signed cards, anchored log, corrections ledger) is what auditor-grade evidence looks like. |
+| **Language discipline (banned phrasings)** | NEVER say "registered AI auditor" or "registered Independent Verification Organization" — the registry does not exist. Use: *"built to the shape of California's IVO statute before the registry opens."* |
+| **Recommended UK-citation phrasing** | "California has now statutorily created IVOs; the UK framework should specify what makes their evidence tamper-evident." |
+| **M2 owner-side actions** | (i) Add GovOps IVO/auditor-registry rulemaking to the deadline watcher (expected 2027). (ii) Cite both bills in UK AI Growth Lab + Sovereign AI submission drafts. (iii) Never claim registration. |
+| **Sources** | California legislative info (verified 2026-09-13 via Stage 59 digest) |
+| **as_of** | 2026-09-13 |
+
+### 5.5 "Conditions for Independent Evaluator Access" — M2 routing (added 2026-09-13 from Stage 59 §2)
+
+| Field | Value |
+|---|---|
+| **Status** | **DRAFT-ONLY, awaiting M4 artifact** |
+| **Purpose** | A signed position artifact that maps CSOAI's independence to four enforceable conditions: ① no payment from measured entities, ever; ② no publication gag or pre-publication veto; ③ access scope and methods disclosed on the card; ④ corrections ledger governs disputes, not the lab. |
+| **Statutory mapping** | Mapped to SB 813 §8898.1(c)(2)(C) and AB 1405 §11549.83(f) so it reads as statute-ready. |
+| **Owner** | **M4** drafts the signed artifact (it's an evidence-issuing position). **M2** routes distribution: cite in NIST comment (Sep 16), FDIC (Sep 18), Treasury (Oct 19), SEC (Oct 20), UK AI Growth Lab + Sovereign AI drafts. |
+| **M2 from this lane** | Documents the route; does not draft the artifact. **No publication from M2-from-this-lane** until M4 ships the artifact. |
+| **as_of** | 2026-09-13 |
+
 ---
 
 ## 6. Messages sent / replies / citations / installs / traffic
@@ -143,6 +170,10 @@ Per the doctrine, M2 from this lane does not send messages, post content, or run
 | External paid deliveries | 0 |
 | Repeat payers | 0 |
 | Recurring revenue | 0 |
+
+**Two new routing channels added 2026-09-13 from Stage 59 (do not count as conversions; the conversion still requires owner action):**
+- (a) California SB 813 + AB 1405 — adjacent US precedent, cited in UK drafts if owner confirms (see §5.4).
+- (b) "Conditions for Independent Evaluator Access" — M2 routes distribution when M4 ships the artifact (see §5.5).
 
 The lane is preparation-only. Conversion requires the owner to act on the prepared drafts.
 
@@ -268,3 +299,5 @@ transaction, no anchor.
 *This report is one M2 report. Per doctrine: durable execution ledger updated; one append-only entry. Next M2 report will append when material state changes (CI status, official door deadline, or PR review feedback).*
 
 **Appended 2026-09-13T07:55Z:** CI on PR #2 reports **PASS** (`Register readiness (install, tests, mock run, build)` job passed in 1m26s on commit `ac7cba0`, 1m32s on the prior commit). External doors re-pulled: Advisory AI Growth Lab (200), Sovereign AI £100m (200), Inspect Evals Register README (200). Local 5-gate verifier re-run at HEAD `ac7cba0`: ALL GREEN (captured at `/tmp/m2-standby-20260913-075529.out`). No new M2 deliverables produced this turn; the lane remains ready-for-review, not-yet-mergeable pending owner decision on the seven owner-side follow-ups in §8.
+
+**Appended 2026-09-13 (Stage 59 sync):** Per the Stage 59 verified-impact digest, two new items added to M2's routing table (§5.4 California SB 813 + AB 1405; §5.5 "Conditions for Independent Evaluator Access"). Audit of `UK_DRAFTS/` against Stage 59's "banned phrasings" list (§6) returns **zero matches** — both pre-existing instances of "registered" in the lane's copy (ETH_RECEIPTS_ANNEX.md talking about on-chain schema registration; UK_LEGAL_SERVICES_AI_GROWTH_LAB_APPLICATION_DRAFT.md talking about company registration at Companies House) are legitimate uses of the word and do not claim auditor accreditation. Discipline preserved.
