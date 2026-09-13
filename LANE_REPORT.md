@@ -188,26 +188,28 @@ Per doctrine: activity without a conversion or durable artifact is not progress.
 
 ---
 
-## Appendices — verifiable from HEAD `6653143`
+## Appendices — verifiable from HEAD `996d3fd`
 
-### A. Canonical 5-gate verifier (run 2026-09-13T06:18Z)
+### A. Canonical 5-gate verifier (run 2026-09-13T06:52:58Z at HEAD `996d3fd`)
 
 | Gate | Result |
 |---|---|
 | `bash scripts/verify_register.sh` | 14 pass / 0 fail, 19/19 modules import, exit 0 |
-| `pytest tests/test_receipt_integration.py` | 2 passed in 3.18s |
-| `pytest tests/test_eth_receipt.py` | 8 passed in 0.21s |
-| `pytest tests/test_probe_smoke.py` | 3 passed, 20 subtests in 0.88s |
+| `pytest tests/test_receipt_integration.py` | 2 passed in 4.20s |
+| `pytest tests/test_eth_receipt.py` | 8 passed in 0.23s |
+| `pytest tests/test_probe_smoke.py` | 3 passed, 20 subtests in 0.97s |
 | `python -m build --sdist --wheel` | sdist + wheel both produced |
 
-Captured at `/tmp/m2-canonical.out`. Per system check this turn: also re-verified via a `mktemp -t hermes-verify-…` script.
+Captured at `/tmp/m2-final-20260913-075258.out`.
 
 ### B. Branch state
 
 ```
+996d3fd docs: append four-host alignment section to M2-conductor lane report
+326736f docs: reformat LANE_REPORT as M2-conductor report per two-Hermes doctrine
 6653143 docs: refresh lane report — probes added, 5-gate canonical verify green at HEAD fade3d5
 fade3d5 ci+scripts: add probe smoke test step + include probes in module sanity check
-0238b02 probes: 11 protocol probes + smoke test (A2A, MCP, did:web, etc.)
+0238b02 probes: 11 protocol probes + smoke test (A2A, MCP, did:web, root, x402, etc.)
 22b6f4c scripts: ETH annex reference implementation — EIP-712 + x402 demo
 e59b78f test+ci: ETH annex — 8 spec-invariant tests + CI gate
 f34ab29 build: add [eth] optional extra (ecdsa>=0.18)
