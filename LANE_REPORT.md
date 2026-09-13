@@ -325,6 +325,66 @@ x402 resource record, legitimate indexes). This is a **surface audit only**
 
 ---
 
+## 13. TUI 6 red-team of PR #2 (added 2026-09-13)
+
+Per the brief, TUI 6 owns: *"Red-team `gspc-harness` PR #2 at `ac7cba0`; verify current Inspect requirements, clean install, two real model logs, paper dependency and upstream acceptance path. Keep it draft until evidence is complete."* M2 from this lane executes the audit on HEAD `0f7eb71` and reports.
+
+### 13.1 Inspect Evals Register repo-level requirements
+
+| Requirement | Status | Evidence |
+|---|---|---|
+| PEP 517 `pyproject.toml` with `[project]` table | **PASS** | `pyproject.toml` lines 1-26; `pip install -e '.[receipts,eth]'` succeeded in fresh venv on this turn. |
+| `inspect_ai` declared as dependency | **PASS** | `pyproject.toml` line 14: `dependencies = ["inspect_ai>=0.3"]`. |
+| Each task exposed with `@task` decorator | **PASS** | 14 `@task` entries across 6 task files (verified by `bash scripts/verify_register.sh`). |
+| External assets pinned in stable storage | **PASS** | All items vendored under `data/`; no external asset fetch. |
+
+### 13.2 Submission-time gates (owner-side, not M2-authorised)
+
+| Gate | Status | Owner action required |
+|---|---|---|
+| arXiv paper URL (versioned) | **FAIL** | Owner publishes a methods paper (honesty register / usable_n ≥ 30 floor). |
+| 40-char commit SHA + `#L<n>` anchor | **BLOCKED** | Owner picks the submission commit; M2 produces the SHA on PR head. |
+| Two complete real-model log files | **FAIL** | Owner runs `gspc_governance` end-to-end against two real models, uploads to Register log store. |
+| Upstream human reviewer reply | **OPEN** | Per `inspect_evals/register/README.md` AI-use policy, human-authored reply required. PR is currently draft. |
+
+### 13.3 Banned-phrasings red-team (extended audit)
+
+| Pattern | Lane matches | Notes |
+|---|---|---|
+| `permanent, employee-level` | 0 | clean |
+| `registered AI auditor` | 0 | clean |
+| `lunar-accuracy` | 0 | clean (no NASA claim made) |
+| `Cohere raised` | 0 | clean |
+| `first to` | 0 | clean |
+| `safe model` / `compliant model` | 0 | clean |
+| `fully certified` / `fully measured` / `guaranteed accuracy` | 0 | clean |
+| `the only` | **10**, of which **9 are legitimate and 1 is unsupported** | see §13.4 |
+
+### 13.4 The one unsupported "only" claim — owner action required
+
+`UK_DRAFTS/UK_ASSURANCE_MAPPING.md:98` reads:
+
+> *"CSOAI operates the only UK physical AI testbed with a 20ft×20ft RF-shielded Faraday cage (>60dB 1MHz–10GHz, MIL-STD-461G RE102 design basis). The methodology is documented; no published HARVI report exists yet."*
+
+**This is an unsupported "only" claim.** Per the brief: "Never publish unsupported 'first', 'only', 'safe' or 'compliant' claims." CSOAI cannot verify that no other UK facility meets the same spec. The honest framing:
+
+> *"As far as CSOAI has been able to verify on 2026-09-13, CSOAI operates a UK physical AI testbed with a 20ft×20ft RF-shielded Faraday cage (>60dB 1MHz–10GHz, MIL-STD-461G RE102 design basis). The methodology is documented; no published HARVI report exists yet."*
+
+**The other 9 matches** are all legitimate:
+- `UK_ASSURANCE_MAPPING.md:45` — "the only one in the repo that clears `usable_n ≥ 30`" — a specific task property, true.
+- `probes/_fixtures/corrections.xml` (×6) — quoting historical CSOAI corrections describing past errors; the phrase appears in the **correction description**, not in any M2 outward claim.
+- `UNCERTAINTIES.md:53` — "the task does not pretend to be the only refusal metric" — a **disclaimer**.
+
+**M2 action: owner must edit `UK_ASSURANCE_MAPPING.md:98` before this draft is submitted to any UK door.** M2 does not edit the draft from this chat (drafts are owner-authorised). The finding is on record; the correction is staged as a one-line edit; the owner can apply it in seconds.
+
+### 13.5 Verdict
+
+**PR #2 is draft, not ready to merge.** The repo-level 4 Inspect requirements are PASS. The submission-time 3 gates (paper, two-model logs, 40-char pin) are owner-side. **One M2 red-team finding requires an owner-applied correction** (§13.4) before the `UK_ASSURANCE_MAPPING.md` draft is safe to submit to any UK door. **One M2 finding requires an owner-applied correction to `LANE_REPORT.md` §1** (the three-way root conflict from prior turn) before any UK draft citing a root hash is safe to submit.
+
+**Canonical 5-gate verifier: ALL GREEN** at HEAD `0f7eb71`. No measurement code touched by this red-team.
+
+---
+
 *This report is one M2 report. Per doctrine: durable execution ledger updated; one append-only entry. Next M2 report will append when material state changes (CI status, official door deadline, or PR review feedback).*
 
 **Appended 2026-09-13 (Stage 59 sync):** Per the Stage 59 verified-impact digest, two new items added to M2's routing table (§5.4 California SB 813 + AB 1405; §5.5 "Conditions for Independent Evaluator Access"). Audit of `UK_DRAFTS/` against Stage 59's "banned phrasings" list (§6) returns **zero matches** — both pre-existing instances of "registered" in the lane's copy (ETH_RECEIPTS_ANNEX.md talking about on-chain schema registration; UK_LEGAL_SERVICES_AI_GROWTH_LAB_APPLICATION_DRAFT.md talking about company registration at Companies House) are legitimate uses of the word and do not claim auditor accreditation. Discipline preserved.
