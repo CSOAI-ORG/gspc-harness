@@ -24,19 +24,24 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install package and receipts integration extra
+      - name: Install package and optional extras
         run: |
           python -m pip install --upgrade pip
-          # -e the package under test, plus the receipts optional dep so the
-          # integration test can import inspect_receipts. inspect_ai is
+          # -e the package under test, plus the receipts and eth optional
+          # deps so the integration tests can import them. inspect_ai is
           # declared as a runtime dependency in pyproject.toml.
-          python -m pip install -e ".[receipts]"
+          python -m pip install -e ".[receipts,eth]"
           python -m pip install pytest
 
       - name: Run receipt integration test
         # This test runs in a subprocess; it patches inspect_receipts at
         # import time. The run is bounded (limit=2) and uses mockllm.
         run: pytest tests/test_receipt_integration.py -v
+
+      - name: Run ETH annex test
+        # Pure-Python EIP-712 reference implementation; 8 spec-invariant
+        # assertions. See UK_DRAFTS/ETH_RECEIPTS_ANNEX.md.
+        run: pytest tests/test_eth_receipt.py -v
 
       - name: Run scripts/verify_register.sh
         # Runs every @task under mockllm/model with --limit 2. Exits non-zero
