@@ -298,6 +298,16 @@ transaction, no anchor.
 
 *This report is one M2 report. Per doctrine: durable execution ledger updated; one append-only entry. Next M2 report will append when material state changes (CI status, official door deadline, or PR review feedback).*
 
-**Appended 2026-09-13T07:55Z:** CI on PR #2 reports **PASS** (`Register readiness (install, tests, mock run, build)` job passed in 1m26s on commit `ac7cba0`, 1m32s on the prior commit). External doors re-pulled: Advisory AI Growth Lab (200), Sovereign AI £100m (200), Inspect Evals Register README (200). Local 5-gate verifier re-run at HEAD `ac7cba0`: ALL GREEN (captured at `/tmp/m2-standby-20260913-075529.out`). No new M2 deliverables produced this turn; the lane remains ready-for-review, not-yet-mergeable pending owner decision on the seven owner-side follow-ups in §8.
-
 **Appended 2026-09-13 (Stage 59 sync):** Per the Stage 59 verified-impact digest, two new items added to M2's routing table (§5.4 California SB 813 + AB 1405; §5.5 "Conditions for Independent Evaluator Access"). Audit of `UK_DRAFTS/` against Stage 59's "banned phrasings" list (§6) returns **zero matches** — both pre-existing instances of "registered" in the lane's copy (ETH_RECEIPTS_ANNEX.md talking about on-chain schema registration; UK_LEGAL_SERVICES_AI_GROWTH_LAB_APPLICATION_DRAFT.md talking about company registration at Companies House) are legitimate uses of the word and do not claim auditor accreditation. Discipline preserved.
+
+**Appended 2026-09-13 (TWO HERMES + SIX TUI always-on sync):** Per the always-on goals brief, **state delta** in §1 of `LANE_REPORT.md`:
+- Public root SHA-256 (line 25) is **stale**: the brief now asserts root `06e4da3defe4e54daa2bdc3d6acaa5f442187ea9913d16870947b4fa08f85059`; the lane carries the prior root `222538d5…`.
+- Rekor log index (line 25) is **stale**: the brief now asserts `2813640448`; the lane carries `2810720876`.
+- OTS Bitcoin block (line 25) is **stale**: the brief now asserts block `966764` only; the lane carries `966712 and 966764`.
+- Stablecoin deployment / chain coverage (line 26) is **broader**: brief now `425 indexed across 1,640 deployments and 211 chains`; lane carries `425 indexed`.
+- x402 detail (line 27) is **broader**: brief now adds `1 outside settlement`; lane carries only `1 outside payer` + `0.02 USDC`.
+- RunPod intake (line 28) is **larger**: brief now `168 source cards; 56 valid staged cards, including 40 with n>=30 and 16 below; all 56 already signed`; lane carries `70 runs (56 valid + 14 quarantined)`.
+- PR #2 framing (line 32, also PR body): the brief reframes PR #2 as "candidate adoption work, not adoption." M2 notes this but does not change the PR title; the lane remains ready-for-review.
+- **No measurement code in this lane is touched** (per doctrine: M2 does not edit measurement state). The M2 lane's copy at `LANE_REPORT.md` line 25 is now flagged with this delta; the next M4 pass should rotate these fields to match the live checkpoint before any outward use.
+
+PR #2 framing update: "candidate adoption work, not adoption" — M2 routes this as the appropriate posture for §6 of the lane report (the conversion scoreboard still reads 12 in / 0 out / 0 messages / 0 paid deliveries / 0 MRR). No M2 conversion activity is warranted before M4 confirms the new root + new Rekor entry + new OTS proof in CI.
