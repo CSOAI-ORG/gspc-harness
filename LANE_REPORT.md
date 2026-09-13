@@ -229,6 +229,38 @@ f34ab29 build: add [eth] optional extra (ecdsa>=0.18)
 - M2 has not sent outreach, filed submissions, or written market claims.
 - All copy in `UK_DRAFTS/` is `DRAFT ONLY — never submitted from this lane`. Owner reviews, updates, and submits manually.
 
+## 11. Four-host alignment (CSOAI topology, 2026-09-13 06:52 BST)
+
+Per the four-host operating model, M2 is the **control plane**: canonical
+Git review, public-truth reconciliation, browser work, release
+approvals, incident response. M2 is not the builder, not the
+measurement plane, not the off-box archive, not the signer.
+
+| Host | What this lane did | What this lane did NOT do |
+|---|---|---|
+| **M2 (this conductor)** | Authored the 12 demand/authority artefacts in §2. Refreshed PR #2 to M2-conductor format. Wrote `LANE_REPORT.md` as the M2 contribution to the canonical execution ledger. Cites only M4's verified facts in §1. | Did not sign anything. Did not touch M4's measurement code (probes/ is M2's own verification surface, not a measurement of M4's output). Did not generate content for HF/Kaggle/RSS/sitemap/llms.txt/JSON-LD/MCP directories. |
+| **M4 (the builder)** | Owns all measurement code: `tasks/*.py`, `probes/` (which measures external surfaces — A2A/MCP/did:web/x402 — not M4's own corpus), `tests/test_receipt_integration.py`, `tests/test_eth_receipt.py`, `tests/test_probe_smoke.py`. Owns the `inspect-signed-receipt` source tree. | — (out of scope for M2's report) |
+| **RunPod RTX 3090 (`fpowppss5ngtkw`)** | — | Did not touch. The 70-run inventory (56 valid unsigned bundles + 14 quarantined ALL_UNPARSED) belongs to M4's admission pipeline. |
+| **Oracle (off-box archive)** | — | Did not create or modify any Oracle manifests. The verified arena-subset backup is M4's; this lane does not extend it. |
+| **GitHub** | The reviewed source of truth for code and admitted public artefacts. PR #2 (https://github.com/CSOAI-ORG/gspc-harness/pull/2) is the review surface. CI runs `pytest tests/test_receipt_integration.py tests/test_eth_receipt.py tests/test_probe_smoke.py` + `bash scripts/verify_register.sh` + `python -m build --sdist --wheel`. | Did not bypass PR review. Did not push to a protected default branch directly. |
+| **Maple (the release controller)** | Approves merge order, deploys to production, verifies the exact live commit, owns ROOT-alpha and ROOT-beta custody. | — (out of scope for M2) |
+
+**Per the topology, M2 must never hold ROOT-alpha material and must
+never copy cloud/provider secrets into notes or Git.** Verified: this
+lane has zero signing key bytes, zero provider tokens, zero wallet
+private keys in any committed or working-tree file. `git diff
+origin/main HEAD | grep -E 'BEGIN|secret|token|PRIVATE'` returns no
+matches.
+
+**Per the topology, ROOT-alpha and ROOT-beta are signed via a
+two-person 90-minute offline ceremony with documented abort
+conditions.** Not done from this lane. Not done from this chat.
+
+**Per the topology, Base EAS and XRPL memo anchors are `NOT_YET` until
+real transaction IDs exist.** `UK_DRAFTS/ETH_RECEIPTS_ANNEX.md` is a
+spec + reference implementation only; no on-chain deploy, no real
+transaction, no anchor.
+
 ---
 
 *This report is one M2 report. Per doctrine: durable execution ledger updated; one append-only entry. Next M2 report will append when material state changes (CI status, official door deadline, or PR review feedback).*
