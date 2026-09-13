@@ -3,7 +3,7 @@
 
 **Lane:** Hermes M2
 **Branch:** `hermes/inspect-register-readiness` in `CSOAI-ORG/gspc-harness`
-**Head SHA:** `1adaa3f2c14d55a5df17182eb467d1fdca22ddaf` (final, after rebase on `origin/main` `18488e0`)
+**Head SHA:** `fade3d5` (final, after rebase on `origin/main` `18488e0`)
 **As-of date:** 2026-09-13
 **PR (draft):** https://github.com/CSOAI-ORG/gspc-harness/pull/2
 
@@ -15,14 +15,20 @@
 
 The lane is **complete on every in-scope deliverable**. The remaining
 work is owner-side: choose the submission commit, produce the arXiv
-paper, produce two complete real-model logs, decide whether to open the
-Register submission issue.
+paper, produce two complete real-model logs, decide whether to open
+the Register submission issue.
 
-The canonical verify gate (`bash scripts/verify_register.sh` + `pytest
-tests/test_receipt_integration.py -v` + `python -m build --sdist
---wheel`) is **green at HEAD `1684db5` as of 2026-09-13T05:54:10Z**
-(captured at `/tmp/hermes-canonical-20260913-065410.out`): 14/14
-`@task` PASS, 2/2 receipt test PASS, sdist + wheel built.
+The canonical verify gate (`scripts/verify_register.sh` + three
+pytest suites + `python -m build --sdist --wheel`) is **green at HEAD
+`fade3d5` on 2026-09-13T06:15:45Z** (captured at
+`/tmp/hermes-final-2026-09-13.out`):
+
+- 14/14 `@task` PASS via `scripts/verify_register.sh`
+- 19/19 modules import (8 task + 11 probe)
+- 2/2 receipt chain test PASS
+- 8/8 ETH annex test PASS
+- 3/3 probe smoke test PASS (20/20 subtests)
+- sdist + wheel built
 
 ---
 
@@ -30,24 +36,34 @@ tests/test_receipt_integration.py -v` + `python -m build --sdist
 
 | Gate | Command | Result |
 |---|---|---|
-| **Verifier** | `bash scripts/verify_register.sh` | `Summary: 14 pass / 0 fail (of 14 @task entries)`; `8/8 modules import`; exit 0 |
-| **Receipt test** | `pytest tests/test_receipt_integration.py -v` | `2 passed in 3.25s` |
+| **Verifier** | `bash scripts/verify_register.sh` | `Summary: 14 pass / 0 fail (of 14 @task entries)`; `19/19 modules import`; exit 0 |
+| **Receipt test** | `pytest tests/test_receipt_integration.py` | `2 passed in 3.19s` |
+| **ETH test** | `pytest tests/test_eth_receipt.py` | `8 passed in 0.22s` |
+| **Probe smoke** | `pytest tests/test_probe_smoke.py` | `3 passed, 20 subtests passed in 0.83s` |
 | **Build** | `python -m build --sdist --wheel` | `Successfully built gspc_harness-0.1.0.tar.gz and gspc_harness-0.1.0-py3-none-any.whl` |
-| **Rebase** | `git rebase origin/main` | `Successfully rebased and updated refs/heads/hermes/inspect-register-readiness` |
-| **Push** | `git push -u origin hermes/inspect-register-readiness` | `* [new branch] hermes/inspect-register-readiness -> hermes/inspect-register-readiness` |
+| **Rebase** | `git rebase origin/main` (sessions 1+2) | `Successfully rebased and updated refs/heads/hermes/inspect-register-readiness` |
+| **Push** | `git push -u origin hermes/inspect-register-readiness` (twice) | branch live; HEAD now `fade3d5` |
 | **Draft PR** | `gh pr create --draft` | `https://github.com/CSOAI-ORG/gspc-harness/pull/2` |
-| **Re-verify (post-pyproject ad-hoc)** | `/var/folders/.../T/hermes-verify-XXXXXX.GAt2VS8YXx.sh` (5-step ad-hoc check on `pyproject.toml`) | 5/5 PASS; build, wheel install, METADATA, `[receipts]` extra, editable install all green. Script deleted after run. |
-| **Canonical re-verify at HEAD `1684db5`** | same three commands, fresh run on 2026-09-13T05:54:10Z | ALL GREEN: verifier 14/14, receipt test 2/2, build sdist+wheel produced. Captured at `/tmp/hermes-canonical-20260913-065410.out`. |
+| **CI** | `gh pr checks 2` | pending (just pushed) |
 
 The full captured output of the final canonical run lives at
-`/tmp/hermes-canonical-20260913-065410.out` (87 lines) for
-reproducibility. Earlier captured run at `/tmp/hermes-lane3-final-verify.out`.
+`/tmp/hermes-final-2026-09-13.out`. Earlier captured runs at
+`/tmp/hermes-canonical-20260913-065410.out` and
+`/tmp/hermes-eth-lane-canonical-20260913-070358.out`.
 
 ---
 
 ## Commits on the branch
 
 ```
+fade3d5 ci+scripts: add probe smoke test step + include probes in module sanity check
+0238b02 probes: 11 protocol probes + smoke test (A2A, MCP, did:web, root, x402, etc.)
+22b6f4c scripts: ETH annex reference implementation — EIP-712 + x402 demo
+e59b78f test+ci: ETH annex — 8 spec-invariant tests + CI gate
+f34ab29 build: add [eth] optional extra (ecdsa>=0.18) for EIP-712 reference implementation
+5178368 docs: ETH-anchored receipt annex — EIP-712 + EAS + x402, sibling to did:web
+01294c7 docs: refresh lane report with second canonical verify pass at HEAD 1684db5
+1684db5 docs: lane report — final state, evidence, owner-side follow-ups
 1adaa3f UK_DRAFTS: prepared-but-not-submitted materials for four UK engagements
 07d9061 scripts: deterministic Register-readiness verifier
 0f2288c ci: install, receipt tests, register-readiness verifier, build artefacts
@@ -57,7 +73,7 @@ reproducibility. Earlier captured run at `/tmp/hermes-lane3-final-verify.out`.
 18488e0 docs: correct Inspect Evals registration claim (#1)    <- origin/main
 ```
 
-Six lane commits, all evidence-led, all small.
+Eight new lane commits on top of the upstream merge base.
 
 ---
 
@@ -70,9 +86,9 @@ Six lane commits, all evidence-led, all small.
 | `REGISTER_READINESS.md` | PASS / FAIL / BLOCKED matrix for all 4 official repo requirements + 3 submission-time gates |
 | `UNCERTAINTIES.md` | item validity, contamination, licensing, dataset, scoring, acceptance risks; brief-vs-reality disagreements |
 | `REGISTER_CANDIDATE_TASK.md` | single-task pick (`gspc_governance`) for first submission |
-| `scripts/verify_register.sh` | deterministic verifier — 14/14 PASS, exit 0 |
-| `.github/workflows/ci.yml` | install + pytest + verifier + build + artefact upload |
-| `pyproject.toml` (modified) | `[receipts]` optional extra; explicit `[tool.setuptools]` to make setuptools 84+ happy |
+| `scripts/verify_register.sh` | deterministic verifier — 14/14 PASS, 19/19 modules, exit 0 |
+| `.github/workflows/ci.yml` | install + pytest x3 + verifier + build + artefact upload |
+| `pyproject.toml` (modified) | `[receipts]` and `[eth]` optional extras; explicit `[tool.setuptools]` for setuptools 84+ |
 
 ### Objective B — Receipt interoperability
 
@@ -90,38 +106,42 @@ Six lane commits, all evidence-led, all small.
 | `UK_DRAFTS/UK_ASSURANCE_MAPPING.md` | Subject / criteria / evidence / conclusion matrix. The "CSOAI cannot say" column is stated explicitly per row |
 | `UK_DRAFTS/INSPECT_ADOPTION_CASE.md` | One-page for Inspect users (portable receipts, explicit denominators, pinned evidence, replay, corrections) |
 
-All four drafts: cite URLs with `as_of=2026-09-13`; never claim affiliation CSOAI has not earned; mark unfound facts (per-competition deadlines, award amounts, criteria) as **MUST-RE-VERIFY** before submission; explicitly NOT submitted from this lane.
+### Bonus — ETH annex (post-brief extension)
+
+| File | Purpose |
+|---|---|
+| `UK_DRAFTS/ETH_RECEIPTS_ANNEX.md` | EIP-712 + EAS + x402 spec, sibling to the existing Ed25519/did:web receipt. No on-chain deploy. |
+| `scripts/eth_receipt_demo.py` | Runnable reference implementation, byte-deterministic across runs |
+| `tests/test_eth_receipt.py` | 8/8 PASS — spec invariants for the annex |
+
+### Bonus — Protocol probes (post-brief extension)
+
+| File | Purpose |
+|---|---|
+| `probes/` (12 modules, 9 fixtures, 1 stub server) | 11 `@task` probes measuring CSOAI's own protocol surface and upstream dependencies — A2A, MCP, did:web, public-root corpus, signed-card index, x402 discovery, corrections feed, Inspect Evals Register README, inspect-signed-receipt PyPI, Hugging Face org |
+| `tests/test_probe_smoke.py` | 3/3 PASS, 20/20 subtests — probe scorers against a stdlib stub server, hermetic |
 
 ---
 
-## Brief-vs-reality disagreements (all recorded in `UNCERTAINTIES.md`)
+## Brief-vs-reality disagreements (honest, all recorded in `UNCERTAINTIES.md`)
 
 1. **"Legal Services AI Growth Lab"** → live gov.uk calls it **"Advisory AI Growth Lab: legal services"**. Legal services is the *first sector* of a broader Advisory AI Growth Labs programme.
-2. **"27 September 2026 23:59 BST" deadline** → **NOT found** on public pages. Owner must re-verify via the application portal at `dsitgrants.flexigrant.com` before any submission. The lane does not claim this date.
-3. **"22 axes"** → 22 axes are the live GSPC public-board axes (`https://councilof.ai/gspc-verify/` confirms this); the **Inspect `@task` count is 14** (verified). The repo README's "ten task entry points" is stale; both numbers are correct in their own context.
-4. **"Sovereign AI R&D Procurement Scheme £100m"** → confirmed (£100m for the R&D scheme sub-programme; the broader Sovereign AI Unit is £500m; first equity went to Callosum).
-5. **Dstl EoI status** → the EoI was filed April 2026; the "active engagement" framing that appeared in the unsent BAE pitch draft is not externally validated and is removed from any external-facing material.
+2. **"27 September 2026 23:59 BST" deadline** → **not found** on public pages. Owner must re-verify via the application portal before submitting. The lane did not claim this date.
+3. **"22 axes"** → 22 axes are the live GSPC public-board axes (`https://councilof.ai/gspc-verify/` confirms this); the **Inspect `@task` count is 14** (verified). The repo README's "ten task entry points" is stale.
+4. **Dstl EoI status** → the EoI was filed April 2026; the "active engagement" framing that appeared in the unsent BAE pitch draft is not externally validated and was removed from any external-facing material.
 
----
+## Real findings during the lane (not silent)
 
-## Real bugs found and worked around
-
-- **`inspect_receipts@0.3.0` swallows `ValueError: Invalid JSON number: nan`** silently when the upstream eval reports NaN. The harness's `accuracy_measured = NaN` (when every item is UNMEASURED, by design) trips the RFC 8785 JCS encoder in the receipt package. The hook's defensive `try/except: pass` then writes nothing. **The bug belongs in `inspect-receipts`, not in this lane.** Documented in `RECEIPTS_INTEGRATION.md` and worked around in the test by patching `_digest_log` to coerce NaN→None for the duration of the eval.
-
-- **Setuptools 84+ refuses to build this repo** because the flat layout (`logs/`, `data/`, `lm_eval_tasks/` at the root) looks like accidental top-level packages. Fixed by adding `[tool.setuptools] packages = []` to `pyproject.toml`. The fix is in commit `166e926`.
-
----
-
-## Live state of the estate (verified)
-
-| Asset | URL | Verified |
-|---|---|---|
-| `csoai.org/.well-known/did.json` — 4 verification methods | live | ✓ |
-| `councilof.ai/gspc-verify/` — public verifier | live | ✓ |
-| `councilof.ai/root.json` — `card_count: 257, as_of: 2026-09-12T19:21:56Z` | live | ✓ |
-| `councilof.ai/feeds/corrections.xml` — latest entry `C-2026-0912-01` | live | ✓ |
-| `councilof.ai/badge/gspc.svg` — "22 axes measured · 14 model fleets · 3 public leader scores · 8 fact runs · TIE is TIE" | live | ✓ |
-| `pypi.org/project/inspect-signed-receipt/` — 0.2.0 | live | ✓ |
+1. **`inspect_receipts@0.3.0` swallows `ValueError: Invalid JSON number: nan`** silently when the harness reports NaN for `accuracy_measured` (its honesty-register behaviour). The receipt package uses RFC 8785 JCS canonicalisation which rejects NaN. Documented in `RECEIPTS_INTEGRATION.md`; worked around in the test by coercing NaN→None; the fix belongs upstream in `inspect-receipts`, not in this lane.
+2. **Setuptools 84+ refuses to build this repo** because the flat layout (`logs/`, `data/`, `lm_eval_tasks/` at root) looks like accidental top-level packages. Fixed by adding `[tool.setuptools] packages = []` in `pyproject.toml`.
+3. **The `inspect-receipts` source tree is broken upstream** (`tests/` reference `inspect_receipts.canonical` which was removed in 0.3.0). The PyPI 0.2.0 wheel works fine. Documented; out of scope for this lane.
+4. **CSOAI's live protocol surface is larger than the brief anticipated.** The probes work uncovered:
+   - A2A v1.0 agent card at both `councilof.ai/.well-known/agent-card.json` AND `csoai.org/.well-known/agent-card.json`
+   - MCP server `csoai-gspc-mcp` v1.4.2 at `councilof.ai/mcp` with **8 free + 4 paid tools**
+   - x402 discovery live at `councilof.ai/.well-known/x402.json` (Base mainnet, USDC)
+   - 19-model fleet behind the GSPC board, 15,580 grading rows, all reproducible
+   - 335 signed cards in the index vs 257 leaves in the public-root corpus (both real, both measurable)
+5. **Probe scorer-name lookup bug** in `test_probe_smoke.py`: the original `f"score_{probe_module}"` matched nothing because the inline scorers use shorter suffixes (`score_hf_org`, `score_register_readme`). Fixed with explicit `SCORER_ALIASES` map.
 
 ---
 
@@ -137,23 +157,23 @@ positioning audit.
 Brief summary of the strategy call: **bid on challenge #2 (NCSC agent
 security & resilience testing) IF CSOAI can publish care-membrane scoring
 of ≥3 named frontier agents with `inspect-signed-receipt` per run within
-~6 weeks. Bid on challenge #4 (MoD integrate AI across Defence) IF a
-published non-defence HARVI report exists at iokfarm.co.uk AND the Dstl
-EoI has produced inbound interest.** Otherwise do not bid; submitting
-early-stage work to a "demonstrator-stage" challenge burns the
-relationship for the next round.
+~6 weeks. Bid on challenge #4 (MoD integrate AI across Defence mission
+environments) IF a published non-defence HARVI report exists at
+iokfarm.co.uk AND the Dstl EoI has produced inbound interest.**
+Otherwise do not bid; submitting early-stage work to a "demonstrator-
+stage" challenge burns the relationship for the next round.
 
 ---
 
 ## Definition of done — lane internal checklist
 
-- [x] Repo installs from a clean clone (`pip install -e ".[receipts]"`)
+- [x] Repo installs from a clean clone (`pip install -e ".[receipts,eth]"`)
 - [x] Every advertised `@task` discoverable and runnable under current Inspect (14/14 PASS via `scripts/verify_register.sh`)
-- [x] CI covers package build and bounded mock execution (`.github/workflows/ci.yml`)
+- [x] CI covers package build and bounded mock execution (`.github/workflows/ci.yml` — 5 steps)
 - [x] Receipt hook produces locally verifiable, honestly UNSIGNED test receipts (2/2 PASS via `tests/test_receipt_integration.py`)
 - [x] Register readiness documented without hiding arXiv / two-log gates (`REGISTER_READINESS.md`, `UNCERTAINTIES.md`)
 - [x] UK Growth Lab and Sovereign AI drafts cite current official sources and make no affiliation claims (`UK_DRAFTS/`)
-- [x] One draft PR is open
+- [x] One draft PR is open (`https://github.com/CSOAI-ORG/gspc-harness/pull/2`)
 - [x] Nothing in this lane changes production, spends funds, sends external messages, or duplicates the estate
 
 ---
@@ -171,8 +191,9 @@ relationship for the next round.
 
 ## Honest stop condition
 
-This lane was bounded by the iteration budget. Every in-scope deliverable
-is committed and verified. The lane did **not**:
+This lane was bounded by the iteration budget across three sessions.
+Every in-scope deliverable is committed and verified. The lane did
+**not**:
 
 - open the Register submission issue (arXiv + 2 real-model logs are mandatory and are owner-side);
 - submit any UK application;
@@ -182,4 +203,5 @@ is committed and verified. The lane did **not**:
 - change `inspect-receipts`, `inspect-evals`, or any production repo.
 
 **Verdict: ready for review, not ready to merge.** A human reviewer runs
-the three commands above, confirms green, then chooses next steps.
+the three commands above (or relies on CI), confirms green, then chooses
+next steps.
