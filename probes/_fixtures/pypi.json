@@ -1,0 +1,13 @@
+{
+  "info": {
+    "name": "inspect-signed-receipt",
+    "version": "0.2.0",
+    "summary": "Ed25519-signed measurement receipts for Inspect AI eval runs",
+    "requires_dist": ["cryptography>=42", "inspect-ai>=0.3"]
+  },
+  "releases": {
+    "0.2.0": [
+      {"filename": "inspect_signed_receipt-0.2.0-py3-none-any.whl", "upload_time": "2026-08-20T02:39:12"}
+    ]
+  }
+}
