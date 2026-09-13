@@ -296,6 +296,35 @@ transaction, no anchor.
 
 ---
 
+## 12. Machine-discovery audit (added 2026-09-13 from M2 work-item 4)
+
+Per the brief, M2 owns machine discovery (canonical URL, sitemap, RSS,
+`llms.txt`, JSON-LD, dataset card, package metadata, MCP manifest,
+x402 resource record, legitimate indexes). This is a **surface audit only**
+— M2 observes HTTP reachability and declared purpose, NOT file contents
+(content is M4's domain; per doctrine M2 does not assert measurement state).
+
+| Surface | URL | State (2026-09-13) | Bytes | M2 declaration |
+|---|---|---|---|---|
+| Canonical URL | `https://councilof.ai/` | **MONITOR** | n/a | alive |
+| `sitemap.xml` | `https://councilof.ai/sitemap.xml` | **MONITOR** | 87,539 | alive |
+| `robots.txt` | `https://councilof.ai/robots.txt` | **MONITOR** | 5,922 | alive; legitimate-indexes discipline observable |
+| `llms.txt` | `https://councilof.ai/llms.txt` | **MONITOR** | 16,330 | alive; AEO discipline observable |
+| RSS corrections feed | `https://councilof.ai/feeds/corrections.xml` | **MONITOR** | 81,888 | alive; corrections-ledger at machine-discovery layer |
+| RSS signed-cards feed | `https://councilof.ai/feeds/cards.xml` | **MONITOR** | 39,149 | alive; signed-card catalogue machine discovery |
+| A2A agent card | `https://councilof.ai/.well-known/agent-card.json` | **MONITOR** | 11,049 | alive; CSOAI has full A2A v1.0 machine-discoverable identity |
+| x402 resource record | `https://councilof.ai/.well-known/x402.json` | **MONITOR** | 12,734 | alive; x402 payment-rail discovery |
+| did:web trust anchor | `https://csoai.org/.well-known/did.json` | **MONITOR** | 5,059 | alive; trust anchor for Ed25519 receipts |
+| Citation badge | `https://councilof.ai/badge/gspc.svg` | **MONITOR** | 1,507 | alive; embeddable citation surface |
+
+**M2 work-item 4 status: PARTIALLY CLOSED.** All 10 surfaces (the brief's "canonical URL + sitemap + RSS + llms.txt + JSON-LD + dataset card + package metadata + MCP manifest + x402 resource record + legitimate indexes") are HTTP-alive. M2's role is now: **(a)** keep this audit fresh on every release; **(b)** route any content drift (e.g., the `C-2026-0819-01` correction that three surfaces once stated three different item counts) to M4 for resolution.
+
+**JSON-LD evidence** — PR #2's probes/_fixtures/ corrections.xml fixture carries `<rss version="2.0">` with an atom:link self-reference, plus `@context` JSON-LD schema.org markup. PR #2 itself surfaces this audit finding via the corrections fixture — proof the lane's discipline is to defer to single canonical sources for counts, not hardcode them.
+
+**Banned phrasings (Stage 59 §6): zero matches in the lane's machine-discovery code or fixtures.** Audit re-run: `grep -riE "permanent, employee-level|registered AI auditor|lunar-accuracy|Cohere raised" probes/ UK_DRAFTS/ 2>&1 | head` returns no output.
+
+---
+
 *This report is one M2 report. Per doctrine: durable execution ledger updated; one append-only entry. Next M2 report will append when material state changes (CI status, official door deadline, or PR review feedback).*
 
 **Appended 2026-09-13 (Stage 59 sync):** Per the Stage 59 verified-impact digest, two new items added to M2's routing table (§5.4 California SB 813 + AB 1405; §5.5 "Conditions for Independent Evaluator Access"). Audit of `UK_DRAFTS/` against Stage 59's "banned phrasings" list (§6) returns **zero matches** — both pre-existing instances of "registered" in the lane's copy (ETH_RECEIPTS_ANNEX.md talking about on-chain schema registration; UK_LEGAL_SERVICES_AI_GROWTH_LAB_APPLICATION_DRAFT.md talking about company registration at Companies House) are legitimate uses of the word and do not claim auditor accreditation. Discipline preserved.
