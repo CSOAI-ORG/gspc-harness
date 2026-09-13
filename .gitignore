@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 logs/
+receipts/
+dist/
+build/
+*.egg-info/
