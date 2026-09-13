@@ -1,207 +1,234 @@
-# Hermes UK Inspect adoption lane — final report
-## Evidence, not narrative
+# Hermes M2 report — UK Inspect adoption lane (Hermes M2 conductor)
+## One M2 report. All claims tagged OPEN / CLOSED / MONITOR / UNVERIFIED with official URL + as_of.
 
-**Lane:** Hermes M2
+**Conductor:** Hermes M2 (Demand and Authority)
+**Subagent lanes owned by this report:**
+- M2-A (Regulatory doors): UK AI Growth Lab, Sovereign AI R&D Procurement Scheme
+- M2-B (Inspect + open-source adoption): `gspc-harness` Register readiness + receipt interoperability
+- M2-C (Revenue / sales conversion): OUT OF SCOPE for this lane — no x402 buyer journey, no outreach
+- M2-D (News, blog, earned media): OUT OF SCOPE — no posts from this lane
+- M2-E (SEO, AEO, GEO, machine discovery): OUT OF SCOPE — no publishing
+- M2-F (Partnerships-by-use, market and funding intelligence): `SOV4-AI-STRATEGY.md` read-only; no claimed relationships
+
 **Branch:** `hermes/inspect-register-readiness` in `CSOAI-ORG/gspc-harness`
-**Head SHA:** `fade3d5` (final, after rebase on `origin/main` `18488e0`)
-**As-of date:** 2026-09-13
+**Head SHA:** `6653143` (rebased on `origin/main` `18488e0`)
 **PR (draft):** https://github.com/CSOAI-ORG/gspc-harness/pull/2
+**As-of:** 2026-09-13T06:18Z (canonical 5-gate verify run captured at `/tmp/m2-canonical.out`)
+**Python 3.11.15, inspect_ai 0.3.263, ecdsa 0.19.2**
 
 ---
 
-## Verdict
+## 1. Verified starting facts (from doctrine + M4)
 
-**Ready for review. Not yet ready to merge.**
+These are M4's published facts; M2 cites them, does not edit them.
 
-The lane is **complete on every in-scope deliverable**. The remaining
-work is owner-side: choose the submission commit, produce the arXiv
-paper, produce two complete real-model logs, decide whether to open
-the Register submission issue.
+- **Public root, 257 leaves** — Ed25519 verified, Rekor log index `2810720876`, OTS Bitcoin blocks 966712 and 966764. CLOSED (M4 has the receipts).
+- **Signed-card catalogue, 335 cards** — separate corpus. CLOSED (M4 has the receipts).
+- **1,301-leaf commitment** — unsigned and unanchored. CLOSED (M4 has the bytes; not signed).
+- **425 stablecoins indexed / 1 fully deep-measured-signed-rooted-Bitcoin-anchored**. CLOSED (M4).
+- **XRPL 16 / SWIFT 26 / x402 9 resources / RunPod `fpowppss5ngtkw`** — CLOSED (M4).
 
-The canonical verify gate (`scripts/verify_register.sh` + three
-pytest suites + `python -m build --sdist --wheel`) is **green at HEAD
-`fade3d5` on 2026-09-13T06:15:45Z** (captured at
-`/tmp/hermes-final-2026-09-13.out`):
-
-- 14/14 `@task` PASS via `scripts/verify_register.sh`
-- 19/19 modules import (8 task + 11 probe)
-- 2/2 receipt chain test PASS
-- 8/8 ETH annex test PASS
-- 3/3 probe smoke test PASS (20/20 subtests)
-- sdist + wheel built
+M2 has not touched any of M4's outputs.
 
 ---
 
-## Fresh evidence (commands I actually ran today)
+## 2. Artifacts advanced (this lane)
 
-| Gate | Command | Result |
+| Artifact | Subagent | Status | Path / URL | as_of |
+|---|---|---|---|---|
+| Register readiness matrix (PASS/FAIL/BLOCKED × 7) | M2-B | **CLOSED** | `REGISTER_READINESS.md` | 2026-09-13 |
+| Risk + disagreement register | M2-B | **CLOSED** | `UNCERTAINTIES.md` | 2026-09-13 |
+| First-submission task pick (`gspc_governance`) | M2-B | **CLOSED** | `REGISTER_CANDIDATE_TASK.md` | 2026-09-13 |
+| Deterministic verifier (14 task PASS, 19/19 modules) | M2-B | **CLOSED** | `scripts/verify_register.sh` | 2026-09-13 |
+| CI gate (install + 3 pytest + verifier + build) | M2-B | **CLOSED** | `.github/workflows/ci.yml` | 2026-09-13 |
+| Receipt chain proof (2/2 PASS, UNSIGNED honest) | M2-B | **CLOSED** | `RECEIPTS_INTEGRATION.md` + `tests/test_receipt_integration.py` | 2026-09-13 |
+| EIP-712 / x402 sibling spec (8/8 PASS, byte-deterministic) | M2-B | **CLOSED** | `UK_DRAFTS/ETH_RECEIPTS_ANNEX.md` + `scripts/eth_receipt_demo.py` + `tests/test_eth_receipt.py` | 2026-09-13 |
+| Protocol probes (11 tasks, 9 fixtures, stub server, 3/3 PASS) | M2-B | **CLOSED** | `probes/` + `tests/test_probe_smoke.py` | 2026-09-13 |
+| Growth Lab application draft (DRAFT ONLY, never submitted) | M2-A | **CLOSED** (draft) | `UK_DRAFTS/UK_LEGAL_SERVICES_AI_GROWTH_LAB_APPLICATION_DRAFT.md` | 2026-09-13 |
+| Sovereign AI capability note (one page) | M2-A, M2-F | **CLOSED** (draft) | `UK_DRAFTS/UK_SOVEREIGN_AI_PROCUREMENT_CAPABILITY_NOTE.md` | 2026-09-13 |
+| UK assurance mapping (subject/criteria/evidence/conclusion) | M2-A | **CLOSED** (draft) | `UK_DRAFTS/UK_ASSURANCE_MAPPING.md` | 2026-09-13 |
+| Inspect user adoption case (one page) | M2-B | **CLOSED** | `UK_DRAFTS/INSPECT_ADOPTION_CASE.md` | 2026-09-13 |
+
+12 artifacts CLOSED. None OPEN.
+
+---
+
+## 3. Pull requests
+
+| PR | URL | State | Branch | Subagent |
+|---|---|---|---|---|
+| PR #2 | https://github.com/CSOAI-ORG/gspc-harness/pull/2 | **OPEN (draft)** | `hermes/inspect-register-readiness` | M2-A + M2-B |
+
+CI status (last polled): pending. Will recheck after push.
+
+---
+
+## 4. Accepted upstream / public records
+
+| Record | Source | Status |
 |---|---|---|
-| **Verifier** | `bash scripts/verify_register.sh` | `Summary: 14 pass / 0 fail (of 14 @task entries)`; `19/19 modules import`; exit 0 |
-| **Receipt test** | `pytest tests/test_receipt_integration.py` | `2 passed in 3.19s` |
-| **ETH test** | `pytest tests/test_eth_receipt.py` | `8 passed in 0.22s` |
-| **Probe smoke** | `pytest tests/test_probe_smoke.py` | `3 passed, 20 subtests passed in 0.83s` |
-| **Build** | `python -m build --sdist --wheel` | `Successfully built gspc_harness-0.1.0.tar.gz and gspc_harness-0.1.0-py3-none-any.whl` |
-| **Rebase** | `git rebase origin/main` (sessions 1+2) | `Successfully rebased and updated refs/heads/hermes/inspect-register-readiness` |
-| **Push** | `git push -u origin hermes/inspect-register-readiness` (twice) | branch live; HEAD now `fade3d5` |
-| **Draft PR** | `gh pr create --draft` | `https://github.com/CSOAI-ORG/gspc-harness/pull/2` |
-| **CI** | `gh pr checks 2` | pending (just pushed) |
+| None yet. | — | **No public upstream record exists.** |
 
-The full captured output of the final canonical run lives at
-`/tmp/hermes-final-2026-09-13.out`. Earlier captured runs at
-`/tmp/hermes-canonical-20260913-065410.out` and
-`/tmp/hermes-eth-lane-canonical-20260913-070358.out`.
+The lane produces a draft PR (M2-B) and 4 application drafts (M2-A) but has not opened any external record, submission, or post. Per doctrine: no claimed relationship from an email, index entry, or protocol compatibility.
 
 ---
 
-## Commits on the branch
+## 5. Official doors (M2-A registry)
+
+### 5.1 Advisory AI Growth Lab (legal services)
+
+| Field | Value |
+|---|---|
+| **Official name** | Advisory AI Growth Lab: legal services |
+| **Status** | **OPEN** (applications being accepted) |
+| **Deadline** | **UNVERIFIED** — not on public pages; owner must re-verify at `dsitgrants.flexigrant.com` |
+| **Eligibility** | UK-established legal entity or entity operating through a UK branch. SMEs encouraged. Organisation size and TRL do NOT gate. |
+| **First cohort size** | ~10–12 participants |
+| **Regulators involved** | Legal Services Board, Solicitors Regulation Authority, Council for Licensed Conveyancers, ICO |
+| **Doctrine** | "Participation does not equal regulatory approval" (gov.uk wording) |
+| **CSOAI fit** | Workflow: versioned legal source → provision mapping → task execution → deterministic result → signed evidence → correction/replay. Matches `gspc_governance` (24 statute-anchored items, EU AI Act risk-tier classification). |
+| **Source** | https://www.gov.uk/government/publications/advisory-ai-growth-lab-legal-services |
+| **Eligibility detail** | https://www.gov.uk/government/publications/advisory-ai-growth-lab-legal-services/legal-services-advisory-ai-growth-lab-application-eligibility-and-support |
+| **Application portal** | `dsitgrants.flexigrant.com` |
+| **as_of** | 2026-09-13 |
+
+### 5.2 Sovereign AI R&D Procurement Scheme (£100m)
+
+| Field | Value |
+|---|---|
+| **Programme name** | Sovereign AI R&D Procurement Scheme |
+| **Total envelope** | **£100 million over lifetime** (broader Sovereign AI Unit = £500m; the £100m is the procurement sub-programme) |
+| **Status** | **OPEN** (first competitions launched 2026-08-31; further phases expected) |
+| **Per-competition deadline** | **UNVERIFIED** — not on public pages; owner must locate via the DSIT innovation-projects portal |
+| **Eligibility (per launch article)** | UK-registered startups and SMEs. Demonstrator-stage tech (moved beyond early R&D; ready for real-world operational testing). |
+| **Structure** | Challenge-led procurement. |
+| **First four launch competitions** | (1) NHS productivity (DHSC); (2) Agent security & resilience testing (NCSC); (3) Driving compute efficiency (DBST + ARIA Scaling Inference Lab); (4) Integrate AI at pace across Defence mission environments (MoD) |
+| **Per-project award envelope** | **UNVERIFIED** — launch article does not state per-project amount |
+| **Published competition criteria per challenge** | Referenced in launch article ("assessed … against published competition criteria") but **per-competition guidance pages not surfaced on gov.uk**. Owner must find via DSIT portal. |
+| **CSOAI fit (from `SOV4-AI-STRATEGY.md`)** | Bid on challenge #2 (NCSC) only IF care-membrane scoring of ≥3 named agents ships in 6 weeks. Bid on challenge #4 (MoD) only IF a published non-defence HARVI report exists AND Dstl EoI has produced inbound interest. **Otherwise do not bid.** |
+| **Source** | https://www.gov.uk/government/news/100-million-competition-to-back-british-ai-companies-to-fix-public-services |
+| **Tech Secretary launch speech** | https://www.gov.uk/government/speeches/tech-secretary-launches-sovereign-ai (2026-04-16, "£500 million bet") |
+| **First-backing announcement** | https://www.gov.uk/government/news/ai-firms-pioneering-drug-discovery-cheaper-supercomputing-and-more-get-first-backing-through-uks-sovereign-ai (2026-04-16, Callosum first equity) |
+| **Sovereign AI Open Call: Autonomous Labs** (separate market engagement, Nov 2025) | https://www.gov.uk/government/publications/sovereign-ai-open-call-autonomous-labs |
+| **as_of** | 2026-09-13 |
+
+### 5.3 Inspect Evals Register
+
+| Field | Value |
+|---|---|
+| **Programme** | Inspect Evals Register (Beta) — upstream contribution channel |
+| **Status** | **MONITOR** — lane produced `REGISTER_READINESS.md`; opening the submission issue is **owner-side** |
+| **Mandatory items for submission** | (1) arXiv paper URL, versioned; (2) GitHub blob URL pinned to 40-char SHA + `#L<n>` anchor; (3) two complete real-model log files uploaded after bot opens the metadata PR |
+| **CSOAI readiness at HEAD `6653143`** | Repo-level 4 requirements: **PASS**. Submission-time 3 gates: **(1) FAIL — no arXiv yet**, (2) BLOCKED — SHA on PR head, (3) **FAIL — no real-model logs yet**. |
+| **Recommended first task** | `gspc_governance` (24 statute-anchored items; deterministic grading; below n=30 interval floor by honesty-register design). |
+| **Source** | https://github.com/UKGovernmentBEIS/inspect_evals/blob/main/register/README.md |
+| **as_of** | 2026-09-13 |
+
+---
+
+## 6. Messages sent / replies / citations / installs / traffic
+
+**M2-C, M2-D, M2-E activity: NONE.**
+
+Per the doctrine, M2 from this lane does not send messages, post content, or run SEO. The 4 application drafts (Growth Lab, Sovereign AI capability note, assurance mapping, Inspect adoption case) are **prepared but not submitted**. No emails. No posts. No IndexNow submissions. No buyer outreach.
+
+| Metric | Value |
+|---|---|
+| Messages sent | 0 |
+| Replies | 0 |
+| Citations | 0 |
+| Downloads / installs | 0 |
+| Qualified traffic | 0 |
+| x402 challenges (issued by CSOAI in this lane) | 0 |
+| External paid deliveries | 0 |
+| Repeat payers | 0 |
+| Recurring revenue | 0 |
+
+The lane is preparation-only. Conversion requires the owner to act on the prepared drafts.
+
+---
+
+## 7. Claim conflicts found
+
+1. **"Legal Services AI Growth Lab"** vs **"Advisory AI Growth Lab: legal services"** — brief said one, live gov.uk says the other. Resolved in `UNCERTAINTIES.md` §1.1 in favour of live.
+2. **"27 September 2026 23:59 BST" deadline** — brief said yes, live page says nothing. Resolved in `UNCERTAINTS.md` §1.2 — **UNVERIFIED**, owner must re-verify.
+3. **"22 axes"** — brief said 22; live `councilof.ai/gspc-verify/` shows 22 axes; the **Inspect `@task` count is 14**. Both true in their own context; documented in `UNCERTAINTIES.md` §1.3.
+4. **Dstl EoI "active engagement"** — appeared in unsent BAE pitch draft only. Removed from external-facing material. `UNCERTAINTIES.md` §1.4.
+5. **Per-competition deadlines / criteria for Sovereign AI** — referenced in launch article but **not surfaced on public gov.uk pages**. Owner-side follow-up.
+
+Five claim conflicts. All resolved or flagged.
+
+---
+
+## 8. Blockers (owner-side, per doctrine)
+
+1. **Re-verify Growth Lab deadline** at `dsitgrants.flexigrant.com`.
+2. **Locate Sovereign AI per-competition criteria** at DSIT innovation-projects portal.
+3. **Choose Register submission commit** (lane produces a SHA on PR head).
+4. **Publish a versioned arXiv paper** describing the honesty register.
+5. **Run two complete real-model eval logs** on `gspc_governance` and upload.
+6. **Decide whether to open the Register submission issue** (only after 1–5).
+7. **Decide whether to bid on Sovereign AI R&D Procurement Scheme** (see `clawd-workspace/SOV4-AI-STRATEGY.md`).
+
+---
+
+## 9. Next best move (one)
+
+**Owner reviews PR #2 (https://github.com/CSOAI-ORG/gspc-harness/pull/2), confirms CI green, and either:**
+- (a) picks a submission commit and asks for a rebase to surface the SHA on PR head (low effort, unblocks Register submission decision), **or**
+- (b) decides to bid on Sovereign AI challenge #2 (NCSC agent security) and starts the 6-week care-membrane-named-agents scoring work.
+
+Both are owner-decision points; M2 has the prepared material ready for either.
+
+---
+
+## 10. Activity that is not progress
+
+Per doctrine: activity without a conversion or durable artifact is not progress. This lane produced 12 durable artifacts (CLOSED in §2) and zero conversions (§6). The activity-to-conversion ratio is the scoreboard item the user should weigh against the M4 conductor's measurement throughput.
+
+---
+
+## Appendices — verifiable from HEAD `6653143`
+
+### A. Canonical 5-gate verifier (run 2026-09-13T06:18Z)
+
+| Gate | Result |
+|---|---|
+| `bash scripts/verify_register.sh` | 14 pass / 0 fail, 19/19 modules import, exit 0 |
+| `pytest tests/test_receipt_integration.py` | 2 passed in 3.18s |
+| `pytest tests/test_eth_receipt.py` | 8 passed in 0.21s |
+| `pytest tests/test_probe_smoke.py` | 3 passed, 20 subtests in 0.88s |
+| `python -m build --sdist --wheel` | sdist + wheel both produced |
+
+Captured at `/tmp/m2-canonical.out`. Per system check this turn: also re-verified via a `mktemp -t hermes-verify-…` script.
+
+### B. Branch state
 
 ```
+6653143 docs: refresh lane report — probes added, 5-gate canonical verify green at HEAD fade3d5
 fade3d5 ci+scripts: add probe smoke test step + include probes in module sanity check
-0238b02 probes: 11 protocol probes + smoke test (A2A, MCP, did:web, root, x402, etc.)
+0238b02 probes: 11 protocol probes + smoke test (A2A, MCP, did:web, etc.)
 22b6f4c scripts: ETH annex reference implementation — EIP-712 + x402 demo
 e59b78f test+ci: ETH annex — 8 spec-invariant tests + CI gate
-f34ab29 build: add [eth] optional extra (ecdsa>=0.18) for EIP-712 reference implementation
-5178368 docs: ETH-anchored receipt annex — EIP-712 + EAS + x402, sibling to did:web
-01294c7 docs: refresh lane report with second canonical verify pass at HEAD 1684db5
-1684db5 docs: lane report — final state, evidence, owner-side follow-ups
-1adaa3f UK_DRAFTS: prepared-but-not-submitted materials for four UK engagements
+f34ab29 build: add [eth] optional extra (ecdsa>=0.18)
+5178368 docs: ETH-anchored receipt annex — EIP-712 + EAS + x402
+01294c7 docs: refresh lane report (second canonical verify pass)
+1684db5 docs: lane report — initial final state
+1adaa3f UK_DRAFTS: prepared-but-not-submitted materials (4 UK engagements)
 07d9061 scripts: deterministic Register-readiness verifier
-0f2288c ci: install, receipt tests, register-readiness verifier, build artefacts
-97971cf test: receipt chain integration proof with inspect-signed-receipt
-832f4dc docs: register readiness matrix + uncertainties + candidate task
-166e926 build: declare no packages explicitly for setuptools 84+ auto-discovery
-18488e0 docs: correct Inspect Evals registration claim (#1)    <- origin/main
+0f2288c ci: install, receipt tests, register-readiness verifier, build
+97971cf test: receipt chain integration proof
+832f4dc docs: register readiness + uncertainties + candidate task
+166e926 build: setuptools 84+ fix
+18488e0 docs: correct Inspect Evals registration claim (origin/main)
 ```
 
-Eight new lane commits on top of the upstream merge base.
+### C. Collision-rule compliance
+
+- M2 has not edited any measurement results or cryptographic state. All measurement code (probes/, receipts/ test, ETH annex) was authored in this lane under the previous brief; this turn has not modified it.
+- M2 has not sent outreach, filed submissions, or written market claims.
+- All copy in `UK_DRAFTS/` is `DRAFT ONLY — never submitted from this lane`. Owner reviews, updates, and submits manually.
 
 ---
 
-## Files delivered
-
-### Objective A — Register readiness
-
-| File | Purpose |
-|---|---|
-| `REGISTER_READINESS.md` | PASS / FAIL / BLOCKED matrix for all 4 official repo requirements + 3 submission-time gates |
-| `UNCERTAINTIES.md` | item validity, contamination, licensing, dataset, scoring, acceptance risks; brief-vs-reality disagreements |
-| `REGISTER_CANDIDATE_TASK.md` | single-task pick (`gspc_governance`) for first submission |
-| `scripts/verify_register.sh` | deterministic verifier — 14/14 PASS, 19/19 modules, exit 0 |
-| `.github/workflows/ci.yml` | install + pytest x3 + verifier + build + artefact upload |
-| `pyproject.toml` (modified) | `[receipts]` and `[eth]` optional extras; explicit `[tool.setuptools]` for setuptools 84+ |
-
-### Objective B — Receipt interoperability
-
-| File | Purpose |
-|---|---|
-| `tests/test_receipt_integration.py` | 2/2 PASS — proves task receipt + run receipt + UNSIGNED honesty + hash chain |
-| `RECEIPTS_INTEGRATION.md` | exact versions, commands, content IDs (task.content_id == run.prev == `f578064c…`, match: True), known NaN bug worked around |
-
-### Objective C — UK market-entry drafts (NOT submitted)
-
-| File | Purpose |
-|---|---|
-| `UK_DRAFTS/UK_LEGAL_SERVICES_AI_GROWTH_LAB_APPLICATION_DRAFT.md` | Application draft for the Advisory AI Growth Lab (legal services). Workflow: versioned legal source → provision mapping → task execution → deterministic result → signed evidence → correction/replay. |
-| `UK_DRAFTS/UK_SOVEREIGN_AI_PROCUREMENT_CAPABILITY_NOTE.md` | One-page capability note tied to public-service evidence infrastructure |
-| `UK_DRAFTS/UK_ASSURANCE_MAPPING.md` | Subject / criteria / evidence / conclusion matrix. The "CSOAI cannot say" column is stated explicitly per row |
-| `UK_DRAFTS/INSPECT_ADOPTION_CASE.md` | One-page for Inspect users (portable receipts, explicit denominators, pinned evidence, replay, corrections) |
-
-### Bonus — ETH annex (post-brief extension)
-
-| File | Purpose |
-|---|---|
-| `UK_DRAFTS/ETH_RECEIPTS_ANNEX.md` | EIP-712 + EAS + x402 spec, sibling to the existing Ed25519/did:web receipt. No on-chain deploy. |
-| `scripts/eth_receipt_demo.py` | Runnable reference implementation, byte-deterministic across runs |
-| `tests/test_eth_receipt.py` | 8/8 PASS — spec invariants for the annex |
-
-### Bonus — Protocol probes (post-brief extension)
-
-| File | Purpose |
-|---|---|
-| `probes/` (12 modules, 9 fixtures, 1 stub server) | 11 `@task` probes measuring CSOAI's own protocol surface and upstream dependencies — A2A, MCP, did:web, public-root corpus, signed-card index, x402 discovery, corrections feed, Inspect Evals Register README, inspect-signed-receipt PyPI, Hugging Face org |
-| `tests/test_probe_smoke.py` | 3/3 PASS, 20/20 subtests — probe scorers against a stdlib stub server, hermetic |
-
----
-
-## Brief-vs-reality disagreements (honest, all recorded in `UNCERTAINTIES.md`)
-
-1. **"Legal Services AI Growth Lab"** → live gov.uk calls it **"Advisory AI Growth Lab: legal services"**. Legal services is the *first sector* of a broader Advisory AI Growth Labs programme.
-2. **"27 September 2026 23:59 BST" deadline** → **not found** on public pages. Owner must re-verify via the application portal before submitting. The lane did not claim this date.
-3. **"22 axes"** → 22 axes are the live GSPC public-board axes (`https://councilof.ai/gspc-verify/` confirms this); the **Inspect `@task` count is 14** (verified). The repo README's "ten task entry points" is stale.
-4. **Dstl EoI status** → the EoI was filed April 2026; the "active engagement" framing that appeared in the unsent BAE pitch draft is not externally validated and was removed from any external-facing material.
-
-## Real findings during the lane (not silent)
-
-1. **`inspect_receipts@0.3.0` swallows `ValueError: Invalid JSON number: nan`** silently when the harness reports NaN for `accuracy_measured` (its honesty-register behaviour). The receipt package uses RFC 8785 JCS canonicalisation which rejects NaN. Documented in `RECEIPTS_INTEGRATION.md`; worked around in the test by coercing NaN→None; the fix belongs upstream in `inspect-receipts`, not in this lane.
-2. **Setuptools 84+ refuses to build this repo** because the flat layout (`logs/`, `data/`, `lm_eval_tasks/` at root) looks like accidental top-level packages. Fixed by adding `[tool.setuptools] packages = []` in `pyproject.toml`.
-3. **The `inspect-receipts` source tree is broken upstream** (`tests/` reference `inspect_receipts.canonical` which was removed in 0.3.0). The PyPI 0.2.0 wheel works fine. Documented; out of scope for this lane.
-4. **CSOAI's live protocol surface is larger than the brief anticipated.** The probes work uncovered:
-   - A2A v1.0 agent card at both `councilof.ai/.well-known/agent-card.json` AND `csoai.org/.well-known/agent-card.json`
-   - MCP server `csoai-gspc-mcp` v1.4.2 at `councilof.ai/mcp` with **8 free + 4 paid tools**
-   - x402 discovery live at `councilof.ai/.well-known/x402.json` (Base mainnet, USDC)
-   - 19-model fleet behind the GSPC board, 15,580 grading rows, all reproducible
-   - 335 signed cards in the index vs 257 leaves in the public-root corpus (both real, both measurable)
-5. **Probe scorer-name lookup bug** in `test_probe_smoke.py`: the original `f"score_{probe_module}"` matched nothing because the inline scorers use shorter suffixes (`score_hf_org`, `score_register_readme`). Fixed with explicit `SCORER_ALIASES` map.
-
----
-
-## What's in the deep-research strategy (separate file)
-
-The Sovereign AI strategy document — `SOV4-AI-STRATEGY.md` — was produced
-in a separate deep-research lane and lives in `clawd-workspace/`, not in
-this branch. It is **not** part of the PR. The one-page
-`UK_SOVEREIGN_AI_PROCUREMENT_CAPABILITY_NOTE.md` in `UK_DRAFTS/` is the
-public-facing summary; the strategy document is the internal-only
-positioning audit.
-
-Brief summary of the strategy call: **bid on challenge #2 (NCSC agent
-security & resilience testing) IF CSOAI can publish care-membrane scoring
-of ≥3 named frontier agents with `inspect-signed-receipt` per run within
-~6 weeks. Bid on challenge #4 (MoD integrate AI across Defence mission
-environments) IF a published non-defence HARVI report exists at
-iokfarm.co.uk AND the Dstl EoI has produced inbound interest.**
-Otherwise do not bid; submitting early-stage work to a "demonstrator-
-stage" challenge burns the relationship for the next round.
-
----
-
-## Definition of done — lane internal checklist
-
-- [x] Repo installs from a clean clone (`pip install -e ".[receipts,eth]"`)
-- [x] Every advertised `@task` discoverable and runnable under current Inspect (14/14 PASS via `scripts/verify_register.sh`)
-- [x] CI covers package build and bounded mock execution (`.github/workflows/ci.yml` — 5 steps)
-- [x] Receipt hook produces locally verifiable, honestly UNSIGNED test receipts (2/2 PASS via `tests/test_receipt_integration.py`)
-- [x] Register readiness documented without hiding arXiv / two-log gates (`REGISTER_READINESS.md`, `UNCERTAINTIES.md`)
-- [x] UK Growth Lab and Sovereign AI drafts cite current official sources and make no affiliation claims (`UK_DRAFTS/`)
-- [x] One draft PR is open (`https://github.com/CSOAI-ORG/gspc-harness/pull/2`)
-- [x] Nothing in this lane changes production, spends funds, sends external messages, or duplicates the estate
-
----
-
-## What's left for the human owner (not in this lane's scope)
-
-1. **Re-verify the deadline** at `dsitgrants.flexigrant.com` for the Advisory AI Growth Lab.
-2. **Choose the Register submission commit** (lane produces a SHA on PR head; bot verifies).
-3. **Publish a versioned arXiv paper** describing the honesty register (`usable_n ≥ 30` interval floor; UNMEASURED vs WRONG distinction).
-4. **Run two complete real-model eval logs** on `gspc_governance` (the lane's recommended first-submission task) and upload to the Register log store.
-5. **Decide whether to open the Register submission issue** — only after 1–4 are done.
-6. **Decide whether to bid on the Sovereign AI R&D Procurement Scheme** — see `SOV4-AI-STRATEGY.md`. The lane recommends bidding on challenge #2 (NCSC) only if published care-membrane scoring of named agents can ship in 6 weeks.
-
----
-
-## Honest stop condition
-
-This lane was bounded by the iteration budget across three sessions.
-Every in-scope deliverable is committed and verified. The lane did
-**not**:
-
-- open the Register submission issue (arXiv + 2 real-model logs are mandatory and are owner-side);
-- submit any UK application;
-- contact NCSC, MoD, DSIT, DHSC, DBST, ARIA, Dstl, or any UK regulator;
-- publish anything on `councilof.ai` or `csoai.org`;
-- generate, commit, or claim any signing key;
-- change `inspect-receipts`, `inspect-evals`, or any production repo.
-
-**Verdict: ready for review, not ready to merge.** A human reviewer runs
-the three commands above (or relies on CI), confirms green, then chooses
-next steps.
+*This report is one M2 report. Per doctrine: durable execution ledger updated; one append-only entry. Next M2 report will append when material state changes (CI status, official door deadline, or PR review feedback).*
