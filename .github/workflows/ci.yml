@@ -43,6 +43,14 @@ jobs:
         # assertions. See UK_DRAFTS/ETH_RECEIPTS_ANNEX.md.
         run: pytest tests/test_eth_receipt.py -v
 
+      - name: Run probe smoke test
+        # 9 protocol probes (A2A, MCP, did:web, root, x402, etc.) with a
+        # local stdlib stub server (probes/_stub_server.py) and live-captured
+        # fixtures (probes/_fixtures/). No external network access required.
+        # 3 tests + 20 subtests; covers module imports, fixture presence,
+        # and per-probe scorer correctness against the stub fixtures.
+        run: pytest tests/test_probe_smoke.py -v
+
       - name: Run scripts/verify_register.sh
         # Runs every @task under mockllm/model with --limit 2. Exits non-zero
         # if any task fails to load, build, or run. Generates logs/ on the

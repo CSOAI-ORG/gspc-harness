@@ -108,6 +108,13 @@ mods = ['tasks.gspc_governance','tasks.gspc_xraiv',
         'tasks.defbench_inspect','tasks.care_cost_inspect',
         'tasks.govbench_inspect','tasks.pqcbench_inspect',
         'tasks._gspc_scoring','tasks._care_gate']
+# Plus every probe module under probes/ (excluding the shared helpers).
+import glob, os
+for path in sorted(glob.glob('probes/*.py')):
+    base = os.path.splitext(os.path.basename(path))[0]
+    if base in ('__init__','_scoring','_get_runner','_stub_server'):
+        continue
+    mods.append(f'probes.{base}')
 ok = 0
 for m in mods:
     try:
