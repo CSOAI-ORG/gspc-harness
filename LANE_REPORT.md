@@ -266,3 +266,5 @@ transaction, no anchor.
 ---
 
 *This report is one M2 report. Per doctrine: durable execution ledger updated; one append-only entry. Next M2 report will append when material state changes (CI status, official door deadline, or PR review feedback).*
+
+**Appended 2026-09-13T07:55Z:** CI on PR #2 reports **PASS** (`Register readiness (install, tests, mock run, build)` job passed in 1m26s on commit `ac7cba0`, 1m32s on the prior commit). External doors re-pulled: Advisory AI Growth Lab (200), Sovereign AI £100m (200), Inspect Evals Register README (200). Local 5-gate verifier re-run at HEAD `ac7cba0`: ALL GREEN (captured at `/tmp/m2-standby-20260913-075529.out`). No new M2 deliverables produced this turn; the lane remains ready-for-review, not-yet-mergeable pending owner decision on the seven owner-side follow-ups in §8.
