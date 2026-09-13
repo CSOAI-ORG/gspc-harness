@@ -18,15 +18,23 @@
 
 ---
 
-## 1. Verified starting facts (from doctrine + M4)
+## 1. Verified starting facts (from doctrine + M4; canonical = live public surface)
 
-These are M4's published facts; M2 cites them, does not edit them.
+M2 cites only M4's verified facts. **Maple cleared from a prior turn:** the canonical root is what the **live public surface** publishes at `https://councilof.ai/root.json`. The lane's prior numbers and the brief's stated numbers are recorded as historical; only the live surface is canonical for any outward citation.
 
-- **Public root, 257 leaves** — Ed25519 verified, Rekor log index `2810720876`, OTS Bitcoin blocks 966712 and 966764. CLOSED (M4 has the receipts).
-- **Signed-card catalogue, 335 cards** — separate corpus. CLOSED (M4 has the receipts).
+**Live public surface, re-pulled 2026-09-13:**
+- **Public root, 264 leaves** — Ed25519-verified, witnessed in Rekor, OTS confirmed in Bitcoin block per the public witness. `merkle_root = 03d0ea31b374df4c3a7826ad4e6347a0c0baf75cad65d85a6f515427d504ea32`, `card_count = 264`, `as_of = 2026-09-13T06:03:55Z`. CLOSED (M4 has the receipts; Maple authorised citation).
+- **Signed-card catalogue, 335 cards** — separate corpus. `head = 66856aca4a1f9390f0f51d89b8b96d984ab902852ed77b0254730758260ad1da`. CLOSED (M4 has the receipts).
 - **1,301-leaf commitment** — unsigned and unanchored. CLOSED (M4 has the bytes; not signed).
-- **425 stablecoins indexed / 1 fully deep-measured-signed-rooted-Bitcoin-anchored**. CLOSED (M4).
-- **XRPL 16 / SWIFT 26 / x402 9 resources / RunPod `fpowppss5ngtkw`** — CLOSED (M4).
+- **Stablecoins: 425 indexed across 1,640 deployments and 211 chains; one subject reported through the measured/signed/rooted/Bitcoin-anchored path; 424 remain unmeasured.** CLOSED (M4).
+- **Agent-protocol census: 109,604 indexed rows; zero graded measurements.** CLOSED (M4).
+- **x402: nine resources; one outside payer; one outside settlement; 0.02 USDC settled. Self-tests and zero-value transactions are separate.** CLOSED (M4).
+- **RunPod intake: 168 source cards; 56 valid staged cards, including 40 with `n>=30` and 16 below; all 56 already signed when checked.** CLOSED (M4).
+
+**Historical (superseded by the live surface above):**
+- ~~Always-on brief: root `06e4da3d…`, count 257~~ — stale at the time of this audit.
+- ~~Lane prior: root `222538d5…`, count 257~~ — stale at the time of this audit.
+- **Per the live surface, the canonical root is `03d0ea31b3…` and count is 264.** Any prior-cited number must be replaced with this when the operator next runs the §1 rotation script.
 
 M2 has not touched any of M4's outputs.
 

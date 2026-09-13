@@ -95,7 +95,7 @@ before the document is sent to a regulator or prime.
 | **Subject matter** | A physical AI system (UGV, drone, cobot) operated in the iokfarm.co.uk outdoor testbed, including RF-denied conditions in the Faraday cage. |
 | **Criteria** | HARVI protocol (Humanoid Autonomous Robotic Validation Interface) — documented in `clawd-workspace/csoai-docs/dstl_application.md §3.3`. Failure modes covered: environmental context evaluation, degraded sensor testing, multi-agent interaction, emergency stop and override reliability, failure mode characterisation. |
 | **Evidence** | A HARVI evaluation report (when one exists). **No HARVI report has been published to date** as far as this audit can verify. |
-| **Conclusion CSOAI can make** | "CSOAI operates the only UK physical AI testbed with a 20ft×20ft RF-shielded Faraday cage (>60dB 1MHz–10GHz, MIL-STD-461G RE102 design basis). The methodology is documented; no published HARVI report exists yet." |
+| **Conclusion CSOAI can make** | "As far as CSOAI has been able to verify on 2026-09-13, CSOAI operates a UK physical AI testbed with a 20ft×20ft RF-shielded Faraday cage (>60dB 1MHz–10GHz, MIL-STD-461G RE102 design basis). The methodology is documented; no published HARVI report exists yet." |
 | **Conclusion CSOAI cannot make** | "CSOAI has evaluated X physical AI system for Y purpose" until a HARVI report with a named system and named client exists. |
 | **Public URL of the evidence** | `clawd-workspace/csoai-docs/sovereign_campus_facility_guide.md` (facility guide, not a HARVI report). |
 
