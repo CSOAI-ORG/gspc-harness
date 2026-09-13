@@ -20,6 +20,11 @@ openai = ["openai>=1.0"]
 # does not require it. The integration test installs `inspect_receipts` as
 # ``inspect-signed-receipt`` (same package; see PyPI for the wheel name).
 receipts = ["inspect-signed-receipt>=0.2"]
+# EIP-712 / ETH annex: pure-Python `ecdsa` for secp256k1 sign + ecrecover.
+# Only used by tests/test_eth_receipt.py and scripts/eth_receipt_demo.py.
+# The reference implementation is chainless; no chain RPC, no real key
+# material, deterministic test signer only.
+eth = ["ecdsa>=0.18"]
 
 [project.urls]
 Homepage = "https://csoai.org"
