@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governance & Independence — CSOAI Ltd</title>
+<meta name="description" content="Governance structure, independence policy, conflict-of-interest register, and key-custody statement for CSOAI Ltd.">
+<link rel="canonical" href="https://councilof.ai/governance">
+<style>
+  body{margin:0;min-height:100vh;background:#0a0a0f;color:#e2e8f0;font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.7;padding:2rem;max-width:48rem;margin:0 auto;}
+  h1{font-size:2rem;font-weight:700;margin:2rem 0 1rem;color:#fff;}
+  h2{font-size:1.3rem;font-weight:600;margin:2rem 0 0.5rem;color:#a5b4fc;}
+  p,li{font-size:0.95rem;color:#cbd5e1;}
+  a{color:#818cf8;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  ul{padding-left:1.5rem;}
+  .highlight{margin:1.5rem 0;padding:1.5rem;background:#1e1b4b;border-radius:8px;border:1px solid #3730a3;}
+  .highlight p{margin:0.3rem 0;font-size:0.95rem;color:#c7d2fe;}
+  .date{font-size:0.85rem;color:#64748b;margin-top:3rem;}
+</style>
+</head>
+<body>
+
+<h1>Governance &amp; Independence</h1>
+
+<div class="highlight">
+<p><strong>CSOAI measures and publishes evidence. It does not certify, endorse, or claim regulator approval.</strong></p>
+<p>This page documents our governance structure, independence policy, and conflict-of-interest controls.</p>
+</div>
+
+<h2>1. Organisation</h2>
+<p>CSOAI Ltd is a UK private limited company.</p>
+<ul>
+<li><strong>Companies House:</strong> 16939677</li>
+<li><strong>Registered office:</strong> London, United Kingdom</li>
+<li><strong>Incorporated:</strong> 2024</li>
+<li><strong>Directors:</strong> Nicholas Templeman (sole director)</li>
+<li><strong>Employees:</strong> 1 (sole founder)</li>
+</ul>
+
+<h2>2. Independence policy</h2>
+<p>CSOAI maintains strict independence from the entities it measures:</p>
+<ul>
+<li><strong>No payment from measured entities.</strong> We do not accept payment, sponsorship, or funding from any entity whose AI systems we measure. This is a stricter standard than California SB 813 §8898.1(c)(2)(C), which permits reasonable market-rate assessed-party payments.</li>
+<li><strong>No publication gag.</strong> We do not accept pre-publication vetoes, editorial control, or publication delays from measured entities. Results publish, period.</li>
+<li><strong>Access scope disclosed on the card.</strong> If a measured entity provides access to internal systems, the scope and method are documented on the measurement card.</li>
+<li><strong>Corrections ledger governs disputes.</strong> Disputes about measurement accuracy are resolved through our publicly auditable corrections ledger (<a href="https://councilof.ai/feeds/corrections.xml">corrections.xml</a>), not through private negotiation with the measured entity.</li>
+</ul>
+
+<h2>3. Conflict-of-interest register</h2>
+<p>As of September 2026, CSOAI has no conflicts of interest to disclose:</p>
+<ul>
+<li><strong>No financial ties to measured entities.</strong> CSOAI has no equity, debt, consulting, or advisory relationships with any entity whose AI systems we measure.</li>
+<li><strong>No lab funding.</strong> CSOAI has not received funding from OpenAI, Anthropic, Google, Meta, or any other AI lab.</li>
+<li><strong>No regulatory affiliation.</strong> CSOAI is not affiliated with, endorsed by, or acting on behalf of any regulatory body (AISI, FCA, SEC, NIST, or any other).</li>
+<li><strong>Self-funded.</strong> CSOAI is 100% self-funded by its sole director. External revenue to date: $0.02 via x402 protocol.</li>
+</ul>
+
+<h2>4. Key-custody statement</h2>
+<p>CSOAI uses Ed25519 signing keys for measurement receipts:</p>
+<ul>
+<li><strong>Signing key custody:</strong> The Ed25519 signing key is held by the sole director in a hardware security module (HSM). The key is not stored on any server, cloud service, or shared infrastructure.</li>
+<li><strong>Verification key:</strong> The public verification key is published at <a href="https://csoai.org/.well-known/did.json">csoai.org/.well-known/did.json</a> (did:web:csoai.org).</li>
+<li><strong>Key rotation:</strong> If the signing key is compromised, a new key pair will be generated and the did:web document will be updated. All previously signed receipts remain verifiable against the original public key.</li>
+<li><strong>No key sharing:</strong> The signing key is not shared with any third party, including measured entities, partners, or regulators.</li>
+</ul>
+
+<h2>5. Decision rights</h2>
+<ul>
+<li><strong>Measurement decisions:</strong> The sole director decides which subjects to measure, which axes to apply, and when to publish results.</li>
+<li><strong>Corrections:</strong> Errors in published measurements are corrected through the corrections ledger. Corrections are published publicly and linked from the original measurement card.</li>
+<li><strong>Scope changes:</strong> Changes to the measurement methodology are documented in the versioned methodology PDF (when published) and announced on the corrections feed.</li>
+</ul>
+
+<h2>6. Key-person continuity</h2>
+<p>CSOAI is currently a sole-founder operation. In the event of key-person incapacity:</p>
+<ul>
+<li><strong>Open-source code:</strong> All measurement code is open source (Apache-2.0) and can be forked and maintained by any third party.</li>
+<li><strong>Published methodology:</strong> The measurement methodology is documented and reproducible. Any qualified party can replicate the measurements.</li>
+<li><strong>Verifiable receipts:</strong> All published receipts are content-addressed and independently verifiable. They do not depend on CSOAI's infrastructure to remain valid.</li>
+<li><strong>Designation request:</strong> In the event of key-person incapacity, CSOAI will request designation as a public-interest entity under California SB 813 to ensure continuity of the measurement infrastructure.</li>
+</ul>
+
+<h2>7. Funding statement</h2>
+<p>CSOAI is 100% self-funded by its sole director. External revenue to date: $0.02 via x402 protocol on Base mainnet (USDC). No grants, loans, or investor funding received.</p>
+
+<h2>8. Contact</h2>
+<p>For governance enquiries: <a href="mailto:nicholas@csoai.org">nicholas@csoai.org</a></p>
+
+<p class="date">Last updated: 15 September 2026. Version 1.0.</p>
+
+</body>
+</html>
