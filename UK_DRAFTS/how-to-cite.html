@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Cite — CSOAI GSPC</title>
+<meta name="description" content="How to cite CSOAI's GSPC measurement framework, individual cards, and the public root in academic papers, regulatory filings, and reports.">
+<link rel="canonical" href="https://councilof.ai/cite">
+<style>
+  body{margin:0;min-height:100vh;background:#0a0a0f;color:#e2e8f0;font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.7;padding:2rem;max-width:48rem;margin:0 auto;}
+  h1{font-size:2rem;font-weight:700;margin:2rem 0 1rem;color:#fff;}
+  h2{font-size:1.3rem;font-weight:600;margin:2rem 0 0.5rem;color:#a5b4fc;}
+  p,li{font-size:0.95rem;color:#cbd5e1;}
+  a{color:#818cf8;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  pre{background:#1e1b4b;padding:1.5rem;border-radius:8px;border:1px solid #3730a3;overflow-x:auto;font-size:0.85rem;color:#c7d2fe;line-height:1.5;}
+  code{font-family:'JetBrains Mono',monospace;}
+  .doi{margin:1.5rem 0;padding:1rem;background:#1e293b;border-radius:8px;border:1px solid #334155;}
+  .doi p{margin:0.3rem 0;font-size:0.9rem;}
+  .date{font-size:0.85rem;color:#64748b;margin-top:3rem;}
+</style>
+</head>
+<body>
+
+<h1>How to Cite CSOAI GSPC</h1>
+
+<p>When referencing CSOAI's measurement framework in academic papers, regulatory filings, reports, or media, please use the formats below. All citations should include the version, date, and verification URL.</p>
+
+<h2>1. Citing the GSPC board (overall framework)</h2>
+
+<h3>APA</h3>
+<pre><code>CSOAI Ltd. (2026). GSPC: Governance, Safety, Provenance, Continuity — A22-axis AI measurement framework (Version 1.0). https://councilof.ai/api/gspc</code></pre>
+
+<h3>BibTeX</h3>
+<pre><code>@misc{csoai_gspc_2026,
+  author = {{CSOAI Ltd}},
+  title = {GSPC: Governance, Safety, Provenance, Continuity — A 22-axis AI measurement framework},
+  year = {2026},
+  version = {1.0},
+  url = {https://councilof.ai/api/gspc},
+  note = {Accessed: \today}
+}</code></pre>
+
+<h3>Zenodo DOI</h3>
+<div class="doi">
+<p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.21991104">10.5281/zenodo.21991104</a></p>
+<p><strong>Citation:</strong> CSOAI Ltd. (2026). GSPC Measurement Framework (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.21991104</p>
+</div>
+
+<h2>2. Citing a specific card</h2>
+
+<h3>APA</h3>
+<pre><code>CSOAI Ltd. (2026). GSPC measurement card: [SUBJECT_NAME] (Card ID: [CARD_ID]). https://councilof.ai/gspc-verify?card=[CARD_ID]</code></pre>
+
+<h3>BibTeX</h3>
+<pre><code>@misc{csoai_card_[CARD_ID],
+  author = {{CSOAI Ltd}},
+  title = {GSPC measurement card: [SUBJECT_NAME]},
+  year = {2026},
+  howpublished = {Card ID: [CARD_ID]},
+  url = {https://councilof.ai/gspc-verify?card=[CARD_ID]},
+  note = {Content-addressed: sha256=[CONTENT_ID]}
+}</code></pre>
+
+<h2>3. Citing the public root</h2>
+
+<h3>APA</h3>
+<pre><code>CSOAI Ltd. (2026). GSPC public root (Root SHA-256: [ROOT_SHA]). https://councilof.ai/root.json</code></pre>
+
+<h3>BibTeX</h3>
+<pre><code>@misc{csoai_root_2026,
+  author = {{CSOAI Ltd}},
+  title = {GSPC public root},
+  year = {2026},
+  howpublished = {Root SHA-256: [ROOT_SHA]},
+  url = {https://councilof.ai/root.json},
+  note = {Rekor log index: [REKOR_INDEX]; OTS: confirmed in Bitcoin block [BLOCK]}
+}</code></pre>
+
+<h2>4. Citing a correction</h2>
+
+<h3>APA</h3>
+<pre><code>CSOAI Ltd. (2026). Correction: [CORRECTION_TITLE] (Correction ID: [C_ID]). https://councilof.ai/feeds/corrections.xml</code></pre>
+
+<h2>5. Verification</h2>
+<p>Every citation can be independently verified:</p>
+<ul>
+<li><strong>Card verification:</strong> <a href="https://councilof.ai/gspc-verify">councilof.ai/gspc-verify</a> — paste card ID, recomputes SHA-256 and checks Ed25519 signature.</li>
+<li><strong>Root verification:</strong> <a href="https://councilof.ai/root.json">councilof.ai/root.json</a> — Merkle root, card count, as_of timestamp.</li>
+<li><strong>Correction feed:</strong> <a href="https://councilof.ai/feeds/corrections.xml">councilof.ai/feeds/corrections.xml</a> — machine-derived corrections ledger.</li>
+<li><strong>Rekor transparency log:</strong> Search by log index at <a href="https://search.sigstore.dev">search.sigstore.dev</a>.</li>
+</ul>
+
+<h2>6. Contact</h2>
+<p>For citation enquiries: <a href="mailto:nicholas@csoai.org">nicholas@csoai.org</a></p>
+
+<p class="date">Last updated: 15 September 2026.</p>
+
+</body>
+</html>
