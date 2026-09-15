@@ -23,7 +23,7 @@ The M2-conductor doctrine: "M2 from this lane does not send outreach." M2 prepar
 
 ```
 To:      UKGovernmentBEIS/inspect_evals maintainers (via GH issue)
-From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@meok.ai
+From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@csoai.org
 Subject: gspc_governance: a deterministic EU AI Act risk-tier eval with an honesty register
 ```
 
@@ -71,7 +71,7 @@ pin. We welcome private review feedback via the GH PR before filing.
 To:      Sovereign AI R&D Procurement Scheme, c/o DSIT (Department for
          Science, Innovation and Technology), via the innovation-projects
          portal
-From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@meok.ai
+From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@csoai.org
 Subject: CSOAI Ltd — demonstrator-stage AI evaluation infrastructure for the Sovereign AI scheme
 ```
 
@@ -114,7 +114,7 @@ clawd-workspace/SOV4-AI-STRATEGY.md. — CSOAI Ltd
 
 ```
 To:      Advisory AI Growth Lab programme team (via dsitgrants.flexigrant.com)
-From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@meok.ai
+From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@csoai.org
 Subject: CSOAI Ltd — application ready for the Advisory AI Growth Lab (legal services)
 ```
 
@@ -156,7 +156,7 @@ does not list an explicit deadline. — CSOAI Ltd
 
 ```
 To:      UK AI Security Institute, c/o DSIT (via AISI public site)
-From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@meok.ai
+From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@csoai.org
 Subject: CSOAI Ltd — your Inspect framework produces the evidence; we sign it and make it verifiable
 ```
 
@@ -198,7 +198,7 @@ We do not request formal engagement; we offer this for AISI awareness. — CSOAI
 
 ```
 To:      x402-foundation/x402 maintainers (via GH issue)
-From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@meok.ai
+From:    Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@csoai.org
 Subject: CSOAI — EIP-712 sibling receipt that interoperates with x402 offer-and-receipt
 ```
 
