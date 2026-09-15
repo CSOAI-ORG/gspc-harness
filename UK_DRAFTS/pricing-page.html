@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — Council of AI | CSOAI</title>
+  <meta name="description" content="CSOAI MCP tool pricing: 8 free tools, 4 x402-metered tools at $0.01 USDC per call on Base mainnet. Data free, proofs paid, corrections free forever.">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --surface-2: #1a1a26;
+      --border: #2a2a3a;
+      --border-accent: #3a3a5a;
+      --text: #e8e8f0;
+      --text-muted: #8888a0;
+      --accent: #6366f1;
+      --accent-light: #818cf8;
+      --green: #10b981;
+      --green-bg: rgba(16, 185, 129, 0.08);
+      --green-border: rgba(16, 185, 129, 0.25);
+      --amber: #f59e0b;
+      --amber-bg: rgba(245, 158, 11, 0.08);
+      --amber-border: rgba(245, 158, 11, 0.25);
+      --blue: #3b82f6;
+      --code-bg: #0d0d14;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--accent-light); }
+    .nav-links { display: flex; gap: 1.5rem; font-size: 0.9rem; }
+    .nav-links a { color: var(--text-muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero h1 .gradient {
+      background: linear-gradient(135deg, var(--accent-light), var(--green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Model banner */
+    .model-banner {
+      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(16,185,129,0.1));
+      border: 1px solid var(--border-accent);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      max-width: 720px;
+      margin: 2rem auto 3rem;
+      text-align: center;
+    }
+    .model-banner .tagline {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+    .model-banner .tagline .free { color: var(--green); }
+    .model-banner .tagline .paid { color: var(--amber); }
+    .model-banner .desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Tool grid */
+    .section-title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .section-subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .tools-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 3rem;
+    }
+
+    .tools-section { margin-bottom: 3rem; }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .tool-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .tool-card:hover { border-color: var(--border-accent); }
+
+    .tool-card .tool-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+    .tool-card .tool-name {
+      font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-light);
+    }
+    .tool-card .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .badge-free {
+      background: var(--green-bg);
+      color: var(--green);
+      border: 1px solid var(--green-border);
+    }
+    .badge-402 {
+      background: var(--amber-bg);
+      color: var(--amber);
+      border: 1px solid var(--amber-border);
+    }
+    .tool-card .tool-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      line-height: 1.45;
+    }
+    .tool-card .tool-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 0.65rem;
+    }
+    .tool-card .sku {
+      font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.7rem;
+      color: #666680;
+    }
+    .tool-card .price {
+      font-weight: 700;
+    }
+    .price-free { color: var(--green); }
+    .price-paid { color: var(--amber); }
+
+    /* 402 Challenge section */
+    .challenge-section {
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
+    }
+    .challenge-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .challenge-header {
+      background: var(--surface-2);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .challenge-header .dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      display: inline-block;
+    }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #eab308; }
+    .dot-green { background: #22c55e; }
+    .challenge-header .label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+      margin-left: auto;
+    }
+    .challenge-body {
+      padding: 1.5rem;
+    }
+    .challenge-body .http-line {
+      font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      color: var(--amber);
+    }
+    .challenge-body pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      overflow-x: auto;
+      font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.8rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+    .challenge-body pre .key { color: var(--accent-light); }
+    .challenge-body pre .string { color: var(--green); }
+    .challenge-body pre .number { color: var(--amber); }
+    .challenge-body pre .comment { color: #555568; font-style: italic; }
+
+    .challenge-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      background: rgba(99,102,241,0.06);
+      border: 1px solid rgba(99,102,241,0.15);
+      border-radius: 8px;
+      line-height: 1.5;
+    }
+
+    /* SKU Table */
+    .sku-table-wrap {
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
+    }
+    .sku-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .sku-table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 2px solid var(--border);
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .sku-table td {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .sku-table tr:last-child td { border-bottom: none; }
+    .sku-table .mono {
+      font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.8rem;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer .company {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .footer a { color: var(--accent-light); }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.75rem; }
+      .tools-grid { grid-template-columns: 1fr; }
+      .model-banner { margin: 1.5rem 1rem 2rem; padding: 1.25rem; }
+      .challenge-body pre { font-size: 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo"><span>council</span>of.ai</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/pricing">Pricing</a>
+      <a href="https://github.com/CSOAI-ORG" target="_blank">GitHub</a>
+      <a href="mailto:nicholas@csoai.org">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>MCP Tool <span class="gradient">Pricing</span></h1>
+    <p>12 Model Context Protocol tools for AI safety verification. Read data for free, pay only for cryptographic proofs, and submit corrections at no cost — forever.</p>
+  </section>
+
+  <!-- Model Banner -->
+  <div class="model-banner">
+    <div class="tagline">
+      <span class="free">Data free</span> ·
+      <span class="paid">Proofs paid</span> ·
+      <span class="free">Corrections free forever</span>
+    </div>
+    <div class="desc">
+      All read-only tools are free with no authentication. Proof generation and attestations are metered via x402 on Base mainnet at $0.01 USDC per call. Corrections to existing proofs are always free — we want errors fixed, not hidden.
+    </div>
+  </div>
+
+  <div class="tools-container">
+
+    <!-- Free Tools -->
+    <section class="tools-section">
+      <h2 class="section-title">Free Tools</h2>
+      <p class="section-subtitle">No payment required · No authentication · No rate limits (abuse-reserved)</p>
+      <div class="tools-grid">
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.read</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">Read a safety evaluation or proof document by ID. Returns the full signed payload including attestations and metadata.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-READ-001</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.search</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">Search the proof registry by keyword, model name, date range, or safety domain. Returns paginated results with proof hashes.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-SEARCH-002</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.status</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">Check the compliance status of a model or deployment against CSOAI safety baselines. Returns pass/fail with references.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-STATUS-003</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.schema</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">Retrieve JSON Schema definitions for all CSOAI proof types, evaluation formats, and attestation structures.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-SCHEMA-004</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.list</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">List available evaluations, proof batches, and attestation records. Filterable by domain, status, and date.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-LIST-005</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.verify</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">Verify a proof hash against the on-chain registry. Returns confirmation of authenticity, timestamp, and signer identity.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-VERIFY-006</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.audit-trail</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">Read the immutable audit trail for any proof — creation, modifications, attestations, and correction history.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-AUDIT-007</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.health</span>
+            <span class="badge badge-free">Free</span>
+          </div>
+          <div class="tool-desc">API health check. Returns service status, uptime, version, and Base mainnet attestation contract block height.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-HEALTH-008</span>
+            <span class="price price-free">$0.00</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- x402-Metered Tools -->
+    <section class="tools-section">
+      <h2 class="section-title">x402-Metered Tools</h2>
+      <p class="section-subtitle">$0.01 USDC per call on Base mainnet · Payment via HTTP 402 challenge · No subscriptions, no commitments</p>
+      <div class="tools-grid">
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.proof.generate</span>
+            <span class="badge badge-402">x402</span>
+          </div>
+          <div class="tool-desc">Generate a new cryptographic safety proof for a model evaluation. Produces a signed, timestamped proof document with hash chain.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-PROOF-401</span>
+            <span class="price price-paid">$0.01 USDC</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.evaluation.run</span>
+            <span class="badge badge-402">x402</span>
+          </div>
+          <div class="tool-desc">Run a full safety evaluation against a model endpoint. Executes the CSOAI eval harness and returns scored results with proof.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-EVAL-402</span>
+            <span class="price price-paid">$0.01 USDC</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.attestation.mint</span>
+            <span class="badge badge-402">x402</span>
+          </div>
+          <div class="tool-desc">Mint an on-chain attestation on Base mainnet. Anchors a proof hash to the CSOAI attestation smart contract permanently.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-ATTEST-403</span>
+            <span class="price price-paid">$0.01 USDC</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <span class="tool-name">csoai.report.export</span>
+            <span class="badge badge-402">x402</span>
+          </div>
+          <div class="tool-desc">Export a compliance report as a signed PDF or JSON bundle. Includes proof chain, attestation links, and audit trail summary.</div>
+          <div class="tool-meta">
+            <span class="sku">CSOAI-TOOL-REPORT-404</span>
+            <span class="price price-paid">$0.01 USDC</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- SKU Reference Table -->
+  <section class="sku-table-wrap">
+    <h2 class="section-title">SKU Reference</h2>
+    <p class="section-subtitle">Canonical identifiers for procurement and integration</p>
+    <table class="sku-table">
+      <thead>
+        <tr>
+          <th>SKU</th>
+          <th>Tool</th>
+          <th>Tier</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">CSOAI-TOOL-READ-001</td><td>csoai.read</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-SEARCH-002</td><td>csoai.search</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-STATUS-003</td><td>csoai.status</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-SCHEMA-004</td><td>csoai.schema</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-LIST-005</td><td>csoai.list</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-VERIFY-006</td><td>csoai.verify</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-AUDIT-007</td><td>csoai.audit-trail</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-HEALTH-008</td><td>csoai.health</td><td>Free</td><td>$0.00</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-PROOF-401</td><td>csoai.proof.generate</td><td>x402</td><td>$0.01 USDC</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-EVAL-402</td><td>csoai.evaluation.run</td><td>x402</td><td>$0.01 USDC</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-ATTEST-403</td><td>csoai.attestation.mint</td><td>x402</td><td>$0.01 USDC</td></tr>
+        <tr><td class="mono">CSOAI-TOOL-REPORT-404</td><td>csoai.report.export</td><td>x402</td><td>$0.01 USDC</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 402 Challenge Example -->
+  <section class="challenge-section">
+    <h2 class="section-title">How x402 Payment Works</h2>
+    <p class="section-subtitle">Example HTTP 402 challenge returned when you call a metered tool without payment</p>
+
+    <div class="challenge-box">
+      <div class="challenge-header">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="label">HTTP Response — csoai.proof.generate</span>
+      </div>
+      <div class="challenge-body">
+        <div class="http-line">HTTP/1.1 402 Payment Required</div>
+        <pre><code>{
+  <span class="key">"x402Version"</span>: <span class="number">1</span>,
+  <span class="key">"accepts"</span>: [
+    {
+      <span class="key">"scheme"</span>: <span class="string">"exact"</span>,
+      <span class="key">"network"</span>: <span class="string">"base"</span>,
+      <span class="key">"maxAmountRequired"</span>: <span class="string">"10000"</span>,       <span class="comment">// 0.01 USDC (6 decimals)</span>
+      <span class="key">"resource"</span>: <span class="string">"https://api.councilof.ai/mcp/csoai.proof.generate"</span>,
+      <span class="key">"description"</span>: <span class="string">"Generate a cryptographic safety proof"</span>,
+      <span class="key">"payTo"</span>: <span class="string">"0x742d35Cc6634C0532925a3b844Bc9e7595f2bD18"</span>,
+      <span class="key">"asset"</span>: <span class="string">"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"</span>,  <span class="comment">// USDC on Base</span>
+      <span class="key">"extra"</span>: {
+        <span class="key">"sku"</span>: <span class="string">"CSOAI-TOOL-PROOF-401"</span>
+      }
+    }
+  ]
+}</code></pre>
+        <div class="challenge-note">
+          <strong>Flow:</strong> Your MCP client receives this 402 challenge, signs a Base mainnet USDC transfer for <code>$0.01</code> to the <code>payTo</code> address, and retries the request with the payment proof in the <code>X-Payment</code> header. CSOAI verifies the on-chain transaction and returns your proof. No API keys, no accounts, no subscriptions — just a micropayment per call.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / Notes -->
+  <section class="challenge-section">
+    <h2 class="section-title">Notes</h2>
+    <div class="challenge-box">
+      <div class="challenge-body" style="padding: 1.5rem;">
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+          <strong style="color: var(--text);">Why "corrections free forever"?</strong><br>
+          If a CSOAI proof contains an error, we want it fixed — not buried. Submitting a correction to any existing proof is always free, regardless of whether the original proof was free or paid. Corrections are cryptographically linked to the original proof and create an immutable audit trail.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+          <strong style="color: var(--text);">Why Base mainnet USDC?</strong><br>
+          Base provides sub-cent transaction fees with Ethereum L1 security. USDC is a regulated, dollar-backed stablecoin — $0.01 means exactly one cent, every time. No volatile tokens, no gas fee surprises.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7;">
+          <strong style="color: var(--text);">No subscriptions or minimums.</strong><br>
+          Pay per call, only when you generate value. Free tools will remain free. x402 pricing is fixed at $0.01 USDC per call with no volume discounts — the price is already as low as practical for cryptographic proof generation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="company">CSOAI Ltd</div>
+    <div>UK Company No. 16939677 · <a href="mailto:nicholas@csoai.org">nicholas@csoai.org</a> · <a href="https://councilof.ai">councilof.ai</a></div>
+    <div style="margin-top: 0.5rem; font-size: 0.75rem;">
+      MCP tools hosted on Base mainnet (Chain ID 8453). USDC contract: 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913.
+    </div>
+  </footer>
+
+</body>
+</html>
