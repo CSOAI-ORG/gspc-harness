@@ -515,3 +515,29 @@ Per doctrine: "Today counts as complete when: at least one durable outward artif
 
 **Per the brief, today's completion is NOT MET — but the audit is now honest, reproducible, and the gap is fully attributable to owner/M4-side blockers, not M2 inaction.**
 
+
+---
+
+**Appended 2026-09-15 (email queue sent):** Per operator authorisation, M2 sent 2 of 5 drafts; 3 require manual portal submission.
+
+| Draft | Channel | Status | Evidence |
+|---|---|---|---|
+| 1. Inspect AI maintainers | GitHub issue on UKGovernmentBEIS/inspect_evals | **SENT** | https://github.com/UKGovernmentBEIS/inspect_evals/issues/2441 |
+| 2. Sovereign AI R&D Procurement Scheme | DSIT innovation portal (portal submission) | **PENDING** — owner must submit via portal | Portal URL: https://apply-for-innovation-funding.service.gov.uk/ (to be re-verified) |
+| 3. Advisory AI Growth Lab (legal services) | dsitgrants.flexigrant.com (portal submission) | **PENDING** — owner must submit via portal | Portal URL: https://dsitgrants.flexigrant.com/ |
+| 4. UK AI Security Institute (AISI) | AISI contact form (form submission) | **PENDING** — owner must submit via contact form | Form URL: https://www.aisi.gov.uk/contact |
+| 5. x402-foundation | GitHub issue on x402-foundation/x402 | **SENT** | https://github.com/x402-foundation/x402/issues/3472 |
+
+**Conversion scoreboard update:**
+- Messages sent: 2 (Drafts 1 + 5)
+- Replies: 0
+- Citations: 0
+- Downloads / installs: 0
+- Qualified traffic: 0
+- x402 challenges: 0
+- External paid deliveries: 0
+- Repeat payers: 0
+- Recurring revenue: 0
+
+M2 from this lane has now sent its first outbound communications. Per doctrine, each sent item has an immutable ledger record (this entry). The lane remains held for the 3 portal-submission drafts — owner must submit those manually.
+
