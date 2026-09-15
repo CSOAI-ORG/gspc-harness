@@ -42,7 +42,7 @@ metrics without contacting any API:
 inspect eval tasks/gspc_governance.py --model mockllm/model
 ```
 
-**Verification status.** All four task files, and all ten task entry points, were loaded,
+**Verification status.** All six task files, and all fourteen task entry points, were loaded,
 built and run end to end on a clean clone at the current commit using `mockllm/model`.
 That verifies the harness mechanics, not model quality — no score for any model, ours
 included, is published here.

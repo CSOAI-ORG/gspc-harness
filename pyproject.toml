@@ -15,7 +15,30 @@ dependencies = ["inspect_ai>=0.3"]
 
 [project.optional-dependencies]
 openai = ["openai>=1.0"]
+# `inspect-signed-receipt` is the PyPI distribution of `inspect-receipts`. It is
+# pulled in only by tests/test_receipt_integration.py; `pip install -e .` alone
+# does not require it. The integration test installs `inspect_receipts` as
+# ``inspect-signed-receipt`` (same package; see PyPI for the wheel name).
+receipts = ["inspect-signed-receipt>=0.2"]
+# EIP-712 / ETH annex: pure-Python `ecdsa` for secp256k1 sign + ecrecover.
+# Only used by tests/test_eth_receipt.py and scripts/eth_receipt_demo.py.
+# The reference implementation is chainless; no chain RPC, no real key
+# material, deterministic test signer only.
+eth = ["ecdsa>=0.18"]
 
 [project.urls]
 Homepage = "https://csoai.org"
 Repository = "https://github.com/CSOAI-ORG/gspc-harness"
+
+# This repository is a flat layout of *task files* and *data files*. There is no
+# importable Python package by design: `inspect eval tasks/<file>.py` is the
+# usage pattern, and the harness relies on the user having `tasks/` on sys.path
+# (the README walks through this). Pin a `setuptools` lower bound that does not
+# enable the auto-discovery safety check (>= 61 was the floor; >= 77 makes the
+# auto-discovery warning into an error which breaks this flat layout); and
+# declare no packages explicitly so the build does not refuse on grounds of
+# accidental top-level package discovery.
+[tool.setuptools]
+packages = []
+py-modules = []
+include-package-data = false
