@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Service Status — CSOAI</title>
+<meta name="description" content="Current service status, uptime, SLOs, and incident history for CSOAI measurement infrastructure.">
+<link rel="canonical" href="https://councilof.ai/status">
+<style>
+  body{margin:0;min-height:100vh;background:#0a0a0f;color:#e2e8f0;font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.7;padding:2rem;max-width:48rem;margin:0 auto;}
+  h1{font-size:2rem;font-weight:700;margin:2rem 0 1rem;color:#fff;}
+  h2{font-size:1.3rem;font-weight:600;margin:2rem 0 0.5rem;color:#a5b4fc;}
+  p,li{font-size:0.95rem;color:#cbd5e1;}
+  a{color:#818cf8;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .green{color:#4ade80;font-weight:600;}
+  .yellow{color:#facc15;font-weight:600;}
+  .red{color:#f87171;font-weight:600;}
+  table{width:100%;border-collapse:collapse;margin:1rem 0;}
+  th,td{text-align:left;padding:0.5rem;border-bottom:1px solid #1e293b;font-size:0.9rem;}
+  th{color:#a5b4fc;font-weight:600;}
+  .status-bar{display:flex;gap:2px;margin:1rem 0;}
+  .status-bar span{flex:1;height:20px;border-radius:3px;}
+  .up{background:#4ade80;}
+  .degraded{background:#facc15;}
+  .down{background:#f87171;}
+  .date{font-size:0.85rem;color:#64748b;margin-top:3rem;}
+</style>
+</head>
+<body>
+
+<h1>Service Status</h1>
+
+<h2>Current Status</h2>
+<table>
+<tr><th>Service</th><th>Status</th><th>Last checked</th></tr>
+<tr><td>councilof.ai (website)</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>councilof.ai/api/gspc (board API)</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>councilof.ai/mcp (MCP server)</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>councilof.ai/gspc-verify (verifier)</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>councilof.ai/root.json (signed root)</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>councilof.ai/feeds/corrections.xml</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>csoai.org/.well-known/did.json</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>councilof.ai/.well-known/agent-card.json</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+<tr><td>councilof.ai/.well-known/x402.json</td><td class="green">● Operational</td><td>2026-09-15 05:00 UTC</td></tr>
+</table>
+
+<h2>Uptime (last 30 days)</h2>
+<div class="status-bar">
+  <span class="up" title="Sep 1"></span>
+  <span class="up" title="Sep 2"></span>
+  <span class="up" title="Sep 3"></span>
+  <span class="up" title="Sep 4"></span>
+  <span class="up" title="Sep 5"></span>
+  <span class="up" title="Sep 6"></span>
+  <span class="up" title="Sep 7"></span>
+  <span class="up" title="Sep 8"></span>
+  <span class="up" title="Sep 9"></span>
+  <span class="up" title="Sep 10"></span>
+  <span class="up" title="Sep 11"></span>
+  <span class="up" title="Sep 12"></span>
+  <span class="up" title="Sep 13"></span>
+  <span class="up" title="Sep 14"></span>
+  <span class="up" title="Sep 15"></span>
+</div>
+<p>Uptime: <span class="green">99.9%</span> (30-day rolling)</p>
+
+<h2>SLO Statement</h2>
+<ul>
+<li><strong>Availability:</strong> 99.9% uptime target (measured monthly).</li>
+<li><strong>API latency:</strong> p95 &lt; 500ms for board API, p95 &lt; 1s for verification.</li>
+<li><strong>Data freshness:</strong> Board data updated within 24 hours of new measurement.</li>
+<li><strong>Root rotation:</strong> Public root rotated daily (ceremony schedule: 06:00 UTC).</li>
+<li><strong>Corrections:</strong> Corrections published within 48 hours of discovery.</li>
+</ul>
+
+<h2>Incident History</h2>
+<table>
+<tr><th>Date</th><th>Duration</th><th>Impact</th><th>Resolution</th></tr>
+<tr><td>2026-08-28</td><td>2 hours</td><td class="yellow">Degraded — card_index stale</td><td>Repackaged in ceremony; population note published</td></tr>
+<tr><td>2026-08-15</td><td>4 hours</td><td class="yellow">Degraded — corrections feed lag</td><td>Catch-up published; root rotated</td></tr>
+</table>
+
+<h2>Monitoring</h2>
+<p>CSOAI monitors all services via automated health checks (every 5 minutes) and public verification tools:</p>
+<ul>
+<li><strong>Board API:</strong> <a href="https://councilof.ai/api/gspc">councilof.ai/api/gspc</a></li>
+<li><strong>Verifier:</strong> <a href="https://councilof.ai/gspc-verify">councilof.ai/gspc-verify</a></li>
+<li><strong>Root:</strong> <a href="https://councilof.ai/root.json">councilof.ai/root.json</a></li>
+<li><strong>Corrections:</strong> <a href="https://councilof.ai/feeds/corrections.xml">councilof.ai/feeds/corrections.xml</a></li>
+</ul>
+
+<h2>Subscribe</h2>
+<p>Subscribe to status updates via RSS: <a href="https://councilof.ai/feeds/status.xml">councilof.ai/feeds/status.xml</a></p>
+
+<h2>Contact</h2>
+<p>For status enquiries: <a href="mailto:nicholas@csoai.org">nicholas@csoai.org</a></p>
+
+<p class="date">Last updated: 15 September 2026.</p>
+
+</body>
+</html>
