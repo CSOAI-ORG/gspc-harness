@@ -1,0 +1,79 @@
+{
+  "subject": "qwen2.5-coder:1.5b",
+  "axis": "governance",
+  "model": "openai/qwen2.5-coder:1.5b",
+  "operational": {
+    "accuracy_measured": 0.417,
+    "usable_n": 24.0,
+    "unmeasured": 0.0,
+    "stderr_gated": null,
+    "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+  },
+  "method": "exact-tier-match (tier_match scorer in tasks/_gspc_scoring.py)",
+  "items": "24 EU AI Act risk-tier classification scenarios in tasks/gspc_governance.py",
+  "limits": [
+    "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+    "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+  ],
+  "evaluation_run": {
+    "eval_log": "logs/2026-09-16T10-38-30-00-00_gspc-governance_2aox2Vx2FzGW9AxDnEJXAx.eval",
+    "completed_at": "2026-09-16T10:38:35Z"
+  },
+  "signer": {
+    "kid": "csoai-measurement-4900bdfa",
+    "public_key_hex": "4900bdfa3d8a71d2e553d93864ca9039dca72d21c66a233e9e9a355270174f8f",
+    "did": "did:web:csoai.org",
+    "did_document_url": "https://csoai.org/.well-known/did.json",
+    "algorithm": "Ed25519",
+    "isolation_note": "Ephemeral key for this run; production uses persistent HSM key"
+  },
+  "card": {
+    "schema": "csoai.inspect-receipt/0.2",
+    "kind": "csoai.receipt/0.3",
+    "issued_at": "2026-09-16T10:38:35Z",
+    "register": "Non-repudiable evidence of what was claimed and when. Not proof the eval is honest, uncontaminated, or correct. Measurement, not certification.",
+    "verify": {
+      "how": "Recompute content_id over the canonical body, then verify the Ed25519 signature against the PUBLISHED key resolved from the signature.kid via did:web.",
+      "did": "did:web:csoai.org",
+      "did_document": "https://csoai.org/.well-known/did.json",
+      "command": "inspect-receipts verify <this-file> --did-web",
+      "anchoring": "Ed25519 signature + SHA-256 hash-chain only. Transparency-log / RFC3161 / OpenTimestamps anchoring is roadmap, not wired."
+    },
+    "log_version": null,
+    "status": null,
+    "eval": {
+      "eval_id": null,
+      "run_id": null,
+      "created": null,
+      "task": null,
+      "task_id": null,
+      "task_version": null,
+      "model": null,
+      "dataset": {
+        "name": null,
+        "location": null,
+        "samples": null,
+        "sample_ids": null,
+        "shuffled": null
+      }
+    },
+    "results": {
+      "total_samples": null,
+      "completed_samples": null,
+      "scores": []
+    },
+    "stats": {
+      "started_at": null,
+      "completed_at": null
+    },
+    "content_id": "4ff9e64eb0d93e8eaac61395a6e45526d5ab9e5d0edacac2df4d5ddd43341e77",
+    "signature": {
+      "status": "SIGNED",
+      "alg": "Ed25519",
+      "kid": "csoai-measurement-4900bdfa",
+      "signer_public_key": "4900bdfa3d8a71d2e553d93864ca9039dca72d21c66a233e9e9a355270174f8f",
+      "sig": "6ffcbab2450992b914b69e488371179f7e464603143c361081ec0002c60dff44d427def8a5a7714884436701802c1fb26152b4add24509f1735f3084a5f94f00",
+      "signed_over": "canonical JSON of receipt minus this signature object"
+    }
+  }
+}

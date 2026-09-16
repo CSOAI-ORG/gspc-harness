@@ -1,0 +1,1094 @@
+{
+  "schema": "csoai.measurement-catalog/1.0",
+  "issuer": "CSOAI Ltd (UK Companies House 16939677)",
+  "generated_at": "2026-09-16T10:31:53.248786+00:00",
+  "do_version": "0.3",
+  "scope": {
+    "swift_banks": {
+      "count": 17,
+      "cards": [
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:JPMorgan Chase@CHASUS33",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:5d651486d7200db984d5395c0361d171",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:591a7845981aba97b69b0e9c36dbc8d5a0676111bbaf7998b91c69ba82dff239",
+          "signature": "ed25519:b383a5310263951efc040a77cbbb8f9e5c6887106e9d66289d0ba5c5bd269ab6"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:HSBC@HSBCHKHH",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:705338a3ed55ad1340266bd96a39a18a",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:c3becff60624cc8dbeb92c098e0600c04416e0e5a2046da7254543c7b041c196",
+          "signature": "ed25519:8e8a7604267989a45142a90d97e5fffd8b6869f3c0049831241b28b210c995e4"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:BNP Paribas@BNPAFRPP",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:a81b08b795b4a01d1ea4c146d8cc2890",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:bae671ed5754760c1d1832c5ec8640ee5f3a9f1a84acc4b672f89795857ec96b",
+          "signature": "ed25519:b766511cacfa7eeaa0afa63e387e791bdd28cba13d67653a7834117a007b6ade"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Deutsche Bank@DEUTDEFF",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:1d84100e2ab79ca0c70e1b93d01f52fd",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:8c0db1c93d6bcc65072d139610c1d42cdd2ebc87859b37e403a3e0288dc5485a",
+          "signature": "ed25519:2514e6ccc7385e11d39c949356a030c8a246e49c77acc4fde10e1232de5cc80d"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Standard Chartered@SCBLGB2L",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:347c117f02ccff8107bc2385a38388f5",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:64879f6b0603d4919280cdc83f9e16176b9263fcd6057f6a6f600927745892b5",
+          "signature": "ed25519:a7d38584f69b574295cb34ea1c250736f3c250ef5e657ad72e6053020f791eb4"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Barclays@BARCGB22",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:7b485c94df76b1b785a1cdd6c8de34cb",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:57d3af4362399663fa186a6b49e5e76ef633a9de596d7acbc28df23b3de8e8ff",
+          "signature": "ed25519:0ed247f827ba57cf8683244b6372c689ff3bdc06d1fb2618771994b40e9199cf"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:UBS@UBSWCHZH",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:7b11f082d9a1ac6dff1cf62b17bddb24",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:b2f0e423b5cbd62f58390459842c70439cd6a60a6127350f95071cde800bd5c0",
+          "signature": "ed25519:8603de198977742ed35c5a7af7823e616ef42e669b76635b44bcb1afa2afd8ed"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Credit Suisse (legacy)@CRESCHZZ",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:b8a9a39a90f531d758d71e6102e17aab",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:96635138f4181dbec13a444a9182a1114fb891b8c99a7d488f3922ed8c1039f2",
+          "signature": "ed25519:b049e0f9087755365c7ae0956d55fde7cba1ace5c596df4d81deabc2c65f2d78"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Soci\u00e9t\u00e9 G\u00e9n\u00e9rale@SOGEFRPP",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:c1ca6934ea708e78b3cd83e662970c35",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:157398353cb32b9b8e43a3f6c84143224ec836e92a11b6f82358f42c2d145922",
+          "signature": "ed25519:a35524b0a595afa97ea2aec70f3731c6a4291e0c4af05bc7d76afcc8a56e5939"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:ING@INGBNL2A",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:ab0fc793f9dd61181a1541fd37181c33",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:72835b9173965411cf1ae13c95e1a4ce36ad448dc60f64ab1c3ae6a02b1cfa41",
+          "signature": "ed25519:68f739586510f3cdbd91654c1b7e961eea769201718b4da0e2ac61b8e72b678d"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Santander@BSCHESMM",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:aa5ace226723611e2bb79e52d8c58cfc",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:5a9950f8fe3560ba6d998b1536917231917389a68bdb97842b3e761bb82200e2",
+          "signature": "ed25519:b5d1a5b91e5d8293e90f8e5313bcaf322bc67e5b970cbaee844f6147fa09558b"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Citi@CITIUS33",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:b56a60a37f10ce3e52e48e6a89fcdf61",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:e7cd3c6de6fb5dc3cdd76f755ef164abedfc1ca3ebe222bbc76fbdbaaae9ec50",
+          "signature": "ed25519:61539e48ad846733bc7752a735cf6ae55e88bb980ae13aa6ee45890ca9d21356"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Bank of America@BOFAUS3N",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:fcab4801302e9c9774fbf3dfe946961c",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:2d25bf6a2af2ef26c7fa43d856f360b39f5ccef9bd6665477660b0454eff0831",
+          "signature": "ed25519:4488bfea18c87a598b9cd0e593c2eaa20f5d9ad91bcc810a93d427e671253284"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Wells Fargo@WFBIUS6S",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:9858d5853ec028e94d308292cf4e284b",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:44df447b00489c793bc8207b08f6d995dd03e4956719c80a1fc3c11a71ea03bd",
+          "signature": "ed25519:8fcfd02216e4904c5ca97ab3581cc37bcd685c968635981f2a39eea33c756fa0"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Mizuho@MHCBJPJT",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:0f0deefc3a3c8728177fadd9a7a88528",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:339bf82dcd7fddd679dfa2c49ae6a046dbf6ed24dc1dcec06f6f87d82204ecfd",
+          "signature": "ed25519:77bedddd663c0090d734bd079b0501bf410a26f2a2fc80980a4388cb9e0bca85"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:Sumitomo Mitsui@SMBCJPJT",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:194c45e75d5477a07662cc003561f436",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:2ecfe014c91973a7384b09a6de1d39a9946484bffa49c95cc5dd749c62856cc2",
+          "signature": "ed25519:7c30b98f6f0f65304973013c86a20b77dfa6bd4565adbdb4d9462592c5abfa5f"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "swift-bank:MUFG@BOTKJPJT",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:719513a51fa518a40dc5b90e038a5c2e",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only. Run gspc_governance against actual AI components to populate operational field."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "_signer_note": "Verified at csoai.org/.well-known/did.json (deployment pending owner action)",
+          "content_id": "sha256:7e6ff1b382a0042c39302822f1dc48a7145aaefd30ef14e3ed90e8fb570a7cd8",
+          "signature": "ed25519:a7c48928c2c7676ecfe8bfdaa529936a2b168fc74ea961ca9d46f38ec9236510"
+        }
+      ]
+    },
+    "xrpl_instruments": {
+      "count": 16,
+      "cards": [
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:XRP@Ripple Labs",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:f2b5bfff2fe90691d3cd129dbc15b083",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:0870a5d20db67a4f37fe77f71e024f5857fb737699d36eff7caeb24a4a280c1f",
+          "signature": "ed25519:d7e74b3b1679bf7117b2a73315c754956b635990fbc6a050430489fda6a7484a"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:RLUSD@Ripple",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:7a68dc57bfb70777e13b6fea82214c74",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:5f2e8d3e7127bdde9cf49c6750c420bd0c80e18196f0e4a90a17b8da615a9187",
+          "signature": "ed25519:bc75d8ce153f656acb9ef32aef2d0d5b3d8d9a8b3fe5e0fa4f5e66248d00d1ab"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:USDt@Bitfinex/Tether",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:60c25f5d770876c763d1e07568c9c0b6",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:0bfdd419953e1329a7b794f493b098373bb11d1bad1321d95acf331d2dd74c71",
+          "signature": "ed25519:e0d103a2d3be452f946682aa041577c8ad3164de5cc513583126fa45c3e3a114"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:EUR@GateHub",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:240179b1afbf204325797d53953ee455",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:7defc78243827929cd30e68acfab2ab4d5c0e4b93fdce182034f038c18e7c1d6",
+          "signature": "ed25519:57ccfd4541014638bcd603bb07fbcf2040f2d17512f43a2561c9e1cff01e4ae0"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:USD@GateHub",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:372b790fa6a4540fb5facd982872b371",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:662d7076e45d900ebd584a212a27d91a121255dd422376a8d6de1434637fc834",
+          "signature": "ed25519:a3dd087e5f10641f3a34240214c6635da526841fd8bea72972e37d34871b6f56"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:GBP@GateHub",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:77e7abca414e95276bcb73f1456e7d58",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:4fa897b2f3749461fdf31eef7a44f37333c8a71faee003273e54a55b29a3ea7e",
+          "signature": "ed25519:6474dad7a854675c81a5e32133c6ea408ce8ecba2df39141f6a6e593947ba390"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:BTC@GateHub",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:e786f9b19806ac306d228248340779a9",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:d186e389b84dd76eaccdd482694e9dabf0940f6907484c2a91306b8603aca600",
+          "signature": "ed25519:cafad4fdeba3675d26ab2b44aa88c7d825fe3afb164ffc17e999e03fa0c7ee71"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:ETH@GateHub",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:e41cafd11954f25795a008654a0577be",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:c6f3e20c08f16190318037f0dfc0215a062120973b41ca2ff2c604907791846d",
+          "signature": "ed25519:f353d6ba1d717289afe447327155a7aa25b63fcaad7d5496bd9517f8d023e465"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:XAU@GateHub",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:1c56529af967b82b5be3a5823c1684bf",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:5bf8fb1a3b915ce24e0a3ab091403034145d51370d871f31043ebbd5cb715fe7",
+          "signature": "ed25519:25f386c0977949c29ba7ea978b45ff69ae3019b359edf47431f7d80ac39ded7e"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:SOLO@Sologenic",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:eb22da2b947f354c658e426c0c8d523c",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:5c556069317c8282f33215ba52a5307025835caf3b3eec80b441dc19c12315ee",
+          "signature": "ed25519:8b85d098d0013df2e116f44aa394224f2f20d6722dd1e7f041c67e15312f8054"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:BTR@Bitrue",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:687332438e7d5b47389b3b90f7ee93f8",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:c9c114ca877a618f82297c8439a8823dbcfa29db684671afed0ef42279083e84",
+          "signature": "ed25519:b5756a30b61f4703a1ea8d90df530716607582d8e80b126a6944d5afd2f696e4"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:XRPL-issued-token-1@XRPL Labs (legacy)",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:a65af52f0045b2f9df6771fd287a3276",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:7f7963b606dd2f92b1799cc523b1c514874d40046488bc16f8ae0f872631c9cf",
+          "signature": "ed25519:16d04371a8e1780742a6e3dcfaf9f2714f28abc0247ca9a2c58333db662c4da2"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:MOB@EternalMob",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:e83ea95a137091f492b10b826ae67158",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:0e6d689c03390a53a437f6aee9e323c3ce12c41a335a2a8c128cd2edf4f8f7a6",
+          "signature": "ed25519:bb613e34caa2de55b419437cb19235b7481f8c108ec8ecedeef3afbfaa62ad99"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:CULT@Cultivate",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:6f102ca3649be31dc1c515129acd0f6b",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:74fc0facd5cb2f4e61d4f7d18a41d53e1ed299a80b41fb028eccc93d2f84259b",
+          "signature": "ed25519:a67153001f8edf1ab9bbe4db5e04e08a94dbe38f8c9065723f60038b7c97ae70"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:BXX@Baanx",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:a77a2e20367aa7dd61b43f4c60800f80",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:6b3d0c9a80c325b80cd81adc2b4d3921beef816fcddb0ec017661001a7325c1f",
+          "signature": "ed25519:395a07b8bc4574383a4f624f985952d682eb7bbbf3a690cf8cfbd3b871d2586c"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "xrpl:XRPC@XRPCommunity",
+          "axis": "provenance-controls",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:31b15a6535c82fab07ebc755ee887b35",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:d09924414a8825f11bb63991c4fe01758fc14530079c481ebc43f7f77e310860",
+          "signature": "ed25519:9e11ff7a703aa5662ac7a313a0e5f174a9100a0ff416261acec89634c9308a9c"
+        }
+      ]
+    },
+    "stablecoin_issuers_top_15": {
+      "count": 15,
+      "cards": [
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Tether International@USDT",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:ad411836a7987effa76695f9a5c27d1f",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:565ac785223759910070b83cf05811783c9b9a57358f0b4270ec9ac072bf4420",
+          "signature": "ed25519:0bb5002d853eb10df69bc3288430f48438aa287f3437be085f901e55896796d3"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Circle Internet Group@USDC",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:36b74889ea8144b38c9547570ff0271d",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:28068682cc96f1ca2c560c997f567ad557a9aa3a36565cb8b08b76e26549acd6",
+          "signature": "ed25519:8902fe03a752ac0373bb8751beb89ff687d293ae1251fc1c3b3ec2713dbe2979"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Sky/Maker@DAI",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:56739d89394ee1155af610780c705419",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:c3147018cd4a7ee39695a90c7b32b334c122038d2121fcde39e451bf703c6fe9",
+          "signature": "ed25519:fccea30fa64103e49d12e3b133950537f4e230e32c905b4444810096f1a76a40"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Ethena Labs@USDe",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:c33fdfbc5769b69618afed2eadcdf6dd",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:7c8e1aab65a4ef661fd786cbd27edb72adddf7555794284460d3d52d0e4929dc",
+          "signature": "ed25519:19bdd214049d6f487af7bd64308f5aa3e2e90d1c35e77b543451990380092552"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:First Digital Labs@FDUSD",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:58dd3a70cef05ab6533935479c95c0c7",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:7c3beab65122ad85e2aa43b5c96e38d9842bfe37cb85400e6dc94f3b5b04bbf7",
+          "signature": "ed25519:4f7218d5f23e7845b0914b6efffa24adf9c502e3e7d5e251d2fe6c6c68506d04"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:PayPal@PYUSD",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:1b79d5b277b203c26449f7ddec7a351a",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:d2d472803acf21395795b7a669792d5abf91f61318074400bdf0ce58622fd889",
+          "signature": "ed25519:83f8fccde4de0f9fa86b3e8f0ab08bd523ab2894f055c27ccbcbe7c19753e319"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Gemini@GUSD",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:3327d3107ae3464ff76c14ac6ee60568",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:b34ba4e8574e83248dc71f99d1690f4b1ca31cb0bc81fec13420c5f4b0849938",
+          "signature": "ed25519:98bcc8d25cede8f2e95ea289a7ac97818c7dcf7aecd99958bf22d4be82aeceee"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:TrueCoin (Archblock)@TUSD",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:906eeb7b27d4a0c8b5cd6a9b5fa49e50",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:e676fc9ad5f1ce3c8985af92b9aa8008ee63c154f3624c7d940fb4e2f148a87c",
+          "signature": "ed25519:1854ad8ecded1c20f5b0e675a797148af3c936efd02fa294827218de27ed6e99"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Paxos@PAXG",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:dfe029fcce0ab4c2c7c4b81249eebe40",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:e919678e9c2855d7d3d62be3343dec1b25a023f3c61f7e181220d5bb42c49a65",
+          "signature": "ed25519:7573fd6087c9527216c4885e7a24f3b25291e1b807436adf928a67a540530533"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Paxos@USDP",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:d2583248a53acd66ebebd8a34011eb38",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:a0761086cca4dfd99528ee3c72698f9c8594f7351f55f060404578973c8abed9",
+          "signature": "ed25519:663f7480d120b101296bfc836205281b4cc7832350e03ce46f5690c80b8df52f"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Ondo Finance@USDY",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:7651db7109ca6475e67dba78cd00fabf",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:7425c3d554001e7b43a63b4a14159ef6cd0717d462d5427869cf32a86c944074",
+          "signature": "ed25519:8dbdbf602319e6764c3a7ca0272641e452ed60d1c42eaa0f9a324698769eb127"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Mountain Protocol@USDM",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:66c1689d071af46c905c2c0cabf5bb71",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:9ffc9635bc09f0b9a4a6eae992ffb1202bfbbdb04521811db0287724ee6c33e0",
+          "signature": "ed25519:90eb60ee1db8d364093268d76e5a0c903c76485c22007d095339eb363dce9ad6"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:M0 Foundation@M",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:c2d825d63df01f01ebf545ab1f424a02",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:a9c3b32502354676975ac96cf87c54181c5b186bb91de9dc117c1ed746741502",
+          "signature": "ed25519:ef3cabf366f7006d3a4fd3dacc24b4c02c8b53c788cb5ff4fb769a16d646f589"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:World Liberty Financial@USD1",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:2fcafd0de2241d5eae11bd7c0b01452c",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:792fd57c28bf9adef784ad7314cbe781cf21d9d20d460926316273bb29e0a8ef",
+          "signature": "ed25519:681e1ebc279ff32e0d9b5efee8f1879f56a86a6e39823a7ac412c45fe838ee04"
+        },
+        {
+          "schema": "csoai.receipt/0.3",
+          "subject": "stablecoin:Resolv Labs@USR",
+          "axis": "reserve-attestation",
+          "version": "1.0",
+          "as_of": "2026-09-16T10:31:53.248786+00:00",
+          "method": "exact-tier-match",
+          "items_hash": "sha256:111e66c677083979930a1fab3d038cd4",
+          "operational": {
+            "accuracy_measured": null,
+            "usable_n": 0,
+            "unmeasured": 0,
+            "stderr_gated": null
+          },
+          "limitations": [
+            "Measurement not run; structural identity card only."
+          ],
+          "signer": "did:web:csoai.org#board-attestation-1",
+          "content_id": "sha256:71ffa10c718d021fddbc5087617c7b93ac5e13f2b662cf114ab7879f2bccefdb",
+          "signature": "ed25519:8e0dab366b8d87560be75326733c3f6e3e3c5c2d85964f61742ce247353167e0"
+        }
+      ]
+    },
+    "real_signed_measurements": {
+      "description": "Actually-signed measurement cards produced from CSOAI harness runs against Ollama models",
+      "count": 1,
+      "measurements": [
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "operational": {
+            "accuracy_measured": 0.417,
+            "usable_n": 24.0,
+            "unmeasured": 0.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "exact-tier-match (tier_match scorer in tasks/_gspc_scoring.py)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-38-30-00-00_gspc-governance_2aox2Vx2FzGW9AxDnEJXAx.eval",
+            "completed_at": "2026-09-16T10:38:35Z"
+          },
+          "signer_kid": "csoai-measurement-4900bdfa",
+          "public_key_hex": "4900bdfa3d8a71d2e553d93864ca9039dca72d21c66a233e9e9a355270174f8f",
+          "card_content_id": "4ff9e64eb0d93e8eaac61395a6e45526d5ab9e5d0edacac2df4d5ddd43341e77",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json"
+        }
+      ]
+    }
+  },
+  "totals": {
+    "cards_generated": 49,
+    "structural_only": true,
+    "notes": [
+      "Total cards include 48 STRUCTURAL identity cards (SWIFT banks + XRPL + top stablecoin issuers)",
+      "and 1 REAL signed measurement cards from actual GSPC harness runs",
+      "All cards are content-addressed (SHA-256) and Ed25519-signed",
+      "Public key for each card is generated for the run; production uses persistent HSM key",
+      "Run `inspect-receipts verify <card-file> --did-web` to verify any card"
+    ],
+    "real_signed_measurements": 1
+  },
+  "signer": "did:web:csoai.org#board-attestation-1"
+}
