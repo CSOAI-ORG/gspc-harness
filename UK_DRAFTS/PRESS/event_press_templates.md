@@ -38,7 +38,7 @@ The cards are included in CSOAI's public Merkle root tree (currently [305] leave
 - Whether the model should be deployed (deployment decisions are human)
 
 **Independence:**
-CSOAI does not accept payment from measured entities. Documented at https://councilof.ai/funding-statement.html.
+CSOAI does not accept payment from measured entities. Documented at `UK_DRAFTS/funding-statement.html` in the public repo (deployment to https://councilof.ai/funding-statement.html pending owner action; verified 404 as of 2026-09-16).
 
 ### Where to send this release
 - AI safety reporters (Karen Hao, Will Douglas Heaven, Jack Clark)
@@ -127,7 +127,7 @@ CSOAI Ltd (UK Companies House 16939677) today filed a public comment on [REGULAT
 - CSOAI's evidence layer demonstrates the technical requirements are feasible
 - CSOAI's independent verification pattern is replicable
 - CSOAI offers to participate in any follow-up consultation
-- CSOAI's structural independence (no payment from measured entities) is documented at https://councilof.ai/funding-statement.html
+- CSOAI's structural independence (no payment from measured entities) is documented at `UK_DRAFTS/funding-statement.html` in the public repo (deployment to https://councilof.ai/funding-statement.html pending owner action; verified 404 as of 2026-09-16)
 
 **What CSOAI does NOT claim:**
 - Compliance with the regulation (the regulator decides)
@@ -166,7 +166,7 @@ CSOAI Ltd (UK Companies House 16939677) has received sponsorship from [FOUNDATIO
 **Structural independence preserved:**
 - CSOAI does not accept payment from measured entities (verified entities)
 - [FOUNDATION/SPONSOR] is not a measured entity
-- The funding is documented at https://councilof.ai/funding-statement.html
+- The funding is documented at `UK_DRAFTS/funding-statement.html` in the public repo (deployment to https://councilof.ai/funding-statement.html pending owner action; verified 404 as of 2026-09-16)
 - CSOAI's measurement methodology is unchanged
 
 **What changes:**

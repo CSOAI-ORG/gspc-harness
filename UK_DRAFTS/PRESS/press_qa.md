@@ -37,7 +37,7 @@ CSOAI Ltd is registered in England and Wales (Companies House 16939677). The com
 
 ## Q: Who funds CSOAI?
 
-**A:** CSOAI is structurally independent of measured entities. CSOAI does not accept payment from companies whose AI it measures. Documented at https://councilof.ai/funding-statement.html.
+**A:** CSOAI is structurally independent of measured entities. CSOAI does not accept payment from companies whose AI it measures. The funding-statement page is at `UK_DRAFTS/funding-statement.html` in the public repo (https://github.com/CSOAI-ORG/gspc-harness); deployment to councilof.ai/funding-statement.html is pending owner action (verified 404 as of 2026-09-16). The content is documented in the repo; live deployment is in progress.
 
 Revenue sources today:
 1. x402-metered tool usage ($0.01 per fresh measurement, settled in USDC on Base mainnet)

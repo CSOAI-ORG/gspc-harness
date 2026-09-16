@@ -97,6 +97,35 @@ For any new blog post or press release:
 
 ---
 
+## CRITICAL: LOCAL HTML TRUST ASSETS NOT DEPLOYED (Owner Action Required)
+
+Local HTML files exist at `UK_DRAFTS/*.html` but they are NOT deployed to councilof.ai and NOT publicly accessible on GitHub raw. Outreach drafts reference these URLs as if they were live — they are not.
+
+| Local file | Drafts cite | Live status (verified 2026-09-16) |
+|------------|-------------|-------------------------------------|
+| `UK_DRAFTS/funding-statement.html` | https://councilof.ai/funding-statement.html | **404** |
+| `UK_DRAFTS/governance.html` | https://councilof.ai/governance.html | **404** |
+| `UK_DRAFTS/how-to-cite.html` | https://councilof.ai/how-to-cite.html | **404** |
+| `UK_DRAFTS/pricing-page.html` | https://councilof.ai/pricing-page.html | **404** |
+| `UK_DRAFTS/status-page.html` | https://councilof.ai/status-page.html | **404** |
+
+**Citations affected:**
+- `TARGET_LEDGER.md`: 1 citation
+- `event_press_templates.md`: 3 citations
+- `press_qa.md`: 1 citation
+- `press_boilerplate.md`: 4 citations (in current wording)
+- `press_release_tiers.md`: 1 citation
+
+**Recommended actions (in order):**
+
+1. **Owner action:** Either (a) deploy the local HTML files to councilof.ai so the URLs work, OR (b) replace the broken URLs in drafts with the GitHub raw content path (which is also currently 404 — see below).
+
+2. **M2 action:** Until deployment, all drafts that reference these URLs must be **QUARANTINED** for outbound use. Cite live URLs only — the signed card catalog, root tree, verifier, corrections feed, DID document, MCP/A2A/x402 catalogs are all live.
+
+3. **Verification:** After deployment, re-run the URL checks above; all should return 200.
+
+---
+
 ## HOW TO USE THIS FILE
 
 When you draft a new blog post or press release:

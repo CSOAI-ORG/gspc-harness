@@ -35,7 +35,7 @@ CSOAI Ltd is a UK-registered independent measurement body for AI systems. The co
 - Signed card index: https://councilof.ai/signed/card_index.json
 - Public verifier: https://councilof.ai/gspc-verify
 - Source: https://github.com/CSOAI-ORG/gspc-harness
-- Funding statement: https://councilof.ai/funding-statement.html
+- Funding statement: documented in repo at `UK_DRAFTS/funding-statement.html` (https://github.com/CSOAI-ORG/gspc-harness/blob/hermes/inspect-register-readiness/UK_DRAFTS/funding-statement.html); deployment to https://councilof.ai/funding-statement.html pending owner action (verified 404 as of 2026-09-16)
 
 ### Media Contact
 Nicholas Templeman

@@ -13,7 +13,7 @@ CSOAI Ltd (UK Companies House 16939677) operates independent measurement infrast
 
 ## MEDIUM (150 words)
 
-CSOAI Ltd is a UK-registered independent measurement body for AI systems (Companies House 16939677). The company's measurement infrastructure produces signed, content-addressed receipts for AI behavior on 22 axes covering model comparison (14 axes) and financial/domain deterministic facts (8 axes). Every measurement is verified by a public browser-based tool at https://councilof.ai/gspc-verify that runs without login or API call. The infrastructure is built on UK AI Safety Institute's Inspect framework, filed in the official Model Context Protocol Registry, and published under Apache-2.0 (source code) and CC-BY-4.0 (data). CSOAI's structural independence — no payment from measured entities — is documented at https://councilof.ai/funding-statement.html. The company does not issue conformity marks, certifications, or regulatory approvals; it measures, and the buyer or regulator interprets. Contact: nicholas@csoai.org.
+CSOAI Ltd is a UK-registered independent measurement body for AI systems (Companies House 16939677). The company's measurement infrastructure produces signed, content-addressed receipts for AI behavior on 22 axes covering model comparison (14 axes) and financial/domain deterministic facts (8 axes). Every measurement is verified by a public browser-based tool at https://councilof.ai/gspc-verify that runs without login or API call. The infrastructure is built on UK AI Safety Institute's Inspect framework, filed in the official Model Context Protocol Registry, and published under Apache-2.0 (source code) and CC-BY-4.0 (data). CSOAI's structural independence — no payment from measured entities — is documented in the public repo at `UK_DRAFTS/funding-statement.html` (https://github.com/CSOAI-ORG/gspc-harness/blob/hermes/inspect-register-readiness/UK_DRAFTS/funding-statement.html); deployment to https://councilof.ai/funding-statement.html is pending owner action (verified 404 as of 2026-09-16). The company does not issue conformity marks, certifications, or regulatory approvals; it measures, and the buyer or regulator interprets. Contact: nicholas@csoai.org.
 
 ---
 
@@ -23,7 +23,7 @@ CSOAI Ltd (UK Companies House 16939677) operates independent measurement infrast
 
 The infrastructure is built on UK AI Safety Institute's Inspect framework and licensed under Apache-2.0 (source code) and CC-BY-4.0 (public board data). CSOAI's MCP server (csoai-gspc-mcp) is filed in the official Model Context Protocol Registry. An A2A agent card and x402 catalog are published for agent-to-agent discovery and metered payment. A browser-based verifier at https://councilof.ai/gspc-verify allows any reader to verify any signed card without login or API call.
 
-CSOAI's structural independence — no payment from measured entities — is documented at https://councilof.ai/funding-statement.html. The company does not issue conformity marks, certifications, or regulatory approvals. CSOAI measures; the buyer or regulator interprets. The corrections feed at https://councilof.ai/feeds/corrections.xml is machine-derived, not human-edited, providing an audit trail of every measurement correction.
+CSOAI's structural independence — no payment from measured entities — is documented in the public repo at `UK_DRAFTS/funding-statement.html`; deployment to https://councilof.ai/funding-statement.html is pending owner action (verified 404 as of 2026-09-16). The company does not issue conformity marks, certifications, or regulatory approvals. CSOAI measures; the buyer or regulator interprets. The corrections feed at https://councilof.ai/feeds/corrections.xml is machine-derived, not human-edited, providing an audit trail of every measurement correction.
 
 CSOAI's regulatory windows map: EU AI Act Articles 11, 12, 72 documentation; California SB 813 IVO category (rulemaking in 2027); UK AISI evaluations (Inspect-compatible); NIST AI 300-1; FDIC PS-01. Contact: Nicholas Templeman, nicholas@csoai.org.
 
@@ -75,11 +75,11 @@ CSOAI's regulatory windows map: EU AI Act Articles 11, 12, 72 documentation; Cal
 - DID document: https://csoai.org/.well-known/did.json
 - A2A agent card: https://councilof.ai/.well-known/agent-card.json
 - x402 catalog: https://councilof.ai/.well-known/x402.json
-- Funding statement: https://councilof.ai/funding-statement.html
+- Funding statement: documented in repo at `UK_DRAFTS/funding-statement.html` (https://github.com/CSOAI-ORG/gspc-harness/blob/hermes/inspect-register-readiness/UK_DRAFTS/funding-statement.html); deployment to https://councilof.ai/funding-statement.html pending owner action (verified 404 as of 2026-09-16)
 - Source code: https://github.com/CSOAI-ORG/gspc-harness
 - MCP Registry submission: https://github.com/modelcontextprotocol/servers/issues/4806
 
-### How CSOAI is funded (per funding-statement.html)
+### How CSOAI is funded (per the funding statement in the public repo)
 - x402-metered tool usage ($0.01 per fresh measurement)
 - Enterprise evidence assembly (curated, not measurement)
 - Sponsorship from foundations/labs that don't run models measured
