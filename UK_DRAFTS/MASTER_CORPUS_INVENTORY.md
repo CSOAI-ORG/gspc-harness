@@ -11,7 +11,7 @@ Keychain `huggingface.co` internet password works. `whoami` = **Nicholastemplema
 
 | Dataset | visibility | files | card-like |
 |---|---|---|---|
-| **`csoai/runpod-gspc-intake`** | **PRIVATE** | **4547** | **1513 `card-unsigned.json`** (unique run dirs) |
+| **`csoai/runpod-gspc-intake`** | **PRIVATE** | **4547** | **1513 `card-unsigned.json`**. `intake.jsonl` still has only **112** rows (stale 2026-09-05 index). All 112 indexed `UNMEASURED`; 104 have `n≥30`. Sample card: `signature=null`, `status=UNMEASURED`, `did_intended=did:web:csoai.org#card-attestation-1`. |
 | `csoai/mill-jobs-staging` | PRIVATE | 765 | 428 `unsigned-*` JSON |
 | `csoai/gspc-hub-cards` | public | 2445 | 2211 JSON (live Hub GET collapses to 385 cells) |
 | `Nicholastempleman/csoai-measurement-cards` | public | 55 | 51 JSON (axis-eval + agent-card discovery) |
