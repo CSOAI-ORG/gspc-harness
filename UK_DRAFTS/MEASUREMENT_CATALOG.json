@@ -1046,7 +1046,7 @@
     },
     "real_signed_measurements": {
       "description": "Actually-signed measurement cards from CSOAI harness runs",
-      "count": 81,
+      "count": 86,
       "measurements": [
         {
           "model": "openai/qwen2.5-coder:1.5b",
@@ -1801,6 +1801,23 @@
           "subject": "qwen2.5-coder:1.5b",
           "axis": "governance",
           "batch": "cont1",
+          "iteration": 1,
+          "operational": {
+            "accuracy_measured": 0.435,
+            "usable_n": 23.0,
+            "unmeasured": 1.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "signer_kid": "csoai-measurement-765ee278",
+          "card_content_id": "8e7b81092fa023042c6af537631faa29b675eb1de2951efd2574f03510ecc7ff",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_cont1_iter1_2026-09-16T15-07-43Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "batch": "cont1",
           "iteration": 2,
           "operational": {
             "accuracy_measured": 0.261,
@@ -1863,6 +1880,23 @@
           "signer_kid": "csoai-measurement-e46fb898",
           "card_content_id": "d24ff0bc3554253972fc4ddfecfff7bf466c12d06f5be679e6a49ff7feadd817",
           "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_cont1_iter2_2026-09-16T14-51-12Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "batch": "cont1",
+          "iteration": 2,
+          "operational": {
+            "accuracy_measured": 0.375,
+            "usable_n": 24.0,
+            "unmeasured": 0.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "signer_kid": "csoai-measurement-64b27ecd",
+          "card_content_id": "222d7a884fb364889754e434dd909e771ea025bb7828a3f33b3df13410e67204",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_cont1_iter2_2026-09-16T15-07-50Z.json"
         },
         {
           "model": "openai/qwen2.5-coder:1.5b",
@@ -1937,6 +1971,23 @@
           "subject": "qwen2.5-coder:1.5b",
           "axis": "governance",
           "batch": "cont1",
+          "iteration": 3,
+          "operational": {
+            "accuracy_measured": 0.208,
+            "usable_n": 24.0,
+            "unmeasured": 0.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "signer_kid": "csoai-measurement-0a768abe",
+          "card_content_id": "6b2510ebcf0ec85c9ad98ce43113aed0fba48f2ad9b7cc58c686fd9093f3ab48",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_cont1_iter3_2026-09-16T15-07-56Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "batch": "cont1",
           "iteration": 4,
           "operational": {
             "accuracy_measured": 0.261,
@@ -2005,6 +2056,23 @@
           "subject": "qwen2.5-coder:1.5b",
           "axis": "governance",
           "batch": "cont1",
+          "iteration": 4,
+          "operational": {
+            "accuracy_measured": 0.292,
+            "usable_n": 24.0,
+            "unmeasured": 0.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "signer_kid": "csoai-measurement-3bb7dc7a",
+          "card_content_id": "f337f616d5257098fc5db0e20f27425247eb2fae4ca00a9c90a29e67850afd51",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_cont1_iter4_2026-09-16T15-08-03Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "batch": "cont1",
           "iteration": 5,
           "operational": {
             "accuracy_measured": 0.348,
@@ -2067,6 +2135,23 @@
           "signer_kid": "csoai-measurement-b127afe5",
           "card_content_id": "3f70c8c7f9bcae964beff06dfbf6000c5f0eda68e864eb6e30d554d44868ba1c",
           "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_cont1_iter5_2026-09-16T14-51-31Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "batch": "cont1",
+          "iteration": 5,
+          "operational": {
+            "accuracy_measured": 0.261,
+            "usable_n": 23.0,
+            "unmeasured": 1.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "signer_kid": "csoai-measurement-ebc06b9e",
+          "card_content_id": "2b95c297a5bba12fbeec7b28898592d8b6dd982031c4dc49372167d2b41cbaf7",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_cont1_iter5_2026-09-16T15-08-09Z.json"
         },
         {
           "model": "openai/qwen2.5-coder:1.5b",
@@ -2429,7 +2514,7 @@
     }
   },
   "totals": {
-    "cards_generated": 129,
+    "cards_generated": 134,
     "structural_only": true,
     "notes": [
       "Total: 48 structural identity cards + 51 real signed measurement cards",
@@ -2438,7 +2523,7 @@
       "honesty register reports stderr_gated=NaN when usable_n < 30",
       "Owner: persistent HSM key; Rekor/OTS; CDN bot fix; HTML deploy; RUNPOD_API_KEY"
     ],
-    "real_signed_measurements": 81
+    "real_signed_measurements": 86
   },
   "signer": "did:web:csoai.org#board-attestation-1"
 }
