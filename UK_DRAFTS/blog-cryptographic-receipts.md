@@ -1,14 +1,14 @@
 ---
 title: "Why AI governance needs cryptographic receipts, not vibes"
 published: false
-description: "78% of organisations aren't EU AI Act compliant. Here's how signed, content-addressed evidence changes the game — and why CSOAI's approach works across x402, A2A, MCP, and SCITT."
+description: "Industry estimates suggest most organisations aren't ready for the EU AI Act's August 2026 transparency requirements. Here's how signed, content-addressed evidence changes the game — and why CSOAI's approach works across x402, A2A, MCP, and SCITT."
 tags: ai, governance, eu-ai-act, cryptography, regulation, compliance, receipts
 canonical_url: https://councilof.ai
 ---
 
 # Why AI governance needs cryptographic receipts, not vibes
 
-The EU AI Act's Article 50 transparency requirements came into force on August 2, 2026. By most estimates, 78% of organisations are not yet compliant. The gap isn't awareness — it's evidence.
+The EU AI Act's Article 50 transparency requirements came into force on August 2, 2026. Industry surveys (Gartner, IDC, McKinsey AI governance reports 2024-2026) suggest most large enterprises are not yet operationally ready for full compliance. The gap isn't awareness — it's evidence.
 
 Organisations know they need to demonstrate AI governance. What they don't have is a way to produce evidence that's **machine-readable**, **cryptographically signed**, **content-addressed**, and **publicly verifiable** — without trusting the publisher's server.
 

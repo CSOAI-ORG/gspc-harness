@@ -1,7 +1,7 @@
 # NIST AI 300-1 — Guidance and Templates for Public-Facing AI Documentation
 ## Zero Draft Comment — CSOAI Ltd
-**Submitted by:** Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@csoai.org
-**Submission date:** [TO BE INSERTED — deadline Sep 16 2026]
+**Submitted by:** Nicholas Templeman, CSOAI Ltd (UK Companies House 16939677), nicholas@csoai.org
+**Submission date:** [TO BE INSERTED — owner to verify NIST 300-1 zero-draft comment deadline. Earlier drafts said Sep 16 2026; that window has now closed. Owner must verify whether a late submission is still accepted or whether the next formal comment window applies.]
 **Submission channel:** ai-standards+doczd@nist.gov
 
 ---

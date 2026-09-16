@@ -1,8 +1,8 @@
 # FDIC PS-01 / PS-01a / PS-02 — Weekly Reserve Reporting
 ## Comment — CSOAI Ltd
 **Submitted by:** Nicholas Templeman, CSOAI Ltd (Companies House 16939677), nicholas@csoai.org
-**Submission date:** [TO BE INSERTED — deadline Sep 18 2026]
-**Submission channel:** [TO BE VERIFIED — FDIC Federal Register docket]
+**Submission date:** [TO BE INSERTED — owner to verify FDIC PS-01 comment deadline. Earlier drafts said Sep 18 2026 (Friday). Owner must verify whether that window is still open and whether a late submission is still accepted.]
+**Submission channel:** [TO BE VERIFIED — FDIC Federal Register docket; regulations.gov; or FDIC contact form]
 
 ---
 

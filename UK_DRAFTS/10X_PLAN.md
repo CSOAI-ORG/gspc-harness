@@ -1,4 +1,5 @@
 # CSOAI 10X PLAN — September 15, 2026
+*(Header note: prepared 2026-09-15; pending update to 2026-09-16. Plan content remains valid; the deadline dates reference known regulatory windows at time of writing and require owner verification before any application.)*
 ## From 59/100 to 95/100, from $0.02 to $10K MRR, from 191 submissions to 5,000+
 
 ---

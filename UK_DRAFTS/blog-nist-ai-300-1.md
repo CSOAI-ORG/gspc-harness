@@ -1,7 +1,7 @@
 ---
 title: "NIST AI 300-1 — machine-readable documentation is the standard CSOAI meets"
 published: false
-description: "NIST's AI 300-1 zero draft closes comment TOMORROW (Sep 16). CSOAI's documentation is already machine-readable, cryptographically signed, content-addressed, versioned, and correction-enabled."
+description: "NIST's AI 300-1 zero draft closes Sep 16 — owner to verify final deadline. CSOAI's documentation is already machine-readable, cryptographically signed, content-addressed, versioned, and correction-enabled."
 tags: nist, ai-300-1, zero-draft, machine-readable, documentation, csai, regulation
 canonical_url: https://councilof.ai
 ---
