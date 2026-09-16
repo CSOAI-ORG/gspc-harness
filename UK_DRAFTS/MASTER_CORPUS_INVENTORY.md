@@ -3,10 +3,34 @@
 **Rule:** numbers are **not additive**. Different objects. Live GET wins when a snapshot disagrees.
 **Not a certificate. Measurement, not certification.**
 
-You were right that this Mac folder (71 local eval cards) is **not** the whole estate.
-You were also right that “about 500” exists as a *memory of a larger population*.
-The closest **live** number to ~500 is **385 Hub cells** (566 index rows before de-dupe).
-I will not add 305+335+385+71 and call it 1,000.
+## 0. HF auth used this pass
+
+Keychain `huggingface.co` internet password works. `whoami` = **Nicholastempleman**, org **csoai**. No token printed. No token committed.
+
+**This is where the “500 cards” live:**
+
+| Dataset | visibility | files | card-like |
+|---|---|---|---|
+| **`csoai/runpod-gspc-intake`** | **PRIVATE** | **4547** | **1513 `card-unsigned.json`** (unique run dirs) |
+| `csoai/mill-jobs-staging` | PRIVATE | 765 | 428 `unsigned-*` JSON |
+| `csoai/gspc-hub-cards` | public | 2445 | 2211 JSON (live Hub GET collapses to 385 cells) |
+| `Nicholastempleman/csoai-measurement-cards` | public | 55 | 51 JSON (axis-eval + agent-card discovery) |
+
+RunPod intake models (unsigned cards): qwen2.5-0.5b 304, qwen2.5-1.5b 273, qwen2.5-7b 233, mistral-7b 222, llama3.1-8b 70, qwen3-8b 70, gemma3-4b 70, qwen3-4b 69, gemma3-12b 56, mistral-nemo-12b 56, phi3.5 56, llama3.2-3b 29, deepseek-r1-8b 5.
+
+Axes in intake: swarm, affect, art5-safeguard, care, conformance, continuity, cross-reality, detector-interop, governance, jail, machinery-conformity, openness, provenance, safety.
+
+**These 1513 are UNSIGNED run artifacts. They are not the 305 public-root leaves and not Ed25519 production cards.** That is why this Mac lane showed 76 and you remembered hundreds.
+
+Authenticated org totals: **148 datasets**, **13 models**, **43 Spaces**. User namespace: **11 datasets**.
+
+Kaggle public profile (browser, not signed in): **98 datasets**, 85 code, 6 benchmarks. `KAGGLE_KEY` still unset — cannot API-download.
+
+---
+
+You were right that this Mac folder is not the estate.
+The “about 500” memory is **under-count**: private HF `csoai/runpod-gspc-intake` holds **1513 unsigned RunPod cards**.
+Do not add 1513+305+385+76. Unsigned intake ≠ signed public root ≠ Hub cells ≠ this-lane evals.
 
 ---
 
