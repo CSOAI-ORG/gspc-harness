@@ -1046,7 +1046,7 @@
     },
     "real_signed_measurements": {
       "description": "Actually-signed measurement cards produced from CSOAI harness runs against Ollama models",
-      "count": 31,
+      "count": 36,
       "measurements": [
         {
           "model": "openai/qwen2.5-coder:1.5b",
@@ -1633,6 +1633,151 @@
           "subject": "qwen2.5-coder:1.5b",
           "axis": "governance",
           "iteration": 1,
+          "batch": "batch6",
+          "operational": {
+            "accuracy_measured": 0.208,
+            "usable_n": 24.0,
+            "unmeasured": 0.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-57-02-00-00_gspc-governance_bTHpfxxw5m2b9BgTAA8T2w.eval",
+            "completed_at": "2026-09-16T10:57:07Z"
+          },
+          "signer_kid": "csoai-measurement-62152b4a",
+          "public_key_hex": "62152b4a5f4e04359d2be9e6a99dd2feff820f54d5f241e28a7c0f2cfec23ad6",
+          "card_content_id": "e616bdd251a87aced5475ee15477af85d223ca49c4c6a72474118c82e756207c",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_batch6_iter1_2026-09-16T10-57-07Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "iteration": 2,
+          "batch": "batch6",
+          "operational": {
+            "accuracy_measured": 0.304,
+            "usable_n": 23.0,
+            "unmeasured": 1.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-57-09-00-00_gspc-governance_GA82aB8agL2NgfPokyzou3.eval",
+            "completed_at": "2026-09-16T10:57:14Z"
+          },
+          "signer_kid": "csoai-measurement-b57d3927",
+          "public_key_hex": "b57d3927ce0052261081c80f8bc88b840a33c834d3d9075bcb8e796413272d80",
+          "card_content_id": "8d740e870738606e73193465bda7d0e7fd5b41bd1f2ece1a926765cd03c80da1",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_batch6_iter2_2026-09-16T10-57-14Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "iteration": 3,
+          "batch": "batch6",
+          "operational": {
+            "accuracy_measured": 0.25,
+            "usable_n": 24.0,
+            "unmeasured": 0.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-57-16-00-00_gspc-governance_9SmEx8MhY6XRjqTnmNLEkF.eval",
+            "completed_at": "2026-09-16T10:57:21Z"
+          },
+          "signer_kid": "csoai-measurement-301f48ed",
+          "public_key_hex": "301f48ed0f2cab6c59fcf3fcab0e63d65653d3b0050580594cb6c80dbc982075",
+          "card_content_id": "4fc7a90b2924edd6da1cd7d80fa390113b9fa989c3330af6370db7768dcb8664",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_batch6_iter3_2026-09-16T10-57-21Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "iteration": 4,
+          "batch": "batch6",
+          "operational": {
+            "accuracy_measured": 0.375,
+            "usable_n": 24.0,
+            "unmeasured": 0.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-57-23-00-00_gspc-governance_eX2F4cLnZk67WaHyRiDtj8.eval",
+            "completed_at": "2026-09-16T10:57:27Z"
+          },
+          "signer_kid": "csoai-measurement-2ae11e63",
+          "public_key_hex": "2ae11e63754549d60567751b8187979df55155b20a4326ff35db3b98339f087a",
+          "card_content_id": "84748c7ba28bdfca49530b619edc38c17fcad0d9e305f2c48bead7fe5e01e9fa",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_batch6_iter4_2026-09-16T10-57-27Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "iteration": 5,
+          "batch": "batch6",
+          "operational": {
+            "accuracy_measured": 0.348,
+            "usable_n": 23.0,
+            "unmeasured": 1.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-57-29-00-00_gspc-governance_ZwsQU8XvDiUersfvWoZfgA.eval",
+            "completed_at": "2026-09-16T10:57:33Z"
+          },
+          "signer_kid": "csoai-measurement-7e34bca7",
+          "public_key_hex": "7e34bca74a490d96d53f7a65d6b68103d058f3da07d9b93a3f9aa0e95a485982",
+          "card_content_id": "db868914b312d74b170ca032e304ee49bbe67c24b0279c62a5d868a2dc62d7c7",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_batch6_iter5_2026-09-16T10-57-33Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "iteration": 1,
           "batch": null,
           "operational": {
             "accuracy_measured": 0.435,
@@ -1951,16 +2096,16 @@
     }
   },
   "totals": {
-    "cards_generated": 79,
+    "cards_generated": 84,
     "structural_only": true,
     "notes": [
-      "Total: 48 structural identity cards + 31 real signed measurement cards",
+      "Total: 48 structural identity cards + 36 real signed measurement cards",
       "Multiple runs on same (model, axis) show accuracy variance (Ollama non-determinism)",
       "honesty register reports stderr_gated=NaN when usable_n < 30 (correct per honesty rule)",
       "All cards content-addressed (SHA-256) and Ed25519-signed",
       "Owner action needed: persistent HSM key generation; Rekor/OTS integration; CDN bot fix; HTML deployment"
     ],
-    "real_signed_measurements": 31
+    "real_signed_measurements": 36
   },
   "signer": "did:web:csoai.org#board-attestation-1"
 }
