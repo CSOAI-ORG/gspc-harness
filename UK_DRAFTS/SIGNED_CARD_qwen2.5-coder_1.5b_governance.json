@@ -3,7 +3,7 @@
   "axis": "governance",
   "model": "openai/qwen2.5-coder:1.5b",
   "operational": {
-    "accuracy_measured": 0.167,
+    "accuracy_measured": 0.208,
     "usable_n": 24.0,
     "unmeasured": 0.0,
     "stderr_gated": null,
@@ -16,12 +16,12 @@
     "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
   ],
   "evaluation_run": {
-    "eval_log": "logs/2026-09-16T10-42-04-00-00_gspc-governance_fbqFmSXv9fdz72cnNE8kaV.eval",
-    "completed_at": "2026-09-16T10:42:10Z"
+    "eval_log": "logs/2026-09-16T10-45-49-00-00_gspc-governance_VHhYiKL7GNkWtLW2VxRUcf.eval",
+    "completed_at": "2026-09-16T10:45:54Z"
   },
   "signer": {
-    "kid": "csoai-measurement-c2433faa",
-    "public_key_hex": "c2433faa67b72ea91ebed58da412dc67f98e331f97155cfc7ef68910a26e96e1",
+    "kid": "csoai-measurement-0455a1f9",
+    "public_key_hex": "0455a1f9062749d1ed827bfc43bd7377f368f2f8ae231ee73a7f1984eae9ba78",
     "did": "did:web:csoai.org",
     "did_document_url": "https://csoai.org/.well-known/did.json",
     "algorithm": "Ed25519",
@@ -30,7 +30,7 @@
   "card": {
     "schema": "csoai.inspect-receipt/0.2",
     "kind": "csoai.receipt/0.3",
-    "issued_at": "2026-09-16T10:42:10Z",
+    "issued_at": "2026-09-16T10:45:54Z",
     "register": "Non-repudiable evidence of what was claimed and when. Not proof the eval is honest, uncontaminated, or correct. Measurement, not certification.",
     "verify": {
       "how": "Recompute content_id over the canonical body, then verify the Ed25519 signature against the PUBLISHED key resolved from the signature.kid via did:web.",
@@ -66,13 +66,13 @@
       "started_at": null,
       "completed_at": null
     },
-    "content_id": "c90eaefe5eb7276a5d39fdd876a9c28dfd7d2234f15d7ab4e92d8417de5ef26c",
+    "content_id": "da1a4be1403bb77aed8eadd90f271b7684a8415c1c410eb05c9ee92e9833bce5",
     "signature": {
       "status": "SIGNED",
       "alg": "Ed25519",
-      "kid": "csoai-measurement-c2433faa",
-      "signer_public_key": "c2433faa67b72ea91ebed58da412dc67f98e331f97155cfc7ef68910a26e96e1",
-      "sig": "a9244a9001efc29dc87a28a77e5ed7c32708aea7f9868aa17b76152e5803997f5c0316239ba2f4c499753efd988455f2c8dafc895b7638e227d40816dba3d10f",
+      "kid": "csoai-measurement-0455a1f9",
+      "signer_public_key": "0455a1f9062749d1ed827bfc43bd7377f368f2f8ae231ee73a7f1984eae9ba78",
+      "sig": "94832b2d7e187c2c2b1498ee91210464ba1f86b4fe694709624e71d3097bab332a9eb46577588988614d3c7d81f8abccbd9a6dedec797e5fd3ce1dd0fe985f07",
       "signed_over": "canonical JSON of receipt minus this signature object"
     }
   }

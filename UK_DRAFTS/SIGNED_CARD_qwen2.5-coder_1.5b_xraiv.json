@@ -16,12 +16,12 @@
     "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
   ],
   "evaluation_run": {
-    "eval_log": "logs/2026-09-16T10-42-11-00-00_gspc-xraiv_iSJknYtfgdVJnXTWCXrxna.eval",
-    "completed_at": "2026-09-16T10:42:20Z"
+    "eval_log": "logs/2026-09-16T10-45-56-00-00_gspc-xraiv_UtCDkuXnQhFEADRpn9VDaB.eval",
+    "completed_at": "2026-09-16T10:46:03Z"
   },
   "signer": {
-    "kid": "csoai-measurement-e9068717",
-    "public_key_hex": "e906871795187c7768ffacdce6cd61a9e64ee94d71a4cb871f2c1068f2c23409",
+    "kid": "csoai-measurement-f45cfc25",
+    "public_key_hex": "f45cfc25799cbd20108fd2c13cd5c795aa96fea7ca5dfc210c86022eba3ce208",
     "did": "did:web:csoai.org",
     "did_document_url": "https://csoai.org/.well-known/did.json",
     "algorithm": "Ed25519",
@@ -30,7 +30,7 @@
   "card": {
     "schema": "csoai.inspect-receipt/0.2",
     "kind": "csoai.receipt/0.3",
-    "issued_at": "2026-09-16T10:42:20Z",
+    "issued_at": "2026-09-16T10:46:03Z",
     "register": "Non-repudiable evidence of what was claimed and when. Not proof the eval is honest, uncontaminated, or correct. Measurement, not certification.",
     "verify": {
       "how": "Recompute content_id over the canonical body, then verify the Ed25519 signature against the PUBLISHED key resolved from the signature.kid via did:web.",
@@ -66,13 +66,13 @@
       "started_at": null,
       "completed_at": null
     },
-    "content_id": "1d023fabcfb875d6bb3fb566bcde2a7ef3d8f53457024dea352dbfad8ad1df2f",
+    "content_id": "877cd8b5a32c6f2c0fd1e7cc168b464a0386f6eea847ce9f717eed5be6b8cedc",
     "signature": {
       "status": "SIGNED",
       "alg": "Ed25519",
-      "kid": "csoai-measurement-e9068717",
-      "signer_public_key": "e906871795187c7768ffacdce6cd61a9e64ee94d71a4cb871f2c1068f2c23409",
-      "sig": "00d65e4f876ba36c642579ceccc1834c31a03ba8ffbb5d2af448cc6781f678bb7b6bafbe78ee3a7513dfa309917a0bcca603f72067f4753c1837b68159f63904",
+      "kid": "csoai-measurement-f45cfc25",
+      "signer_public_key": "f45cfc25799cbd20108fd2c13cd5c795aa96fea7ca5dfc210c86022eba3ce208",
+      "sig": "2a367ef2926465b96ac845a0c627336e698113408e77f6c45ad0e54326fa820ba4621d5b46b6cab0e45b60921870aabe20a892674b71a17bd30053134793470c",
       "signed_over": "canonical JSON of receipt minus this signature object"
     }
   }
