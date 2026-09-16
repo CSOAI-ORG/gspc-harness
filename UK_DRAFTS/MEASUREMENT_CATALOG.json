@@ -1046,49 +1046,76 @@
     },
     "real_signed_measurements": {
       "description": "Actually-signed measurement cards produced from CSOAI harness runs against Ollama models",
-      "count": 1,
+      "count": 2,
       "measurements": [
         {
           "model": "openai/qwen2.5-coder:1.5b",
           "subject": "qwen2.5-coder:1.5b",
           "axis": "governance",
           "operational": {
-            "accuracy_measured": 0.417,
+            "accuracy_measured": 0.167,
             "usable_n": 24.0,
             "unmeasured": 0.0,
             "stderr_gated": null,
             "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
           },
-          "method": "exact-tier-match (tier_match scorer in tasks/_gspc_scoring.py)",
+          "method": "deterministic grading (exact-tier-match for governance; regex for xraiv)",
           "limits": [
             "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
             "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
           ],
           "evaluation_run": {
-            "eval_log": "logs/2026-09-16T10-38-30-00-00_gspc-governance_2aox2Vx2FzGW9AxDnEJXAx.eval",
-            "completed_at": "2026-09-16T10:38:35Z"
+            "eval_log": "logs/2026-09-16T10-42-04-00-00_gspc-governance_fbqFmSXv9fdz72cnNE8kaV.eval",
+            "completed_at": "2026-09-16T10:42:10Z"
           },
-          "signer_kid": "csoai-measurement-4900bdfa",
-          "public_key_hex": "4900bdfa3d8a71d2e553d93864ca9039dca72d21c66a233e9e9a355270174f8f",
-          "card_content_id": "4ff9e64eb0d93e8eaac61395a6e45526d5ab9e5d0edacac2df4d5ddd43341e77",
+          "signer_kid": "csoai-measurement-c2433faa",
+          "public_key_hex": "c2433faa67b72ea91ebed58da412dc67f98e331f97155cfc7ef68910a26e96e1",
+          "card_content_id": "c90eaefe5eb7276a5d39fdd876a9c28dfd7d2234f15d7ab4e92d8417de5ef26c",
           "card_signature_status": "SIGNED",
           "card_algorithm": "Ed25519",
-          "source_file": "SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json"
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "xraiv",
+          "operational": {
+            "accuracy_measured": NaN,
+            "usable_n": 0.0,
+            "unmeasured": null,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance; regex for xraiv)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-42-11-00-00_gspc-xraiv_iSJknYtfgdVJnXTWCXrxna.eval",
+            "completed_at": "2026-09-16T10:42:20Z"
+          },
+          "signer_kid": "csoai-measurement-e9068717",
+          "public_key_hex": "e906871795187c7768ffacdce6cd61a9e64ee94d71a4cb871f2c1068f2c23409",
+          "card_content_id": "1d023fabcfb875d6bb3fb566bcde2a7ef3d8f53457024dea352dbfad8ad1df2f",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_xraiv.json"
         }
       ]
     }
   },
   "totals": {
-    "cards_generated": 49,
+    "cards_generated": 50,
     "structural_only": true,
     "notes": [
-      "Total cards include 48 STRUCTURAL identity cards (SWIFT banks + XRPL + top stablecoin issuers)",
-      "and 1 REAL signed measurement cards from actual GSPC harness runs",
-      "All cards are content-addressed (SHA-256) and Ed25519-signed",
-      "Public key for each card is generated for the run; production uses persistent HSM key",
-      "Run `inspect-receipts verify <card-file> --did-web` to verify any card"
+      "Total: 48 structural identity cards (SWIFT banks + XRPL + top stablecoin issuers)",
+      "      + 2 REAL signed measurement cards from actual GSPC harness runs",
+      "All cards content-addressed (SHA-256) and Ed25519-signed",
+      "To verify: inspect-receipts verify <card-file> --did-web",
+      "Verification requires public key (in signer.public_key_hex) on the did:web:csoai.org verification list"
     ],
-    "real_signed_measurements": 1
+    "real_signed_measurements": 2
   },
   "signer": "did:web:csoai.org#board-attestation-1"
 }
