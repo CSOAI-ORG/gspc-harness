@@ -8,7 +8,7 @@
 |---|---|---|
 | Dataset files | **4547** | PRIVATE |
 | `card-unsigned.json` | **1513** | unique run directories |
-| `intake.jsonl` rows | **112** | **STALE index** — README and jsonl still describe the 2026-09-05 pull of 112 runs. File tree grew to 1513. Do not quote 112 as the live file count. |
+| `intake.jsonl` rows | **112** | **STALE index** (2026-09-05 only). Path census of the file tree: **`UK_DRAFTS/RUNPOD_INTAKE_INDEX.jsonl` = 1513 rows**. Days: 05=112, 06=235, 09=165, 10=56, 11=56, 12=112, 13=56, 14=413, 15=141, **16=167**. |
 | `intake.jsonl` `candidate_status` | UNMEASURED ×112 | every indexed row |
 | `intake.jsonl` `n ≥ 30` | **104 / 112** | 8 below honesty floor |
 | `intake.jsonl` accuracy | min 0.000 max 0.9444 mean 0.3128 | n=112 indexed only |

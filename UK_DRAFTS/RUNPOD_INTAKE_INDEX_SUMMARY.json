@@ -1,0 +1,52 @@
+{
+  "schema": "csoai.runpod-intake-index/0.1",
+  "as_of": "2026-09-16T14:41:16.902025+00:00",
+  "dataset": "csoai/runpod-gspc-intake",
+  "dataset_private": true,
+  "card_unsigned_count": 1513,
+  "stale_intake_jsonl_rows": 112,
+  "models": {
+    "deepseek-r1-8b": 5,
+    "gemma3-12b": 56,
+    "gemma3-4b": 70,
+    "llama3.1-8b": 70,
+    "llama3.2-3b": 29,
+    "mistral-7b": 222,
+    "mistral-nemo-12b": 56,
+    "phi3.5-3.8b": 56,
+    "qwen2.5-0.5b-instruct": 304,
+    "qwen2.5-1.5b": 273,
+    "qwen2.5-7b": 233,
+    "qwen3-4b": 69,
+    "qwen3-8b": 70
+  },
+  "axes": {
+    "swarm": 101,
+    "affect": 109,
+    "art5-safeguard": 109,
+    "care": 105,
+    "conformance": 109,
+    "continuity": 109,
+    "cross-reality": 109,
+    "detector-interop": 109,
+    "governance": 104,
+    "jail": 109,
+    "machinery-conformity": 109,
+    "openness": 109,
+    "provenance": 110,
+    "safety": 112
+  },
+  "days": {
+    "20260905": 112,
+    "20260906": 235,
+    "20260909": 165,
+    "20260910": 56,
+    "20260911": 56,
+    "20260912": 112,
+    "20260913": 56,
+    "20260914": 413,
+    "20260915": 141,
+    "20260916": 167
+  },
+  "honesty": "UNSIGNED. UNMEASURED. Path index only. Not live GSPC. Not root.json. Signer admission required."
+}
