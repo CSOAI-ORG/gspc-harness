@@ -3,6 +3,28 @@
 
 ---
 
+## 0. ADDENDUM — September 16, 2026
+
+Since the original report:
+
+- **Coppice external x402 test confirmed:** CSOAI received its first external-payer x402 transaction on Sep 15, 2026 ($0.02 USDC on Base mainnet). Self-tests excluded. Repeat payers: 0.
+
+- **CDN bot rule blocker identified:** Standard library HTTP clients (Python urllib, libwww-perl) receive 403 BEFORE seeing the 402 payment terms. This is a Cloudflare Bot Fight Mode pattern, not a CSOAI bug. See `UK_DRAFTS/DOCS_BUG_REPORT_2026-09-16.md` for full repro.
+
+- **Arc (Circle's L1) genesis:** Sep 16, 2026. CSOAI monitors Arc-native USDC via the stablecoin measurement pipeline. Arc was confirmed on schedule; we do not make claims about the on-chain behavior beyond what the public ledger shows.
+
+- **Microsoft MAI Humanist AI Code of Conduct:** Sep 14, 2026. Microsoft opened a 6-week consultation on the MAI Code of Conduct. CSOAI's 22 axes map to several MAI clauses (see `UK_DRAFTS/MASTER_DATABASE.md` for the mapping).
+
+- **NIST AI 300-1 zero-draft:** Sep 16 comment window closed. CSOAI's documentation already meets all 5 of NIST's proposed technical requirements (machine-readable, signed, content-addressed, versioned, correction-enabled). A formal comment draft exists at `UK_DRAFTS/NIST_300_1_COMMENT.md` (NEEDS_FACT_CHECK before submission — web fact-check required).
+
+- **FDIC PS-01 comment window:** Sep 18, 2026 deadline (per earlier drafts; needs owner verification). CSOAI's stablecoin measurement pipeline already produces the structured data PS-01 would consume.
+
+- **Karen Hao beat update:** Karen Hao moved from MIT Tech Review to The Atlantic. Press contacts database updated to reflect this. Use The Atlantic email; not MIT Tech Review.
+
+- **Banned phrasing review:** All drafts in `DRAFTS_FOR_REVIEW.md`, `EMAIL_QUEUE_2026-09-15.md`, and `PRESS/` reviewed against the M2 conversion rules (no "first/only/certified/compliant/approved/court-ready/HSM-custody-in-production/continuous daily coverage/registered AI auditor"). Two claims were rephrased to "a measurement layer" instead of "the first AI measurement layer" to remove any "first" claim that couldn't be verified.
+
+---
+
 ## Executive Summary
 
 CSOAI has proven interoperability across six major protocols and standards bodies. This is not aspirational — every integration is live, tested, and publicly verifiable. The interop is the product: signed, content-addressed receipts that work across payment rails, agent protocols, and transparency logs.

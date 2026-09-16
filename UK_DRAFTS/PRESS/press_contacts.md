@@ -8,13 +8,13 @@ Each entry has: name, outlet, beat, email (where public), why they're relevant, 
 ## SECTION 1 — AI SAFETY / GOVERNANCE REPORTERS (top priority)
 
 ### Karen Hao
-- **Outlet:** MIT Technology Review (former), now independent newsletter
-- **Beat:** AI governance, OpenAI, Anthropic, EU AI Act
-- **Email:** karen@karenhao.com (verified public)
-- **Why:** Most-read AI safety reporter globally. Wrote the seminal FT AI regulation series.
+- **Outlet:** The Atlantic (formerly MIT Technology Review / FT). Independent newsletter "The Algorithm"
+- **Beat:** AI governance, OpenAI, Anthropic, EU AI Act, AI policy
+- **Email:** karen@theatlantic.com (verify current); karenhaoreporting@gmail.com for pitches (verify); personal site at karenhao.com
+- **Why:** Most-read AI safety reporter globally. Wrote the seminal FT AI regulation series and the book "Empire of AI" (about OpenAI).
 - **CSOAI angle:** Independent measurement layer is missing in EU AI Act coverage
 - **Subject:** "Independent AI measurement infrastructure — 305 leaves, 335 cards, all publicly verifiable"
-- **Status:** DRAFT ready in `DRAFTS_FOR_REVIEW.md`
+- **Status:** DRAFT ready in `DRAFTS_FOR_REVIEW.md` (use The Atlantic email; not MIT Tech Review)
 
 ### Will Douglas Heaven
 - **Outlet:** MIT Technology Review
