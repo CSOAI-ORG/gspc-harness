@@ -78,7 +78,7 @@ The release is embargo-free. We do not seek exclusive coverage. The artifact is 
 Suggested hooks for editors:
 1. **AI governance beat:** "The SB 813 IVO rulemaking window is coming. CSOAI's existing infrastructure is already the shape of what IVOs will be required to produce. Are existing vendors ready?"
 2. **Tech / open source beat:** "A UK company has built MCP-native, A2A-native, x402-native signed evidence infrastructure. It's in the GitHub MCP Registry. The verifier runs in any browser."
-3. **Crypto / x402 beat:** "x402 customers are non-browser scripts by definition. A UK measurer is the first to register a measurement layer in the MCP catalog and publish x402 payment terms that standard library HTTP clients can read."
+3. **Crypto / x402 beat:** "x402 customers are non-browser scripts by definition. CSOAI filed a measurement layer in the MCP catalog and publishes x402 payment terms that standard library HTTP clients can read (when the CDN bot rule is fixed)."
 4. **Stablecoin / banking beat:** "CSOAI's reserve-attestation axis measures third-party attestation language on retrieved pages. The signed cards document what Tether, Circle, and others actually disclose — not what their press releases claim."
 5. **AI safety / x-risk beat:** "UK AISI built Inspect. CSOAI added signed receipts, content-addressing, and public Merkle witnessing on top. The harness is open source; the evidence is publicly verifiable."
 

@@ -1,7 +1,7 @@
 # Email queue — prepared drafts (NOT for sending from this lane)
 
 **Author:** M2 from `hermes/inspect-register-readiness` lane
-**As-of:** 2026-09-15 (all verified surfaces re-pulled this session per `LANE_REPORT.md` §14)
+**As-of:** 2026-09-16 (revised from 2026-09-15; see `DOCS_BUG_REPORT_2026-09-16.md` for the Coppice finding that triggered the re-research pass)
 **Doctrine:** "Prepare browser submissions, emails and wallet transactions completely; do not execute a new irreversible send, filing or chain spend without the action being authorized in the supervising session."
 **Status:** **DRAFTS ONLY — owner must authorise each send before transmission.**
 

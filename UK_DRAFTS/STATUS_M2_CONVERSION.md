@@ -1,13 +1,27 @@
 # STATUS_M2_CONVERSION.md — M2 Controlled Conversion Status (FINAL)
-## 2026-09-15 (end-of-day, complete lane deliverables)
+## 2026-09-16 (end-of-day, includes Coppice finding from today)
 
 ## 1. INVENTORY (what exists)
 
 ### Blog posts
-- **Total:** 96 blog posts (88 in `UK_DRAFTS/blog-*.md` + 1 at `/Users/iokfarm/gspc-blog-post.md`)
-- **By category (verified):** strategic (9), technical (13), regulatory (9), philosophy (19), audience (6), news (20+), 22-axes deep dive (1), trust engine deep dive (1)
-- **All committed to:** `hermes/inspect-register-readiness` branch (commit `387b4d5` and earlier)
+- **Total:** 95 blog posts (verified 2026-09-16)
+- **By category (verified):** strategic (9), technical (13), regulatory (9), philosophy (19), audience (6), news (20+), 22-axes deep dive (1), trust engine deep dive (1), and additional 17 across other themes
+- **All committed to:** `hermes/inspect-register-readiness` branch
 - **Pushed to:** `origin/hermes/inspect-register-readiness`
+- **Note:** Earlier version of this file said "96" — corrected to 95 after directory recount
+
+### Press program (NEW 2026-09-16)
+- `UK_DRAFTS/PRESS/press_release_master.md` — master release, all claims verifiable
+- `UK_DRAFTS/PRESS/press_release_tiers.md` — 5 tiers for different outlet types
+- `UK_DRAFTS/PRESS/press_contacts.md` — 80+ journalist contacts across 13 categories
+- `UK_DRAFTS/PRESS/press_qa.md` — 22 Q&A pairs for journalist questions
+- `UK_DRAFTS/PRESS/press_boilerplate.md` — short/medium/long + fact sheet boilerplate
+- `UK_DRAFTS/PRESS/press_distribution_log.md` — outreach log template
+- `UK_DRAFTS/PRESS/show_hn_draft.md` — Hacker News Show HN draft
+- `UK_DRAFTS/PRESS/reddit_drafts.md` — 8 subreddit drafts
+
+### Coppice finding (NEW 2026-09-16)
+- `UK_DRAFTS/DOCS_BUG_REPORT_2026-09-16.md` — full repro of CDN bot rule blocking x402 customers
 
 ### Trust assets (HTML)
 - **Total:** 8 HTML pages in `UK_DRAFTS/`
@@ -135,12 +149,19 @@ Each draft is in `UK_DRAFTS/DRAFTS_FOR_REVIEW.md`:
 
 ### Critical blockers (preventing claims)
 1. **RunPod cycles are not yet signed/rooted/retrievable.** Cycles-run (168) is INTERNAL activity. Cannot claim HSM-custody-in-production at RunPod scale until each cycle is verified end-to-end.
+2. **CDN bot rule blocking x402 customers (Coppice finding, 2026-09-16)** — Standard library HTTP clients (Python urllib, libwww-perl) get 403 BEFORE seeing the 402 payment terms. This blocks all x402 customers. Re-verified twice today (04:47 UTC and 05:51 UTC) — both Python-urllib and libwww-perl still return 403. Owner must fix in Cloudflare (turn off Bot Fight Mode OR add WAF exception for `/api/*`).
 
 ### Fact-check blockers (drafts quarantined)
-2. **NIST AI 300-1 comment deadline** — earlier drafts said Sep 16; current NIST page must be verified before any submission. Drafts quarantined to NEEDS_FACT_CHECK.
-3. **GPT-6 Astra system card date** — earlier drafts said Sep 12; OpenAI publication must be verified. Drafts quarantined.
-4. **AB 1405 registry timing** — claim of Jan 2029 registry needs source verification.
-5. **SB 813 IVO rulemaking timeline** — claim of 2027 rulemaking needs source verification.
+3. **NIST AI 300-1 comment deadline** — earlier drafts said Sep 16; current NIST page must be verified before any submission. Drafts quarantined to NEEDS_FACT_CHECK.
+4. **GPT-6 Astra system card date** — earlier drafts said Sep 12; OpenAI publication must be verified. Drafts quarantined.
+5. **AB 1405 registry timing** — claim of Jan 2029 registry needs source verification.
+6. **SB 813 IVO rulemaking timeline** — claim of 2027 rulemaking needs source verification.
+
+**Updated blocker priority (today 2026-09-16):**
+1. **CDN bot rule fix (HIGHEST PRIORITY)** — blocks actual conversion of new x402 customers
+2. RunPod cycles end-to-end verification (blocks HSM claims)
+3. NIST AI 300-1 outreach fact-check
+4. GPT-6 Astra outreach fact-check
 
 ### Action items for owner
 - Verify each blocked item via direct source check (not through this lane)

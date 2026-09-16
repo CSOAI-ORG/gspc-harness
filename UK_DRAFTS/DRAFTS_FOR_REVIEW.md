@@ -1,5 +1,5 @@
 # DRAFTS_FOR_REVIEW.md — 10 Tailored M2 Outreach Messages
-## 2026-09-15 (controlled conversion lane)
+## 2026-09-16 (controlled conversion lane, post-Coppice finding)
 
 **Critical rules (per M2 controlled conversion instruction):**
 - Use ONLY reconciled facts (305 leaves, 335 cards, 1 external payer @ $0.02)
@@ -76,7 +76,7 @@ nicholas@csoai.org
 
 Eugene,
 
-Wanted to flag a concrete product story: CSOAI's MCP server (`csoai-gspc-mcp`) was filed in the official Model Context Protocol registry on Sep 15 — the first AI measurement layer in the registry.
+Wanted to flag a concrete product story: CSOAI's MCP server (`csoai-gspc-mcp`) was filed in the official Model Context Protocol registry on Sep 15 — a measurement layer in the registry. Whether it was the first such filing is a registry search away.
 
 **The submission:** https://github.com/modelcontextprotocol/servers/issues/4806
 
