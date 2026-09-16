@@ -1,5 +1,5 @@
 # MASTER CORPUS INVENTORY — verified surfaces only
-**as_of:** 2026-09-16T14:35Z (this lane)
+**as_of:** 2026-09-16T14:35Z (inventory) / **14:33Z** (SWIFT/XRPL/stablecoin hunt + 5 more local eval cards)
 **Rule:** numbers are **not additive**. Different objects. Live GET wins when a snapshot disagrees.
 **Not a certificate. Measurement, not certification.**
 
@@ -21,6 +21,18 @@ I will not add 305+335+385+71 and call it 1,000.
 | `GET https://councilof.ai/api/hub-cards` | 200 | **385 cells, 385 MEASURED, 0 UNMEASURED** | **2026-09-16T14:28:44Z** | Third-party Hub models — **NOT** the CSOAI fleet. Arithmetic: 566 index rows − 181 duplicates = 385. Source dataset: `huggingface.co/datasets/csoai/gspc-hub-cards`. |
 
 Financial fact axes (from `/api/gspc`): 8 measured as deterministic facts; **1 Ed25519-signed**, 7 content-addressed unsigned. Signed axis: `provenance-controls`.
+
+---
+
+## 1b. SWIFT / XRPL / 425 stablecoins — live index vs MEASURED
+
+| Target | Live evidence | Status |
+|---|---|---|
+| **17 SWIFT banks** | HF `csoai/swift-17` default split **17 rows**. Banks: ANZ, BNP Paribas, BNY, Citi, DBS, FAB, FirstRand, HSBC, Itaú Unibanco, Lloyds, MUFG, Mashreq, OCBC, Standard Chartered, UBS, UOB, Wells Fargo. Every row `board_status=UNMEASURED`, `n=0`, `not_a_grade=true`. | **INDEXED. Not MEASURED.** |
+| **16 XRPL** | HF `csoai/xrpl-16-reader` **16 rows**. Symbols: RLUSD, OUSG, USDB, BBRL, EURCV, USD.bs, EUR.bs, USD.gh, USDC, EUR.gh, EURQ, USDQ, EURØP, XAU.gh, GBP.gh, PSC. Live `root.json` `xrpl_fi_assetCount=16`. Financial axes n=16 on reserve/regulatory/distribution/custody. | **INDEXED + fact-run n=16. Not model-scored.** |
+| **425 stablecoins** | Live page `https://councilof.ai/stablecoins/` (200, 627KB): **Indexed 425 · Deployments 1640 · Chains 211**. Page copy: *“Inclusion is not a measurement.”* Promotion queue: **all 425 assets**; **19** have a registered primary source. | **INDEXED. Not MEASURED.** |
+
+HF `csoai/living-catalog` default split **154 rows**. `csoai/gspc-top100` **135 rows**. Neither is the 425 index.
 
 ---
 
@@ -76,10 +88,10 @@ Verified via web (2026-09-16):
 
 | Object | Count |
 |---|---|
-| Local Inspect eval signed cards (`SIGNED_CARD_*.json`) | **70** |
+| Local Inspect eval signed cards (`SIGNED_CARD_*.json`) | **75** |
 | Extra `SIGNED_MEASUREMENT_CARD_*.json` | **1** |
 | Structural identity placeholders (SWIFT 17 + XRPL 16 + issuers 15) | **48** |
-| Catalog `real_signed_measurements` | **71** |
+| Catalog `real_signed_measurements` | **76** |
 
 These are **Ollama eval receipts from this Hermes session**. They are **not** the 305 public-root leaves and **not** the 385 Hub cells.
 
