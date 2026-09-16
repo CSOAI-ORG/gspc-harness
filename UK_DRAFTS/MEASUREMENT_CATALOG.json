@@ -1046,7 +1046,7 @@
     },
     "real_signed_measurements": {
       "description": "Actually-signed measurement cards produced from CSOAI harness runs against Ollama models",
-      "count": 3,
+      "count": 5,
       "measurements": [
         {
           "model": "openai/qwen2.5-coder:1.5b",
@@ -1078,6 +1078,33 @@
         {
           "model": "openai/qwen2.5-coder:1.5b",
           "subject": "qwen2.5-coder:1.5b",
+          "axis": "governance",
+          "operational": {
+            "accuracy_measured": 0.261,
+            "usable_n": 23.0,
+            "unmeasured": 1.0,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance; regex for xraiv)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-47-24-00-00_gspc-governance_P2G74y7ottXsDHFhxP67Qe.eval",
+            "completed_at": "2026-09-16T10:47:29Z"
+          },
+          "signer_kid": "csoai-measurement-91fb155b",
+          "public_key_hex": "91fb155b477093de1c8f7303f9de71889b634cce5779fd17a6b0cfd733ff637a",
+          "card_content_id": "af32ea03b721e4ba618cc947e2e2cc96b6fa1035403563c45131e70ea296e454",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_governance_2026-09-16T10-47-29Z.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
           "axis": "xraiv",
           "operational": {
             "accuracy_measured": NaN,
@@ -1101,6 +1128,33 @@
           "card_signature_status": "SIGNED",
           "card_algorithm": "Ed25519",
           "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_xraiv.json"
+        },
+        {
+          "model": "openai/qwen2.5-coder:1.5b",
+          "subject": "qwen2.5-coder:1.5b",
+          "axis": "xraiv",
+          "operational": {
+            "accuracy_measured": NaN,
+            "usable_n": 0.0,
+            "unmeasured": null,
+            "stderr_gated": null,
+            "note": "stderr_gated is NaN because usable_n < 30; per honesty register rule"
+          },
+          "method": "deterministic grading (exact-tier-match for governance; regex for xraiv)",
+          "limits": [
+            "model qwen2.5-coder:1.5b \u2014 local Ollama inference, single run",
+            "usable_n < 30 \u2014 confidence interval is NaN, not 0.000"
+          ],
+          "evaluation_run": {
+            "eval_log": "logs/2026-09-16T10-47-31-00-00_gspc-xraiv_hGcVG6xKpKom33Pocjd5Bz.eval",
+            "completed_at": "2026-09-16T10:47:37Z"
+          },
+          "signer_kid": "csoai-measurement-f6ace700",
+          "public_key_hex": "f6ace7004153d04afb1502b190c9e23a91876fc759dc61d44f9b7fed942c63ff",
+          "card_content_id": "78b35c992ce7565ca50ac808b03290d85dde3d2ef5500bfc779b44745bc34e8f",
+          "card_signature_status": "SIGNED",
+          "card_algorithm": "Ed25519",
+          "source_file": "SIGNED_CARD_qwen2.5-coder_1.5b_xraiv_2026-09-16T10-47-37Z.json"
         },
         {
           "model": "openai/qwen2.5-coder:1.5b",
@@ -1133,16 +1187,16 @@
     }
   },
   "totals": {
-    "cards_generated": 51,
+    "cards_generated": 53,
     "structural_only": true,
     "notes": [
-      "Total: 48 structural identity cards + 3 real signed measurement cards",
+      "Total: 48 structural identity cards + 5 real signed measurement cards",
       "All cards content-addressed (SHA-256) and Ed25519-signed",
-      "Accuracy varies across runs (Ollama non-determinism); demonstrates honesty register importance",
-      "To verify: inspect-receipts verify <card-file> --did-web",
-      "Owner action needed: persistent HSM key generation; Rekor/OTS integration; CDN bot fix"
+      "Multiple runs on same (model, axis) show accuracy variance (Ollama non-determinism)",
+      "honesty register reports stderr_gated=NaN when usable_n < 30 (correct per honesty rule)",
+      "To verify: inspect-receipts verify <card-file> --did-web"
     ],
-    "real_signed_measurements": 3
+    "real_signed_measurements": 5
   },
   "signer": "did:web:csoai.org#board-attestation-1"
 }
