@@ -1,0 +1,62 @@
+{
+  "schema": "csoai.x402-bazaar-conformance/0.1",
+  "as_of": "2026-09-05T13:29:06.336122Z",
+  "hosts_probed": 3520,
+  "method": "One GET per DISTINCT HOST listed in either public x402 Bazaar (Coinbase CDP, PayAI), using the first resource that index advertises for that host. Conformant = HTTP 402 AND a PAYMENT-REQUIRED response header AND x402Version 2 in the body AND an extensions.bazaar block. Identifiable UA, 12s timeout, 24 concurrent. Nothing signed, nothing paid, no door settled.",
+  "headline": {
+    "conformant": 394,
+    "conformant_pct": 11.19,
+    "answered_402": 1536,
+    "answered_402_pct": 43.64,
+    "unreachable": 1027,
+    "unreachable_pct": 29.18,
+    "carried_payment_required_header": 1395,
+    "x402_version_2": 538,
+    "carried_bazaar_extension": 413
+  },
+  "by_index": {
+    "cdp": {
+      "hosts": 1746,
+      "conformant": 312,
+      "conformant_pct": 17.87
+    },
+    "cdp+payai": {
+      "hosts": 110,
+      "conformant": 31,
+      "conformant_pct": 28.18
+    },
+    "payai": {
+      "hosts": 1664,
+      "conformant": 51,
+      "conformant_pct": 3.06
+    }
+  },
+  "status_distribution": {
+    "402": 1536,
+    "None": 1027,
+    "404": 481,
+    "405": 227,
+    "200": 90,
+    "400": 42,
+    "204": 25,
+    "401": 22,
+    "503": 18,
+    "502": 14,
+    "521": 9,
+    "500": 6,
+    "403": 5,
+    "410": 5,
+    "530": 5,
+    "422": 3,
+    "406": 1,
+    "526": 1,
+    "301": 1,
+    "520": 1,
+    "525": 1
+  },
+  "verification": "Sampled 12 hosts from each of status=None, 404 and 405 and re-probed with a browser User-Agent and a 30s timeout: all 36 reproduced their original outcome exactly. The result is not an artefact of the probe's UA or timeout.",
+  "self_check": "councilof.ai appears in this census and is conformant (402, header, v2, extension). It is measured by the same probe as everyone else, not exempted.",
+  "not_a_measurement_of": "a seller's honesty, product quality, price, or whether a door would deliver after payment. It measures ONE thing: whether the door an index advertises answers the protocol an index reads.",
+  "license": "CC-BY-4.0",
+  "publisher": "Council of AI (CSOAI Ltd, UK 16939677)"
+}
