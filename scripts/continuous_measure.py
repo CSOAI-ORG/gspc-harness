@@ -166,10 +166,13 @@ def one_eval(model: str, task_path: str, timeout: int = 60):
     )
     text = (proc.stdout or "") + "\n" + (proc.stderr or "")
     acc, n = parse_metrics(text)
-    return proc.returncode, acc, n
+    return proc.returncode, acc, n, (proc.stderr or "")[-400:]
 
 
 def main():
+    if any(a in ("-h", "--help") for a in sys.argv[1:]):
+        print(__doc__)
+        return
     models = [m.strip() for m in os.environ.get("CSOAI_MODELS", "qwen2.5-coder:1.5b").split(",") if m.strip()]
     axes = {
         "governance": "tasks/gspc_governance.py",
@@ -192,12 +195,13 @@ def main():
                 for i in range(1, iters + 1):
                     print(f"=== {model} AX-{axis} {batch} iter={i}/{iters} ===", flush=True)
                     try:
-                        rc, acc, n = one_eval(model, task)
+                        rc, acc, n, err = one_eval(model, task)
                     except subprocess.TimeoutExpired:
                         print("  TIMEOUT", flush=True)
                         continue
                     print(f"  Acc={acc} n={n} exit={rc}", flush=True)
                     if rc != 0:
+                        print(f"  inspect fail tail: {err}", flush=True)
                         continue
                     result = sign_latest(model, axis, batch, i, acc, n, task)
                     if result:
