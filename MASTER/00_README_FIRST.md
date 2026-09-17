@@ -2,7 +2,8 @@
 
 **Lane:** `M2 / hermes/inspect-register-readiness`
 **as_of:** 2026-09-16
-**One file:** `MASTER/MASTER_FILES.json` is the machine-readable index (sha256-keyed).
+**One file:** `MASTER/MASTER_FILES.json` is the machine-readable index (sha256-keyed, schema `csoai.master-files/2.0`, every file carries `section` + `kind` + `purpose`).
+**Flat views:** `MASTER/INVENTORY.csv` (pipe-friendly, one row per file) and `MASTER/MANIFEST.sha256` (canonical sha256sum format).
 **One read:** `MASTER/00_README_FIRST.md` (this file's companion).
 
 The aim of this master is to be the one thing a stranger reads, and the one
