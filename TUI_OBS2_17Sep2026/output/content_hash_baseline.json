@@ -1,0 +1,166 @@
+{
+  "as_of": "2026-09-17T07:57:10.831288+00:00",
+  "purpose": "baseline content hashes for OBSERVER-2 standing job. A future sweep compares against these; any hash change indicates the operator (or upstream producer) shipped new bytes. ANY url/code/size change is reportable as a deviation from the baseline.",
+  "probes": [
+    {
+      "label": "homepage",
+      "url": "https://councilof.ai/",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 258765,
+      "sha256": "17686fa5507b8c80",
+      "final": "https://councilof.ai/",
+      "error": null
+    },
+    {
+      "label": "gspc-verify (redirect)",
+      "url": "https://councilof.ai/gspc-verify",
+      "method": "anonymously, follow 308",
+      "code": 200,
+      "size": 77257,
+      "sha256": "0ff278cec4623273",
+      "final": "https://councilof.ai/gspc-verify/",
+      "error": null
+    },
+    {
+      "label": "methodology (redirect)",
+      "url": "https://councilof.ai/methodology",
+      "method": "anonymously, follow 308",
+      "code": 200,
+      "size": 79646,
+      "sha256": "b706a6d1096db2ec",
+      "final": "https://councilof.ai/methodology/",
+      "error": null
+    },
+    {
+      "label": "/api/gspc",
+      "url": "https://councilof.ai/api/gspc",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 70527,
+      "sha256": "9699081c10c4106f",
+      "final": "https://councilof.ai/api/gspc",
+      "error": null
+    },
+    {
+      "label": "/api/a2a",
+      "url": "https://councilof.ai/api/a2a",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 1957,
+      "sha256": "57adca6294b9b8fa",
+      "final": "https://councilof.ai/api/a2a",
+      "error": null
+    },
+    {
+      "label": "/api/x402",
+      "url": "https://councilof.ai/api/x402",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 12670,
+      "sha256": "14f259775fefae0b",
+      "final": "https://councilof.ai/api/x402",
+      "error": null
+    },
+    {
+      "label": "/api/free-door (x402 challenge)",
+      "url": "https://councilof.ai/api/free-door",
+      "method": "anonymously, expect 402",
+      "code": 402,
+      "size": 0,
+      "sha256": "",
+      "final": "https://councilof.ai/api/free-door",
+      "error": "HTTP Error 402: Payment Required"
+    },
+    {
+      "label": "agent-card.json",
+      "url": "https://councilof.ai/.well-known/agent-card.json",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 13018,
+      "sha256": "b6474156e927483e",
+      "final": "https://councilof.ai/.well-known/agent-card.json",
+      "error": null
+    },
+    {
+      "label": "agent.json (alias)",
+      "url": "https://councilof.ai/.well-known/agent.json",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 13018,
+      "sha256": "b6474156e927483e",
+      "final": "https://councilof.ai/.well-known/agent.json",
+      "error": null
+    },
+    {
+      "label": "x402.json",
+      "url": "https://councilof.ai/.well-known/x402.json",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 15072,
+      "sha256": "b68ccd4f0520bcdf",
+      "final": "https://councilof.ai/.well-known/x402.json",
+      "error": null
+    },
+    {
+      "label": "did.json",
+      "url": "https://councilof.ai/.well-known/did.json",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 5059,
+      "sha256": "03b92739e3db6e6b",
+      "final": "https://councilof.ai/.well-known/did.json",
+      "error": null
+    },
+    {
+      "label": "robots.txt",
+      "url": "https://councilof.ai/robots.txt",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 6126,
+      "sha256": "7d4ec2fe0a7eda59",
+      "final": "https://councilof.ai/robots.txt",
+      "error": null
+    },
+    {
+      "label": "llms.txt",
+      "url": "https://councilof.ai/llms.txt",
+      "method": "anonymously, browser UA",
+      "code": 200,
+      "size": 17186,
+      "sha256": "c655357cf53937b3",
+      "final": "https://councilof.ai/llms.txt",
+      "error": null
+    },
+    {
+      "label": "HF correction",
+      "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/corrections/PUBLIC-ROOT-IS-NOT-A-LOG-2026-09-17.md",
+      "method": "anonymously, follow 307",
+      "code": 200,
+      "size": 9033,
+      "sha256": "5c320db8c6cbb3ed",
+      "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/cae34906cd1f5ad89ed0c3893c5ae6c5dede5d55/corrections%2FPUBLIC-ROOT-IS-NOT-A-LOG-2026-09-17.md?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fcorrections%2FPUBLIC-ROOT-IS-NOT-A-LOG-2026-09-17.md=&etag=%22fff09ade10e63c3a36a7228fa6754ab9169ce7f0%22",
+      "error": null
+    },
+    {
+      "label": "HF audit script",
+      "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/corrections/audit_root_leaf_churn.py",
+      "method": "anonymously, follow 307",
+      "code": 200,
+      "size": 6697,
+      "sha256": "a927b5e6773d0134",
+      "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/cae34906cd1f5ad89ed0c3893c5ae6c5dede5d55/corrections%2Faudit_root_leaf_churn.py?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fcorrections%2Faudit_root_leaf_churn.py=&etag=%229d4c3df1f73d7e00d081cf38734a8b71366a6c8a%22",
+      "error": null
+    }
+  ],
+  "deviation_policy": [
+    "code_changed: investigate; might be a deploy, might be a Cloudflare rule change.",
+    "size_changed_with_same_code: bytes shifted; might be a content update.",
+    "sha256_changed_with_same_size: bytes shifted but same length; record the before/after.",
+    "error_field_non_empty: the URL probe threw; do not log this as drift; treat as inconclusive."
+  ],
+  "operator_decisions_recorded": [
+    "C-2026-0917-02 (scripted-readers blocked; still OPEN per C above)",
+    "C-2026-0917-03 (affiliation claims; homepage still carries them per A above)"
+  ]
+}
