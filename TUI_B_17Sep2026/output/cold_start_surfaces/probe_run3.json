@@ -1,0 +1,166 @@
+{
+  "label": "csoai-cold-start/1.0",
+  "as_of": "2026-09-17T05:23:38.467609+00:00",
+  "surfaces": [
+    {
+      "url": "https://councilof.ai/",
+      "code": 200,
+      "size": 258765,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/index.html",
+      "code": 200,
+      "size": 258765,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/robots.txt",
+      "code": 200,
+      "size": 6126,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/llms.txt",
+      "code": 200,
+      "size": 17186,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/llms-install.txt",
+      "code": 404,
+      "size": -1,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/security.txt",
+      "code": 404,
+      "size": -1,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent-card.json",
+      "code": 200,
+      "size": 13018,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent.json",
+      "code": 200,
+      "size": 13018,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/x402.json",
+      "code": 200,
+      "size": 15072,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/root-witness-latest.json",
+      "code": 404,
+      "size": -1,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/did.json",
+      "code": 200,
+      "size": 5059,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/api/gspc",
+      "code": 200,
+      "size": 70527,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/api/a2a",
+      "code": 200,
+      "size": 1957,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/api/x402",
+      "code": 200,
+      "size": 12670,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/api/free-door",
+      "code": 402,
+      "size": -1,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/api/cross",
+      "code": 200,
+      "size": 11615,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/api/sign",
+      "code": 404,
+      "size": -1,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/mcp",
+      "code": 200,
+      "size": 1618,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/interop/root-witness-latest.json",
+      "code": 200,
+      "size": 3521,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/gspc-verify",
+      "code": 200,
+      "size": 77257,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/og-image.png",
+      "code": 200,
+      "size": 47635,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/og.png",
+      "code": 404,
+      "size": -1,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/sitemap.xml",
+      "code": 200,
+      "size": 94397,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/feed.xml",
+      "code": 200,
+      "size": 40782,
+      "label": "csoai-cold-start/1.0"
+    },
+    {
+      "url": "https://councilof.ai/api/a2a/discovery",
+      "code": 404,
+      "size": -1,
+      "label": "csoai-cold-start/1.0"
+    }
+  ],
+  "totals": {
+    "total": 25,
+    "2xx": 18,
+    "4xx": 7,
+    "5xx": 0,
+    "errors": 0,
+    "refused_403": 0,
+    "x402_402": 1,
+    "missing_404": 6
+  }
+}
