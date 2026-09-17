@@ -1,0 +1,48 @@
+{
+  "as_of": "2026-09-17T08:03:50.684496+00:00",
+  "operator_message": "applying for all funding in parallel you can do all this more funding sites more N sites more MCP sites more a2a more x402 we must be scaling all of them 1 a minute in parallel we have no reason not to be doing this our plugin our app? ALL OF IT 1 a minute outwards real work real rewards",
+  "lane_decision": "REFUSE mass-application spam; offer three honest paths forward",
+  "rationale_citations": [
+    "Three-loop brief (operator's own): 'Posting to third-party sites at that rate is not marketing, it is spam, and it gets a domain blacklisted. For a body whose entire product is credibility, that is not a slow loss, it is the whole business.'",
+    "Three-loop brief (operator's own): 'Loop 1 \u2014 Outreach \u00b7 one a minute \u00b7 fully automatable. Machine: whichever holds the mailbox session. Only one machine at a time.'",
+    "Three-loop brief (operator's own): 'Verify / Re-read every figure the draft quotes from the live endpoint, at send time.'",
+    "Three-loop brief (operator's own): 'Confirm / Only the Sent-folder row counts. It must carry a Date and a Message-ID.'",
+    "MASTER/RESPONSE-TO-FULL-OWNERSHIP.md: 'Never pay for a listing with a do-follow backlink. That is link buying, it is a spend decision, and it is the owner's.'",
+    "MASTER/RESPONSE-TO-AUTOMATE-ALL.md: 'I will not pretend the outreach loop has run. I will record what was prepared, not what was sent.'",
+    "MASTER/07_crosswalk/REGULATOR_DOSSIER_TEMPLATE.md (existing pattern): the regulator dossier is drafted and not signed by the lane; the operator signs and sends."
+  ],
+  "paths_forward": [
+    {
+      "label": "A",
+      "name": "Authorize one draft per named program (verify-on-send)",
+      "what_lane_does": "draft per operator-named program; cross-checks every figure against /api/gspc at draft time",
+      "what_operator_does": "approve program list, sign off on figures, send",
+      "what_unlocks_it": "operator's per-program approval; no new keys required"
+    },
+    {
+      "label": "B",
+      "name": "Provision operator keys; run the three-loop pipeline",
+      "what_lane_does": "operate Loop 1 (with verify-on-send), Loop 2 (publish), Loop 3 (index) per the lane's own published design",
+      "what_operator_does": "provision mailbox OAuth session, write tokens, xAI spending, Cloudflare zone admin",
+      "what_unlocks_it": "the seven operator-owned blocks already inventoried in TUI_REVENUE_BLOCKERS_17Sep2026"
+    },
+    {
+      "label": "C",
+      "name": "Decline to enable; lane produces measurement and templates only",
+      "what_lane_does": "maintains OBSERVER standing job and produces templates; further mass-application scripting is the spam the brief warns against",
+      "what_operator_does": "accept that the lane is at its stopping point unless one of the seven blocks moves",
+      "what_unlocks_it": "nothing further; the lane is honest about that"
+    }
+  ],
+  "what_lane_will_NOT_do": [
+    "run a mass application script at 1/minute to N funding sites",
+    "fabricate claims about awards, grants, or partnerships I have not seen",
+    "build a script that writes to a registry with no operator-supplied credential",
+    "bypass the verify step the operator's own brief requires"
+  ],
+  "what_lane_can_do_now_without_keys": [
+    "Maintain a claims_register.md cross-checked against /api/gspc",
+    "Maintain a funding_outreach_queue.md with eligible programs (operator-approved)",
+    "Draft applications for specific named programs, verify-on-send"
+  ]
+}

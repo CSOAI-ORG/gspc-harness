@@ -116,6 +116,8 @@ def purpose_of(rel, kind):
     if rel == 'END-OF-SESSION-17Sep2026.md':         return 'end-of-session state for the operator; honest summary of what the lane did and did not do'
     if rel.startswith('TUI_OBS_17Sep2026/'):
         return 'OBSERVER-mode artifact; honest measurement of what an anonymous reader sees vs what we publish'
+    if rel.startswith('TUI_FUNDING_REFUSAL_17Sep2026/'):
+        return 'refusal of mass-funding-application spam with three honest paths forward; cites the operator own brief'
     if rel.startswith('TUI_REVENUE_BLOCKERS_17Sep2026/'):
         return 'honest list of operator-owned blocks that gate mass-outreach / sales / revenue work; not a fabricated pipeline'
     if rel.startswith('TUI_OBS2_17Sep2026/'):
