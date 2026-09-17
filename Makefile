@@ -5,7 +5,7 @@
 #
 # All targets are idempotent. Targets that need `ots` say so in their recipe.
 
-.PHONY: help audit stamp rebuild selfcheck verify pipeline clean stamp-age wait-ots
+.PHONY: help audit stamp rebuild selfcheck verify pipeline clean stamp-age wait-ots revision
 
 # Allow `make BRANCH=foo` to override; default is the canonical lane branch.
 BRANCH ?= hermes/inspect-register-readiness
@@ -22,6 +22,7 @@ help:
 	@echo "  make clean       remove stray worktrees + tmp dirs"
 	@echo "  make stamp-age   print how old the OTS stamp is + hint whether to re-run"
 	@echo "  make wait-ots    poll the master stamp until Bitcoin confirmation (or 1h timeout)"
+	@echo "  make revision    print git HEAD + pipeline file SHAs + stamp state + age"
 	@echo
 	@echo "Default branch: $(BRANCH)"
 	@echo "Override: make BRANCH=foo audit"
@@ -65,3 +66,6 @@ wait-ots:
 		--root MASTER/MANIFEST.sha256 \
 		--stamp MASTER/MASTER_PACKAGE.ots \
 		--timeout $(WAIT_TIMEOUT) --interval $(WAIT_INTERVAL)
+
+revision:
+	@bash tools/master_revision.sh
