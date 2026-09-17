@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-09-17T07:56:09.582967+00:00",
+  "trendline_summary": "6 sweeps; HUMAN_ONLY stable at 19/21; defect is stable not regressing; no per-sweep drift in any axis. The next sweep is expected to produce the same finding; publishing again would be cosmetic.",
+  "axes": {
+    "A": {
+      "github_links_on_homepage": 3,
+      "all_404": true
+    },
+    "B": {
+      "sweeps_in_trendline": 5,
+      "human_only_latest": 19,
+      "surfaces_total": 21,
+      "drift_in_period": true
+    },
+    "C": {
+      "endpoints_live": [
+        "pod-cards-index.json",
+        "commissions",
+        "hub-cards-index.json",
+        "gspc-verify"
+      ],
+      "endpoints_with_MHE_in_body": 0,
+      "endpoints_with_measured_in_body": 4
+    },
+    "D": {
+      "total_axes": 23,
+      "axes_with_high_exclusion": 0,
+      "axes_with_MHE_status": 0
+    },
+    "E": {
+      "hf_correction_md": 200,
+      "hf_audit_script_py": 200
+    }
+  },
+  "operator_decisions_recorded": [
+    "C-2026-0917-02 (scripted-readers blocked; OPEN)",
+    "C-2026-0917-03 (affiliation claims; homepage still carries them)"
+  ]
+}
