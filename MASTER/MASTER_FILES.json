@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T03:14:47.510953+00:00",
+  "as_of": "2026-09-17T03:23:25.066991+00:00",
   "root": "MASTER",
-  "total_files": 4768,
-  "total_bytes": 153908794,
+  "total_files": 4774,
+  "total_bytes": 156431143,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -54,17 +54,24 @@
       "bytes": 387255
     },
     "_top": {
-      "files": 3,
-      "bytes": 1658449
+      "files": 9,
+      "bytes": 4180798
     }
   },
+  "self_referencing": [
+    "MASTER_FILES.json",
+    "INVENTORY.csv",
+    "MANIFEST.sha256",
+    "MASTER_PACKAGE.json"
+  ],
+  "self_referencing_note": "These four files cannot be self-verified because they contain their own future hash or are derived from one. Verify them by re-running this script and comparing its output bytes to its declared sha256.",
   "files": [
     {
       "path": "00_README_FIRST.md",
       "section": "_top",
       "kind": "md",
-      "bytes": 4572,
-      "sha256": "759f15e7a58e836d4783cf089f4e2033ee0934d61a1942fb1f12a1c36722f5ac",
+      "bytes": 4788,
+      "sha256": "5eb851b8255520f9f3cc3b2d3eeb98103733141257547e3d51cca5ddb3f703d1",
       "purpose": "orient the reader; the one read"
     },
     {
@@ -38188,6 +38195,30 @@
       "purpose": "locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
     },
     {
+      "path": "INDEX_OF_WHATS_NOT_HERE.md",
+      "section": "_top",
+      "kind": "md",
+      "bytes": 4131,
+      "sha256": "cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6",
+      "purpose": "things this master deliberately does not carry"
+    },
+    {
+      "path": "INVENTORY.csv",
+      "section": "_top",
+      "kind": "other",
+      "bytes": 1328247,
+      "sha256": "0c1f4a6d43c73e75a3ff090268fd79de2677c54205e67956f810f5fce292f687",
+      "purpose": ""
+    },
+    {
+      "path": "MANIFEST.sha256",
+      "section": "_top",
+      "kind": "other",
+      "bytes": 931949,
+      "sha256": "f259666f0cd89634b6acf18bd093632a663b2c39c435f8b8e07ef4eef088e9e3",
+      "purpose": ""
+    },
+    {
       "path": "MASTER_CATALOG.json",
       "section": "_top",
       "kind": "json",
@@ -38199,9 +38230,33 @@
       "path": "MASTER_FILES.json",
       "section": "_top",
       "kind": "json",
-      "bytes": 1652196,
-      "sha256": "54491f9782dda1755d761886b1cad63f3a9f5817a2b64f28095deb871de88f66",
+      "bytes": 1901777,
+      "sha256": "2c6f20f8dbe86f1186a408197622094bc39a9663d04b509fd6440d2c0e49da64",
       "purpose": "sha256 index of every file"
+    },
+    {
+      "path": "MASTER_PACKAGE.json",
+      "section": "_top",
+      "kind": "json",
+      "bytes": 367,
+      "sha256": "fde4c1d8c274e176cdfe7d2a56bdaaeb1a8997ced1c4af7b098830e7949938df",
+      "purpose": "package-level sha256 + OTS status"
+    },
+    {
+      "path": "MASTER_PACKAGE.ots",
+      "section": "_top",
+      "kind": "ots-stamp",
+      "bytes": 24,
+      "sha256": "aaeaa79810e81ba6ad6d338d13776a5b508dddcb3a7a61d6188227d10df7d8b9",
+      "purpose": "OpenTimestamps stamp over the master package (pending)"
+    },
+    {
+      "path": "OPERATIONS.md",
+      "section": "_top",
+      "kind": "md",
+      "bytes": 7834,
+      "sha256": "c67c0530696618bdb68cb8ba81046c0cad0558edae4a303c6a42cacec313d532",
+      "purpose": "how to verify, upgrade OTS, add files, audit"
     }
   ]
 }
