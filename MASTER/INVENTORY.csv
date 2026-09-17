@@ -4767,10 +4767,11 @@ path,section,kind,bytes,sha256,purpose
 09_eval_signed/SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json,09_eval_signed,json,3038,fdd90097bb8e81971efeb5c2dd95fdd73e7c12c12d82cd6e231ebb117df378d5,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 CHEATSHEET.txt,_top,other,4475,ffa5d2a2726d8aa6fd6976a7dfaddee34a5e86609fe7842b4d858485b230301d,one-page operator workflow for the master
 INDEX_OF_WHATS_NOT_HERE.md,_top,md,4131,cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6,things this master deliberately does not carry
-INVENTORY.csv,_top,other,1328348,0193869e62ec1c9582cd3798c6d6be5a8e4ee44c38ebe947a42051bcc66a5868,
-MANIFEST.sha256,_top,other,932030,69ea3e2d5b83521d25e923362ae1d887bfe0f8bdb853b5b60206fa172995ba34,
+INVENTORY.csv,_top,other,1328481,9e035a35e34cef0ebc6397e613a639638f4baeb53c45f41c8f82d88621106dc1,
+MANIFEST.sha256,_top,other,932108,d5903ae5919dfb4abeba588e4ddd867cbe36b540f6c2674e2e954ac8db7ca7d7,
 MASTER_CATALOG.json,_top,json,1681,651eb22643b5e7a8cd2f53621f47a471efa9e3c37a073ce2dd1547e5429042f9,machine-readable section map
-MASTER_FILES.json,_top,json,1902355,2dad557e4467246a132643d52b93eaa851a2e49190f49e16f4f99be5e1944a6a,sha256 index of every file
-MASTER_PACKAGE.json,_top,json,573,938406dd580c1bac265a9a90c9927646569a86db77249d660782da4c1052813a,package-level sha256 + OTS status
+MASTER_FILES.json,_top,json,1902608,008b0fcfeb17e37791f1f999e6030f1212de2271820325fd3f5391ad4695704b,sha256 index of every file
+MASTER_PACKAGE.json,_top,json,630,00b08201efca71567c0d2b7b504219cee6020476ec8971f9f2be13e42486d167,package-level sha256 + OTS status
 MASTER_PACKAGE.ots,_top,ots-stamp,665,47b47351539553e3d1fd30203af8d044313e6c272df049fed9618c1e9a47d681,OpenTimestamps stamp over the master package (pending)
 OPERATIONS.md,_top,md,8475,c4000b234079360dbac3574fa322a253c9423cf6aa64b1bbd5a86b50e9f127c7,"how to verify, upgrade OTS, add files, audit"
+REPO_MAP.md,_top,md,1404,4cbcc7c853672c889d2bbbeb5677bd904cf3990f6d27592b01e530c3edf9827c,branch + remote map for the master

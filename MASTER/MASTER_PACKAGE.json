@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-package/1.0",
-  "as_of": "2026-09-17T03:43:53.944221+00:00",
+  "as_of": "2026-09-17T03:46:06.070735+00:00",
   "package_path": "MASTER/",
   "package_files_count": null,
-  "package_files_sha256_of_manifest": "1d227fbfa53ae1c7459bd3fe51c8a642579d698a5a4194a9d81b9d39cc472de7",
+  "package_files_sha256_of_manifest": "385009299800dc1ef926581bc575892f64ff1a79a96afb1710c01324d69c02fc",
   "ots_status": "STAMPED_PENDING_BITCOIN",
   "ots_file": "MASTER_PACKAGE.ots",
   "ots_source": "ots v0.7.2 CLI via scripts/upgrade_ots.py",

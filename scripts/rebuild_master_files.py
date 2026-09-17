@@ -13,10 +13,23 @@ Self-referencing note: MASTER_FILES.json, INVENTORY.csv, MANIFEST.sha256,
 and MASTER_PACKAGE.json contain their own future sha256 (or are derived from
 one). They are listed as self_referencing and are not checked against
 themselves — they are checked by re-running this script and comparing.
+
+Branch guard: refuses to run on anything other than hermes/inspect-register-readiness.
+Set SKIP_BRANCH_GUARD=1 to override (operator-only; for rebases or forensics).
 """
-import json, hashlib, datetime, csv
+from __future__ import annotations
+import json, hashlib, datetime, csv, os, subprocess, sys
 from pathlib import Path
+import shutil
 ROOT = Path('MASTER')
+
+# Branch guard: MASTER/ lives only on hermes/inspect-register-readiness.
+# Skip with SKIP_BRANCH_GUARD=1 for rebases or forensic replays.
+if not os.environ.get('SKIP_BRANCH_GUARD'):
+    guard = subprocess.run(['bash', 'tools/branch_sync.sh'], capture_output=True, text=True)
+    if guard.returncode != 0:
+        print(guard.stderr.strip(), file=sys.stderr)
+        sys.exit(2)
 
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
@@ -96,6 +109,7 @@ def purpose_of(rel, kind):
     if rel.startswith('08_blog/'):              return 'blog draft; outreach material, not live evidence'
     if rel.startswith('09_eval_signed/SIGNED_'): return 'locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)'
     if rel == 'CHEATSHEET.txt':                  return 'one-page operator workflow for the master'
+    if rel == 'REPO_MAP.md':                     return 'branch + remote map for the master'
     if rel == '09_eval_signed/MEASUREMENT_CATALOG.json':
         return 'catalog of every locally-signed eval card'
     return PURPOSE_BULK.get(kind, '')

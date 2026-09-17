@@ -25,6 +25,12 @@ import json, hashlib, os, shutil, subprocess, sys
 from pathlib import Path
 ROOT = Path('MASTER')
 
+if not os.environ.get('SKIP_BRANCH_GUARD'):
+    guard = subprocess.run(['bash', 'tools/branch_sync.sh'], capture_output=True, text=True)
+    if guard.returncode != 0:
+        print(guard.stderr.strip(), file=sys.stderr)
+        sys.exit(2)
+
 OTS = shutil.which('ots') or os.environ.get('OTS_BIN') or '/Users/iokfarm/workspace_for_ai/inspect-lane/.venv/bin/ots'
 MF  = ROOT / 'MASTER_FILES.json'
 INV = ROOT / 'INVENTORY.csv'
