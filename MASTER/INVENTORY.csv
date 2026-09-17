@@ -4767,13 +4767,13 @@ path,section,kind,bytes,sha256,purpose
 09_eval_signed/SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json,09_eval_signed,json,3038,fdd90097bb8e81971efeb5c2dd95fdd73e7c12c12d82cd6e231ebb117df378d5,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 CHEATSHEET.txt,_top,other,4475,ffa5d2a2726d8aa6fd6976a7dfaddee34a5e86609fe7842b4d858485b230301d,one-page operator workflow for the master
 INDEX_OF_WHATS_NOT_HERE.md,_top,md,4131,cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6,things this master deliberately does not carry
-INVENTORY.csv,_top,other,1328659,15207d9887ac2e5c19a1484a16b8da84759de72052f77c0e4c598ed38bca3e9c,
+INVENTORY.csv,_top,other,1328769,640545f0e484f8cdef2fb4ef456b83b17df31016474f9e728a9c33e87c4765c2,
 KEYS_NEEDED.md,_top,md,4842,2ff13242854dd9c0d855afe6027b9a01fd23d272d9d8425385f4aab5de4589f6,index of secrets and credentials the lane touches
-MANIFEST.sha256,_top,other,932189,74895192fe65f9ac58eccb5fb4d5d6a34082eed98f86abd19f8a293846d3b5c0,
+MANIFEST.sha256,_top,other,932285,d00fbc6e3f369550d0c5e56d5883fff5d82d332964df4fc7e35d34b6592c3613,
 MASTER_CATALOG.json,_top,json,1681,651eb22643b5e7a8cd2f53621f47a471efa9e3c37a073ce2dd1547e5429042f9,machine-readable section map
-MASTER_FILES.json,_top,json,1902906,c7cf5761dedd10349a46482abe302dd95ff21afef3ba38fbf03cfdae24e19e7f,sha256 index of every file
-MASTER_PACKAGE.json,_top,json,654,eb66af4b36b9ab195a18073c5af03026394b884689a2dafe826d8d5ad28e5723,package-level sha256 + OTS status
-MASTER_PACKAGE.ots,_top,ots-stamp,665,7d78868541c7478ba37a6aec3c318d7aff5b778efbb50f971953394bb42740ed,OpenTimestamps stamp over the master package (pending)
+MASTER_FILES.json,_top,json,1903136,db52c1188f476646baba53c124d2727e3fe743ae395cdb4e63682b4e3d799258,sha256 index of every file
+MASTER_PACKAGE.json,_top,json,654,32bc2712c49b1abd6f4a9316b84129885d6cbf4fa319bcc2614c865939f54e5e,package-level sha256 + OTS status
+MASTER_PACKAGE.ots,_top,ots-stamp,770,cbf47b28b4f6c0c0829a58c59c235379261cf307ace364a95086c81c9409215e,OpenTimestamps stamp over the master package (pending)
 OPERATIONS.md,_top,md,9783,8c3a8fc4d3eb6cd0dc7eb8d69940cd3e5da45ab5a3d36d1be45eae6b98351ab1,"how to verify, upgrade OTS, add files, audit"
 REPO_MAP.md,_top,md,1404,4cbcc7c853672c889d2bbbeb5677bd904cf3990f6d27592b01e530c3edf9827c,branch + remote map for the master
-RESPONSE-TO-FULL-OWNERSHIP.md,_top,md,5571,8faae7236caa3528bf71af9c84970f3a785a5f22002c5f1024452060bc156275,
+RESPONSE-TO-FULL-OWNERSHIP.md,_top,md,5571,8faae7236caa3528bf71af9c84970f3a785a5f22002c5f1024452060bc156275,straight answer to the operator on what blocks full ownership

@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T05:08:27.691833+00:00",
+  "as_of": "2026-09-17T05:08:49.056524+00:00",
   "root": "MASTER",
   "total_files": 4778,
-  "total_bytes": 156453084,
+  "total_bytes": 156453625,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -55,7 +55,7 @@
     },
     "_top": {
       "files": 13,
-      "bytes": 4201748
+      "bytes": 4202289
     }
   },
   "self_referencing": [
@@ -38214,8 +38214,8 @@
       "path": "INVENTORY.csv",
       "section": "_top",
       "kind": "other",
-      "bytes": 1328659,
-      "sha256": "15207d9887ac2e5c19a1484a16b8da84759de72052f77c0e4c598ed38bca3e9c",
+      "bytes": 1328769,
+      "sha256": "640545f0e484f8cdef2fb4ef456b83b17df31016474f9e728a9c33e87c4765c2",
       "purpose": ""
     },
     {
@@ -38230,8 +38230,8 @@
       "path": "MANIFEST.sha256",
       "section": "_top",
       "kind": "other",
-      "bytes": 932189,
-      "sha256": "74895192fe65f9ac58eccb5fb4d5d6a34082eed98f86abd19f8a293846d3b5c0",
+      "bytes": 932285,
+      "sha256": "d00fbc6e3f369550d0c5e56d5883fff5d82d332964df4fc7e35d34b6592c3613",
       "purpose": ""
     },
     {
@@ -38246,8 +38246,8 @@
       "path": "MASTER_FILES.json",
       "section": "_top",
       "kind": "json",
-      "bytes": 1902906,
-      "sha256": "c7cf5761dedd10349a46482abe302dd95ff21afef3ba38fbf03cfdae24e19e7f",
+      "bytes": 1903136,
+      "sha256": "db52c1188f476646baba53c124d2727e3fe743ae395cdb4e63682b4e3d799258",
       "purpose": "sha256 index of every file"
     },
     {
@@ -38255,15 +38255,15 @@
       "section": "_top",
       "kind": "json",
       "bytes": 654,
-      "sha256": "eb66af4b36b9ab195a18073c5af03026394b884689a2dafe826d8d5ad28e5723",
+      "sha256": "32bc2712c49b1abd6f4a9316b84129885d6cbf4fa319bcc2614c865939f54e5e",
       "purpose": "package-level sha256 + OTS status"
     },
     {
       "path": "MASTER_PACKAGE.ots",
       "section": "_top",
       "kind": "ots-stamp",
-      "bytes": 665,
-      "sha256": "7d78868541c7478ba37a6aec3c318d7aff5b778efbb50f971953394bb42740ed",
+      "bytes": 770,
+      "sha256": "cbf47b28b4f6c0c0829a58c59c235379261cf307ace364a95086c81c9409215e",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {
@@ -38288,7 +38288,7 @@
       "kind": "md",
       "bytes": 5571,
       "sha256": "8faae7236caa3528bf71af9c84970f3a785a5f22002c5f1024452060bc156275",
-      "purpose": ""
+      "purpose": "straight answer to the operator on what blocks full ownership"
     }
   ]
 }
