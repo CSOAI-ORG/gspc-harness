@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T03:46:06.033884+00:00",
+  "as_of": "2026-09-17T03:46:37.019926+00:00",
   "root": "MASTER",
   "total_files": 4776,
-  "total_bytes": 156440782,
+  "total_bytes": 156440793,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -55,7 +55,7 @@
     },
     "_top": {
       "files": 11,
-      "bytes": 4189446
+      "bytes": 4189457
     }
   },
   "self_referencing": [
@@ -38214,8 +38214,8 @@
       "path": "INVENTORY.csv",
       "section": "_top",
       "kind": "other",
-      "bytes": 1328481,
-      "sha256": "9e035a35e34cef0ebc6397e613a639638f4baeb53c45f41c8f82d88621106dc1",
+      "bytes": 1328515,
+      "sha256": "60083fd5661929ec19b7e85dbd420d7d9e27f3edc10464622a661132365b84f6",
       "purpose": ""
     },
     {
@@ -38223,7 +38223,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 932108,
-      "sha256": "d5903ae5919dfb4abeba588e4ddd867cbe36b540f6c2674e2e954ac8db7ca7d7",
+      "sha256": "385009299800dc1ef926581bc575892f64ff1a79a96afb1710c01324d69c02fc",
       "purpose": ""
     },
     {
@@ -38238,16 +38238,16 @@
       "path": "MASTER_FILES.json",
       "section": "_top",
       "kind": "json",
-      "bytes": 1902608,
-      "sha256": "008b0fcfeb17e37791f1f999e6030f1212de2271820325fd3f5391ad4695704b",
+      "bytes": 1902642,
+      "sha256": "c561b42a79d628641474a5e1d2af77cf7b698e374793ab2b234554347faea616",
       "purpose": "sha256 index of every file"
     },
     {
       "path": "MASTER_PACKAGE.json",
       "section": "_top",
       "kind": "json",
-      "bytes": 630,
-      "sha256": "00b08201efca71567c0d2b7b504219cee6020476ec8971f9f2be13e42486d167",
+      "bytes": 573,
+      "sha256": "17ed0f6ff4b2ce00311e3d061a68eb177276302282d7f5ecd89b28929ec6345b",
       "purpose": "package-level sha256 + OTS status"
     },
     {
@@ -38255,7 +38255,7 @@
       "section": "_top",
       "kind": "ots-stamp",
       "bytes": 665,
-      "sha256": "47b47351539553e3d1fd30203af8d044313e6c272df049fed9618c1e9a47d681",
+      "sha256": "c876c6c1766cbf75f973584323e950fc96d3659413a740fc96c2bf8a896737a2",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {

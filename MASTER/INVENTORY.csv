@@ -4767,11 +4767,11 @@ path,section,kind,bytes,sha256,purpose
 09_eval_signed/SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json,09_eval_signed,json,3038,fdd90097bb8e81971efeb5c2dd95fdd73e7c12c12d82cd6e231ebb117df378d5,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 CHEATSHEET.txt,_top,other,4475,ffa5d2a2726d8aa6fd6976a7dfaddee34a5e86609fe7842b4d858485b230301d,one-page operator workflow for the master
 INDEX_OF_WHATS_NOT_HERE.md,_top,md,4131,cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6,things this master deliberately does not carry
-INVENTORY.csv,_top,other,1328481,9e035a35e34cef0ebc6397e613a639638f4baeb53c45f41c8f82d88621106dc1,
-MANIFEST.sha256,_top,other,932108,d5903ae5919dfb4abeba588e4ddd867cbe36b540f6c2674e2e954ac8db7ca7d7,
+INVENTORY.csv,_top,other,1328515,60083fd5661929ec19b7e85dbd420d7d9e27f3edc10464622a661132365b84f6,
+MANIFEST.sha256,_top,other,932108,385009299800dc1ef926581bc575892f64ff1a79a96afb1710c01324d69c02fc,
 MASTER_CATALOG.json,_top,json,1681,651eb22643b5e7a8cd2f53621f47a471efa9e3c37a073ce2dd1547e5429042f9,machine-readable section map
-MASTER_FILES.json,_top,json,1902608,008b0fcfeb17e37791f1f999e6030f1212de2271820325fd3f5391ad4695704b,sha256 index of every file
-MASTER_PACKAGE.json,_top,json,630,00b08201efca71567c0d2b7b504219cee6020476ec8971f9f2be13e42486d167,package-level sha256 + OTS status
-MASTER_PACKAGE.ots,_top,ots-stamp,665,47b47351539553e3d1fd30203af8d044313e6c272df049fed9618c1e9a47d681,OpenTimestamps stamp over the master package (pending)
+MASTER_FILES.json,_top,json,1902642,c561b42a79d628641474a5e1d2af77cf7b698e374793ab2b234554347faea616,sha256 index of every file
+MASTER_PACKAGE.json,_top,json,573,17ed0f6ff4b2ce00311e3d061a68eb177276302282d7f5ecd89b28929ec6345b,package-level sha256 + OTS status
+MASTER_PACKAGE.ots,_top,ots-stamp,665,c876c6c1766cbf75f973584323e950fc96d3659413a740fc96c2bf8a896737a2,OpenTimestamps stamp over the master package (pending)
 OPERATIONS.md,_top,md,8475,c4000b234079360dbac3574fa322a253c9423cf6aa64b1bbd5a86b50e9f127c7,"how to verify, upgrade OTS, add files, audit"
 REPO_MAP.md,_top,md,1404,4cbcc7c853672c889d2bbbeb5677bd904cf3990f6d27592b01e530c3edf9827c,branch + remote map for the master
