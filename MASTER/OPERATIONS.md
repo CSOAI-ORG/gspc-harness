@@ -177,47 +177,65 @@ The three pipeline scripts are:
   - `scripts/rebuild_master_files.py` — reindexes sha256 of every file
   - `scripts/selfcheck_master.py`     — 7 assertions across the master
 
-## 7. Verify the live board has not drifted from our snapshots
+  ## 7. How stale is the OTS stamp?
 
-```bash
-python3 - << 'PY'
-import urllib.request, json, sys
-for url in [
-    'https://councilof.ai/api/gspc',
-    'https://councilof.ai/root.json',
-    'https://councilof.ai/signed/card_index.json',
-    'https://councilof.ai/interop/root-witness-latest.json',
-]:
-    req = urllib.request.Request(url, headers={'User-Agent':'csoai-m2/1.0'})
-    try:
-        body = urllib.request.urlopen(req, timeout=20).read()
-        d = json.loads(body)
-        print(f'OK {url}  {len(body)} bytes')
-    except Exception as e:
-        print(f'FAIL {url}  {e}')
-PY
-```
+  ```bash
+  bash tools/stamp_age.sh
+  # or:  make stamp-age
+  ```
 
-Expected: 4 OK lines. If any fail, the snapshot is stale. Do **not** edit
-`MASTER/01_live/*` to match — re-fetch and re-stamp.
+  Prints `ots_status`, `obtained_at`, current age in hours/days, and a
+  plain-English hint:
 
-## 8. Owner-only actions
+  - `fresh (retry pointless)`            — <1h old
+  - `recent (<24h, retry pointless)`     — 1–24h
+  - `1-7d (calendar may have upgraded; worth a quick re-run)`  — 1–7d
+  - `>7d (Bitcoin attestation likely ready; re-run scripts/upgrade_ots.py)` — >7d
 
-| action | owner | what to do |
-|---|---|---|
-| sign unsigned RunPod cards with `card-attestation-1` | operator + HSM | follow `docs/operations/root-ceremony/NICK-RUNBOOK.md` (council-os repo) |
-| anchor the unsigned-pile Merkle root in Bitcoin | operator + reachable host | run `scripts/stamp_master_package.py` from a host that can reach alice.btc.calendar.opentimestamps.org |
-| deploy `MASTER/` to councilof.ai | operator | not yet wired; this doc is the deploy plan |
-| pay the live x402 paid doors | operator | grant CuaDriver Accessibility + Screen Recording + Chrome `Allow JS from Apple Events`, then I drive the click |
+  Also runs `ots info` on the current stamp so you can see the on-disk
+  state without opening it yourself.
 
-## 9. The audit (anyone)
+  ## 8. Verify the live board has not drifted from our snapshots
 
-A complete audit reads three files:
+  ```bash
+  python3 - << 'PY'
+  import urllib.request, json
+  for url in [
+   'https://councilof.ai/api/gspc',
+   'https://councilof.ai/root.json',
+   'https://councilof.ai/signed/card_index.json',
+   'https://councilof.ai/interop/root-witness-latest.json',
+  ]:
+   req = urllib.request.Request(url, headers={'User-Agent':'csoai-m2/1.0'})
+   try:
+       body = urllib.request.urlopen(req, timeout=20).read()
+       d = json.loads(body)
+       print(f'OK {url}  {len(body)} bytes')
+   except Exception as e:
+       print(f'FAIL {url}  {e}')
+  PY
+  ```
 
-1. `MASTER/00_README_FIRST.md` — what is here and why.
-2. `MASTER/INDEX_OF_WHATS_NOT_HERE.md` — what is intentionally absent.
-3. `MASTER/MANIFEST.sha256` — every byte accounted for.
+  Expected: 4 OK lines. If any fail, the snapshot is stale. Do **not** edit
+  `MASTER/01_live/*` to match — re-fetch and re-stamp.
 
-Then run §1 (rehash) and `python3 scripts/selfcheck_master.py` (7
-assertions). If both exit 0 and the live §7 fetch is current, the master
-is sound for the moment it was produced.
+  ## 9. Owner-only actions
+
+  | action | owner | what to do |
+  |---|---|---|
+  | sign unsigned RunPod cards with `card-attestation-1` | operator + HSM | follow `docs/operations/root-ceremony/NICK-RUNBOOK.md` (council-os repo) |
+  | anchor the unsigned-pile Merkle root in Bitcoin | operator + reachable host | run `scripts/stamp_master_package.py` from a host that can reach alice.btc.calendar.opentimestamps.org |
+  | deploy `MASTER/` to councilof.ai | operator | not yet wired; this doc is the deploy plan |
+  | pay the live x402 paid doors | operator | grant CuaDriver Accessibility + Screen Recording + Chrome `Allow JS from Apple Events`, then I drive the click |
+
+  ## 10. The audit (anyone)
+
+  A complete audit reads three files:
+
+  1. `MASTER/00_README_FIRST.md` — what is here and why.
+  2. `MASTER/INDEX_OF_WHATS_NOT_HERE.md` — what is intentionally absent.
+  3. `MASTER/MANIFEST.sha256` — every byte accounted for.
+
+  Then run §1 (rehash) and `python3 scripts/selfcheck_master.py` (7
+  assertions). If both exit 0 and the live §8 fetch is current, the master
+  is sound for the moment it was produced.

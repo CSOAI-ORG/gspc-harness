@@ -5,7 +5,7 @@
 #
 # All targets are idempotent. Targets that need `ots` say so in their recipe.
 
-.PHONY: help audit stamp rebuild selfcheck verify pipeline clean
+.PHONY: help audit stamp rebuild selfcheck verify pipeline clean stamp-age
 
 # Allow `make BRANCH=foo` to override; default is the canonical lane branch.
 BRANCH ?= hermes/inspect-register-readiness
@@ -20,6 +20,7 @@ help:
 	@echo "  make verify      full stamp -> rebuild -> selfcheck pipeline"
 	@echo "  make pipeline    alias for verify"
 	@echo "  make clean       remove stray worktrees + tmp dirs"
+	@echo "  make stamp-age   print how old the OTS stamp is + hint whether to re-run"
 	@echo
 	@echo "Default branch: $(BRANCH)"
 	@echo "Override: make BRANCH=foo audit"
@@ -40,6 +41,9 @@ rebuild:
 selfcheck: audit
 
 verify pipeline: stamp rebuild audit
+
+stamp-age:
+	@bash tools/stamp_age.sh
 
 clean:
 	@echo ">> cleaning stray worktrees under repo parent"

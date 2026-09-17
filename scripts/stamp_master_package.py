@@ -85,6 +85,8 @@ def main():
         'ots_status': state,
         'ots_file': 'MASTER_PACKAGE.ots',
         'ots_source': 'ots v0.7.2 CLI via scripts/upgrade_ots.py',
+        'ots_obtained_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        'stamp_age_hours': 0,
         'not_a_signature': 'This package hash records when the master existed as bytes. Not a signature, not a witness, not a certification. Pending OTS is not Bitcoin confirmation.',
     }
     # Try to fill total_files from MASTER_FILES.json if present
