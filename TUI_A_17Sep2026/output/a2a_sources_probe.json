@@ -1,0 +1,55 @@
+{
+  "as_of": "2026-09-17T07:58:18.024110+00:00",
+  "results": [
+    {
+      "label": "a2a.dev (google index)",
+      "url": "https://a2a.dev/agents",
+      "code": 200,
+      "size": 479,
+      "next_cursor": null,
+      "sample": "(not JSON: Expecting value: line 1 column 1 (char 0))",
+      "final": "https://a2a.dev/agents",
+      "error": null
+    },
+    {
+      "label": "a2a.dev agents.json",
+      "url": "https://a2a.dev/agents.json",
+      "code": 200,
+      "size": 479,
+      "next_cursor": null,
+      "sample": "(not JSON: Expecting value: line 1 column 1 (char 0))",
+      "final": "https://a2a.dev/agents.json",
+      "error": null
+    },
+    {
+      "label": "github a2a-agents (via GH API)",
+      "url": "https://api.github.com/repos/a2a-dotnet/a2a-agents",
+      "code": 404,
+      "size": 0,
+      "next_cursor": null,
+      "sample": null,
+      "final": "https://api.github.com/repos/a2a-dotnet/a2a-agents",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "wellknown index",
+      "url": "https://councilof.ai/.well-known/a2a-agents.json",
+      "code": 404,
+      "size": 0,
+      "next_cursor": null,
+      "sample": null,
+      "final": "https://councilof.ai/.well-known/a2a-agents.json",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "councilof /api/a2a (already)",
+      "url": "https://councilof.ai/api/a2a",
+      "code": 200,
+      "size": 1957,
+      "next_cursor": null,
+      "sample": "keys: ['binding', 'protocolVersion', 'endpoint', 'agent_card', 'methods', 'version_rule', 'tasks', 'register', 'example']",
+      "final": "https://councilof.ai/api/a2a",
+      "error": null
+    }
+  ]
+}
