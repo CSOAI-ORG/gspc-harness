@@ -4550,7 +4550,7 @@ path,section,kind,bytes,sha256,purpose
 02_unsigned_pile/evidence_runpod_gspc_intake/intake_original_stale_112rows.jsonl,02_unsigned_pile,jsonl,65164,036a1e0a282d29c1291077fe842b8bd9064b0305eec6d56d48fe55ba59088ea6,"stale published intake.jsonl (112 rows, not 1513) — kept for diff only"
 02_unsigned_pile/intake_v2.jsonl,02_unsigned_pile,jsonl,695219,24374e261f51a71f99cae3a9ce5d99e88fc01cb0e8c9778dc475736262078822,1513-row bijection-proven index
 02_unsigned_pile/unsigned_merkle_root.json,02_unsigned_pile,json,109758,327f5b4da0ee05908d66eed0e28374994fe7d12036cf090acc291c82e63bc826,Merkle root over the 1513 unsigned bodies
-02_unsigned_pile/unsigned_merkle_root.json.ots,02_unsigned_pile,ots-stamp,24,aaeaa79810e81ba6ad6d338d13776a5b508dddcb3a7a61d6188227d10df7d8b9,pending OpenTimestamps stamp
+02_unsigned_pile/unsigned_merkle_root.json.ots,02_unsigned_pile,ots-stamp,1015,721e885ab5e861a80675deb769c19810cf6429e0a139aa945e9687b6a14bd3e7,pending OpenTimestamps stamp
 03_publishability/publishability_report.json,03_publishability,json,3826,1e1785f8b1f14561cd6e0e0fa7ccd861e88d499d88f8aad9bc262965d2ffd75f,5 publishability checks + failing control
 04_corpora/HASH_OVERLAP_CENSUS.md,04_corpora,md,1332,4d72069dbd2978d8210dd8652efa5b633970b1b323406e456183a77b7c879c63,intersection of intake / root / card_index (all 0)
 04_corpora/MILL_JOBS_STAGING_INDEX.jsonl,04_corpora,jsonl,64464,2ea12adc4e2b8ed941f8d720bd6e9a0728aa684d50db0ab0e5c8858d7910c656,428 unsigned MILL jobs
@@ -4766,10 +4766,10 @@ path,section,kind,bytes,sha256,purpose
 09_eval_signed/SIGNED_CARD_qwen2.5-coder_1.5b_xraiv_batch2_iter3_2026-09-16T10-51-04Z.json,09_eval_signed,json,3019,30c1c5daed241ba015f8d48d3651c8ac6a9081fa0260bca3e4cb0bc7b52cb05b,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 09_eval_signed/SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json,09_eval_signed,json,3038,fdd90097bb8e81971efeb5c2dd95fdd73e7c12c12d82cd6e231ebb117df378d5,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 INDEX_OF_WHATS_NOT_HERE.md,_top,md,4131,cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6,things this master deliberately does not carry
-INVENTORY.csv,_top,other,1328247,6c19b30a11590335974ad355bcf32295752cb1100c2acd536af9507c582f2a14,
-MANIFEST.sha256,_top,other,931949,6a457fa2d14a106e9fdf3825a46e317cbed3747374f8b7c0fbdadd5e06478872,
+INVENTORY.csv,_top,other,1328249,ec79046a0de5cc873fddf494ba0f08a61f73ff0ec2aaa0525654b698ff8652f2,
+MANIFEST.sha256,_top,other,931949,e92a8daac97267352fe9d82b8fcaf82c457feb3af5d150f280fcc0214c42b97b,
 MASTER_CATALOG.json,_top,json,1681,651eb22643b5e7a8cd2f53621f47a471efa9e3c37a073ce2dd1547e5429042f9,machine-readable section map
-MASTER_FILES.json,_top,json,1902133,cb90051671913bd671674cea82dabca74ef0a7041ee2f1287a3cb9a7b23cb7ce,sha256 index of every file
-MASTER_PACKAGE.json,_top,json,367,51a61311fc60fd860b9314b376e5bca2acad62bb526bd39f23329019dfd48ca7,package-level sha256 + OTS status
-MASTER_PACKAGE.ots,_top,ots-stamp,24,aaeaa79810e81ba6ad6d338d13776a5b508dddcb3a7a61d6188227d10df7d8b9,OpenTimestamps stamp over the master package (pending)
+MASTER_FILES.json,_top,json,1902135,42de76314cfe28661ae0a59c44ceda7f358b1fef2083031a73e505fb3e3629af,sha256 index of every file
+MASTER_PACKAGE.json,_top,json,573,ba4559958e4f960b9faff08e6ee6c61f6a2060feea565186c24331086636bf27,package-level sha256 + OTS status
+MASTER_PACKAGE.ots,_top,ots-stamp,735,348476698633b0d84920e0ed7bc525077971e3106802467724658ef6882b689d,OpenTimestamps stamp over the master package (pending)
 OPERATIONS.md,_top,md,7834,c67c0530696618bdb68cb8ba81046c0cad0558edae4a303c6a42cacec313d532,"how to verify, upgrade OTS, add files, audit"
