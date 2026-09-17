@@ -95,6 +95,7 @@ def purpose_of(rel, kind):
     if rel.startswith('07_crosswalk/sources/'): return 'honest source stub; carries open_questions, no fabricated URL'
     if rel.startswith('08_blog/'):              return 'blog draft; outreach material, not live evidence'
     if rel.startswith('09_eval_signed/SIGNED_'): return 'locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)'
+    if rel == 'CHEATSHEET.txt':                  return 'one-page operator workflow for the master'
     if rel == '09_eval_signed/MEASUREMENT_CATALOG.json':
         return 'catalog of every locally-signed eval card'
     return PURPOSE_BULK.get(kind, '')
