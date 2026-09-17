@@ -1,0 +1,346 @@
+{
+  "as_of": "2026-09-17T06:04:39.312993+00:00",
+  "rows": [
+    {
+      "url": "https://councilof.ai/",
+      "code": 200,
+      "bytes": 258765,
+      "final": "https://councilof.ai/",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent-card.json",
+      "code": 200,
+      "bytes": 13018,
+      "final": "https://councilof.ai/.well-known/agent-card.json",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent-card.json`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/.well-known/agent-card.json`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent.json",
+      "code": 200,
+      "bytes": 13018,
+      "final": "https://councilof.ai/.well-known/agent.json",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent.json`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/.well-known/agent.json`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/did.json",
+      "code": 200,
+      "bytes": 5059,
+      "final": "https://councilof.ai/.well-known/did.json",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/.well-known/root-witness-latest.json",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/.well-known/root-witness-latest.json",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/.well-known/x402.json",
+      "code": 200,
+      "bytes": 15072,
+      "final": "https://councilof.ai/.well-known/x402.json",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/.well-known/x402.json`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/.well-known/x402.json`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/api/a2a",
+      "code": 200,
+      "bytes": 1957,
+      "final": "https://councilof.ai/api/a2a",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/api/a2a/discovery",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/api/a2a/discovery",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/api/a2a`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/api/a2a`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/api/cross",
+      "code": 200,
+      "bytes": 11615,
+      "final": "https://councilof.ai/api/cross",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/api/free-door",
+      "code": 402,
+      "bytes": 0,
+      "final": "https://councilof.ai/api/free-door",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 402: Payment Required"
+    },
+    {
+      "url": "https://councilof.ai/api/free-door`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/api/free-door`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/api/gspc",
+      "code": 200,
+      "bytes": 70527,
+      "final": "https://councilof.ai/api/gspc",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/api/gspc`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/api/gspc`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/api/sign",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/api/sign",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/api/x402",
+      "code": 200,
+      "bytes": 12670,
+      "final": "https://councilof.ai/api/x402",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/feed.xml",
+      "code": 200,
+      "bytes": 40782,
+      "final": "https://councilof.ai/feed.xml",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/gspc-verify",
+      "code": 200,
+      "bytes": 77257,
+      "final": "https://councilof.ai/gspc-verify/",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/index.html",
+      "code": 200,
+      "bytes": 258765,
+      "final": "https://councilof.ai/",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/interop/root-witness-latest.json",
+      "code": 200,
+      "bytes": 3521,
+      "final": "https://councilof.ai/interop/root-witness-latest.json",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/llms-install.txt",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/llms-install.txt",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/llms.txt",
+      "code": 200,
+      "bytes": 17186,
+      "final": "https://councilof.ai/llms.txt",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/llms.txt`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/llms.txt`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/mcp",
+      "code": 200,
+      "bytes": 1618,
+      "final": "https://councilof.ai/mcp",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/mcp`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/mcp`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/og-image.png",
+      "code": 200,
+      "bytes": 47635,
+      "final": "https://councilof.ai/og-image.png",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/og.png",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/og.png",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/robots.txt",
+      "code": 200,
+      "bytes": 6126,
+      "final": "https://councilof.ai/robots.txt",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/robots.txt`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/robots.txt`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/root.json",
+      "code": 200,
+      "bytes": 24454,
+      "final": "https://councilof.ai/root.json",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://councilof.ai/security.txt",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://councilof.ai/security.txt",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://councilof.ai/sitemap.xml",
+      "code": 200,
+      "bytes": 94397,
+      "final": "https://councilof.ai/sitemap.xml",
+      "chain_len": 2,
+      "chained": true,
+      "error": null
+    },
+    {
+      "url": "https://registry.modelcontextprotocol.io/v0/servers`",
+      "code": 404,
+      "bytes": 0,
+      "final": "https://registry.modelcontextprotocol.io/v0/servers`",
+      "chain_len": 1,
+      "chained": false,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "totals": {
+    "total": 37,
+    "200": 19,
+    "404": 17,
+    "non_200": 18,
+    "github_defects": 0
+  },
+  "github_defect_urls": []
+}

@@ -114,6 +114,8 @@ def purpose_of(rel, kind):
     if rel == '07_crosswalk/REGULATOR_DOSSIER_TEMPLATE.md':
         return 'regulator dossier template; draft for human review, NOT signed by the lane'
     if rel == 'END-OF-SESSION-17Sep2026.md':         return 'end-of-session state for the operator; honest summary of what the lane did and did not do'
+    if rel.startswith('TUI_OBS_17Sep2026/'):
+        return 'OBSERVER-mode artifact; honest measurement of what an anonymous reader sees vs what we publish'
     if rel.startswith('cold_start_surfaces/'):
         return 'plain machine client probe of councilof.ai surfaces; not the operator\'s 21-of-21 claim'
     if rel == 'REPO_MAP.md':
