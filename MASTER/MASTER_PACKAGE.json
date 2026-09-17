@@ -1,12 +1,12 @@
 {
   "schema": "csoai.master-package/1.0",
-  "as_of": "2026-09-17T07:51:22.175590+00:00",
+  "as_of": "2026-09-17T07:52:48.221978+00:00",
   "package_path": "MASTER/",
   "package_files_count": null,
-  "package_files_sha256_of_manifest": "b350534ea0f3c69c5319291721c85c61cf83d8dbdbebf9a5819b328c7ed32bdb",
+  "package_files_sha256_of_manifest": "1acd1193740c3a6484896e62d4d07c663b2f67b7ceeabe22e5d1955dba37abef",
   "ots_status": "STAMPED_PENDING_BITCOIN",
   "ots_file": "MASTER_PACKAGE.ots",
   "ots_source": "ots v0.7.2 CLI via scripts/upgrade_ots.py",
-  "ots_obtained_at": "2026-09-17T07:51:20.794211+00:00",
+  "ots_obtained_at": "2026-09-17T07:52:46.937422+00:00",
   "not_a_signature": "This package hash records when the master existed as bytes. Not a signature, not a witness, not a certification. Pending OTS is not Bitcoin confirmation."
 }
