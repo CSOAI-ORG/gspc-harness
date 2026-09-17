@@ -85,8 +85,22 @@ if (( MIN_CORRECTIONS > 0 )); then
 fi
 
 # Step 3: deploy. Stream its output unchanged.
+# If the operator passes "exit 3" via --deploy, it really does exit 3 — that's
+# the correct semantics for a deploy that aborts. The gate's job is to
+# propagate that exit through exit code 4 (RED gate hit). The script itself
+# stays alive long enough to print "deploy exit: 3" before exit, because
+# echo comes after the deploy command and echo doesn't propagate the exit.
 echo ">> deploy: $DEPLOY"
 DEPLOY_RC=0
-eval "$DEPLOY" || DEPLOY_RC=$?
+{ eval "$DEPLOY"; } || DEPLOY_RC=$?
 echo ">> deploy exit: $DEPLOY_RC"
-exit $(( DEPLOY_RC == 0 ? 0 : 4 ))
+# If DEPLOY_RC is 3 here, the eval-exit may have already exited this
+# script. We use the captured RC to compute the gate verdict, but we
+# must not call "exit $(( ... ))" if the script is already exiting.
+# The conditional below avoids re-exit when we're already in an exit flow.
+if (( DEPLOY_RC != 0 )); then
+  # We're still alive; print gate verdict and exit with the right code.
+  echo "GATE FAIL: deploy rc=$DEPLOY_RC; exit 4"
+  exit 4
+fi
+exit 0

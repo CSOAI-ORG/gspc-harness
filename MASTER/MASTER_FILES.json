@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T04:42:44.707423+00:00",
+  "as_of": "2026-09-17T05:06:28.886907+00:00",
   "root": "MASTER",
   "total_files": 4777,
-  "total_bytes": 156447583,
+  "total_bytes": 156447548,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -55,7 +55,7 @@
     },
     "_top": {
       "files": 12,
-      "bytes": 4196247
+      "bytes": 4196212
     }
   },
   "self_referencing": [
@@ -38215,7 +38215,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 1328659,
-      "sha256": "6112ed4aefde996dfd7155a7c6e62b4a2af75a55d7cda014086e3288478dfe09",
+      "sha256": "74faa91c00e1033d8f2e7d5e903cd16a23b45ae04a0566e9baf980ccf705cc06",
       "purpose": ""
     },
     {
@@ -38231,7 +38231,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 932189,
-      "sha256": "eb0f0319294dff92902da3c26026ded53843581bae8f5a80054ae41a63de64ef",
+      "sha256": "c00fef8ffd9d211686a04efeb220bf45b9263d53b33b3238bf014264c090e529",
       "purpose": ""
     },
     {
@@ -38247,7 +38247,7 @@
       "section": "_top",
       "kind": "json",
       "bytes": 1902906,
-      "sha256": "013773623e4265c6053dec952d3464737637f82415a88e29f61962d65ecbf88b",
+      "sha256": "16f8112ff18f5a4be9668c988165b241772f6a5eec232ab0b18707bd9ca47ea9",
       "purpose": "sha256 index of every file"
     },
     {
@@ -38255,15 +38255,15 @@
       "section": "_top",
       "kind": "json",
       "bytes": 654,
-      "sha256": "950bad7ccdea0ed9d65bd0fa79078df1118363bdf8d82d095d360e3285f86ffb",
+      "sha256": "4b67ed107b815666cfd46cd2bd1175caa26e2e94eb345c9a44ac06292dbebf6d",
       "purpose": "package-level sha256 + OTS status"
     },
     {
       "path": "MASTER_PACKAGE.ots",
       "section": "_top",
       "kind": "ots-stamp",
-      "bytes": 735,
-      "sha256": "a4b0a83f2429e5c51a1c1cd3b99024ebac6fc0bd73168359c7e4023851921976",
+      "bytes": 700,
+      "sha256": "1f3a50a0ff556889b7fba704e18ef3564952c2f0cd339df9dd07c92e1dda7bb7",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {
