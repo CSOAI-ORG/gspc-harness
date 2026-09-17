@@ -1,6 +1,6 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T04:32:42.143173+00:00",
+  "as_of": "2026-09-17T04:42:44.707423+00:00",
   "root": "MASTER",
   "total_files": 4777,
   "total_bytes": 156447583,
@@ -38215,7 +38215,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 1328659,
-      "sha256": "87261ba9f6ce70e947f6659f375e03735770921c64b085a6c3068a69fe503942",
+      "sha256": "6112ed4aefde996dfd7155a7c6e62b4a2af75a55d7cda014086e3288478dfe09",
       "purpose": ""
     },
     {
@@ -38231,7 +38231,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 932189,
-      "sha256": "250db8e0cf711e97960f6ed1e4ad208d168a75531ccc7aaf9345c73d5de01dff",
+      "sha256": "eb0f0319294dff92902da3c26026ded53843581bae8f5a80054ae41a63de64ef",
       "purpose": ""
     },
     {
@@ -38247,7 +38247,7 @@
       "section": "_top",
       "kind": "json",
       "bytes": 1902906,
-      "sha256": "d5b6711952364ec67052dc50b00831d2000f0a653b5684dc957b6c2a0f062926",
+      "sha256": "013773623e4265c6053dec952d3464737637f82415a88e29f61962d65ecbf88b",
       "purpose": "sha256 index of every file"
     },
     {
@@ -38255,7 +38255,7 @@
       "section": "_top",
       "kind": "json",
       "bytes": 654,
-      "sha256": "585ed9624f3eb128b48a7680c8b53d668b3153b97ed0f248c0ced31d3fc86c44",
+      "sha256": "950bad7ccdea0ed9d65bd0fa79078df1118363bdf8d82d095d360e3285f86ffb",
       "purpose": "package-level sha256 + OTS status"
     },
     {
@@ -38263,7 +38263,7 @@
       "section": "_top",
       "kind": "ots-stamp",
       "bytes": 735,
-      "sha256": "3cc236bcf0f49af68fd8a0f84178910f9b77868e015af91517d7f1af5cc540a4",
+      "sha256": "a4b0a83f2429e5c51a1c1cd3b99024ebac6fc0bd73168359c7e4023851921976",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {
