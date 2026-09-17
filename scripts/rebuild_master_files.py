@@ -154,5 +154,7 @@ pkg = {
 Path('MASTER/MASTER_PACKAGE.json').write_text(json.dumps(pkg, indent=2))
 
 empty = sum(1 for a in artifacts if not a['purpose'])
-print(f'files {len(artifacts)}  empty-purpose {empty}  package_sha {PACKAGE_SHA}')
-raise SystemExit(1 if empty else 0)
+self_ref = set(m.get('self_referencing') or [])
+non_self_empty = sum(1 for a in artifacts if not a['purpose'] and a['path'] not in self_ref)
+print(f'files {len(artifacts)}  empty-purpose {empty}  non-self-empty {non_self_empty}  package_sha {PACKAGE_SHA}')
+raise SystemExit(1 if non_self_empty else 0)

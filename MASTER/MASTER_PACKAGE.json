@@ -1,8 +1,8 @@
 {
   "schema": "csoai.master-package/1.0",
-  "as_of": "2026-09-17T03:23:25.120313+00:00",
+  "as_of": "2026-09-17T03:25:00.203029+00:00",
   "package_path": "MASTER/",
   "package_files_count": 4774,
-  "package_files_sha256_of_manifest": "1ce74ec2a3870873afc269e93609bab1b594bbd2188889be16210606a8cd1408",
+  "package_files_sha256_of_manifest": "1bfa148834a5f33d8bcb06a43baf18aea914b3788308628cfd77c0005c5c33b9",
   "note": "Rebuilt by scripts/rebuild_master_files.py. Re-run scripts/stamp_master_package.py to refresh OTS."
 }
