@@ -1,0 +1,23 @@
+{
+  "schema": "csoai.master-catalog/1.0",
+  "as_of": "2026-09-16",
+  "purpose": "One canonical inventory of the consolidated master. Every artefact is keyed by sha256 of its bytes; missing files fail the build; ad-hoc verify re-runs against this file.",
+  "root": "/Users/iokfarm/workspace_for_ai/inspect-lane/gspc-harness/MASTER",
+  "sections": {
+    "01_live":       {"role": "what the live rails said on fetch (root.json, witness, anchor status)"},
+    "02_unsigned_pile": {"role": "1,513 unsigned RunPod card bodies, merkle root, OTS pending file, bijection-proven index"},
+    "03_publishability": {"role": "5 publishability checks against the 1,513 + a deliberately broken control card"},
+    "04_corpora":    {"role": "SWIFT-17, XRPL-16, 425 stablecoins, MILL staging, hash overlap census, gap notes"},
+    "05_x402":       {"role": "Bazaar census 28136 listed / 3520 hosts probed / 394 conformant + RLUSD 402 freeze + 11-door probe"},
+    "06_anchoring":  {"role": "interop report, EIP-712 annex, the one mill card we pasted into gspc-verify"},
+    "07_crosswalk":  {"role": "stable goal ontology, canonical evidence schema, source stubs (CLARITY/SEC/CFTC/OSAIA/x402), tasks report"},
+    "08_blog":       {"role": "100+ drafts; not live evidence; outreach material"},
+    "09_eval_signed":{"role": "local Ollama qwen2.5-coder:1.5b signed eval cards; distinct from the RunPod pile"},
+    "10_operational":{"role": "deprecated: kept for archaeology; superseded by MASTER/"}
+  },
+  "OPERATIONAL": {
+    "role": "outreach, press, legal-pages, early blog drafts, internal plans. Demoted out of the master.",
+    "deprecated_for_readers": true,
+    "kept_for_audit": true
+  }
+}
