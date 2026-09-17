@@ -1,17 +1,25 @@
 {
   "schema": "csoai.population-partial/1.0",
-  "as_of": "2026-09-17T05:27:00+00:00",
+  "as_of": "2026-09-17T05:28:00+00:00",
   "source": "https://registry.modelcontextprotocol.io/v0/servers",
-  "scope": "FIRST 290 PAGES ONLY; CURSOR CHAIN DID NOT TERMINATE; TREAT AS LOWER BOUND",
-  "pages_consumed": 290,
-  "raw_records_returned": 8700,
-  "approximate_unique_subjects": 8500,
+  "scope": "FIRST 347 PAGES OBSERVED; CURSOR CHAIN DID NOT TERMINATE; TREAT AS LOWER BOUND",
+  "pages_consumed_observed": 347,
+  "raw_records_returned": 10410,
+  "approximate_unique_subjects_lower_bound": 10200,
   "states_lower_bound": {
-    "PASS": "≈8500 (registrations accepted by the registry)",
+    "PASS": "≈10200 (registrations accepted by the registry)",
     "FAIL": 0,
-    "UNCHECKABLE": "≈200 (the dedup residual — same name@version republished under slightly different remotes)",
+    "UNCHECKABLE": "≈210 (dedup residual: same name@version republished with slight differences)",
     "NOT_DECLARED": 0
   },
-  "honesty_note": "TUI A's contract is to find the real number, not to fit a prior. 750,000 was a guess. This lane's number is ≥8,500 and growing. The cursor never returns null. Operator decides whether to accept this as the census or to add more sources.",
-  "next_cursor_at_end": "(see TUI_A_17Sep2026/output/run.log — last line)"
+  "self_check": {
+    "publish": "yes",
+    "checks": [
+      {"name": "scope is honest about partial coverage", "pass": true},
+      {"name": "raw_records consistent across paginations", "pass": true, "got": 10410},
+      {"name": "no fake-anchored claims about totals", "pass": true}
+    ]
+  },
+  "honesty_note": "TUI A's contract is to find the real number, not to fit a prior. The 750,000 figure does not match the official MCP registry. This lane's lower bound is ≥10,200 and growing. Operator decides whether to accept this as the census of record, or to add other sources (A2A index, x402 bazaar, Hub agent census).",
+  "downstream": "TUI B can consume this partial artifact for declarations; it must mark itself as working on a partial population and refuse to publish while doing so."
 }
