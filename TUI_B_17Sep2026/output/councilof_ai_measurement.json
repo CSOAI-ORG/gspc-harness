@@ -1,0 +1,80 @@
+{
+  "schema": "csoai.measurement/1.0",
+  "as_of": "2026-09-17T04:52:34.782412+00:00",
+  "population_source": "TUI_A_17Sep2026/output/population_smoke.json",
+  "agents_in_population": 30,
+  "agents_measured": 1,
+  "axes_per_host": 5,
+  "states_total": {
+    "PASS": 5,
+    "FAIL": 0,
+    "UNCHECKABLE": 0,
+    "NOT_DECLARED": 0
+  },
+  "negative_controls": {
+    "bad_json": [
+      "REJECTED_OK",
+      "json.loads raised as expected"
+    ]
+  },
+  "results": [
+    {
+      "subject": "councilof.ai",
+      "card_url": "https://councilof.ai/.well-known/agent-card.json",
+      "axes": {
+        "card_resolves": [
+          "PASS",
+          "ok"
+        ],
+        "alias_consistency": [
+          "PASS",
+          "byte-identical"
+        ],
+        "protocol_version": [
+          "PASS",
+          "card.version=1.1.0 is the card revision; interfaces declare ['1.0']; the card does not lie about either"
+        ],
+        "declared_skills": [
+          "PASS",
+          "all 8 declared skills have name+description+examples"
+        ],
+        "stated_policy": [
+          "PASS",
+          "robots.txt retrievable, 6126 bytes"
+        ]
+      },
+      "states": {
+        "PASS": 5,
+        "FAIL": 0,
+        "UNCHECKABLE": 0,
+        "NOT_DECLARED": 0
+      }
+    }
+  ],
+  "self_check": {
+    "publish": "yes",
+    "checks": [
+      {
+        "name": "states_total sum == agents_measured \u00d7 axes_per_host",
+        "pass": true,
+        "expected": 5,
+        "got": 5,
+        "axes_per_host": 5
+      },
+      {
+        "name": "all 4 state keys present",
+        "pass": true
+      },
+      {
+        "name": "every result has all 4 state keys",
+        "pass": true,
+        "failures": []
+      },
+      {
+        "name": "every negative control was REJECTED",
+        "pass": true
+      }
+    ]
+  },
+  "hash": "9450929932042c454e6dad47c8da971c7cd9a2812ad26b0f9dcb386c55b7395a"
+}
