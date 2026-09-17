@@ -1,0 +1,17 @@
+{
+  "schema": "csoai.population-partial/1.0",
+  "as_of": "2026-09-17T05:27:00+00:00",
+  "source": "https://registry.modelcontextprotocol.io/v0/servers",
+  "scope": "FIRST 290 PAGES ONLY; CURSOR CHAIN DID NOT TERMINATE; TREAT AS LOWER BOUND",
+  "pages_consumed": 290,
+  "raw_records_returned": 8700,
+  "approximate_unique_subjects": 8500,
+  "states_lower_bound": {
+    "PASS": "≈8500 (registrations accepted by the registry)",
+    "FAIL": 0,
+    "UNCHECKABLE": "≈200 (the dedup residual — same name@version republished under slightly different remotes)",
+    "NOT_DECLARED": 0
+  },
+  "honesty_note": "TUI A's contract is to find the real number, not to fit a prior. 750,000 was a guess. This lane's number is ≥8,500 and growing. The cursor never returns null. Operator decides whether to accept this as the census or to add more sources.",
+  "next_cursor_at_end": "(see TUI_A_17Sep2026/output/run.log — last line)"
+}

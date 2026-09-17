@@ -1,0 +1,618 @@
+{
+  "schema": "csoai.population/1.0",
+  "as_of": "2026-09-17T04:18:35.589414+00:00",
+  "source": "https://registry.modelcontextprotocol.io/v0/servers",
+  "pages_consumed": 1,
+  "total_records_in_response": 30,
+  "population_size": 30,
+  "states": {
+    "PASS": 30,
+    "FAIL": 0,
+    "UNCHECKABLE": 0,
+    "NOT_DECLARED": 0
+  },
+  "servers": [
+    {
+      "subject": "ac.inference.sh/mcp@1.0.0",
+      "name": "ac.inference.sh/mcp",
+      "version": "1.0.0",
+      "title": "inference.sh",
+      "description": "Run 150+ AI apps \u2014 image, video, audio, LLMs, 3D and more. Browse, execute, stream results.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://sh.inference.ac"
+        },
+        {
+          "type": "streamable-http",
+          "url": "https://api.inference.sh/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "a696200356027c08cb6b1dd5d20513e06c33a5f925ab2f2ea0bbe83b8a064b97",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ac.inference.sh/mcp@1.0.1",
+      "name": "ac.inference.sh/mcp",
+      "version": "1.0.1",
+      "title": "inference.sh",
+      "description": "Run 150+ AI apps \u2014 image, video, audio, LLMs, 3D and more. Browse, execute, stream results.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://sh.inference.ac"
+        },
+        {
+          "type": "streamable-http",
+          "url": "https://api.inference.sh/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "9ef23a2378fac18ea0eec224ab289acf033e123e4a1b04e255d5bbc326aeb6b7",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ac.inference.sh/mcp@2.0.0",
+      "name": "ac.inference.sh/mcp",
+      "version": "2.0.0",
+      "title": "inference.sh",
+      "description": "run any ai model. compose agents, stack knowledge, connect tools. one api, pay per run.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://sh.inference.ac"
+        },
+        {
+          "type": "streamable-http",
+          "url": "https://api.inference.sh/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "c06f8db165d9f55edce4abb4612e81d0c689e74a2ccbad4377ac796376fbc725",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ac.inference.sh/mcp@2.0.1",
+      "name": "ac.inference.sh/mcp",
+      "version": "2.0.1",
+      "title": "inference.sh",
+      "description": "run any ai model. compose agents, stack knowledge, connect tools. one api, pay per run.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://api.inference.sh/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "b6adcacabe4982a5621580a57372d5f616aa4b655562d57dc7e6c0bb948d7e3e",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ac.snag/snag@1.0.0",
+      "name": "ac.snag/snag",
+      "version": "1.0.0",
+      "title": null,
+      "description": "Gives your coding agent the captured console, network, replay and screenshot evidence for a bug.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.snag.ac/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "4de8b0b3f3a0daecc32516c57b98831edfd3f25b35ab07f6b98ddf17680e33e6",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ac.tandem/docs-mcp@0.3.0",
+      "name": "ac.tandem/docs-mcp",
+      "version": "0.3.0",
+      "title": null,
+      "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://tandem.ac/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "edf5541bcda1d597e93151a8d627e27fd05ac4b8165414317fa97b9dd069923d",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ac.tandem/docs-mcp@0.3.1",
+      "name": "ac.tandem/docs-mcp",
+      "version": "0.3.1",
+      "title": null,
+      "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://tandem.ac/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "5570ae3eb2c1fbf5c4d4ea742647c01d4efa4867bfb4c1db174e3a2566774054",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ac.tandem/docs-mcp@0.3.2",
+      "name": "ac.tandem/docs-mcp",
+      "version": "0.3.2",
+      "title": null,
+      "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://tandem.ac/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "3bae5d0f2cb1b34788e024aad08ec9f771e126a2d40a06177f0e3a0428a07c80",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ad.inside/inside-ads@1.0.0",
+      "name": "ad.inside/inside-ads",
+      "version": "1.0.0",
+      "title": "Inside Ads",
+      "description": "Telegram ad exchange: estimate reach and cost with no account, then create and run campaigns.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://app.inside.ad/api/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "eb6a3fc37c3ed3beb8bfcd24137ce2a0c00b92918fed9c41ee9e1da799e1de20",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ae.propick/propick@1.0.0",
+      "name": "ae.propick/propick",
+      "version": "1.0.0",
+      "title": "Propick Integration MCP",
+      "description": "Manage your real-estate stock on Propick (Dubai): bulk listing sync, lookups and run reports.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://propick.ae/mcp",
+          "headers": [
+            {
+              "description": "Bearer <integration key> (ppk_live_...) issued in the Propick cabinet when creating an import channel",
+              "isRequired": true,
+              "isSecret": true,
+              "name": "Authorization"
+            }
+          ]
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "43ddac803ba85094c285f6a1cb3e29866b008757071b9c78e25a3f15410e40f8",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ag.hood/name-service@0.1.0",
+      "name": "ag.hood/name-service",
+      "version": "0.1.0",
+      "title": "hood. \u2014 .hood name service",
+      "description": "Resolve .hood names on Robinhood Chain \u2014 forward/reverse, text records, availability & pricing.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://www.hood.ag/api/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "97604c9fa592c2c83b51e6d55418e4a148790d01927af12790e8dc808c115bde",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.goji/goji@1.0.0",
+      "name": "agency.goji/goji",
+      "version": "1.0.0",
+      "title": null,
+      "description": "AEO, SEO, web and brand answers from a Melbourne agency's published glossary, guides and pricing.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.goji.agency/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "354dd14c77bb7b9acba5832eb67459272d6ae437ef6d24a055c8f3b8b29c0b36",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.goji/goji@1.0.1",
+      "name": "agency.goji/goji",
+      "version": "1.0.1",
+      "title": null,
+      "description": "Answers on AEO, SEO, web and brand from GOJI's published material. Melbourne, Australia.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.goji.agency/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "7bfac3efd06143bd674ad413206c61e179ec82b1ff6c713375ad09ba7324c479",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.kesey/pretrip@1.0.1",
+      "name": "agency.kesey/pretrip",
+      "version": "1.0.1",
+      "title": "Pre-Trip compliance scanner",
+      "description": "Screen regulated-health marketing copy against source-cited rulesets, all 50 states.",
+      "remotes": [],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "c22b002385383890b412b7de70b0eb8e3686db0d86cffe0e0adf5a0c914fe449",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.lona/trading@2.0.0",
+      "name": "agency.lona/trading",
+      "version": "2.0.0",
+      "title": null,
+      "description": "AI-powered trading strategy development: backtesting, market data, and portfolio analysis",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.lona.agency/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "5dee98bc058c877df4d2b5f45dad417a2a4961175ef2dbd2ed38f3cd87fbfb2a",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.ottobot/business-contact-finder@0.2.0",
+      "name": "agency.ottobot/business-contact-finder",
+      "version": "0.2.0",
+      "title": "Business Contact Finder",
+      "description": "Check how to contact a business website, and whether that contact path actually works.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://business-contact-finder-mcp.ottobot2025.workers.dev/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "4fc7d3bf7cfe475f0ab068c620b6683bc1d4404d3bb93a7e97e024edae0f3fcb",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.ottobot/contractor-license-changes@0.1.2",
+      "name": "agency.ottobot/contractor-license-changes",
+      "version": "0.1.2",
+      "title": "Contractor Licence Changes",
+      "description": "Did this contractor's licence change? Observed lapses and reinstatements, not a snapshot.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://license-changes-mcp.ottobot2025.workers.dev/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "4c10881a67eb64d5c2a3db5d07192234e91a3093b618b17b539fa4a250bfda19",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.ottobot/contractor-license-changes@0.1.3",
+      "name": "agency.ottobot/contractor-license-changes",
+      "version": "0.1.3",
+      "title": "Contractor Licence Changes",
+      "description": "Did this contractor's licence change? Observed lapses and reinstatements, not a snapshot.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://license-changes-mcp.ottobot2025.workers.dev/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "9e94b644ba30d38ccedceab4012dd2d5b379621cc1268187a8a8d516fea352d2",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "agency.thebureauoflostcontext/bureau-public@3.0.0",
+      "name": "agency.thebureauoflostcontext/bureau-public",
+      "version": "3.0.0",
+      "title": "Bureau public reader",
+      "description": "Bureau-operated public read-only MCP service for public Context Packets and Cases.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://thebureauoflostcontext.agency/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "25664f1c4352a2d486d2454247f5189c5579466e70396ffd03c0943978669104",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.1325/mcp@0.1.0",
+      "name": "ai.1325/mcp",
+      "version": "0.1.0",
+      "title": "1325.AI",
+      "description": "Verified directory of 44,000+ Black-owned U.S. businesses. Search, maps, loyalty rewards.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://agoclnqfyinwjxdmjnns.supabase.co/functions/v1/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "0a0c91e00fd2fc776d49f70c74b00fbeea43ba601d9dadcc7f15fb386f4b0139",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.1325/mcp@0.1.3",
+      "name": "ai.1325/mcp",
+      "version": "0.1.3",
+      "title": "1325.AI",
+      "description": "Verified directory of 47,000+ Black-owned U.S. businesses. Search, profiles, maps, rewards.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://agoclnqfyinwjxdmjnns.supabase.co/functions/v1/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "7acf8de7790de1f3732c6ee9110f6e153c45b2e813f725494bc6a16ecf050c64",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.aard/aard@0.1.0",
+      "name": "ai.aard/aard",
+      "version": "0.1.0",
+      "title": "Aard",
+      "description": "Official statistics from 170+ publishers, resolved from natural language with provenance.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://api.aard.ai/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "1c32cda7b40cb74b1f6f555203b590b14a29354ea536ae9e805414ed8156b609",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.aarna/atars-mcp@0.1.0",
+      "name": "ai.aarna/atars-mcp",
+      "version": "0.1.0",
+      "title": "aTars MCP",
+      "description": "Crypto market signals, technical indicators, and sentiment analysis for AI agents.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.aarna.ai/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "5da47919129ec3bea8a4af05fb0e40afcaeb784d798c3df28b25082638ea97df",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.abmeter/abmeter@0.1.0",
+      "name": "ai.abmeter/abmeter",
+      "version": "0.1.0",
+      "title": "ABMeter",
+      "description": "Feature flagging and A/B testing platform with AI-first experimentation workflows.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.abmeter.ai"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "cc61876298d76bca89b5834d3c62181d8304e12c40f1518b87cf78aa7bcd0258",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.abmeter/abmeter@0.2.0",
+      "name": "ai.abmeter/abmeter",
+      "version": "0.2.0",
+      "title": "ABMeter",
+      "description": "Run A/B experiments through your AI assistant. SDKs for Ruby, Python, JS, Node, React Native, Go.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.abmeter.ai"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "5207fe8f2e04dce99e7df78844eaa159d72463afeed446581b5b1827771642ec",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.actwise/ideation@1.0.0",
+      "name": "ai.actwise/ideation",
+      "version": "1.0.0",
+      "title": null,
+      "description": "Actwise Ideation helps founders benchmark startup and product ideas before they build.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://actwise.ai/ideation/mcp/v1"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "d02d4f008a4007033063e538647bafe0c5971643c1f60f1c44fc18c96b371110",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.adadvisor/mcp-server@1.0.0",
+      "name": "ai.adadvisor/mcp-server",
+      "version": "1.0.0",
+      "title": "AdAdvisor MCP Server",
+      "description": "Query Meta Ads performance data \u2014 accounts, campaigns, ad sets, ads, metrics & settings.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://api.adadvisor.ai/mcp",
+          "headers": [
+            {
+              "description": "Bearer token (adv_sk_...). Get key: https://www.adadvisor.ai/docs/user-guide/managing-api-keys?utm_source=mcp-registry",
+              "isRequired": true,
+              "isSecret": true,
+              "name": "Authorization"
+            }
+          ]
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "f42ea916d1518a2f3bda06718ce2aab63ab5cc1ada9379004653f871493346d5",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.adadvisor/mcp-server@1.0.1",
+      "name": "ai.adadvisor/mcp-server",
+      "version": "1.0.1",
+      "title": "AdAdvisor MCP Server",
+      "description": "Query Meta Ads performance data \u2014 accounts, campaigns, ad sets, ads, metrics & settings.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://api.adadvisor.ai/mcp",
+          "headers": [
+            {
+              "description": "Bearer token (adv_sk_...). Get key: https://www.adadvisor.ai/docs/user-guide/getting-started-with-mcp?utm_source=mcp-registry",
+              "isRequired": true,
+              "isSecret": true,
+              "name": "Authorization"
+            }
+          ]
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "28a95953b73cb7cb9dea44e977dbdbfbfdcc6626061a40fc2bf967055ecc77bc",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.adako/ads@0.2.0",
+      "name": "ai.adako/ads",
+      "version": "0.2.0",
+      "title": "Adako \u2014 careful ad ops for AI agents",
+      "description": "Google, Meta, ChatGPT, TikTok and LinkedIn Ads for AI agents. Every write needs your approval.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://adako.ai/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "04169e36fb3c6974fa5be0a859ee1b0c38ff7c8103874db4d93803fb2003e91d",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    },
+    {
+      "subject": "ai.adako/ads@0.2.1",
+      "name": "ai.adako/ads",
+      "version": "0.2.1",
+      "title": "Adako: ad ops for AI assistants",
+      "description": "Google, Meta, ChatGPT, TikTok and LinkedIn Ads for AI assistants. Every change needs your approval.",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://adako.ai/mcp"
+        }
+      ],
+      "official": true,
+      "published_at": null,
+      "sha256_of_server_block": "3267638708b07777b4ee56a8be43e0576bd8739cabd2fd8c065376bcaf1e397a",
+      "state": "PASS",
+      "state_reason": "registered with an 'official' meta block; bytes match"
+    }
+  ],
+  "_self_check_target": "the rest of this artifact",
+  "self_check": {
+    "publish": "yes",
+    "checks": [
+      {
+        "name": "population_size == len(servers)",
+        "pass": true
+      },
+      {
+        "name": "sum(states) == population_size",
+        "pass": true,
+        "expected": 30,
+        "got": 30
+      },
+      {
+        "name": "every sha256 is 64-hex",
+        "pass": true,
+        "failures": []
+      },
+      {
+        "name": "every state has a reason",
+        "pass": true,
+        "failures": []
+      },
+      {
+        "name": "states dictionary has all 4 keys",
+        "pass": true
+      }
+    ]
+  },
+  "hash": "658b3d3f6ea82b4e196266b2587d123541a504eb623a9fe6fd3a02b9bee105b7"
+}
