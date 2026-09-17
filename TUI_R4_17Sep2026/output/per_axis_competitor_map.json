@@ -1,0 +1,519 @@
+{
+  "as_of": "2026-09-17",
+  "axes_covered": [
+    "affect",
+    "ai-adoption-components",
+    "art5-safeguard",
+    "care",
+    "conformance",
+    "continuity",
+    "cross-reality",
+    "custody-disclosure",
+    "detector-interop",
+    "distribution-integrity",
+    "governance",
+    "humanoid-labour-index",
+    "jail",
+    "labour-components",
+    "machinery-conformity",
+    "openness",
+    "provenance",
+    "provenance-controls",
+    "regulatory-framework",
+    "reserve-attestation",
+    "safety",
+    "swarm"
+  ],
+  "note": "Each row names a public competitor surface (URL) or UNMEASURED. An UNMEASURED cell means: no public surface measures this axis with the councilof.ai schema. That is a market finding, not a deficit. lmarena + the brief itself state: 'they win on scale, we win on method'.",
+  "cells": [
+    {
+      "axis": "governance",
+      "competitor": "lmarena (chatbot arena leaderboard)",
+      "url": "https://lmarena.ai/leaderboard",
+      "code": 200,
+      "bytes": 5373920,
+      "note": "LMArena is the competitor of record for human-preference ranking; explicit governance/dangerous-capability evaluations are separate work",
+      "final": "https://arena.ai/leaderboard"
+    },
+    {
+      "axis": "governance",
+      "competitor": "Apollo Research",
+      "url": "https://www.apolloresearch.ai/research",
+      "code": 200,
+      "bytes": 193581,
+      "note": "scheming, sandbagging, eval awareness research",
+      "final": "https://www.apolloresearch.ai/science"
+    },
+    {
+      "axis": "governance",
+      "competitor": "UK AISI",
+      "url": "https://www.aisi.gov.uk/work",
+      "code": 200,
+      "bytes": 145287,
+      "note": "Inspect evals \u2014 agent safety, dangerous capability",
+      "final": "https://www.aisi.gov.uk/blog"
+    },
+    {
+      "axis": "governance",
+      "competitor": "NIST CAISI",
+      "url": "https://www.nist.gov/itl/caisi",
+      "code": 404,
+      "bytes": 0,
+      "note": "AI RMF profile; concrete NIST benchmarks limited",
+      "final": "https://www.nist.gov/itl/caisi"
+    },
+    {
+      "axis": "safety",
+      "competitor": "UK AISI",
+      "url": "https://www.aisi.gov.uk/work",
+      "code": 200,
+      "bytes": 145287,
+      "note": "Inspect evals \u2014 primary public source for safety eval",
+      "final": "https://www.aisi.gov.uk/blog"
+    },
+    {
+      "axis": "safety",
+      "competitor": "Apollo Research",
+      "url": "https://www.apolloresearch.ai/research",
+      "code": 200,
+      "bytes": 193581,
+      "note": "scheming, jailbreak, eval awareness",
+      "final": "https://www.apolloresearch.ai/science"
+    },
+    {
+      "axis": "safety",
+      "competitor": "METR",
+      "url": "https://metr.org/",
+      "code": 200,
+      "bytes": 134239,
+      "note": "agent time-horizon evaluations",
+      "final": "https://metr.org/"
+    },
+    {
+      "axis": "safety",
+      "competitor": "NIST CAISI",
+      "url": "https://www.nist.gov/itl/caisi",
+      "code": 404,
+      "bytes": 0,
+      "note": "AI RMF; safety evals limited",
+      "final": "https://www.nist.gov/itl/caisi"
+    },
+    {
+      "axis": "provenance",
+      "competitor": "C2PA",
+      "url": "https://c2pa.org/",
+      "code": 200,
+      "bytes": 92208,
+      "note": "content provenance standard, not an evaluation",
+      "final": "https://c2pa.org/"
+    },
+    {
+      "axis": "provenance",
+      "competitor": "Open Provenance",
+      "url": "https://www.openprovenance.org/",
+      "code": -1,
+      "bytes": 0,
+      "note": "specification work",
+      "final": "https://www.openprovenance.org/"
+    },
+    {
+      "axis": "provenance",
+      "competitor": "DOI / Crossref",
+      "url": "https://www.crossref.org/",
+      "code": 200,
+      "bytes": 35762,
+      "note": "DOI minting, not model provenance",
+      "final": "https://www.crossref.org/"
+    },
+    {
+      "axis": "continuity",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures model-version continuity specifically as councilof.ai defines it (card_sha256 + canonical JSON over time). The observer-side monitoring gap is a market finding."
+    },
+    {
+      "axis": "conformance",
+      "competitor": "C2PA conformance-admin seat",
+      "url": "https://c2pa.org/conformance/",
+      "code": 200,
+      "bytes": 92524,
+      "note": "the C2PA conformance program exists, but it certifies C2PA tools, not model behaviour",
+      "final": "https://c2pa.org/conformance/"
+    },
+    {
+      "axis": "conformance",
+      "competitor": "W3C VC working group",
+      "url": "https://www.w3.org/groups/wg/vc/",
+      "code": 200,
+      "bytes": 32509,
+      "note": "verifiable credentials; not model behaviour",
+      "final": "https://www.w3.org/groups/wg/vc/"
+    },
+    {
+      "axis": "conformance",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures model-to-spec conformance the way councilof.ai does (per-axis spec + per-card measurement)"
+    },
+    {
+      "axis": "openness",
+      "competitor": "OSI Open Source AI Definition",
+      "url": "https://opensource.org/ai",
+      "code": 200,
+      "bytes": 230799,
+      "note": "1.0 published 2024-10; binary 'open' flag with provenance test",
+      "final": "https://opensource.org/ai"
+    },
+    {
+      "axis": "openness",
+      "competitor": "Open Model Initiative",
+      "url": "https://openmodelic.org/",
+      "code": -1,
+      "bytes": 0,
+      "note": "the 'open weights' market coalition",
+      "final": "https://openmodelic.org/"
+    },
+    {
+      "axis": "openness",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures per-card openness with the councilof.ai axis schema"
+    },
+    {
+      "axis": "machinery-conformity",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "this is the councilof.ai proprietary axis (signed card + signed artefact on a public byte stream); no competitor does this end-to-end"
+    },
+    {
+      "axis": "care",
+      "competitor": "Anthropic",
+      "url": "https://www.anthropic.com/research",
+      "code": 200,
+      "bytes": 314191,
+      "note": "Anthropic's care/sycophancy evaluation is a leading example",
+      "final": "https://www.anthropic.com/research"
+    },
+    {
+      "axis": "care",
+      "competitor": "Apollo Research",
+      "url": "https://www.apolloresearch.ai/research",
+      "code": 200,
+      "bytes": 193581,
+      "note": "sycophancy and reward hacking evaluations",
+      "final": "https://www.apolloresearch.ai/science"
+    },
+    {
+      "axis": "care",
+      "competitor": "MLCommons AILuminate",
+      "url": "https://mlcommons.org/benchmarks/ailuminate",
+      "code": 200,
+      "bytes": 146986,
+      "note": "safety benchmark; specifically AI-Luminate 1.0 as one of the named recipients",
+      "final": "https://mlcommons.org/benchmarks/ailuminate/"
+    },
+    {
+      "axis": "cross-reality",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures model behaviour across text vs. image vs. audio vs. video; this is a councilof.ai proprietary axis"
+    },
+    {
+      "axis": "detector-interop",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures per-detector interop (NSFW, deepfake, etc.) the way councilof.ai does; private vendor scores dominate"
+    },
+    {
+      "axis": "art5-safeguard",
+      "competitor": "EU AI Office (Code of Practice on GPAI)",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice-gpai",
+      "code": 200,
+      "bytes": 46165,
+      "note": "policy / commitment registry, not a behavioural measure",
+      "final": "https://digital-strategy.ec.europa.eu/en/page-not-found"
+    },
+    {
+      "axis": "art5-safeguard",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures the OECD/GPAI safeguards behaviourally"
+    },
+    {
+      "axis": "swarm",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures coordinated multi-agent behaviour; councilof.ai's swarm axis is ahead of the public measurement set"
+    },
+    {
+      "axis": "affect",
+      "competitor": "Anthropic Claude character training",
+      "url": "https://www.anthropic.com/research",
+      "code": 200,
+      "bytes": 314191,
+      "note": "Anthropic publishes affect/character; few competitors do",
+      "final": "https://www.anthropic.com/research"
+    },
+    {
+      "axis": "affect",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface matches the councilof.ai affect axis schema"
+    },
+    {
+      "axis": "jail",
+      "competitor": "HarmBench",
+      "url": "https://www.harmbench.org/",
+      "code": 200,
+      "bytes": 918,
+      "note": "standard jailbreak evaluation",
+      "final": "https://www.harmbench.org/"
+    },
+    {
+      "axis": "jail",
+      "competitor": "AdvBench",
+      "url": "https://github.com/llm-attacks/llm-attacks",
+      "code": 200,
+      "bytes": 294452,
+      "note": "the GCG / AdvBench corpus",
+      "final": "https://github.com/llm-attacks/llm-attacks"
+    },
+    {
+      "axis": "jail",
+      "competitor": "JailbreakBench",
+      "url": "https://github.com/Princeton-SysML/Jailbreak_LLM",
+      "code": 200,
+      "bytes": 291599,
+      "note": "academic jailbreak benchmark",
+      "final": "https://github.com/Princeton-SysML/Jailbreak_LLM"
+    },
+    {
+      "axis": "jail",
+      "competitor": "UK AISI",
+      "url": "https://www.aisi.gov.uk/work",
+      "code": 200,
+      "bytes": 145287,
+      "note": "Inspect evals include jailbreak resistance",
+      "final": "https://www.aisi.gov.uk/blog"
+    },
+    {
+      "axis": "provenance-controls",
+      "competitor": "XRPL public ledger",
+      "url": "https://livenet.xrpl.org/",
+      "code": 200,
+      "bytes": 2150,
+      "note": "issuer flags; provenance is a property of the ledger entry itself",
+      "final": "https://livenet.xrpl.org/"
+    },
+    {
+      "axis": "provenance-controls",
+      "competitor": "XRPScan well-known directory",
+      "url": "https://xrpscan.com/directory",
+      "code": 200,
+      "bytes": 5338,
+      "note": "XRPL issuer directory",
+      "final": "https://xrpscan.com/directory"
+    },
+    {
+      "axis": "provenance-controls",
+      "competitor": "OpenCorporates",
+      "url": "https://opencorporates.com/",
+      "code": 200,
+      "bytes": 195388,
+      "note": "corporate registry; covers real-world issuer identity",
+      "final": "https://opencorporates.com/"
+    },
+    {
+      "axis": "reserve-attestation",
+      "competitor": "XRPL public ledger",
+      "url": "https://livenet.xrpl.org/",
+      "code": 200,
+      "bytes": 2150,
+      "note": "real-time supply figures",
+      "final": "https://livenet.xrpl.org/"
+    },
+    {
+      "axis": "reserve-attestation",
+      "competitor": "Issuer attestations (varies)",
+      "url": "varies by issuer",
+      "code": -1,
+      "bytes": 0,
+      "note": "issuer-by-issuer; not standardised",
+      "final": "varies by issuer"
+    },
+    {
+      "axis": "reserve-attestation",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no cross-issuer reserve-attestation register that covers all 425 stablecoins"
+    },
+    {
+      "axis": "regulatory-framework",
+      "competitor": "EU AI Office",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+      "code": 200,
+      "bytes": 79485,
+      "note": "EU AI Act implementing rules",
+      "final": "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+    },
+    {
+      "axis": "regulatory-framework",
+      "competitor": "NIST AI RMF",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "code": 200,
+      "bytes": 93781,
+      "note": "AI Risk Management Framework",
+      "final": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "axis": "regulatory-framework",
+      "competitor": "OECD AI Principles",
+      "url": "https://oecd.ai/ai-principles/",
+      "code": 200,
+      "bytes": 135908,
+      "note": "OECD AI Principles 2019, updated 2024",
+      "final": "https://oecd.ai/en/ai-principles/"
+    },
+    {
+      "axis": "regulatory-framework",
+      "competitor": "Council of Europe AI Framework Convention",
+      "url": "https://www.coe.int/en/web/artificial-intelligence",
+      "code": 200,
+      "bytes": 97889,
+      "note": "CETS No. 225, 2024",
+      "final": "https://www.coe.int/en/web/artificial-intelligence"
+    },
+    {
+      "axis": "regulatory-framework",
+      "competitor": "UN AI High-Level Advisory Body",
+      "url": "https://www.un.org/en/ai-advisory-body",
+      "code": 200,
+      "bytes": 74741,
+      "note": "interim report 2023, final report 2024",
+      "final": "https://www.un.org/en/ai-advisory-body"
+    },
+    {
+      "axis": "distribution-integrity",
+      "competitor": "XRPL public ledger",
+      "url": "https://livenet.xrpl.org/",
+      "code": 200,
+      "bytes": 2150,
+      "note": "holder counts, supply, distribution at the ledger level",
+      "final": "https://livenet.xrpl.org/"
+    },
+    {
+      "axis": "distribution-integrity",
+      "competitor": "Etherscan / BSCscan",
+      "url": "https://etherscan.io/",
+      "code": 200,
+      "bytes": 142353,
+      "note": "EVM-chain distribution",
+      "final": "https://etherscan.io/"
+    },
+    {
+      "axis": "distribution-integrity",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no cross-chain standardised distribution-integrity index"
+    },
+    {
+      "axis": "custody-disclosure",
+      "competitor": "Issuer attestations",
+      "url": "varies",
+      "code": -1,
+      "bytes": 0,
+      "note": "issuer-by-issuer; not standardised",
+      "final": "varies"
+    },
+    {
+      "axis": "custody-disclosure",
+      "competitor": "SEC / FFIEC filings",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar",
+      "code": 403,
+      "bytes": 0,
+      "note": "US regulated entities file custody disclosures",
+      "final": "https://www.sec.gov/cgi-bin/browse-edgar"
+    },
+    {
+      "axis": "custody-disclosure",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no cross-issuer cross-jurisdiction custody-disclosure register"
+    },
+    {
+      "axis": "ai-adoption-components",
+      "competitor": "OpenAI usage stats",
+      "url": "https://openai.com/",
+      "code": 200,
+      "bytes": 452323,
+      "note": "industry figures (their own usage)",
+      "final": "https://openai.com/"
+    },
+    {
+      "axis": "ai-adoption-components",
+      "competitor": "Anthropic / Google DeepMind",
+      "url": "various",
+      "code": -1,
+      "bytes": 0,
+      "note": "industry figures (their own usage)",
+      "final": "various"
+    },
+    {
+      "axis": "ai-adoption-components",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures ai-adoption-components per the councilof.ai schema (component-decomposed)"
+    },
+    {
+      "axis": "labour-components",
+      "competitor": "BLS / OECD labour stats",
+      "url": "https://stats.bls.gov/",
+      "code": 403,
+      "bytes": 0,
+      "note": "industry-level figures",
+      "final": "https://stats.bls.gov/"
+    },
+    {
+      "axis": "labour-components",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures labour-components as decomposed by councilof.ai"
+    },
+    {
+      "axis": "humanoid-labour-index",
+      "competitor": "UNMEASURED",
+      "url": "",
+      "code": -1,
+      "bytes": 0,
+      "note": "no public surface measures humanoid-labour-index at the councilof.ai schema"
+    }
+  ]
+}
