@@ -195,6 +195,23 @@ The three pipeline scripts are:
   Also runs `ots info` on the current stamp so you can see the on-disk
   state without opening it yourself.
 
+  ## 7b. Wait for Bitcoin confirmation
+
+  ```bash
+  # default: poll every 60s, give up after 1h
+  make wait-ots
+
+  # override timeout/interval
+  make wait-ots WAIT_TIMEOUT=600 WAIT_INTERVAL=30
+  ```
+
+  The script polls `ots verify -f MASTER/MANIFEST.sha256 MASTER/MASTER_PACKAGE.ots`
+  and exits **0** when `ots verify` returns 0 (Bitcoin attestation received).
+  Exits **1** on timeout. Exits **2** on dependency miss.
+
+  When the wait succeeds, it prints the final `ots info` so the Bitcoin
+  block header + attestations are visible in the same terminal.
+
   ## 8. Verify the live board has not drifted from our snapshots
 
   ```bash
