@@ -110,6 +110,7 @@ def purpose_of(rel, kind):
     if rel.startswith('09_eval_signed/SIGNED_'): return 'locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)'
     if rel == 'CHEATSHEET.txt':                  return 'one-page operator workflow for the master'
     if rel == 'REPO_MAP.md':                     return 'branch + remote map for the master'
+    if rel == 'KEYS_NEEDED.md':                  return 'index of secrets and credentials the lane touches'
     if rel == '09_eval_signed/MEASUREMENT_CATALOG.json':
         return 'catalog of every locally-signed eval card'
     return PURPOSE_BULK.get(kind, '')

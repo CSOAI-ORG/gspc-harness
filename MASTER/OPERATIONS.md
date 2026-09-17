@@ -256,3 +256,6 @@ The three pipeline scripts are:
   Then run §1 (rehash) and `python3 scripts/selfcheck_master.py` (7
   assertions). If both exit 0 and the live §8 fetch is current, the master
   is sound for the moment it was produced.
+
+  When something is wrong, `MASTER/KEYS_NEEDED.md` names which secret unlocks
+  which behaviour — a faster path than re-running the aligner.

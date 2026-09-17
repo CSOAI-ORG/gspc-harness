@@ -4767,11 +4767,12 @@ path,section,kind,bytes,sha256,purpose
 09_eval_signed/SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json,09_eval_signed,json,3038,fdd90097bb8e81971efeb5c2dd95fdd73e7c12c12d82cd6e231ebb117df378d5,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 CHEATSHEET.txt,_top,other,4475,ffa5d2a2726d8aa6fd6976a7dfaddee34a5e86609fe7842b4d858485b230301d,one-page operator workflow for the master
 INDEX_OF_WHATS_NOT_HERE.md,_top,md,4131,cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6,things this master deliberately does not carry
-INVENTORY.csv,_top,other,1328515,63284d3b243c99f1a8505a50e3c4bed84797e5411581ce39de6a9fd8d2bfc4fc,
-MANIFEST.sha256,_top,other,932108,9f4e1008386fd4374fbd402c1219df58479241042570f73591ba26eb08c98b1b,
+INVENTORY.csv,_top,other,1328610,f3df238e86ba572539a2e171997fd088d3b6e12c9d9193438f35e4d3b5e5e8c4,
+KEYS_NEEDED.md,_top,md,4842,2ff13242854dd9c0d855afe6027b9a01fd23d272d9d8425385f4aab5de4589f6,index of secrets and credentials the lane touches
+MANIFEST.sha256,_top,other,932189,18aec95215d1125b3d6962a731fa921cba4bce9d605d8dd6c248d272543c846b,
 MASTER_CATALOG.json,_top,json,1681,651eb22643b5e7a8cd2f53621f47a471efa9e3c37a073ce2dd1547e5429042f9,machine-readable section map
-MASTER_FILES.json,_top,json,1902642,cab17d796d6a1ff900eba238e86a6a157e558e302d08acf20c906860146e0389,sha256 index of every file
-MASTER_PACKAGE.json,_top,json,654,256ce49640880f103b0a3d2230584ea4d738c4b86d753cf58eaeabeeb5be0cf3,package-level sha256 + OTS status
-MASTER_PACKAGE.ots,_top,ots-stamp,700,2d4092892eaa0d0d3578b1977fd999dfc436c9657670ed4cae5258de0ef372e6,OpenTimestamps stamp over the master package (pending)
-OPERATIONS.md,_top,md,9081,02975199da11c2128a478e50c86aa0acd53509dfa0a46968f0d31c61a5e1d73d,"how to verify, upgrade OTS, add files, audit"
+MASTER_FILES.json,_top,json,1902857,14df0f8481bd540969e8df756151dc5a4d593e72de86d357524b44b459ecb767,sha256 index of every file
+MASTER_PACKAGE.json,_top,json,654,71533418f732b3f6e0cdf856653525c6afa339190838bbd35efa8e08b0663517,package-level sha256 + OTS status
+MASTER_PACKAGE.ots,_top,ots-stamp,665,4e4ba0bd464d99482b1b80b7266fb12978076842dce24942dc1192c5a533f7ca,OpenTimestamps stamp over the master package (pending)
+OPERATIONS.md,_top,md,9783,8c3a8fc4d3eb6cd0dc7eb8d69940cd3e5da45ab5a3d36d1be45eae6b98351ab1,"how to verify, upgrade OTS, add files, audit"
 REPO_MAP.md,_top,md,1404,4cbcc7c853672c889d2bbbeb5677bd904cf3990f6d27592b01e530c3edf9827c,branch + remote map for the master
