@@ -7,7 +7,16 @@ Every command is copy-pasteable. Every output is reproducible.
 ## 0. Pre-flight
 
 ```bash
-# from the repo root
+bash tools/bootstrap.sh --export         # shows what's available
+eval "$(bash tools/bootstrap.sh --export)"  # exports REPO / OTS_BIN / PY
+```
+
+`tools/bootstrap.sh` locates `ots` (v0.7+) and a Python 3.11+ without
+modifying the system. It honours `$OTS_BIN` and `$PY` if set. If `ots` is
+missing, the bootstrap script exits non-zero and tells you to install it
+via brew/apt/cargo.
+
+```bash
 python3 --version         # 3.11+
 which git
 git status --short        # clean tree expected

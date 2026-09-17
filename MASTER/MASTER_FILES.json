@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T03:36:53.265723+00:00",
+  "as_of": "2026-09-17T03:40:22.575829+00:00",
   "root": "MASTER",
   "total_files": 4774,
-  "total_bytes": 156433719,
+  "total_bytes": 156434019,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -55,7 +55,7 @@
     },
     "_top": {
       "files": 9,
-      "bytes": 4182383
+      "bytes": 4182683
     }
   },
   "self_referencing": [
@@ -38207,7 +38207,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 1328250,
-      "sha256": "9fb5e4285497d3c5bc0405108aa6be54289ea1ef7eb1c9c5406c4bc299faa8e7",
+      "sha256": "31fbf33392b4e9270acd0766071ddc03ceb03b908351ccf1f1bc7ae0293885df",
       "purpose": ""
     },
     {
@@ -38215,7 +38215,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 931949,
-      "sha256": "b46150419c821cb9fdfcd3be4b34114e24026acbfab6d4c1f03b5c7fb3e2f108",
+      "sha256": "25cb46f4079ef86ff70b1e8993225359740f9c2a37c396cc561927f90fe2a403",
       "purpose": ""
     },
     {
@@ -38231,7 +38231,7 @@
       "section": "_top",
       "kind": "json",
       "bytes": 1902136,
-      "sha256": "0f2e3203fc0b999686f4b4170194e381980e7f927b6dadd27bc5a7dcdd4a990d",
+      "sha256": "f9a01126909d5bba10ed97fb034e21fc573e7382bd3fd71ac573cea44c33a181",
       "purpose": "sha256 index of every file"
     },
     {
@@ -38239,23 +38239,23 @@
       "section": "_top",
       "kind": "json",
       "bytes": 573,
-      "sha256": "cf7dccaaa8a587268c495f680e4bb73b8acecbd3ae4673b5749d1dbb97b14607",
+      "sha256": "8468def3a38f3caa0b8546475e87bd6d52ee2d9a1a9b8396e4ca6ca9893f9425",
       "purpose": "package-level sha256 + OTS status"
     },
     {
       "path": "MASTER_PACKAGE.ots",
       "section": "_top",
       "kind": "ots-stamp",
-      "bytes": 770,
-      "sha256": "d9ec81d0e5bdb7aa25940cb703b791fdade20951362aeb8905c31fb377a4aac1",
+      "bytes": 700,
+      "sha256": "2b02c165e9ab4b8350f3fd0abeb7a3f45af725bf333664170323f32cab6c6b1b",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {
       "path": "OPERATIONS.md",
       "section": "_top",
       "kind": "md",
-      "bytes": 8105,
-      "sha256": "51cadadea41d37d4fa96158f101d3ddf529b8f97c28f8e926227a4368a2fb453",
+      "bytes": 8475,
+      "sha256": "c4000b234079360dbac3574fa322a253c9423cf6aa64b1bbd5a86b50e9f127c7",
       "purpose": "how to verify, upgrade OTS, add files, audit"
     }
   ]

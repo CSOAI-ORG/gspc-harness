@@ -21,11 +21,11 @@ Exits 0 on success, 1 on the first failed check, 2 on a dependency miss
 (no `ots` CLI, no MASTER_FILES.json).
 """
 from __future__ import annotations
-import json, hashlib, shutil, subprocess, sys
+import json, hashlib, os, shutil, subprocess, sys
 from pathlib import Path
 ROOT = Path('MASTER')
 
-OTS = shutil.which('ots') or '/Users/iokfarm/workspace_for_ai/inspect-lane/.venv/bin/ots'
+OTS = shutil.which('ots') or os.environ.get('OTS_BIN') or '/Users/iokfarm/workspace_for_ai/inspect-lane/.venv/bin/ots'
 MF  = ROOT / 'MASTER_FILES.json'
 INV = ROOT / 'INVENTORY.csv'
 MAN = ROOT / 'MANIFEST.sha256'

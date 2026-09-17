@@ -4766,10 +4766,10 @@ path,section,kind,bytes,sha256,purpose
 09_eval_signed/SIGNED_CARD_qwen2.5-coder_1.5b_xraiv_batch2_iter3_2026-09-16T10-51-04Z.json,09_eval_signed,json,3019,30c1c5daed241ba015f8d48d3651c8ac6a9081fa0260bca3e4cb0bc7b52cb05b,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 09_eval_signed/SIGNED_MEASUREMENT_CARD_qwen2.5-coder_1.5b.json,09_eval_signed,json,3038,fdd90097bb8e81971efeb5c2dd95fdd73e7c12c12d82cd6e231ebb117df378d5,"locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)"
 INDEX_OF_WHATS_NOT_HERE.md,_top,md,4131,cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6,things this master deliberately does not carry
-INVENTORY.csv,_top,other,1328250,9fb5e4285497d3c5bc0405108aa6be54289ea1ef7eb1c9c5406c4bc299faa8e7,
-MANIFEST.sha256,_top,other,931949,b46150419c821cb9fdfcd3be4b34114e24026acbfab6d4c1f03b5c7fb3e2f108,
+INVENTORY.csv,_top,other,1328250,31fbf33392b4e9270acd0766071ddc03ceb03b908351ccf1f1bc7ae0293885df,
+MANIFEST.sha256,_top,other,931949,25cb46f4079ef86ff70b1e8993225359740f9c2a37c396cc561927f90fe2a403,
 MASTER_CATALOG.json,_top,json,1681,651eb22643b5e7a8cd2f53621f47a471efa9e3c37a073ce2dd1547e5429042f9,machine-readable section map
-MASTER_FILES.json,_top,json,1902136,0f2e3203fc0b999686f4b4170194e381980e7f927b6dadd27bc5a7dcdd4a990d,sha256 index of every file
-MASTER_PACKAGE.json,_top,json,573,cf7dccaaa8a587268c495f680e4bb73b8acecbd3ae4673b5749d1dbb97b14607,package-level sha256 + OTS status
-MASTER_PACKAGE.ots,_top,ots-stamp,770,d9ec81d0e5bdb7aa25940cb703b791fdade20951362aeb8905c31fb377a4aac1,OpenTimestamps stamp over the master package (pending)
-OPERATIONS.md,_top,md,8105,51cadadea41d37d4fa96158f101d3ddf529b8f97c28f8e926227a4368a2fb453,"how to verify, upgrade OTS, add files, audit"
+MASTER_FILES.json,_top,json,1902136,f9a01126909d5bba10ed97fb034e21fc573e7382bd3fd71ac573cea44c33a181,sha256 index of every file
+MASTER_PACKAGE.json,_top,json,573,8468def3a38f3caa0b8546475e87bd6d52ee2d9a1a9b8396e4ca6ca9893f9425,package-level sha256 + OTS status
+MASTER_PACKAGE.ots,_top,ots-stamp,700,2b02c165e9ab4b8350f3fd0abeb7a3f45af725bf333664170323f32cab6c6b1b,OpenTimestamps stamp over the master package (pending)
+OPERATIONS.md,_top,md,8475,c4000b234079360dbac3574fa322a253c9423cf6aa64b1bbd5a86b50e9f127c7,"how to verify, upgrade OTS, add files, audit"
