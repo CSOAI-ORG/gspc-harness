@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T05:23:54.314647+00:00",
+  "as_of": "2026-09-17T05:27:26.494510+00:00",
   "root": "MASTER",
-  "total_files": 4780,
-  "total_bytes": 156468672,
+  "total_files": 4781,
+  "total_bytes": 156474711,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -54,8 +54,8 @@
       "bytes": 387255
     },
     "_top": {
-      "files": 14,
-      "bytes": 4209695
+      "files": 15,
+      "bytes": 4215734
     }
   },
   "self_referencing": [
@@ -38211,6 +38211,14 @@
       "purpose": "one-page operator workflow for the master"
     },
     {
+      "path": "END-OF-SESSION-17Sep2026.md",
+      "section": "_top",
+      "kind": "md",
+      "bytes": 5679,
+      "sha256": "aeb132f889f4f982154924080960de790cedf0548513397952f09450482e5e09",
+      "purpose": "end-of-session state for the operator; honest summary of what the lane did and did not do"
+    },
+    {
       "path": "INDEX_OF_WHATS_NOT_HERE.md",
       "section": "_top",
       "kind": "md",
@@ -38222,8 +38230,8 @@
       "path": "INVENTORY.csv",
       "section": "_top",
       "kind": "other",
-      "bytes": 1329220,
-      "sha256": "2e9b5beba15443e6f7aff34172eedf8af07c7f2689bc30ac79417aa41b1f2bf2",
+      "bytes": 1329328,
+      "sha256": "1886bd7278afce9aefe2f437776221b3cf81a4c5ea0a2695b2cd079ecb2990ef",
       "purpose": ""
     },
     {
@@ -38238,8 +38246,8 @@
       "path": "MANIFEST.sha256",
       "section": "_top",
       "kind": "other",
-      "bytes": 932488,
-      "sha256": "8dd60b0ee5cbd0b091dd7370abf13a8e9ab869c31b6e74164a51096083ac1c53",
+      "bytes": 932582,
+      "sha256": "e135b003a10b67d7ac03abdfd7999148532db926c35e5a3bda4ea79ed008af1d",
       "purpose": ""
     },
     {
@@ -38254,8 +38262,8 @@
       "path": "MASTER_FILES.json",
       "section": "_top",
       "kind": "json",
-      "bytes": 1903826,
-      "sha256": "90d303f6a421fdab0538116e97e67cd0ea2e7ff270ddbae4e69e599ca32ad8f1",
+      "bytes": 1904054,
+      "sha256": "e95ec1c3bfbc1907ad0d6461beb3f2ecf6cf30d01f020520ec5110d3c8ac6357",
       "purpose": "sha256 index of every file"
     },
     {
@@ -38263,15 +38271,15 @@
       "section": "_top",
       "kind": "json",
       "bytes": 654,
-      "sha256": "c45f346f06c61cd4ba8e09f09838fc4aedea4e47d9bd17d98295bac73ebfb2f1",
+      "sha256": "9f2976e3b803ee9e59c93e7269c009c45ed59e6ca2e315b83043e4f269598387",
       "purpose": "package-level sha256 + OTS status"
     },
     {
       "path": "MASTER_PACKAGE.ots",
       "section": "_top",
       "kind": "ots-stamp",
-      "bytes": 840,
-      "sha256": "9be56b32a7004ff47c688075c5f8bb62bee3f6fe0c1fea59ff2bef840724d3c7",
+      "bytes": 770,
+      "sha256": "d1d24f8cf8639729c32a6da401dcd6c70fdd42e525d7b1a9c70eba385ec33743",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {
