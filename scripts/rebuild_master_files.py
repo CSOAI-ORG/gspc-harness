@@ -110,6 +110,7 @@ def purpose_of(rel, kind):
     if rel.startswith('09_eval_signed/SIGNED_'): return 'locally-signed eval card (Ollama qwen2.5-coder:1.5b, this lane)'
     if rel == 'CHEATSHEET.txt':                  return 'one-page operator workflow for the master'
     if rel == 'RESPONSE-TO-FULL-OWNERSHIP.md':     return 'straight answer to the operator on what blocks full ownership'
+    if rel == 'RESPONSE-TO-AUTOMATE-ALL.md':      return 'straight answer to the operator on automating regulator outreach end-to-end'
     if rel == 'REPO_MAP.md':                     return 'branch + remote map for the master'
     if rel == 'KEYS_NEEDED.md':                  return 'index of secrets and credentials the lane touches'
     if rel == '09_eval_signed/MEASUREMENT_CATALOG.json':
