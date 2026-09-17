@@ -111,7 +111,10 @@ def purpose_of(rel, kind):
     if rel == 'CHEATSHEET.txt':                  return 'one-page operator workflow for the master'
     if rel == 'RESPONSE-TO-FULL-OWNERSHIP.md':     return 'straight answer to the operator on what blocks full ownership'
     if rel == 'RESPONSE-TO-AUTOMATE-ALL.md':      return 'straight answer to the operator on automating regulator outreach end-to-end'
-    if rel == 'REPO_MAP.md':                     return 'branch + remote map for the master'
+    if rel == '07_crosswalk/REGULATOR_DOSSIER_TEMPLATE.md':
+        return 'regulator dossier template; draft for human review, NOT signed by the lane'
+    if rel == 'REPO_MAP.md':
+        return 'branch + remote map for the master'
     if rel == 'KEYS_NEEDED.md':                  return 'index of secrets and credentials the lane touches'
     if rel == '09_eval_signed/MEASUREMENT_CATALOG.json':
         return 'catalog of every locally-signed eval card'

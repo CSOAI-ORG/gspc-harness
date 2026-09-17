@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T05:16:16.197066+00:00",
+  "as_of": "2026-09-17T05:20:18.510930+00:00",
   "root": "MASTER",
-  "total_files": 4779,
-  "total_bytes": 156460204,
+  "total_files": 4780,
+  "total_bytes": 156468522,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -42,8 +42,8 @@
       "bytes": 22630
     },
     "07_crosswalk": {
-      "files": 9,
-      "bytes": 19540
+      "files": 10,
+      "bytes": 27181
     },
     "08_blog": {
       "files": 95,
@@ -55,7 +55,7 @@
     },
     "_top": {
       "files": 14,
-      "bytes": 4208868
+      "bytes": 4209545
     }
   },
   "self_referencing": [
@@ -36635,6 +36635,14 @@
       "purpose": "crosswalk scaffold: goals, evidence schema, sources tree"
     },
     {
+      "path": "07_crosswalk/REGULATOR_DOSSIER_TEMPLATE.md",
+      "section": "07_crosswalk",
+      "kind": "md",
+      "bytes": 7641,
+      "sha256": "708d81cb740acd8220c16798a0e465797a7b605e42f163250d896fd4ce3c1051",
+      "purpose": "regulator dossier template; draft for human review, NOT signed by the lane"
+    },
+    {
       "path": "07_crosswalk/TASKS_REPORT.md",
       "section": "07_crosswalk",
       "kind": "md",
@@ -38214,8 +38222,8 @@
       "path": "INVENTORY.csv",
       "section": "_top",
       "kind": "other",
-      "bytes": 1328938,
-      "sha256": "9b2741acd7e76d19a7f47fdf553f356252f5c0bfaa60bc29b9cf2079b9499f75",
+      "bytes": 1329144,
+      "sha256": "028fa8bc9d7fa40e915e5493e49ec648a2520d00c659e11dbabdb24aa126e39d",
       "purpose": ""
     },
     {
@@ -38230,8 +38238,8 @@
       "path": "MANIFEST.sha256",
       "section": "_top",
       "kind": "other",
-      "bytes": 932379,
-      "sha256": "85f2d2a9ed77f18b79ec3eb51a16db085a47692b52b696a0d33cfceadf3fa479",
+      "bytes": 932488,
+      "sha256": "c1e65b37bfc6114b69bb3079f6c194eb846828c13ddb14e2213d74194191f9f7",
       "purpose": ""
     },
     {
@@ -38246,8 +38254,8 @@
       "path": "MASTER_FILES.json",
       "section": "_top",
       "kind": "json",
-      "bytes": 1903425,
-      "sha256": "60ae55af534b0ccdc7c57c9266d4cdfa2a51a24a79eb500e7fa2e0a3a1ef3098",
+      "bytes": 1903752,
+      "sha256": "a350048435d9df8bbe94ac633246779f2d09f8c340b0bd7db4ee18eac7d6bc23",
       "purpose": "sha256 index of every file"
     },
     {
@@ -38255,15 +38263,15 @@
       "section": "_top",
       "kind": "json",
       "bytes": 654,
-      "sha256": "11b9a01b9853b517a338e4ba8cb435d341945e29c02563b1013e79b27a4f2c99",
+      "sha256": "1225bc089036b351bf964760f9e064a119974f1364c2242b5ceff6e035687eae",
       "purpose": "package-level sha256 + OTS status"
     },
     {
       "path": "MASTER_PACKAGE.ots",
       "section": "_top",
       "kind": "ots-stamp",
-      "bytes": 805,
-      "sha256": "3d14203de37702ce70778533ddef0a06f0e3098e28535037adb09d5692941cfa",
+      "bytes": 840,
+      "sha256": "6523271ece86f900f1c10662f6828d787f4d88cf0f6c8d25e3ffe5a35209f0f0",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {
