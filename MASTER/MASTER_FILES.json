@@ -1,9 +1,9 @@
 {
   "schema": "csoai.master-files/2.0",
-  "as_of": "2026-09-17T05:06:28.886907+00:00",
+  "as_of": "2026-09-17T05:08:27.691833+00:00",
   "root": "MASTER",
-  "total_files": 4777,
-  "total_bytes": 156447548,
+  "total_files": 4778,
+  "total_bytes": 156453084,
   "sections": [
     "01_live",
     "02_unsigned_pile",
@@ -54,8 +54,8 @@
       "bytes": 387255
     },
     "_top": {
-      "files": 12,
-      "bytes": 4196212
+      "files": 13,
+      "bytes": 4201748
     }
   },
   "self_referencing": [
@@ -38215,7 +38215,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 1328659,
-      "sha256": "74faa91c00e1033d8f2e7d5e903cd16a23b45ae04a0566e9baf980ccf705cc06",
+      "sha256": "15207d9887ac2e5c19a1484a16b8da84759de72052f77c0e4c598ed38bca3e9c",
       "purpose": ""
     },
     {
@@ -38231,7 +38231,7 @@
       "section": "_top",
       "kind": "other",
       "bytes": 932189,
-      "sha256": "c00fef8ffd9d211686a04efeb220bf45b9263d53b33b3238bf014264c090e529",
+      "sha256": "74895192fe65f9ac58eccb5fb4d5d6a34082eed98f86abd19f8a293846d3b5c0",
       "purpose": ""
     },
     {
@@ -38247,7 +38247,7 @@
       "section": "_top",
       "kind": "json",
       "bytes": 1902906,
-      "sha256": "16f8112ff18f5a4be9668c988165b241772f6a5eec232ab0b18707bd9ca47ea9",
+      "sha256": "c7cf5761dedd10349a46482abe302dd95ff21afef3ba38fbf03cfdae24e19e7f",
       "purpose": "sha256 index of every file"
     },
     {
@@ -38255,15 +38255,15 @@
       "section": "_top",
       "kind": "json",
       "bytes": 654,
-      "sha256": "4b67ed107b815666cfd46cd2bd1175caa26e2e94eb345c9a44ac06292dbebf6d",
+      "sha256": "eb66af4b36b9ab195a18073c5af03026394b884689a2dafe826d8d5ad28e5723",
       "purpose": "package-level sha256 + OTS status"
     },
     {
       "path": "MASTER_PACKAGE.ots",
       "section": "_top",
       "kind": "ots-stamp",
-      "bytes": 700,
-      "sha256": "1f3a50a0ff556889b7fba704e18ef3564952c2f0cd339df9dd07c92e1dda7bb7",
+      "bytes": 665,
+      "sha256": "7d78868541c7478ba37a6aec3c318d7aff5b778efbb50f971953394bb42740ed",
       "purpose": "OpenTimestamps stamp over the master package (pending)"
     },
     {
@@ -38281,6 +38281,14 @@
       "bytes": 1404,
       "sha256": "4cbcc7c853672c889d2bbbeb5677bd904cf3990f6d27592b01e530c3edf9827c",
       "purpose": "branch + remote map for the master"
+    },
+    {
+      "path": "RESPONSE-TO-FULL-OWNERSHIP.md",
+      "section": "_top",
+      "kind": "md",
+      "bytes": 5571,
+      "sha256": "8faae7236caa3528bf71af9c84970f3a785a5f22002c5f1024452060bc156275",
+      "purpose": ""
     }
   ]
 }
