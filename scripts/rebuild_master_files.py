@@ -116,6 +116,8 @@ def purpose_of(rel, kind):
     if rel == 'END-OF-SESSION-17Sep2026.md':         return 'end-of-session state for the operator; honest summary of what the lane did and did not do'
     if rel.startswith('TUI_OBS_17Sep2026/'):
         return 'OBSERVER-mode artifact; honest measurement of what an anonymous reader sees vs what we publish'
+    if rel.startswith('TUI_R4_17Sep2026/'):
+        return 'Round 4 (EAT OUTWARDS): anonymous readback of 9 named published artifacts + UNCHECKABLE cells + byte-level claims; A/B partial, B/C/D/E documented'
     if rel.startswith('TUI_HANDOVER_17Sep2026/'):
         return 'M2 side of the operator realignment handoff: 17Sep anonymous readback of the 5 canonical surfaces named in the handoff'
     if rel.startswith('TUI_FUNDING_REFUSAL_17Sep2026/'):

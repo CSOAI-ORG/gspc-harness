@@ -1,0 +1,92 @@
+[
+  {
+    "label": "census_v0.1",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/public/interop/verifiability-census-2026-09-17.json",
+    "why": "the operator's named 'census v0.1' \u2014 the earlier of the two verifiability censuses",
+    "code": 200,
+    "bytes": 19944,
+    "sha256": "f9730f50f7aca5e7f6cba75e35afee0d7ca4ad2c1139a4db308be4d3f5356f5f",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/public%2Finterop%2Fverifiability-census-2026-09-17.json?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fpublic%2Finterop%2Fverifiability-census-2026-09-17.json=&etag=%226d8c53da6c07e1a6efbe67631057a9c2b44a8721%22",
+    "sample": "{\n \"schema\": \"csoai.verifiability-census/0.1\",\n \"as_of\": \"2026-09-17T10:53:01Z\",\n \"signed\": false,\n \"unsigned_reason\": \"The board signer runs as OIDC inside GitHub Actions, which is disabled account-w"
+  },
+  {
+    "label": "census_v0.2",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/public/interop/verifiability-census-2026-09-17-v0.2.json",
+    "why": "the operator's named 'census v0.2' \u2014 the later verifiability census (v0.1 SUPERSEDED)",
+    "code": 200,
+    "bytes": 30486,
+    "sha256": "a7f7c2d94ea2400fd357b07c23481886454dd631dbf983d08d79b7291ed8fd55",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/public%2Finterop%2Fverifiability-census-2026-09-17-v0.2.json?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fpublic%2Finterop%2Fverifiability-census-2026-09-17-v0.2.json=&etag=%22b2d66992ab06110595092f3fbca72abc4aab2aff%22",
+    "sample": "{\n \"schema\": \"csoai.verifiability-census/0.2\",\n \"as_of\": \"2026-09-17T11:13:24Z\",\n \"signed\": false,\n \"unsigned_reason\": \"The board signer runs as OIDC inside GitHub Actions, which is disabled account-w"
+  },
+  {
+    "label": "arc_paired_arm",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/public/interop/paired-arm-arc-agi-2-2026-09-17.json",
+    "why": "the operator's named 'ARC AGI 2 paired arm'",
+    "code": 200,
+    "bytes": 25639,
+    "sha256": "929c3df5350765834dc44896ee534b8b93861897550dd9b667ab3d6e3aa940ca",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/public%2Finterop%2Fpaired-arm-arc-agi-2-2026-09-17.json?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fpublic%2Finterop%2Fpaired-arm-arc-agi-2-2026-09-17.json=&etag=%22df59b44546235e8aa133c35d5110c5b5d884edae%22",
+    "sample": "{\n \"schema\": \"csoai.paired-arm/0.1\",\n \"as_of\": \"2026-09-17T11:09:36Z\",\n \"signed\": false,\n \"unsigned_reason\": \"The board signer runs as OIDC inside GitHub Actions, disabled account-wide.\",\n \"title\": \"T"
+  },
+  {
+    "label": "press_piece_hf",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/public/press/2026-09-17-can-you-check-their-work.md",
+    "why": "the press piece on HF mirror",
+    "code": 200,
+    "bytes": 10230,
+    "sha256": "46e14330bd311214ca4402e729cbd927dd9ffd02a71ad3b6b21035beda6f45ab",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/public%2Fpress%2F2026-09-17-can-you-check-their-work.md?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fpublic%2Fpress%2F2026-09-17-can-you-check-their-work.md=&etag=%22032c164bbf5377f86213d2bdeb2dec5f33d8bbaf%22",
+    "sample": "# Can you check their work?\n\n**Fifteen organisations publish AI evaluation results. Thirteen of them keep a public record\nof their own mistakes. Not one of them signs a result.**\n\n17 September 2026 \u00b7"
+  },
+  {
+    "label": "press_piece_root",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/press/2026-09-17-our-own-root-was-forgeable.md",
+    "why": "the second press piece (about the forgeable root)",
+    "code": 200,
+    "bytes": 12234,
+    "sha256": "4a23e0396fd4398d9e7b147d576bf5184ce12e569f409a5950c66795d0578429",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/press%2F2026-09-17-our-own-root-was-forgeable.md?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fpress%2F2026-09-17-our-own-root-was-forgeable.md=&etag=%2247dbb94bdfe7934b7fa18e5ecce20123ec31c478%22",
+    "sample": "# Our own transparency root accepts a leaf set we never published\n\n**17 September 2026.** A Merkle root we publish at `https://councilof.ai/api/root` covers 305\nleaf digests. A set of **306** leaves \ufffd"
+  },
+  {
+    "label": "master_consolidation_v0.1",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/interop__master-consolidation-rollup-v0.1.json",
+    "why": "master consolidation v0.1 (the operator named v0.1/v0.2 census)",
+    "code": 200,
+    "bytes": 8589,
+    "sha256": "99c8c78479cf66f65850198e9ac729cb9596ab1667f6680fd2cb2a3b3128d45c",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/interop__master-consolidation-rollup-v0.1.json?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Finterop__master-consolidation-rollup-v0.1.json=&etag=%22b3152f22b4d754e4851c4e3a072685fddc97b538%22",
+    "sample": "{\n  \"schema\": \"csoai.master-consolidation-rollup/0.1\",\n  \"generated_at\": \"2026-09-17T04:34:50.832035+00:00\",\n  \"title\": \"Master Consolidation Roll-up \\u2014 GSPC Estate\",\n  \"purpose\": \"One manifest th"
+  },
+  {
+    "label": "regulatory_crosswalk",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/interop__regulatory-crosswalk-2026-09-17.json",
+    "why": "regulatory crosswalk dated 2026-09-17",
+    "code": 200,
+    "bytes": 24057,
+    "sha256": "3b66548090e7fd7b3c79dbe0ff11d61baab718ea82a3f807d61b270e34af10d8",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/interop__regulatory-crosswalk-2026-09-17.json?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Finterop__regulatory-crosswalk-2026-09-17.json=&etag=%2284d1f7320dd7e131cd37327e287a447217d4f552%22",
+    "sample": "{\n  \"schema\": \"csoai.regulatory-crosswalk/0.1\",\n  \"as_of\": \"2026-09-17\",\n  \"what_this_is\": \"Regulatory and assurance sources crosswalked against stable goal objects, so a source changing state does no"
+  },
+  {
+    "label": "signed_card_index",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/signed__card_index.json",
+    "why": "the public signed card index",
+    "code": 200,
+    "bytes": 197471,
+    "sha256": "4ff54c78dba0b15b56dc3fdeec62f11f98fa7bf5d4efffc9e54c6839247242a7",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/signed__card_index.json?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fsigned__card_index.json=&etag=%22aab016a0497624ddeb0c3772f181814469ecaf93%22",
+    "sample": "{\n  \"cards\": [\n    {\n      \"alg\": \"Ed25519\",\n      \"axis\": \"care-refusal-protect\",\n      \"card\": \"82994353b8f94337746ddf73700b0edc425d695d43910dbfeb53d118d5a09a1c\",\n      \"card_url\": \"/signed/cards/82"
+  },
+  {
+    "label": "corrections_dir",
+    "url": "https://huggingface.co/datasets/csoai/councilof-ai-mirror/resolve/main/corrections/PUBLIC-ROOT-IS-NOT-A-LOG-2026-09-17.md",
+    "why": "the operator's previously published self-correction",
+    "code": 200,
+    "bytes": 9033,
+    "sha256": "5c320db8c6cbb3ed0abc917840a32aa6f30302963375f07759333bb67fca0a1e",
+    "final": "https://huggingface.co/api/resolve-cache/datasets/csoai/councilof-ai-mirror/a659a2b352da270c6fd01aef7a819679782765e3/corrections%2FPUBLIC-ROOT-IS-NOT-A-LOG-2026-09-17.md?%2Fdatasets%2Fcsoai%2Fcouncilof-ai-mirror%2Fresolve%2Fmain%2Fcorrections%2FPUBLIC-ROOT-IS-NOT-A-LOG-2026-09-17.md=&etag=%22fff09ade10e63c3a36a7228fa6754ab9169ce7f0%22",
+    "sample": "# The public root is not a log\n\n**A correction against ourselves, 17 September 2026.** Measured from our own published bytes.\n\n## The claim\n\n`public/root.json` is a **point-in-time snapshot**, re-deri"
+  }
+]

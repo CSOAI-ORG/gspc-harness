@@ -1,0 +1,98 @@
+[
+  {
+    "dataset": "csoai/oss-model-census",
+    "url": "https://huggingface.co/api/datasets/csoai/oss-model-census",
+    "code": 200,
+    "bytes": 2054,
+    "sha256": "6a50d83a07c821485adfbc9fd134995b",
+    "final": "https://huggingface.co/api/datasets/csoai/oss-model-census"
+  },
+  {
+    "dataset": "csoai/mcp-census",
+    "url": "https://huggingface.co/api/datasets/csoai/mcp-census",
+    "code": 200,
+    "bytes": 2087,
+    "sha256": "d5af6b592b0c938e6266a23547720fa7",
+    "final": "https://huggingface.co/api/datasets/csoai/mcp-census"
+  },
+  {
+    "dataset": "csoai/a2a-census",
+    "url": "https://huggingface.co/api/datasets/csoai/a2a-census",
+    "code": 200,
+    "bytes": 2099,
+    "sha256": "771795d3c87bf8c166ec87e3f5dcac45",
+    "final": "https://huggingface.co/api/datasets/csoai/a2a-census"
+  },
+  {
+    "dataset": "csoai/gspc-hf-model-census",
+    "url": "https://huggingface.co/api/datasets/csoai/gspc-hf-model-census",
+    "code": 200,
+    "bytes": 1811,
+    "sha256": "d761336b97ffad3832b925880eaccea9",
+    "final": "https://huggingface.co/api/datasets/csoai/gspc-hf-model-census"
+  },
+  {
+    "dataset": "csoai/x402-bazaar-census",
+    "url": "https://huggingface.co/api/datasets/csoai/x402-bazaar-census",
+    "code": 200,
+    "bytes": 1948,
+    "sha256": "96a029b1c736aa2bc4af70cf66b3f554",
+    "final": "https://huggingface.co/api/datasets/csoai/x402-bazaar-census"
+  },
+  {
+    "dataset": "csoai/agent-interop-census",
+    "url": "https://huggingface.co/api/datasets/csoai/agent-interop-census",
+    "code": 200,
+    "bytes": 1871,
+    "sha256": "301ed30c53c4accf06b81eb6a909cca3",
+    "final": "https://huggingface.co/api/datasets/csoai/agent-interop-census"
+  },
+  {
+    "dataset": "csoai/x402-settlement-census",
+    "url": "https://huggingface.co/api/datasets/csoai/x402-settlement-census",
+    "code": 200,
+    "bytes": 2501,
+    "sha256": "5e7c909b0a5b8059fa3c35992b3045c9",
+    "final": "https://huggingface.co/api/datasets/csoai/x402-settlement-census"
+  },
+  {
+    "dataset": "csoai/councilof-ai-mirror",
+    "url": "https://huggingface.co/api/datasets/csoai/councilof-ai-mirror",
+    "code": 200,
+    "bytes": 3289,
+    "sha256": "5de8385eab076a8c754511d97847b86f",
+    "final": "https://huggingface.co/api/datasets/csoai/councilof-ai-mirror"
+  },
+  {
+    "dataset": "csoai/gspc-board",
+    "url": "https://huggingface.co/api/datasets/csoai/gspc-board",
+    "code": 200,
+    "bytes": 2414,
+    "sha256": "035de73ab6b2edfbe6c36aecc8f398ae",
+    "final": "https://huggingface.co/api/datasets/csoai/gspc-board"
+  },
+  {
+    "dataset": "csoai/x402-bazaar-conformance",
+    "url": "https://huggingface.co/api/datasets/csoai/x402-bazaar-conformance",
+    "code": 200,
+    "bytes": 3270,
+    "sha256": "162d4ff1ebe68c78f13a2fd099b807a7",
+    "final": "https://huggingface.co/api/datasets/csoai/x402-bazaar-conformance"
+  },
+  {
+    "dataset": "csoai/revenue-history",
+    "url": "https://huggingface.co/api/datasets/csoai/revenue-history",
+    "code": 200,
+    "bytes": 1535,
+    "sha256": "8e77a891eb682f554a40ce6b81cec77c",
+    "final": "https://huggingface.co/api/datasets/csoai/revenue-history"
+  },
+  {
+    "dataset": "csoai/gspc-boards",
+    "url": "https://huggingface.co/api/datasets/csoai/gspc-boards",
+    "code": 200,
+    "bytes": 13893,
+    "sha256": "1fc75822e08e7fc8934f1549d4e336e6",
+    "final": "https://huggingface.co/api/datasets/csoai/gspc-boards"
+  }
+]
