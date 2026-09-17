@@ -4769,13 +4769,13 @@ path,section,kind,bytes,sha256,purpose
 CHEATSHEET.txt,_top,other,4475,ffa5d2a2726d8aa6fd6976a7dfaddee34a5e86609fe7842b4d858485b230301d,one-page operator workflow for the master
 END-OF-SESSION-17Sep2026.md,_top,md,5679,aeb132f889f4f982154924080960de790cedf0548513397952f09450482e5e09,end-of-session state for the operator; honest summary of what the lane did and did not do
 INDEX_OF_WHATS_NOT_HERE.md,_top,md,4131,cae00d90ca1fe8e37d390514a56ec58c9841519e272b3013fbab8fd4b3a6eff6,things this master deliberately does not carry
-INVENTORY.csv,_top,other,1329417,7bfa85c43eb74d9cbf0e9973a0037fed19deafa7384c525e545f8cca9c8ca161,
+INVENTORY.csv,_top,other,1329417,6e30ecc58fbdb2a25df136aebc2cde7e42972c9856c6b90679bb7aff9e52829b,
 KEYS_NEEDED.md,_top,md,4842,2ff13242854dd9c0d855afe6027b9a01fd23d272d9d8425385f4aab5de4589f6,index of secrets and credentials the lane touches
-MANIFEST.sha256,_top,other,932582,88466671b1da430ed637c805797f6c76536e0e02792a54b1f44dd05c489b8619,
+MANIFEST.sha256,_top,other,932582,943c9bac438dea30ccc30a51b1a5291782294d89e30ea04724449b0de4af5881,
 MASTER_CATALOG.json,_top,json,1681,651eb22643b5e7a8cd2f53621f47a471efa9e3c37a073ce2dd1547e5429042f9,machine-readable section map
-MASTER_FILES.json,_top,json,1904143,648aab86028d575999cf27b7d60987d3b9812394025e84184d7070598e74f811,sha256 index of every file
-MASTER_PACKAGE.json,_top,json,654,043e5eeba85366919f3aebaf082f18e9d5f66358d54453b14b13cc5851acd926,package-level sha256 + OTS status
-MASTER_PACKAGE.ots,_top,ots-stamp,770,9b156800fcb21e09882dd291a1c343612990283eec81779c86be7add6abd22cd,OpenTimestamps stamp over the master package (pending)
+MASTER_FILES.json,_top,json,1904143,811d157d5f2f8131603e6c9bac8063bdf8ef1181e85fea088a4d53d0c63b0c30,sha256 index of every file
+MASTER_PACKAGE.json,_top,json,654,39baa7eb2b587f537feee8229605cbe104fb9723faecea22ffddf9674379583e,package-level sha256 + OTS status
+MASTER_PACKAGE.ots,_top,ots-stamp,770,371c0f4162b3f988b8f6a3ec5d0e7e4f25013c5427e65e38001e117da1bb321d,OpenTimestamps stamp over the master package (pending)
 OPERATIONS.md,_top,md,9783,8c3a8fc4d3eb6cd0dc7eb8d69940cd3e5da45ab5a3d36d1be45eae6b98351ab1,"how to verify, upgrade OTS, add files, audit"
 REPO_MAP.md,_top,md,1404,4cbcc7c853672c889d2bbbeb5677bd904cf3990f6d27592b01e530c3edf9827c,branch + remote map for the master
 RESPONSE-TO-AUTOMATE-ALL.md,_top,md,5992,ef6d9c36ae2fabffcc71f80d9adb21b725f8cc292e3138a1747552aa0eef0761,straight answer to the operator on automating regulator outreach end-to-end

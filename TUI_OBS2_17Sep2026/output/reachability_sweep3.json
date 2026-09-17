@@ -1,0 +1,471 @@
+{
+  "as_of": "2026-09-17T07:50:41.185944+00:00",
+  "rows": [
+    {
+      "url": "https://councilof.ai/",
+      "per_ua": {
+        "browser": [
+          200,
+          258765
+        ],
+        "curl-8": [
+          200,
+          258765
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          258765
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/api/gspc",
+      "per_ua": {
+        "browser": [
+          200,
+          70527
+        ],
+        "curl-8": [
+          200,
+          70527
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          70527
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/api/a2a",
+      "per_ua": {
+        "browser": [
+          200,
+          1957
+        ],
+        "curl-8": [
+          200,
+          1957
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          1957
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/api/x402",
+      "per_ua": {
+        "browser": [
+          200,
+          12670
+        ],
+        "curl-8": [
+          200,
+          12670
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          12670
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/api/cross",
+      "per_ua": {
+        "browser": [
+          200,
+          11615
+        ],
+        "curl-8": [
+          200,
+          11615
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          11615
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/api/free-door",
+      "per_ua": {
+        "browser": [
+          402,
+          0
+        ],
+        "curl-8": [
+          402,
+          0
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          402,
+          0
+        ]
+      },
+      "human_only": false
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent-card.json",
+      "per_ua": {
+        "browser": [
+          200,
+          13018
+        ],
+        "curl-8": [
+          200,
+          13018
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          13018
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/.well-known/agent.json",
+      "per_ua": {
+        "browser": [
+          200,
+          13018
+        ],
+        "curl-8": [
+          200,
+          13018
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          13018
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/.well-known/x402.json",
+      "per_ua": {
+        "browser": [
+          200,
+          15072
+        ],
+        "curl-8": [
+          200,
+          15072
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          15072
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/.well-known/did.json",
+      "per_ua": {
+        "browser": [
+          200,
+          5059
+        ],
+        "curl-8": [
+          200,
+          5059
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          5059
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/.well-known/signed/card_index.json",
+      "per_ua": {
+        "browser": [
+          404,
+          0
+        ],
+        "curl-8": [
+          404,
+          0
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          404,
+          0
+        ]
+      },
+      "human_only": false
+    },
+    {
+      "url": "https://councilof.ai/llms.txt",
+      "per_ua": {
+        "browser": [
+          200,
+          17186
+        ],
+        "curl-8": [
+          200,
+          17186
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          17186
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/robots.txt",
+      "per_ua": {
+        "browser": [
+          200,
+          6126
+        ],
+        "curl-8": [
+          200,
+          6126
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          6126
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/sitemap.xml",
+      "per_ua": {
+        "browser": [
+          200,
+          94397
+        ],
+        "curl-8": [
+          200,
+          94397
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          94397
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/feed.xml",
+      "per_ua": {
+        "browser": [
+          200,
+          40782
+        ],
+        "curl-8": [
+          200,
+          40782
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          40782
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/mcp",
+      "per_ua": {
+        "browser": [
+          200,
+          1618
+        ],
+        "curl-8": [
+          200,
+          1618
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          1618
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/gspc-verify",
+      "per_ua": {
+        "browser": [
+          200,
+          77257
+        ],
+        "curl-8": [
+          200,
+          77257
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          77257
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/interop/root-witness-latest.json",
+      "per_ua": {
+        "browser": [
+          200,
+          3521
+        ],
+        "curl-8": [
+          200,
+          3521
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          3521
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/og-image.png",
+      "per_ua": {
+        "browser": [
+          200,
+          47635
+        ],
+        "curl-8": [
+          200,
+          47635
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          47635
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/index.html",
+      "per_ua": {
+        "browser": [
+          200,
+          258765
+        ],
+        "curl-8": [
+          200,
+          258765
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          258765
+        ]
+      },
+      "human_only": true
+    },
+    {
+      "url": "https://councilof.ai/methodology",
+      "per_ua": {
+        "browser": [
+          200,
+          79646
+        ],
+        "curl-8": [
+          200,
+          79646
+        ],
+        "python-urllib": [
+          403,
+          0
+        ],
+        "empty": [
+          200,
+          79646
+        ]
+      },
+      "human_only": true
+    }
+  ],
+  "totals": {
+    "surfaces": 21,
+    "human_only": 19
+  }
+}
