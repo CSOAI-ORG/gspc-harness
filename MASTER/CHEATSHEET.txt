@@ -1,0 +1,103 @@
+# MASTER/CHEATSHEET — the entire workflow on one page
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CSOAI M2 lane · hermes/inspect-register-readiness · 2026-09-16          │
+│ Branch: git checkout hermes/inspect-register-readiness                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+# 0. BOOTSTRAP (one line, then you have OTS_BIN, PY, REPO in your shell)
+
+eval "$(bash tools/bootstrap.sh --export)"
+
+# 1. AUDIT (read-only; safe to run anytime; ~3 seconds)
+
+python3 scripts/selfcheck_master.py
+# expected: "OK: 7/7 checks pass on 4774 files"
+
+# 2. STAMP (anchors current bytes in OTS calendars; ~5-15 seconds)
+
+python3 scripts/stamp_master_package.py
+# writes MASTER/MASTER_PACKAGE.ots (real PendingAttestation, 4 calendars)
+# writes MASTER/MASTER_PACKAGE.json (ots_status = STAMPED_PENDING_BITCOIN)
+
+# 3. REINDEX (captures post-stamp hashes; <1 second)
+
+python3 scripts/rebuild_master_files.py
+# writes MASTER/MASTER_FILES.json, INVENTORY.csv, MANIFEST.sha256
+
+# 4. SELF-CHECK (the 7 assertions; <1 second)
+
+python3 scripts/selfcheck_master.py
+# MUST still say "7/7 checks pass". If it fails on step 6, you ran
+# rebuild before stamp. Re-run stamp then rebuild (order matters).
+
+# 5. COMMIT (only after 7/7)
+
+git add MASTER/ scripts/ tools/
+git commit -m "what changed — reindexed, re-stamped, verified"
+
+# 6. UPGRADE OTS TO BITCOIN (slow, optional)
+
+python3 scripts/upgrade_ots.py \
+  --root-file MASTER/02_unsigned_pile/unsigned_merkle_root.json \
+  --stamp-file MASTER/02_unsigned_pile/unsigned_merkle_root.json.ots \
+  --wait
+# --wait blocks until a Bitcoin block header attestation is available
+# without --wait, the script exits idempotently with the current state
+
+# 7. ADD A FILE TO THE MASTER (operator workflow)
+
+cp /path/to/new.md MASTER/07_crosswalk/
+python3 scripts/stamp_master_package.py    # stamp FIRST
+python3 scripts/rebuild_master_files.py   # rebuild SECOND
+python3 scripts/selfcheck_master.py        # assert THIRD
+# expected: "OK: 7/7"
+git add MASTER/ scripts/
+git commit -m "add <description>"
+
+# ----- LIVE BOARD CHECK (separate from the master itself) -----
+
+curl -sS https://councilof.ai/api/gspc  | python3 -c "import sys,json;print('board:',json.load(sys.stdin)['totals']['public_count'])"
+curl -sS https://councilof.ai/root.json | python3 -c "import sys,json;print('root cards:',json.load(sys.stdin)['card_count'])"
+
+# ----- WHO TO TELL WHAT IS WRONG -----
+
+# Step 6 (MASTER_PACKAGE.json package_sha != MANIFEST.sha256 sha256):
+#   you ran rebuild before stamp. Re-run stamp then rebuild.
+
+# Step 5 (.ots has no PendingAttestation):
+#   your OTS stamp is fake or stale. Re-run scripts/stamp_master_package.py
+
+# ots CLI missing:
+#   macOS:   brew install opentimestamps
+#   Debian:  apt install opentimestamps-client
+#   Source:  cargo install opentimestamps-client
+
+# Bitcoin attestation not visible after 6+ hours:
+#   re-run scripts/upgrade_ots.py --wait (calendar servers update weekly)
+
+# ----- KEY NUMBERS (live, fetched today) -----
+
+# 305 leaves in councilof.ai/root.json
+# 335 cards in councilof.ai/signed/card_index.json
+# 23 axis · 22 measured in councilof.ai/api/gspc
+# 1,513 unsigned RunPod card bodies in csoai/runpod-gspc-intake
+#   (subset: 4,774 files in this master, 7/7 self-check passing)
+
+# ----- WHAT THIS MASTER DOES NOT HAVE (honest, see INDEX_OF_WHATS_NOT_HERE.md) -----
+
+# no Ed25519 production signature (key on operator HSM, not this Mac)
+# no source text bodies of CLARITY/SEC/CFTC/EU AI Act (we cite URLs)
+# no Bitcoin-confirmed OTS yet (4 PendingAttestations, waiting)
+# no COBOL measurement bank (CSOAI doesn't COBOL; outreach only)
+
+# ----- THE 7 SELF-CHECK ASSERTIONS -----
+
+# 1. MASTER_FILES.json parses, schema 2.0
+# 2. self_referencing list == 4 expected files
+# 3. every non-self file exists + sha256-matches + has a purpose
+# 4. INVENTORY.csv rows == MANIFEST.sha256 rows + 1
+# 5. both .ots stamps contain PendingAttestation (real, not stubs)
+# 6. MASTER_PACKAGE.json package_sha == sha256(MANIFEST.sha256)
+# 7. ots_status in {BITCOIN_CONFIRMED, STAMPED_PENDING_BITCOIN, BROKEN_rc_N}
