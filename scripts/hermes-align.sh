@@ -49,7 +49,7 @@ else
   if ( set -a; . "$ENVF" ) >/dev/null 2>&1; then
     ok "env file sources cleanly"
   else
-    bad "env file does NOT parse - every line below the bad one is silently lost"
+    bad "env file does NOT parse — every line below the bad one is silently lost"
     ( set -a; . "$ENVF" ) 2>&1 | head -3 | sed 's/^/        /'
   fi
 
@@ -92,7 +92,7 @@ import json,sys,os
 d=json.load(open(os.path.expanduser('~/.hermes/auth.json')))
 sys.exit(0 if 'xai-oauth' in (d.get('providers') or {}) else 1)" 2>/dev/null; then
   if grep -qE '^XAI_API_KEY=' "$ENVF" 2>/dev/null; then
-    bad "XAI_API_KEY is set AND an xai-oauth session exists - the env key shadows the paid session"
+    bad "XAI_API_KEY is set AND an xai-oauth session exists — the env key shadows the paid session"
     [ "$APPLY" = "1" ] && sed -i.bak-align '/^XAI_API_KEY=/d' "$ENVF" && ok "XAI_API_KEY removed"
   else
     ok "xai-oauth session present with no env key shadowing it"
@@ -110,7 +110,7 @@ import yaml,os
 d=yaml.safe_load(open(os.path.expanduser('~/.hermes/config.yaml')))
 print((d.get('agent') or {}).get('reasoning_effort',''))" 2>/dev/null)
   case "$RE" in
-    xhigh) bad "agent.reasoning_effort is xhigh - xAI-only; OpenAI rejects it and every fallback dies on it"
+    xhigh) bad "agent.reasoning_effort is xhigh — xAI-only; OpenAI rejects it and every fallback dies on it"
            if [ "$APPLY" = "1" ]; then
              python3 -c "
 import yaml,os,pathlib
@@ -121,7 +121,7 @@ p.write_text(yaml.safe_dump(d,sort_keys=False,allow_unicode=True,width=4096))"
            fi ;;
     minimal|low|medium|high) ok "agent.reasoning_effort is $RE" ;;
     "") warn "agent.reasoning_effort is unset" ;;
-    *) warn "agent.reasoning_effort is '$RE' - verify every configured provider accepts it" ;;
+    *) warn "agent.reasoning_effort is '$RE' — verify every configured provider accepts it" ;;
   esac
 else
   bad "$CFG does not exist"
@@ -144,9 +144,21 @@ if [ -d "$REPO" ]; then
         echo "        A manifest is generated FROM THE BYTES, never from a list of files you meant to stamp."
       fi
       if [ "$ORPH" -gt 0 ]; then
-        bad "a real proof no longer covers its artefact - the artefact was regenerated under its stamp"
+        bad "a real proof no longer covers its artefact — the artefact was regenerated under its stamp"
         grep -A 1 'ORPHANED' /tmp/align-ots.log | tail -2 | sed 's/^/        /'
-        echo "        fix: re-stamp the artefact. Never regenerate underneath an existing stamp."
+        if [ "$APPLY" = "1" ]; then
+          # Re-stamping an orphan is safe: it produces a NEW proof over the bytes that are actually
+          # published. It is not editing a stamp, which nothing may do.
+          grep -oE 'public/[^ ]+\.ots' /tmp/align-ots.log | sort -u | while read -r stamp; do
+            src="${stamp%.ots}"
+            if [ -f "$REPO/$src" ]; then
+              ( cd "$REPO" && python3 scripts/ots/ots-stamp.py --file "$src" --out "$stamp" >/dev/null 2>&1 ) \
+                && echo "        re-stamped $src"
+            fi
+          done
+        else
+          echo "        fix: re-stamp the artefact. Never regenerate underneath an existing stamp."
+        fi
       fi
       if [ "$APPLY" = "1" ] && [ -f "$REPO/scripts/ots_manifest_rebuild.py" ]; then
         ( cd "$REPO" && python3 scripts/ots_manifest_rebuild.py --apply ) | sed 's/^/        /'
@@ -155,7 +167,7 @@ if [ -d "$REPO" ]; then
       fi
     fi
   else
-    bad "scripts/ots_guard.py missing - this machine cannot detect fake proofs at all"
+    bad "scripts/ots_guard.py missing — this machine cannot detect fake proofs at all"
   fi
 else
   warn "repo not found at $REPO (pass --repo=/path)"
@@ -168,7 +180,7 @@ if command -v gh >/dev/null 2>&1; then
   PROT=$(gh api repos/CSOAI-ORG/councilof-ai/branches/master/protection --jq '.enforce_admins.enabled' 2>/dev/null || echo "none")
   case "$PROT" in
     true) ok "master is protected and the protection applies to admins too" ;;
-    false) bad "master is protected but admins are exempt - an admin agent bypasses every gate"
+    false) bad "master is protected but admins are exempt — an admin agent bypasses every gate"
            echo "        fix: gh api -X POST repos/CSOAI-ORG/councilof-ai/branches/master/protection/enforce_admins" ;;
     *) bad "master has no branch protection; direct pushes bypass every gate" ;;
   esac
