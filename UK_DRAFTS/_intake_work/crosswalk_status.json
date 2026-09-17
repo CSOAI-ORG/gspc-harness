@@ -1,0 +1,22 @@
+{
+  "schema": "csoai.crosswalk-status/1.0",
+  "as_of": "2026-09-16",
+  "sources": {
+    "clarity.senate.market_structure": {
+      "legislative_state": "STALLED (procedural advancement failed on 14 Sep 2026)",
+      "attempted": "SEC/CFTC jurisdiction split for digital commodities",
+      "evidence": "public reporting — no signed artifact collected yet, must be fetched"
+    },
+    "sec.regulation_crypto_assets": {"status": "OPEN", "comments_close": "2026-10-20"},
+    "sec_cftc.interpretation_2026": {"status": "OPERATIVE"},
+    "genius.stablecoin_implementation": {"status": "ENACTED", "note": "permitted issuer + reserve requirements live"},
+    "cftc.innovation_task_force": {"status": "ACTIVE", "recent_meetings": ["Fireblocks","Ondo","BitGo","Hedera","Moody's"]},
+    "osaia.safe.rfc": {"status": "OPEN", "comments_close": "2026-09-21"},
+    "swift.17bank_pilot": {"status": "PILOT"},
+    "x402.pay_per_call": {"status": "LIVE", "do_count": 11, "cs_oai_endpoints": 11},
+    "22_axes.living_board": {"status": "22 measured / 1 declared slot", "as_of": "2026-09-15T07:13:43Z"}
+  },
+  "frozen_to_fluid": {
+    "example": "CLARITY: yesterday=ADVANCING, today=STALLED. Underlying regulatory problem persists. Dependent sources still ACTIVE (SEC rulemaking, CFTC rulemaking, joint interpretation). Effects on measurement graph MUST be computed, not typed."
+  }
+}

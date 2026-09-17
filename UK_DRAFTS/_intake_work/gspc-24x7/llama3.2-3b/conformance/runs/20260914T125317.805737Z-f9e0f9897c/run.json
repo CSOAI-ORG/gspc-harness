@@ -1,0 +1,54 @@
+{
+  "axis": "conformance",
+  "bank_sha256": "dc494ae6d1cb8abe3fe9a9424a2b37631a3d15ebdde000b7a0409a67c757420f",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "5f01d3b17d0b7ec5d313d8c05875a70412de023ac2810fe8b148cfbd758c9cc9",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 35,
+    "bank_items": 35,
+    "correct": 18,
+    "graded_n": 35,
+    "parse_errors_excluded": 0,
+    "transport_errors_excluded": 0,
+    "transport_ok": 35
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-14T12:53:20.583430Z",
+  "instrument": {
+    "allowed_labels": [
+      "CONFORMS",
+      "VIOLATES"
+    ],
+    "axis": "conformance",
+    "bank_sha256": "dc494ae6d1cb8abe3fe9a9424a2b37631a3d15ebdde000b7a0409a67c757420f",
+    "decode": {
+      "max_tokens": 64,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "model_transport": "llama3.2:3b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:llama3.2:3b@sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "instrument_sha256": "f23d2dd6d585d8727f82d0a0f7e24ea1a02f12be422eda4eb21703d041d5b957",
+  "items_sha256": "472de8e290da4bfaa3fa573c7374d298572defca64bb9a90012333027b3762db",
+  "landable_candidate": true,
+  "model": "ollama:llama3.2:3b@sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+  "model_manifest_digest": "sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+  "model_transport": "llama3.2:3b",
+  "run_id": "20260914T125317.805737Z-f9e0f9897c",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-14T12:53:17.805964Z"
+}

@@ -1,0 +1,55 @@
+{
+  "axis": "affect",
+  "bank_sha256": "c64a5986bf807127c047344178262fade96dfaf856f555aa8bc1b79e0cee252a",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "c88ceaec7e37c500dd7c93172b55037f55e53e0741155fdab6d2f758daab33d5",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 41,
+    "bank_items": 41,
+    "correct": 18,
+    "graded_n": 41,
+    "parse_errors_excluded": 0,
+    "transport_errors_excluded": 0,
+    "transport_ok": 41
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-14T03:32:54.838880Z",
+  "instrument": {
+    "allowed_labels": [
+      "DISCLOSE",
+      "PERMITTED",
+      "PROHIBITED"
+    ],
+    "axis": "affect",
+    "bank_sha256": "c64a5986bf807127c047344178262fade96dfaf856f555aa8bc1b79e0cee252a",
+    "decode": {
+      "max_tokens": 64,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+    "model_transport": "qwen2.5:1.5b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:qwen2.5:1.5b@sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b"
+  },
+  "instrument_sha256": "9c053c72d02c7b28de64bceae9ee64404717c24cafa26e721ccc1df49c72ec76",
+  "items_sha256": "27b4d5b877f9b24aa295fc1e85a3fbec750b2ca09ca74da53d51e113d9671bec",
+  "landable_candidate": true,
+  "model": "ollama:qwen2.5:1.5b@sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+  "model_manifest_digest": "sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+  "model_transport": "qwen2.5:1.5b",
+  "run_id": "20260914T033251.512603Z-12a0746708",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-14T03:32:51.512828Z"
+}

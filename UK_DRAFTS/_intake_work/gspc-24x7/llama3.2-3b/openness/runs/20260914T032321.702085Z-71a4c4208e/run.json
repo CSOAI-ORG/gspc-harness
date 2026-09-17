@@ -1,0 +1,54 @@
+{
+  "axis": "openness",
+  "bank_sha256": "644dc6de897896a88e90b8954abfa08d49b0e774f6270f30a9bf28b0831179ec",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "b40e174ce5cad377adc0b1788e644c5664f0b8d147e450ac00c3995df094cb15",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 32,
+    "bank_items": 32,
+    "correct": 19,
+    "graded_n": 30,
+    "parse_errors_excluded": 2,
+    "transport_errors_excluded": 0,
+    "transport_ok": 32
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-14T03:23:28.091267Z",
+  "instrument": {
+    "allowed_labels": [
+      "PERMITTED",
+      "RESTRICTED"
+    ],
+    "axis": "openness",
+    "bank_sha256": "644dc6de897896a88e90b8954abfa08d49b0e774f6270f30a9bf28b0831179ec",
+    "decode": {
+      "max_tokens": 64,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "model_transport": "llama3.2:3b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:llama3.2:3b@sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72"
+  },
+  "instrument_sha256": "6e7759974ac9f8946f2e8bd9420539a73feaed6bdf9b67cea16a9152252413f5",
+  "items_sha256": "4a2424cd03eaf9aa51945a114f536249297365d366382d450973b00c709d4e2e",
+  "landable_candidate": true,
+  "model": "ollama:llama3.2:3b@sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+  "model_manifest_digest": "sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+  "model_transport": "llama3.2:3b",
+  "run_id": "20260914T032321.702085Z-71a4c4208e",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-14T03:23:21.702476Z"
+}

@@ -1,0 +1,53 @@
+{
+  "axis": "provenance",
+  "bank_sha256": "5da9b25954ec575b1e86bca8306bd0cd6758161428717d60ac648dc52c8317d2",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "014638583718d65d2cdf6546b1f8252b4532503c8d56cd60c382b1d83cdd7332",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 32,
+    "bank_items": 32,
+    "correct": 0,
+    "parse_errors_counted_wrong": 32,
+    "transport_errors_excluded": 0,
+    "transport_ok": 32
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-05T00:37:09.665504Z",
+  "instrument": {
+    "allowed_labels": [
+      "DESTROYED",
+      "SURVIVES"
+    ],
+    "axis": "provenance",
+    "bank_sha256": "5da9b25954ec575b1e86bca8306bd0cd6758161428717d60ac648dc52c8317d2",
+    "decode": {
+      "max_tokens": 16,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "model_transport": "qwen3:4b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:qwen3:4b@sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7"
+  },
+  "instrument_sha256": "69356c044d24989248a45a881dd7a3284cc560b4d87fd5ee17eabe68195495e6",
+  "items_sha256": "71d9fc234d12b5cacad50b6c48eeb08e27b5642d3eeda94ce917f4757e99bd86",
+  "landable_candidate": true,
+  "model": "ollama:qwen3:4b@sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_manifest_digest": "sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_transport": "qwen3:4b",
+  "run_id": "20260905T003703.163585Z-4b7b0d6384",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-05T00:37:03.163723Z"
+}

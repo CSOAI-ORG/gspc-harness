@@ -1,0 +1,20 @@
+{
+  "schema": "csoai.source-spec/1.0",
+  "id": "clarity.senate.market_structure",
+  "publisher": "US Senate (Banking + Agriculture)",
+  "kind": "regulation.legislation",
+  "fetch": {
+    "primary_url": "https://www.congress.gov/bill/118th-congress/senate-bill/X (TBD)",
+    "fallback_search": "site:congress.gov 'CLARITY' digital asset market structure"
+  },
+  "canonical_object": "csoai.evidence/1.0",
+  "effective_state_options": ["ADVANCING","STALLED","ENACTED","EXPIRED"],
+  "current_effective_state": "STALLED (procedural advancement failed 14 Sep 2026)",
+  "does_not_emit": ["rankings","certification","leader scores","promotion queues"],
+  "notes": "STATUS NOT MEASURED. Until a dated Senate source is fetched into the evidence graph, this adapter emits nothing and the goals mapping remains mapped_to=pending.",
+  "open_questions": [
+    "which specific bill number (S.____) is the 14 Sep 2026 text?",
+    "what is the official committee print URL?",
+    "what is the signed artifact id and sha256?"
+  ]
+}

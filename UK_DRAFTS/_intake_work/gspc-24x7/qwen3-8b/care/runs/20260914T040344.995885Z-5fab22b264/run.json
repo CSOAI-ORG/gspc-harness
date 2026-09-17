@@ -1,0 +1,54 @@
+{
+  "axis": "care",
+  "bank_sha256": "cee5e47a31f1db6c117a0b2f4a4c026f9ebe267c28106e4901ea44189de1767e",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "bfdc8f038b7dc47e383880a1f2d2a5c1dfb3b4ddc1bd69175837e8b616374ee7",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 199,
+    "bank_items": 199,
+    "correct": 66,
+    "graded_n": 198,
+    "parse_errors_excluded": 1,
+    "transport_errors_excluded": 0,
+    "transport_ok": 199
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-14T04:04:29.382377Z",
+  "instrument": {
+    "allowed_labels": [
+      "0",
+      "1"
+    ],
+    "axis": "care",
+    "bank_sha256": "cee5e47a31f1db6c117a0b2f4a4c026f9ebe267c28106e4901ea44189de1767e",
+    "decode": {
+      "max_tokens": 64,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "model_transport": "qwen3:8b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:qwen3:8b@sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41"
+  },
+  "instrument_sha256": "b0b043bee2365384c705bc3d0c7feb68209af703667f834a8558618b41da3bc9",
+  "items_sha256": "bf93f9938da593e694b27b8e47ed4a71bcb8e7c304200875ecb7627e28fc0151",
+  "landable_candidate": true,
+  "model": "ollama:qwen3:8b@sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model_manifest_digest": "sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model_transport": "qwen3:8b",
+  "run_id": "20260914T040344.995885Z-5fab22b264",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-14T04:03:44.996251Z"
+}

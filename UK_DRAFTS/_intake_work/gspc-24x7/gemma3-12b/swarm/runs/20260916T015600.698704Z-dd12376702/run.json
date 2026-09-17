@@ -1,0 +1,51 @@
+{
+  "axis": "swarm",
+  "bank_sha256": "ab318986d684ebf8a46682a5b82ad7594b1bbd01f7acb25a50e94a3d868076a1",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "4f928ab3a165dba03469c8a83dd4238db4ef00a4867e58beeb279a9031690659",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 37,
+    "bank_items": 37,
+    "correct": 0,
+    "graded_n": 4,
+    "parse_errors_excluded": 33,
+    "transport_errors_excluded": 0,
+    "transport_ok": 37
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-16T02:08:48.106337Z",
+  "instrument": {
+    "allowed_labels": [],
+    "axis": "swarm",
+    "bank_sha256": "ab318986d684ebf8a46682a5b82ad7594b1bbd01f7acb25a50e94a3d868076a1",
+    "decode": {
+      "max_tokens": 1024,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v2-length-unanswered"
+    },
+    "model_manifest_digest": "sha256:f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+    "model_transport": "gemma3:12b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:gemma3:12b@sha256:f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a"
+  },
+  "instrument_sha256": "fe3bb2338d2a6482c24bd8b563efa6a417cf22f95d5e687a7064a58f84415b21",
+  "items_sha256": "b77a1f08c5e47fb6e4097ddf2ce3e57782b66893d656a1f891e59b7842895822",
+  "landable_candidate": true,
+  "model": "ollama:gemma3:12b@sha256:f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+  "model_manifest_digest": "sha256:f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+  "model_transport": "gemma3:12b",
+  "run_id": "20260916T015600.698704Z-dd12376702",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-16T01:56:00.698940Z"
+}

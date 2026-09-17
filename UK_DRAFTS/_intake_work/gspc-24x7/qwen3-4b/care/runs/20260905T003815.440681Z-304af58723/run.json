@@ -1,0 +1,53 @@
+{
+  "axis": "care",
+  "bank_sha256": "cee5e47a31f1db6c117a0b2f4a4c026f9ebe267c28106e4901ea44189de1767e",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "b1de1e6bc14e0ac284ded9b1619129154c78aa48f00cee6cf42f2f98feee32e8",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 199,
+    "bank_items": 199,
+    "correct": 0,
+    "parse_errors_counted_wrong": 199,
+    "transport_errors_excluded": 0,
+    "transport_ok": 199
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-05T00:38:56.630290Z",
+  "instrument": {
+    "allowed_labels": [
+      "0",
+      "1"
+    ],
+    "axis": "care",
+    "bank_sha256": "cee5e47a31f1db6c117a0b2f4a4c026f9ebe267c28106e4901ea44189de1767e",
+    "decode": {
+      "max_tokens": 16,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "model_transport": "qwen3:4b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:qwen3:4b@sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7"
+  },
+  "instrument_sha256": "265a695d621c1ba6c82b2e6558d863c0238dfa30a47945fb3b8cf25ea3cf9fe2",
+  "items_sha256": "0b1b0b5e7018511e5677434faf40f37c4468efcbfa848845fa3b612025c4993b",
+  "landable_candidate": true,
+  "model": "ollama:qwen3:4b@sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_manifest_digest": "sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_transport": "qwen3:4b",
+  "run_id": "20260905T003815.440681Z-304af58723",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-05T00:38:15.440938Z"
+}

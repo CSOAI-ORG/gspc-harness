@@ -1,0 +1,54 @@
+{
+  "axis": "care",
+  "bank_sha256": "cee5e47a31f1db6c117a0b2f4a4c026f9ebe267c28106e4901ea44189de1767e",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "85dc9b8a8f2b699679f0e45b199f3c55057ef9cb8aa7df30d992c1d83350fc2c",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 199,
+    "bank_items": 199,
+    "correct": 47,
+    "graded_n": 81,
+    "parse_errors_excluded": 118,
+    "transport_errors_excluded": 0,
+    "transport_ok": 199
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-14T12:57:27.714743Z",
+  "instrument": {
+    "allowed_labels": [
+      "0",
+      "1"
+    ],
+    "axis": "care",
+    "bank_sha256": "cee5e47a31f1db6c117a0b2f4a4c026f9ebe267c28106e4901ea44189de1767e",
+    "decode": {
+      "max_tokens": 64,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+    "model_transport": "qwen2.5:1.5b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:qwen2.5:1.5b@sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b"
+  },
+  "instrument_sha256": "9dce5b91326232aa91f2d97a30f879cdc85b71cf87fee47f340dafc8badbbb8b",
+  "items_sha256": "0278430cc710fc332a29f803aca4ff40137cb7b2019798c1ff171ff495cbab88",
+  "landable_candidate": true,
+  "model": "ollama:qwen2.5:1.5b@sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+  "model_manifest_digest": "sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+  "model_transport": "qwen2.5:1.5b",
+  "run_id": "20260914T125707.326058Z-7fe83cf4c2",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-14T12:57:07.326296Z"
+}

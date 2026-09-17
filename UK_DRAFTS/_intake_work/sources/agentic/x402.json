@@ -1,0 +1,16 @@
+{
+  "schema": "csoai.source-spec/1.0",
+  "id": "x402.pay_per_call",
+  "publisher": "Coinbase CDP + Linux Foundation x402",
+  "kind": "agentic.protocol",
+  "fetch": {
+    "primary_url": "https://www.x402.org",
+    "cs_oai_well_known": "https://councilof.ai/.well-known/x402.json"
+  },
+  "canonical_object": "csoai.evidence/1.0",
+  "effective_state_options": ["LIVE","QUARANTINED","RETIRED"],
+  "current_effective_state": "LIVE",
+  "cs_oai_endpoint_count": 11,
+  "mcp_payment_policy_supported": ["amount","currency","network","server","tool","per-agent","per-session"],
+  "notes": "MAPLE/REGIME budget sits above x402, not inside it. x402 is the rail; CSOAI measures what evidence existed when an agent was permitted to spend."
+}

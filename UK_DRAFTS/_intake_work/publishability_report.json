@@ -1,0 +1,115 @@
+{
+  "schema": "csoai.intake-publishability/1.0",
+  "as_of": "2026-09-16",
+  "card_count": 1513,
+  "checks": {
+    "can_the_item_fail": {
+      "pass": 1454,
+      "fail": 59,
+      "rule": "items.jsonl expected-set has exactly one permitted answer"
+    },
+    "n_honest": {
+      "pass": 1231,
+      "fail": 282,
+      "threshold": 30,
+      "rule": "n>=30 required for MEASURED"
+    },
+    "grader_identified": {
+      "pass": 1513,
+      "fail": 0,
+      "rule": "bank_sha256 AND instrument_sha256 present"
+    },
+    "score_recomputes": {
+      "pass": 1052,
+      "fail": 461,
+      "tolerance": 0.02,
+      "rule": "recomputed = sum(grade=True)/n"
+    },
+    "suspicious_perfect": {
+      "pass": 1509,
+      "fail": 4,
+      "rule": "accuracy==1.0 AND n>=30 (September-defect signature)"
+    }
+  },
+  "control": {
+    "card_acc": 1.0,
+    "recomputed": 0.42,
+    "tolerance": 0.02,
+    "flagged": true
+  },
+  "failing_examples": {
+    "forced_pass": [
+      "gspc-24x7/deepseek-r1-8b/swarm/runs/20260914T031123.692924Z-2906496bc3/card-unsigned.json",
+      "gspc-24x7/deepseek-r1-8b/swarm/runs/20260914T042757.294119Z-7324171aef/card-unsigned.json",
+      "gspc-24x7/deepseek-r1-8b/swarm/runs/20260914T132922.599496Z-4cd82451f6/card-unsigned.json",
+      "gspc-24x7/deepseek-r1-8b/swarm/runs/20260915T030808.817107Z-84cd0bf2e9/card-unsigned.json",
+      "gspc-24x7/deepseek-r1-8b/swarm/runs/20260916T032253.725313Z-95d0f6ce53/card-unsigned.json"
+    ],
+    "n_lt_30": [
+      [
+        "gspc-24x7/deepseek-r1-8b/swarm/runs/20260915T030808.817107Z-84cd0bf2e9/card-unsigned.json",
+        1
+      ],
+      [
+        "gspc-24x7/deepseek-r1-8b/swarm/runs/20260916T032253.725313Z-95d0f6ce53/card-unsigned.json",
+        1
+      ],
+      [
+        "gspc-24x7/gemma3-12b/swarm/runs/20260915T014307.110190Z-da3a6baa93/card-unsigned.json",
+        4
+      ],
+      [
+        "gspc-24x7/gemma3-12b/swarm/runs/20260916T015600.698704Z-dd12376702/card-unsigned.json",
+        4
+      ],
+      [
+        "gspc-24x7/gemma3-4b/safety/runs/20260914T025635.426322Z-8aa330ad25/card-unsigned.json",
+        27
+      ]
+    ],
+    "perfect_n30": [
+      "gspc-24x7/gemma3-12b/art5-safeguard/runs/20260914T052432.383173Z-cfcc0abe96/card-unsigned.json",
+      "gspc-24x7/gemma3-12b/art5-safeguard/runs/20260914T134626.810554Z-a1ff9ae430/card-unsigned.json",
+      "gspc-24x7/gemma3-12b/art5-safeguard/runs/20260915T014247.709742Z-a6afb420f2/card-unsigned.json",
+      "gspc-24x7/gemma3-12b/art5-safeguard/runs/20260916T014739.115949Z-363df01293/card-unsigned.json"
+    ],
+    "mismatch": [
+      {
+        "path": "gspc-24x7/gemma3-12b/care/runs/20260914T052733.896476Z-3597bb991d/card-unsigned.json",
+        "card_acc": 0.3832,
+        "recomputed": 0.3216,
+        "items": 199,
+        "graded_correct": 64
+      },
+      {
+        "path": "gspc-24x7/gemma3-12b/care/runs/20260914T134738.884497Z-1253939eb4/card-unsigned.json",
+        "card_acc": 0.3832,
+        "recomputed": 0.3216,
+        "items": 199,
+        "graded_correct": 64
+      },
+      {
+        "path": "gspc-24x7/gemma3-12b/care/runs/20260915T015600.691592Z-0b1ef2fef9/card-unsigned.json",
+        "card_acc": 0.3832,
+        "recomputed": 0.3216,
+        "items": 199,
+        "graded_correct": 64
+      },
+      {
+        "path": "gspc-24x7/gemma3-12b/care/runs/20260916T020848.401852Z-59d607511b/card-unsigned.json",
+        "card_acc": 0.3832,
+        "recomputed": 0.3216,
+        "items": 199,
+        "graded_correct": 64
+      },
+      {
+        "path": "gspc-24x7/gemma3-12b/safety/runs/20260914T052159.784348Z-40776aa223/card-unsigned.json",
+        "card_acc": 0.8485,
+        "recomputed": 0.7778,
+        "items": 36,
+        "graded_correct": 28
+      }
+    ]
+  },
+  "note": "three states never collapsed into two: pass / fail / unchecked (no items.jsonl)"
+}

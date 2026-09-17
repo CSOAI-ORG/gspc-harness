@@ -1,0 +1,55 @@
+{
+  "axis": "machinery-conformity",
+  "bank_sha256": "ab0b40f2336e81703e3c17e9988b88a3b0d4bf3a441aa7c3c53b038a6398a434",
+  "candidate_file": "card-unsigned.json",
+  "candidate_status": "UNMEASURED",
+  "card_sha256": "57ee736ff76e80d5d84abae0be0eae0aeb09d861180e7f58fc2002c8e292f451",
+  "complete": true,
+  "compute_only": true,
+  "counts": {
+    "attempted": 33,
+    "bank_items": 33,
+    "correct": 11,
+    "graded_n": 26,
+    "parse_errors_excluded": 7,
+    "transport_errors_excluded": 0,
+    "transport_ok": 33
+  },
+  "detail_code": "COMPLETE_UNSIGNED",
+  "finished_at": "2026-09-14T02:49:26.807020Z",
+  "instrument": {
+    "allowed_labels": [
+      "NOT_SAFETY_FUNCTION",
+      "OUT_OF_SCOPE",
+      "PART_A"
+    ],
+    "axis": "machinery-conformity",
+    "bank_sha256": "ab0b40f2336e81703e3c17e9988b88a3b0d4bf3a441aa7c3c53b038a6398a434",
+    "decode": {
+      "max_tokens": 64,
+      "seed": 0,
+      "stream": false,
+      "temperature": 0,
+      "think": false
+    },
+    "graders": {
+      "exact_label": "unicode-exact-after-outer-whitespace-v1",
+      "keyword_match": "all-nfkc-casefold-whitespace-normalized-substrings-v1"
+    },
+    "model_manifest_digest": "sha256:6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+    "model_transport": "mistral:7b",
+    "prompt_adapter": "frozen-prompt-plus-public-label-set-v1",
+    "schema": "csoai.runpod-gspc-worker/0.1",
+    "subject": "ollama:mistral:7b@sha256:6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf"
+  },
+  "instrument_sha256": "7636e3073c4f723d8b9d99af34e083aa1e0a5443d8f3dbf75a3c80bdc6b01df2",
+  "items_sha256": "9f41d9ded044cecd951b6b6a5752af7a5a0b890ac155c2f35e4b5de1c1676c95",
+  "landable_candidate": true,
+  "model": "ollama:mistral:7b@sha256:6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+  "model_manifest_digest": "sha256:6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+  "model_transport": "mistral:7b",
+  "run_id": "20260914T024920.903766Z-9a172fb824",
+  "schema": "csoai.runpod-gspc-run/0.1",
+  "signature": null,
+  "started_at": "2026-09-14T02:49:20.904005Z"
+}

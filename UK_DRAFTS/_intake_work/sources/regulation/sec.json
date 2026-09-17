@@ -1,0 +1,16 @@
+{
+  "schema": "csoai.source-spec/1.0",
+  "id": "sec.regulation_crypto_assets",
+  "publisher": "SEC",
+  "kind": "regulation.proposal",
+  "fetch": {
+    "primary_url": "https://www.sec.gov/rules-regulations/2026/X (TBD)",
+    "comments_close": "2026-10-20"
+  },
+  "canonical_object": "csoai.evidence/1.0",
+  "effective_state_options": ["OPEN","CLOSED","ENACTED"],
+  "current_effective_state": "OPEN",
+  "does_not_emit": ["rankings","certification","leader scores","promotion queues"],
+  "notes": "Adapter emits per-clause evidence objects (offering exemption disclosures, safe harbour conditions, antifraud/antimanipulation). Each is keyed by goal and tagged with the rule's section number once the rule text is fetched.",
+  "open_questions": ["which docket number on sec.gov?"]
+}

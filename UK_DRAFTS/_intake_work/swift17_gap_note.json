@@ -1,0 +1,59 @@
+{
+  "schema": "csoai.swift-17-gap/1.0",
+  "as_of": "2026-09-16",
+  "membership": "17/17",
+  "measured": "0/17",
+  "one_sentence": "SWIFT-17 is a 17-bank named cohort with no measurement run behind it; the GSPC axis it would attach to requires a benchmark name not present in any row (the `axis_evidence.bank_run` field is empty for all 17).",
+  "gap": {
+    "missing_artifact": "axis_evidence.bank_run",
+    "required_source_kind": "a published, dated, SWIFT-attributed disclosure or commitment, with provenance, NOT a newsroom index page",
+    "known_bad_sources": "11 of 17 rows carry a `source` field whose URL resolves to a press-release index page that the dataset constructor wrote; those URLs are explicitly excluded as a primary source"
+  },
+  "sample_rows": [
+    {
+      "bank": "ANZ",
+      "status": "DISCOVERED",
+      "board_status": "UNMEASURED",
+      "n": 0,
+      "not_a_grade": true,
+      "not_a_client": true,
+      "settlement": "off_chain",
+      "settlement_still_off_chain": true,
+      "source": "SWIFT press release 2026-07-09 (public notice)",
+      "url_sha256": "215626e6c3a947b1d4cef4de1e169ae36c7351786aeb3d434b815f34f98d637f",
+      "card_sha256": "764827b125a82fae5933548a93491e890bedd80484eb630c02458bef6712ee60",
+      "card_url": "https://councilof.ai/cards/764827b125a82fae.json",
+      "as_of": "2026-08-31T07:38:20Z"
+    },
+    {
+      "bank": "BNP Paribas",
+      "status": "DISCOVERED",
+      "board_status": "UNMEASURED",
+      "n": 0,
+      "not_a_grade": true,
+      "not_a_client": true,
+      "settlement": "off_chain",
+      "settlement_still_off_chain": true,
+      "source": "SWIFT press release 2026-07-09 (public notice)",
+      "url_sha256": "215626e6c3a947b1d4cef4de1e169ae36c7351786aeb3d434b815f34f98d637f",
+      "card_sha256": "5cb6483adfedf48d585e68ab72178c01bdc87f25071e01387d799d4a70cd7ab1",
+      "card_url": "https://councilof.ai/cards/5cb6483adfedf48d.json",
+      "as_of": "2026-08-31T07:38:20Z"
+    },
+    {
+      "bank": "BNY",
+      "status": "DISCOVERED",
+      "board_status": "UNMEASURED",
+      "n": 0,
+      "not_a_grade": true,
+      "not_a_client": true,
+      "settlement": "off_chain",
+      "settlement_still_off_chain": true,
+      "source": "SWIFT press release 2026-07-09 (public notice)",
+      "url_sha256": "215626e6c3a947b1d4cef4de1e169ae36c7351786aeb3d434b815f34f98d637f",
+      "card_sha256": "906c0d371fc9111f451a804b3ecf9b5ba7a3817b5db84709634606acbe87375c",
+      "card_url": "https://councilof.ai/cards/906c0d371fc9111f.json",
+      "as_of": "2026-08-31T07:38:20Z"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "csoai.source-spec/1.0",
+  "id": "cftc.innovation_task_force",
+  "publisher": "CFTC",
+  "kind": "regulation.program",
+  "fetch": {
+    "primary_url": "https://www.cftc.gov (TBD URL once source fetched)"
+  },
+  "canonical_object": "csoai.evidence/1.0",
+  "effective_state_options": ["ACTIVE","PAUSED","CONCLUDED"],
+  "current_effective_state": "ACTIVE",
+  "recent_meetings": ["Fireblocks","Ondo","BitGo","Hedera","Moody's"],
+  "does_not_emit": ["rankings","certification","leader scores","promotion queues"],
+  "notes": "CFTC ITF covers BOTH digital commodities AND AI/autonomous systems. This is the strongest regulator entry point because it intersects the two halves of CSOAI's measurement graph."
+}

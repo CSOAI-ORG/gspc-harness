@@ -1,0 +1,14 @@
+{
+  "schema": "csoai.source-spec/1.0",
+  "id": "osaia.safe",
+  "publisher": "Open Secure AI Alliance",
+  "kind": "assurance.framework",
+  "fetch": {
+    "primary_url": "https://opensecureai.org/safe (TBD URL)",
+    "comments_close": "2026-09-21"
+  },
+  "canonical_object": "csoai.evidence/1.0",
+  "effective_state_options": ["OPEN","ACCEPTED","MERGED","REJECTED"],
+  "current_effective_state": "OPEN",
+  "notes": "SAFE is asking contributors to help turn shared findings into evidence-based controls. Our 22-axis machinery maps to finding→measurement→provenance→remediation→remeasurement almost verbatim."
+}

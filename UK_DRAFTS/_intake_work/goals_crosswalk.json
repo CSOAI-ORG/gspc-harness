@@ -1,0 +1,60 @@
+{
+  "schema": "csoai.crosswalk-goals/1.0",
+  "as_of": "2026-09-16",
+  "goals": [
+    {"id":"asset.classification","question":"What is the instrument?"},
+    {"id":"actor.identity","question":"Who issued / controls / transacts?"},
+    {"id":"jurisdiction.attachment","question":"Which authority / rules potentially attach?"},
+    {"id":"disclosure.existence","question":"What information exists?"},
+    {"id":"custody.control","question":"Who controls the asset / keys?"},
+    {"id":"transaction.integrity","question":"What actually occurred?"},
+    {"id":"market.integrity","question":"What manipulation / abuse observations exist?"},
+    {"id":"customer.protection","question":"What safeguards are observable?"},
+    {"id":"reserves.backing","question":"What assets actually back the obligation?"},
+    {"id":"settlement.finality","question":"Where / how / when did finality occur?"},
+    {"id":"agent.authority","question":"What was an AI permitted to do?"},
+    {"id":"provenance.origin","question":"What produced the transaction / instruction?"},
+    {"id":"assurance.evidence","question":"What evidence supports those assertions?"},
+    {"id":"change.delta","question":"What has changed since the last measurement?"}
+  ],
+  "mappings": {
+    "clarity.stalled_14sep": [
+      {"goal":"asset.classification","clause":"§101 digital commodity vs security","note":"Senate text attempts to allocate; status STALLED"},
+      {"goal":"jurisdiction.attachment","clause":"SEC/CFTC jurisdiction","note":"House CLARITY + Senate Banking + Ag attempts"}
+    ],
+    "sec.reg_crypto_assets.comments_close_20oct2026": [
+      {"goal":"disclosure.existence","clause":"offering exemption disclosures"},
+      {"goal":"market.integrity","clause":"antifraud / antimanipulation"}
+    ],
+    "sec_cftc.interpretation_2026": [
+      {"goal":"asset.classification","clause":"digital commodity vs digital security"},
+      {"goal":"jurisdiction.attachment","clause":"CFTC investment-contract treatment"}
+    ],
+    "genius.stablecoin": [
+      {"goal":"reserves.backing","clause":"permitted issuer reserve requirements"},
+      {"goal":"custody.control","clause":"foreign issuer conditions"},
+      {"goal":"asset.classification","clause":"payment stablecoin"}
+    ],
+    "cftc.innovation_task_force": [
+      {"goal":"asset.classification","clause":"tokenised collateral, autonomous systems"},
+      {"goal":"change.delta","clause":"meetings with Fireblocks, Ondo, BitGo, Hedera, Moody's"}
+    ],
+    "osaia.safe.rfc_21sep2026": [
+      {"goal":"assurance.evidence","clause":"finding → measurement → provenance → remediation → remeasurement"},
+      {"goal":"change.delta","clause":"shared findings → evidence-based controls"}
+    ],
+    "swift.17bank_pilot": [
+      {"goal":"settlement.finality","clause":"tokenised deposit ledger, programmable money"},
+      {"goal":"custody.control","clause":"compliance / credit / risk / control preserved"},
+      {"goal":"provenance.origin","clause":"agentic commerce"}
+    ],
+    "x402.pay_per_call": [
+      {"goal":"agent.authority","clause":"amount, currency, network, server, tool, per-agent spending limits"},
+      {"goal":"transaction.integrity","clause":"X-PAYMENT header, settled receipt"}
+    ],
+    "22_axes.living_board": [
+      {"goal":"assurance.evidence","clause":"22 measured axes, 1 declared slot"},
+      {"goal":"change.delta","clause":"Rekor-witnessed root with OTS pending Bitcoin"}
+    ]
+  }
+}

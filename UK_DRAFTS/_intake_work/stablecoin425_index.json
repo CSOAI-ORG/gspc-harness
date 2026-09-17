@@ -1,0 +1,14 @@
+{
+  "schema": "csoai.stablecoin425-index/1.0",
+  "as_of": "2026-09-16",
+  "universe": 425,
+  "measured": 1,
+  "unmeasured": 424,
+  "arithmetic": "1+424=425 (must equal 425)",
+  "root_count": 305,
+  "card_index_count": 335,
+  "overlap": "Universe=425; measured=1; unmeasured=424; root=305; card_index=335; root vs index overlap (id set) was 0 per earlier audit; per-asset overlap with the 425 universe is not 1:1 because cards are evidence packets, not asset tokens.",
+  "refuse_to_publish_if_overlap_nonzero": true,
+  "guard": "asserts measured+unmeasured==universe; never average; never type derived numbers",
+  "input_index_sha256": "1f3154ee5aa247cd3b95ad0c90c20d0fbec5ae0de4f9d74906a52a9971667497"
+}
