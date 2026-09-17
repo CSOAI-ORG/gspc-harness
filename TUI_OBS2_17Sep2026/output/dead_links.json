@@ -1,0 +1,1087 @@
+{
+  "as_of": "2026-09-17T07:44:21.187724+00:00",
+  "rows": [
+    {
+      "label": "homepage",
+      "url": "https://councilof.ai/",
+      "final": "https://councilof.ai/",
+      "code": 200,
+      "bytes": 258765,
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai",
+      "final": "https://councilof.ai",
+      "code": 200,
+      "bytes": 258765,
+      "context": "link rel=\"canonical\" ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/feed.xml",
+      "final": "https://councilof.ai/feed.xml",
+      "code": 200,
+      "bytes": 40782,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 state changes\" ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/feeds/corrections.xml",
+      "final": "https://councilof.ai/feeds/corrections.xml",
+      "code": 200,
+      "bytes": 103792,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 corrections ledger\" ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/feeds/corrections.atom",
+      "final": "https://councilof.ai/feeds/corrections.atom",
+      "code": 200,
+      "bytes": 101877,
+      "context": "link rel=\"alternate\" type=\"application/atom+xml\" title=\"Council of AI \u2014 corrections ledger (Atom)\" ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/feeds/cards.xml",
+      "final": "https://councilof.ai/feeds/cards.xml",
+      "code": 200,
+      "bytes": 39149,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 newly signed measurement cards\" ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/feeds/roots.xml",
+      "final": "https://councilof.ai/feeds/roots.xml",
+      "code": 200,
+      "bytes": 1482,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 public root\" ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://fonts.googleapis.com",
+      "final": "https://fonts.googleapis.com",
+      "code": 404,
+      "bytes": 0,
+      "context": "link rel=\"preconnect\" ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://fonts.gstatic.com",
+      "final": "https://fonts.gstatic.com",
+      "code": 404,
+      "bytes": 0,
+      "context": "link rel=\"preconnect\" ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap",
+      "final": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap",
+      "code": 200,
+      "bytes": 952,
+      "context": "link ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://huggingface.co/datasets/csoai/gspc-hub-cards",
+      "final": "https://huggingface.co/datasets/csoai/gspc-hub-cards",
+      "code": 200,
+      "bytes": 1057628,
+      "context": "de>. This is a separate benchmark instrument from the GSPC board above: model axes rank measured cells; deterministic fact axes do not rank models.</p></div><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-455202deadee.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-455202deadee.json",
+      "code": 200,
+      "bytes": 1776,
+      "context": " text-slate-800 dark:text-emerald-100\">83.3%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-2c0fb0b31f09.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-2c0fb0b31f09.json",
+      "code": 200,
+      "bytes": 1806,
+      "context": " text-slate-800 dark:text-emerald-100\">83.3%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-28b37daeaad1.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-28b37daeaad1.json",
+      "code": 200,
+      "bytes": 1755,
+      "context": " text-slate-800 dark:text-emerald-100\">73.3%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-bd8ab023dec0.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-bd8ab023dec0.json",
+      "code": 200,
+      "bytes": 1742,
+      "context": " text-slate-800 dark:text-emerald-100\">66.7%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-3e6503c22c5a.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-3e6503c22c5a.json",
+      "code": 200,
+      "bytes": 1758,
+      "context": " text-slate-800 dark:text-emerald-100\">63.3%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-eba1061e7a92.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-eba1061e7a92.json",
+      "code": 200,
+      "bytes": 1783,
+      "context": "ms text-slate-800 dark:text-emerald-100\">60%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-6755ba5fdad8.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-6755ba5fdad8.json",
+      "code": 200,
+      "bytes": 1425,
+      "context": "text-slate-800 dark:text-emerald-100\">57.8%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 237</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-fdd6018a57f9.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-fdd6018a57f9.json",
+      "code": 200,
+      "bytes": 1756,
+      "context": " text-slate-800 dark:text-emerald-100\">56.7%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/mill-cards-signed/signed-governan-d3dcdd50fc18.json",
+      "final": "https://councilof.ai/interop/mill-cards-signed/signed-governan-d3dcdd50fc18.json",
+      "code": 200,
+      "bytes": 1770,
+      "context": " text-slate-800 dark:text-emerald-100\">56.7%<span class=\"ml-2 text-xs text-slate-500 dark:text-emerald-100/55\">n 30</span></td><td class=\"px-3 py-2 text-sm\"><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-pact",
+      "final": "https://digital-strategy.ec.europa.eu/en/policies/ai-pact",
+      "code": 200,
+      "bytes": 95523,
+      "context": "pan class=\"font-semibold text-slate-700\">Private confirmation.</span> The invitation email is held privately; no public participant entry is linked here.</p><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://datatracker.ietf.org/",
+      "final": "https://datatracker.ietf.org/",
+      "code": 200,
+      "bytes": 49643,
+      "context": "pan class=\"font-semibold text-slate-700\">Public record.</span> Mailing-list posts are public; the exact thread links are not yet catalogued on this card.</p><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://identity.foundation/",
+      "final": "https://identity.foundation/",
+      "code": 200,
+      "bytes": 49204,
+      "context": "n class=\"font-semibold text-slate-700\">Private confirmation.</span> The onboarding confirmation is held privately; no public member entry is linked here.</p><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://lotnet.com/",
+      "final": "https://lotnet.com/",
+      "code": 403,
+      "bytes": 0,
+      "context": "n class=\"font-semibold text-slate-700\">Private confirmation.</span> The membership confirmation is held privately; no public member entry is linked here.</p><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://openinventionnetwork.com/",
+      "final": "https://openinventionnetwork.com/",
+      "code": 200,
+      "bytes": 449449,
+      "context": "e-500\"><span class=\"font-semibold text-slate-700\">Private confirmation.</span> The confirmation is held privately; no public member entry is linked here.</p><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://www.x402-list.com/services/council-of-ai",
+      "final": "https://www.x402-list.com/services/council-of-ai",
+      "code": 200,
+      "bytes": 136447,
+      "context": "<span class=\"font-semibold text-slate-700\">Public record.</span> The check count and uptime figures are theirs; read them there, they are not typed here.</p><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/openapi.json",
+      "final": "https://councilof.ai/openapi.json",
+      "code": 200,
+      "bytes": 202632,
+      "context": " text-slate-500\"><span class=\"font-semibold text-slate-700\">Self-published.</span> Written and served by us. Self-published metadata is labelled as such.</p><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://github.com/CSOAI-ORG/councilof-ai",
+      "final": "https://github.com/CSOAI-ORG/councilof-ai",
+      "code": 404,
+      "bytes": 0,
+      "context": "laxed text-slate-500\"><span class=\"font-semibold text-slate-700\">Public record.</span> Hosting is public; hosting is not adoption, review or endorsement.</p><a ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://github.com/CSOAI-ORG",
+      "final": "https://github.com/CSOAI-ORG",
+      "code": 404,
+      "bytes": 0,
+      "context": "t-sm max-w-md\">Independent measurement body. Signed attestation and transparent measurement \u2014 never certification.</p><div class=\"flex space-x-4 sm:ml-auto\"><a ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://linkedin.com/company/csoai",
+      "final": "https://linkedin.com/company/csoai",
+      "code": 200,
+      "bytes": 21255,
+      "context": "35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"></path><path d=\"M9 18c-4.51 2-5-2-7-2\"></path></svg></a><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "final": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "code": 200,
+      "bytes": 92376,
+      "context": "-center uppercase tracking-wider mb-4\">Frameworks we measure against</p><ul class=\"flex flex-wrap items-center justify-center gap-2.5 list-none p-0 m-0\"><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "final": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "code": 200,
+      "bytes": 93781,
+      "context": "lt=\"EU AI Act\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/eu-ai-act.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://www.iso.org/standard/81230.html",
+      "final": "https://www.iso.org/standard/81230.html",
+      "code": 403,
+      "bytes": 0,
+      "context": "NIST AI RMF\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/nist-ai-rmf.svg\"></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en",
+      "final": "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en",
+      "code": 200,
+      "bytes": 106492,
+      "context": "ISO/IEC 42001\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/iso-42001.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://c2pa.org/",
+      "final": "https://c2pa.org/",
+      "code": 200,
+      "bytes": 92208,
+      "context": "ow\"><img alt=\"DORA\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/dora.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://openinventionnetwork.com/",
+      "final": "https://openinventionnetwork.com/",
+      "code": 200,
+      "bytes": 449453,
+      "context": "ow\"><img alt=\"C2PA\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/c2pa.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://lotnet.com/",
+      "final": "https://lotnet.com/",
+      "code": 403,
+      "bytes": 0,
+      "context": "n Invention Network\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/oin.svg\"></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://identity.foundation/",
+      "final": "https://identity.foundation/",
+      "code": 200,
+      "bytes": 49204,
+      "context": "LOT Network\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/lot-network.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://www.linuxfoundation.org/",
+      "final": "https://www.linuxfoundation.org/",
+      "code": 200,
+      "bytes": 140804,
+      "context": "Identity Foundation\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/dif.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://github.com/CSOAI-ORG",
+      "final": "https://github.com/CSOAI-ORG",
+      "code": 404,
+      "bytes": 0,
+      "context": "-xs text-center uppercase tracking-wider mb-4\">Verify us everywhere</h3><ul class=\"flex flex-wrap items-center justify-center gap-2.5 list-none p-0 m-0\"><li><a ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://huggingface.co/csoai",
+      "final": "https://huggingface.co/csoai",
+      "code": 200,
+      "bytes": 296160,
+      "context": "\"h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/github.svg\"><span>GitHub \u00b7 CSOAI-ORG</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://pypi.org/project/inspect-signed-receipt/",
+      "final": "https://pypi.org/project/inspect-signed-receipt/",
+      "code": 200,
+      "bytes": 3038,
+      "context": "x] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/huggingface.svg\"><span>Hugging Face \u00b7 csoai</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://pypi.org/project/csoai/",
+      "final": "https://pypi.org/project/csoai/",
+      "code": 200,
+      "bytes": 3038,
+      "context": " w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 inspect-signed-receipt</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://pypi.org/project/proofof-ai-mcp/",
+      "final": "https://pypi.org/project/proofof-ai-mcp/",
+      "code": 200,
+      "bytes": 3038,
+      "context": "\" class=\"h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 csoai</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://doi.org/10.5281/zenodo.21991104",
+      "final": "https://doi.org/10.5281/zenodo.21991104",
+      "code": 403,
+      "bytes": 0,
+      "context": "h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 proofof-ai-mcp</span></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://www.wikidata.org/wiki/Q141128616",
+      "final": "https://www.wikidata.org/wiki/Q141128616",
+      "code": 200,
+      "bytes": 80143,
+      "context": " shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/zenodo.svg\"><span>Zenodo DOI 10.5281/zenodo.21991104</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16939677",
+      "final": "https://find-and-update.company-information.service.gov.uk/company/16939677",
+      "code": 200,
+      "bytes": 35513,
+      "context": "8px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/wikidata.svg\"><span>Wikidata \u00b7 Q141128616</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://orcid.org/0009-0001-3869-1068",
+      "final": "https://orcid.org/0009-0001-3869-1068",
+      "code": 200,
+      "bytes": 65015,
+      "context": "shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/companies-house.svg\"><span>Companies House \u00b7 16939677</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CSOAI-ORG/councilof-ai",
+      "final": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CSOAI-ORG/councilof-ai",
+      "code": 200,
+      "bytes": 4567,
+      "context": "px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/orcid.svg\"><span>ORCID 0009-0001-3869-1068</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://councilof.ai/interop/root-witness-pointer.json",
+      "final": "https://councilof.ai/interop/root-witness-pointer.json",
+      "code": 200,
+      "bytes": 3158,
+      "context": "nk-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/software-heritage.svg\"><span>Software Heritage \u00b7 archived</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "homepage::link",
+      "url": "https://csoai.org/.well-known/did.json",
+      "final": "https://csoai.org/.well-known/did.json",
+      "code": 200,
+      "bytes": 5116,
+      "context": "o shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/sigstore.svg\"><span>Sigstore Rekor \u00b7 root witnessed</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify",
+      "url": "https://councilof.ai/gspc-verify",
+      "final": "https://councilof.ai/gspc-verify",
+      "code": 308,
+      "bytes": 0,
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "label": "gspc-verify/",
+      "url": "https://councilof.ai/gspc-verify/",
+      "final": "https://councilof.ai/gspc-verify/",
+      "code": 200,
+      "bytes": 77257,
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://councilof.ai/gspc-verify/",
+      "final": "https://councilof.ai/gspc-verify/",
+      "code": 200,
+      "bytes": 77257,
+      "context": "link rel=\"canonical\" ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://councilof.ai/feed.xml",
+      "final": "https://councilof.ai/feed.xml",
+      "code": 200,
+      "bytes": 40782,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 state changes\" ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://councilof.ai/feeds/corrections.xml",
+      "final": "https://councilof.ai/feeds/corrections.xml",
+      "code": 200,
+      "bytes": 103792,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 corrections ledger\" ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://councilof.ai/feeds/corrections.atom",
+      "final": "https://councilof.ai/feeds/corrections.atom",
+      "code": 200,
+      "bytes": 101877,
+      "context": "link rel=\"alternate\" type=\"application/atom+xml\" title=\"Council of AI \u2014 corrections ledger (Atom)\" ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://councilof.ai/feeds/cards.xml",
+      "final": "https://councilof.ai/feeds/cards.xml",
+      "code": 200,
+      "bytes": 39149,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 newly signed measurement cards\" ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://councilof.ai/feeds/roots.xml",
+      "final": "https://councilof.ai/feeds/roots.xml",
+      "code": 200,
+      "bytes": 1482,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 public root\" ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://fonts.googleapis.com",
+      "final": "https://fonts.googleapis.com",
+      "code": 404,
+      "bytes": 0,
+      "context": "link rel=\"preconnect\" ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://fonts.gstatic.com",
+      "final": "https://fonts.gstatic.com",
+      "code": 404,
+      "bytes": 0,
+      "context": "link rel=\"preconnect\" ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap",
+      "final": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap",
+      "code": 200,
+      "bytes": 952,
+      "context": "link ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://github.com/CSOAI-ORG",
+      "final": "https://github.com/CSOAI-ORG",
+      "code": 404,
+      "bytes": 0,
+      "context": "t-sm max-w-md\">Independent measurement body. Signed attestation and transparent measurement \u2014 never certification.</p><div class=\"flex space-x-4 sm:ml-auto\"><a ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://linkedin.com/company/csoai",
+      "final": "https://linkedin.com/company/csoai",
+      "code": 200,
+      "bytes": 21253,
+      "context": "35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"></path><path d=\"M9 18c-4.51 2-5-2-7-2\"></path></svg></a><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "final": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "code": 200,
+      "bytes": 92376,
+      "context": "-center uppercase tracking-wider mb-4\">Frameworks we measure against</p><ul class=\"flex flex-wrap items-center justify-center gap-2.5 list-none p-0 m-0\"><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "final": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "code": 200,
+      "bytes": 93781,
+      "context": "lt=\"EU AI Act\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/eu-ai-act.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://www.iso.org/standard/81230.html",
+      "final": "https://www.iso.org/standard/81230.html",
+      "code": 403,
+      "bytes": 0,
+      "context": "NIST AI RMF\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/nist-ai-rmf.svg\"></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en",
+      "final": "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en",
+      "code": 200,
+      "bytes": 106492,
+      "context": "ISO/IEC 42001\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/iso-42001.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://c2pa.org/",
+      "final": "https://c2pa.org/",
+      "code": 200,
+      "bytes": 92208,
+      "context": "ow\"><img alt=\"DORA\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/dora.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://openinventionnetwork.com/",
+      "final": "https://openinventionnetwork.com/",
+      "code": 200,
+      "bytes": 449447,
+      "context": "ow\"><img alt=\"C2PA\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/c2pa.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://lotnet.com/",
+      "final": "https://lotnet.com/",
+      "code": 403,
+      "bytes": 0,
+      "context": "n Invention Network\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/oin.svg\"></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://identity.foundation/",
+      "final": "https://identity.foundation/",
+      "code": 200,
+      "bytes": 49204,
+      "context": "LOT Network\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/lot-network.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://www.linuxfoundation.org/",
+      "final": "https://www.linuxfoundation.org/",
+      "code": 200,
+      "bytes": 140804,
+      "context": "Identity Foundation\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/dif.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://github.com/CSOAI-ORG",
+      "final": "https://github.com/CSOAI-ORG",
+      "code": 404,
+      "bytes": 0,
+      "context": "-xs text-center uppercase tracking-wider mb-4\">Verify us everywhere</h3><ul class=\"flex flex-wrap items-center justify-center gap-2.5 list-none p-0 m-0\"><li><a ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://huggingface.co/csoai",
+      "final": "https://huggingface.co/csoai",
+      "code": 200,
+      "bytes": 296160,
+      "context": "\"h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/github.svg\"><span>GitHub \u00b7 CSOAI-ORG</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://pypi.org/project/inspect-signed-receipt/",
+      "final": "https://pypi.org/project/inspect-signed-receipt/",
+      "code": 200,
+      "bytes": 3038,
+      "context": "x] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/huggingface.svg\"><span>Hugging Face \u00b7 csoai</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://pypi.org/project/csoai/",
+      "final": "https://pypi.org/project/csoai/",
+      "code": 200,
+      "bytes": 3038,
+      "context": " w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 inspect-signed-receipt</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://pypi.org/project/proofof-ai-mcp/",
+      "final": "https://pypi.org/project/proofof-ai-mcp/",
+      "code": 200,
+      "bytes": 3038,
+      "context": "\" class=\"h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 csoai</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://doi.org/10.5281/zenodo.21991104",
+      "final": "https://doi.org/10.5281/zenodo.21991104",
+      "code": 403,
+      "bytes": 0,
+      "context": "h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 proofof-ai-mcp</span></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://www.wikidata.org/wiki/Q141128616",
+      "final": "https://www.wikidata.org/wiki/Q141128616",
+      "code": 200,
+      "bytes": 80143,
+      "context": " shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/zenodo.svg\"><span>Zenodo DOI 10.5281/zenodo.21991104</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16939677",
+      "final": "https://find-and-update.company-information.service.gov.uk/company/16939677",
+      "code": 200,
+      "bytes": 35513,
+      "context": "8px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/wikidata.svg\"><span>Wikidata \u00b7 Q141128616</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://orcid.org/0009-0001-3869-1068",
+      "final": "https://orcid.org/0009-0001-3869-1068",
+      "code": 200,
+      "bytes": 65015,
+      "context": "shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/companies-house.svg\"><span>Companies House \u00b7 16939677</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CSOAI-ORG/councilof-ai",
+      "final": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CSOAI-ORG/councilof-ai",
+      "code": 200,
+      "bytes": 4567,
+      "context": "px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/orcid.svg\"><span>ORCID 0009-0001-3869-1068</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://councilof.ai/interop/root-witness-pointer.json",
+      "final": "https://councilof.ai/interop/root-witness-pointer.json",
+      "code": 200,
+      "bytes": 3158,
+      "context": "nk-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/software-heritage.svg\"><span>Software Heritage \u00b7 archived</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "gspc-verify/::link",
+      "url": "https://csoai.org/.well-known/did.json",
+      "final": "https://csoai.org/.well-known/did.json",
+      "code": 200,
+      "bytes": 5116,
+      "context": "o shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/sigstore.svg\"><span>Sigstore Rekor \u00b7 root witnessed</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology",
+      "url": "https://councilof.ai/methodology",
+      "final": "https://councilof.ai/methodology",
+      "code": 308,
+      "bytes": 0,
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "label": "methodology/",
+      "url": "https://councilof.ai/methodology/",
+      "final": "https://councilof.ai/methodology/",
+      "code": 200,
+      "bytes": 79646,
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://councilof.ai/methodology/",
+      "final": "https://councilof.ai/methodology/",
+      "code": 200,
+      "bytes": 79646,
+      "context": "link rel=\"canonical\" ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://councilof.ai/feed.xml",
+      "final": "https://councilof.ai/feed.xml",
+      "code": 200,
+      "bytes": 40782,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 state changes\" ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://councilof.ai/feeds/corrections.xml",
+      "final": "https://councilof.ai/feeds/corrections.xml",
+      "code": 200,
+      "bytes": 103792,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 corrections ledger\" ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://councilof.ai/feeds/corrections.atom",
+      "final": "https://councilof.ai/feeds/corrections.atom",
+      "code": 200,
+      "bytes": 101877,
+      "context": "link rel=\"alternate\" type=\"application/atom+xml\" title=\"Council of AI \u2014 corrections ledger (Atom)\" ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://councilof.ai/feeds/cards.xml",
+      "final": "https://councilof.ai/feeds/cards.xml",
+      "code": 200,
+      "bytes": 39149,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 newly signed measurement cards\" ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://councilof.ai/feeds/roots.xml",
+      "final": "https://councilof.ai/feeds/roots.xml",
+      "code": 200,
+      "bytes": 1482,
+      "context": "link rel=\"alternate\" type=\"application/rss+xml\" title=\"Council of AI \u2014 public root\" ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://fonts.googleapis.com",
+      "final": "https://fonts.googleapis.com",
+      "code": 404,
+      "bytes": 0,
+      "context": "link rel=\"preconnect\" ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://fonts.gstatic.com",
+      "final": "https://fonts.gstatic.com",
+      "code": 404,
+      "bytes": 0,
+      "context": "link rel=\"preconnect\" ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap",
+      "final": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap",
+      "code": 200,
+      "bytes": 952,
+      "context": "link ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://github.com/CSOAI-ORG",
+      "final": "https://github.com/CSOAI-ORG",
+      "code": 404,
+      "bytes": 0,
+      "context": "t-sm max-w-md\">Independent measurement body. Signed attestation and transparent measurement \u2014 never certification.</p><div class=\"flex space-x-4 sm:ml-auto\"><a ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://linkedin.com/company/csoai",
+      "final": "https://linkedin.com/company/csoai",
+      "code": 200,
+      "bytes": 21256,
+      "context": "35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"></path><path d=\"M9 18c-4.51 2-5-2-7-2\"></path></svg></a><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "final": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "code": 200,
+      "bytes": 92376,
+      "context": "-center uppercase tracking-wider mb-4\">Frameworks we measure against</p><ul class=\"flex flex-wrap items-center justify-center gap-2.5 list-none p-0 m-0\"><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "final": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "code": 200,
+      "bytes": 93781,
+      "context": "lt=\"EU AI Act\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/eu-ai-act.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://www.iso.org/standard/81230.html",
+      "final": "https://www.iso.org/standard/81230.html",
+      "code": 403,
+      "bytes": 0,
+      "context": "NIST AI RMF\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/nist-ai-rmf.svg\"></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en",
+      "final": "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en",
+      "code": 200,
+      "bytes": 106492,
+      "context": "ISO/IEC 42001\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/iso-42001.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://c2pa.org/",
+      "final": "https://c2pa.org/",
+      "code": 200,
+      "bytes": 92208,
+      "context": "ow\"><img alt=\"DORA\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/dora.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://openinventionnetwork.com/",
+      "final": "https://openinventionnetwork.com/",
+      "code": 200,
+      "bytes": 449447,
+      "context": "ow\"><img alt=\"C2PA\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/c2pa.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://lotnet.com/",
+      "final": "https://lotnet.com/",
+      "code": 403,
+      "bytes": 0,
+      "context": "n Invention Network\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/oin.svg\"></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://identity.foundation/",
+      "final": "https://identity.foundation/",
+      "code": 200,
+      "bytes": 49204,
+      "context": "LOT Network\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/lot-network.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://www.linuxfoundation.org/",
+      "final": "https://www.linuxfoundation.org/",
+      "code": 200,
+      "bytes": 140804,
+      "context": "Identity Foundation\" width=\"160\" height=\"40\" class=\"h-9 w-auto sm:h-10\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/frameworks/dif.svg\"></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://github.com/CSOAI-ORG",
+      "final": "https://github.com/CSOAI-ORG",
+      "code": 404,
+      "bytes": 0,
+      "context": "-xs text-center uppercase tracking-wider mb-4\">Verify us everywhere</h3><ul class=\"flex flex-wrap items-center justify-center gap-2.5 list-none p-0 m-0\"><li><a ",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://huggingface.co/csoai",
+      "final": "https://huggingface.co/csoai",
+      "code": 200,
+      "bytes": 296160,
+      "context": "\"h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/github.svg\"><span>GitHub \u00b7 CSOAI-ORG</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://pypi.org/project/inspect-signed-receipt/",
+      "final": "https://pypi.org/project/inspect-signed-receipt/",
+      "code": 200,
+      "bytes": 3038,
+      "context": "x] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/huggingface.svg\"><span>Hugging Face \u00b7 csoai</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://pypi.org/project/csoai/",
+      "final": "https://pypi.org/project/csoai/",
+      "code": 200,
+      "bytes": 3038,
+      "context": " w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 inspect-signed-receipt</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://pypi.org/project/proofof-ai-mcp/",
+      "final": "https://pypi.org/project/proofof-ai-mcp/",
+      "code": 200,
+      "bytes": 3038,
+      "context": "\" class=\"h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 csoai</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://doi.org/10.5281/zenodo.21991104",
+      "final": "https://doi.org/10.5281/zenodo.21991104",
+      "code": 403,
+      "bytes": 0,
+      "context": "h-[18px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/pypi.svg\"><span>PyPI \u00b7 proofof-ai-mcp</span></a></li><li><a ",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://www.wikidata.org/wiki/Q141128616",
+      "final": "https://www.wikidata.org/wiki/Q141128616",
+      "code": 200,
+      "bytes": 80143,
+      "context": " shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/zenodo.svg\"><span>Zenodo DOI 10.5281/zenodo.21991104</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16939677",
+      "final": "https://find-and-update.company-information.service.gov.uk/company/16939677",
+      "code": 200,
+      "bytes": 35513,
+      "context": "8px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/wikidata.svg\"><span>Wikidata \u00b7 Q141128616</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://orcid.org/0009-0001-3869-1068",
+      "final": "https://orcid.org/0009-0001-3869-1068",
+      "code": 200,
+      "bytes": 65015,
+      "context": "shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/companies-house.svg\"><span>Companies House \u00b7 16939677</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CSOAI-ORG/councilof-ai",
+      "final": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CSOAI-ORG/councilof-ai",
+      "code": 200,
+      "bytes": 4567,
+      "context": "px] w-auto shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/orcid.svg\"><span>ORCID 0009-0001-3869-1068</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://councilof.ai/interop/root-witness-pointer.json",
+      "final": "https://councilof.ai/interop/root-witness-pointer.json",
+      "code": 200,
+      "bytes": 3158,
+      "context": "nk-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/software-heritage.svg\"><span>Software Heritage \u00b7 archived</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "methodology/::link",
+      "url": "https://csoai.org/.well-known/did.json",
+      "final": "https://csoai.org/.well-known/did.json",
+      "code": 200,
+      "bytes": 5116,
+      "context": "o shrink-0 object-contain\" loading=\"lazy\" decoding=\"async\" src=\"/images/badges/verify/sigstore.svg\"><span>Sigstore Rekor \u00b7 root witnessed</span></a></li><li><a ",
+      "error": null
+    },
+    {
+      "label": "llms.txt",
+      "url": "https://councilof.ai/llms.txt",
+      "final": "https://councilof.ai/llms.txt",
+      "code": 200,
+      "bytes": 17186,
+      "error": null
+    },
+    {
+      "label": "llms-install",
+      "url": "https://councilof.ai/llms-install",
+      "final": "https://councilof.ai/llms-install",
+      "code": 404,
+      "bytes": 0,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

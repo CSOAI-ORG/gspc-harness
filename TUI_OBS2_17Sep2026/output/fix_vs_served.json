@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-09-17T07:45:49.687526+00:00",
+  "results": [
+    {
+      "label": "/interop/pod-cards-index.json",
+      "url": "https://councilof.ai/interop/pod-cards-index.json",
+      "served_exclusion_fields": [
+        "mentions_measured=yes"
+      ]
+    },
+    {
+      "label": "/api/commissions",
+      "url": "https://councilof.ai/api/commissions",
+      "served_exclusion_fields": [
+        "mentions_measured=yes"
+      ]
+    },
+    {
+      "label": "/interop/hub-cards-index.json",
+      "url": "https://councilof.ai/interop/hub-cards-index.json",
+      "served_exclusion_fields": [
+        "mentions_measured=yes"
+      ]
+    },
+    {
+      "label": "/gspc-verify",
+      "url": "https://councilof.ai/gspc-verify",
+      "served_exclusion_fields": []
+    }
+  ],
+  "tree_state": "trees now emit exclusions (per upstream commit messages)"
+}
