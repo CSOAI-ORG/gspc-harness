@@ -5,7 +5,7 @@
 #
 # All targets are idempotent. Targets that need `ots` say so in their recipe.
 
-.PHONY: help audit stamp rebuild selfcheck verify pipeline clean stamp-age wait-ots revision health
+.PHONY: help audit stamp rebuild selfcheck verify pipeline clean stamp-age wait-ots revision health tui-a
 
 # Allow `make BRANCH=foo` to override; default is the canonical lane branch.
 BRANCH ?= hermes/inspect-register-readiness
@@ -24,6 +24,7 @@ help:
 	@echo "  make wait-ots    poll the master stamp until Bitcoin confirmation (or 1h timeout)"
 	@echo "  make revision    print git HEAD + pipeline file SHAs + stamp state + age"
 	@echo "  make health      run estate + master checks in one command (alias for tools/both.sh)"
+	@echo "  make tui-a       print TUI A summary + operator decisions (reads partial_observations.json)"
 	@echo
 	@echo "Default branch: $(BRANCH)"
 	@echo "Override: make BRANCH=foo audit"
@@ -76,3 +77,6 @@ revision:
 HEALTH_APPLY ?=
 health:
 	@bash -c 'if [ -n "$(HEALTH_APPLY)" ]; then bash tools/both.sh --apply; else bash tools/both.sh; fi'
+
+tui-a:
+	@bash tools/tui_a_summary.sh
