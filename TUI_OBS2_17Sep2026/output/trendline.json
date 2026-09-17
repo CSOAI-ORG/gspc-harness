@@ -1,0 +1,35 @@
+{
+  "trendline": [
+    {
+      "file": "reachability_sweep2.json",
+      "as_of": "2026-09-17T07:45:10.746841+00:00",
+      "human_only": 19,
+      "surfaces": 21
+    },
+    {
+      "file": "reachability_sweep3.json",
+      "as_of": "2026-09-17T07:50:41.185944+00:00",
+      "human_only": 19,
+      "surfaces": 21
+    },
+    {
+      "file": "reachability_sweep4.json",
+      "as_of": "2026-09-17T07:52:06.932199+00:00",
+      "human_only": 19,
+      "surfaces": 21
+    },
+    {
+      "file": "reachability_sweep5.json",
+      "as_of": "2026-09-17T07:53:23.560583+00:00",
+      "human_only": 19,
+      "surfaces": 21
+    },
+    {
+      "file": "reachability_sweep6.json",
+      "as_of": "2026-09-17T07:54:41.093108+00:00",
+      "human_only": 19,
+      "surfaces": 21
+    }
+  ],
+  "summary": "6 sweeps; HUMAN_ONLY stable at 19/21; defect is stable not regressing; no per-sweep drift in any axis. The next sweep is expected to produce the same finding; publishing again would be cosmetic."
+}
