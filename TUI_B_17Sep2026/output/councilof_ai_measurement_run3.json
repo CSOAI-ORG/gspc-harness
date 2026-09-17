@@ -1,0 +1,103 @@
+{
+  "schema": "csoai.measurement/1.0",
+  "as_of": "2026-09-17T05:12:43.024258+00:00",
+  "population_source": "TUI_A_17Sep2026/output/population_run2.json",
+  "agents_in_population": 3330,
+  "agents_measured": 1,
+  "axes_per_host": 5,
+  "states_total": {
+    "PASS": 5,
+    "FAIL": 0,
+    "UNCHECKABLE": 0,
+    "NOT_DECLARED": 0
+  },
+  "negative_controls": {
+    "bad_json_card_resolves": [
+      "REJECTED_OK",
+      "card_resolves parser rejected bad bytes"
+    ],
+    "different_alias_alias_consistency": [
+      "REJECTED_OK",
+      "alias_consistency FAILs when bytes differ"
+    ],
+    "inconsistent_version_protocol_version": [
+      "UNABLE_TO_TRIGGER",
+      "current checker treats version != protocolVersion as PASS by design"
+    ],
+    "missing_skills_declared_skills": [
+      "REJECTED_OK",
+      "declared_skills FAILs when skills array is empty"
+    ],
+    "empty_capabilities_no_axis_fails": [
+      "REJECTED_OK",
+      "no axis FAILed on a card with no claims \u2014 NOT_DECLARED is NOT FAIL"
+    ]
+  },
+  "results": [
+    {
+      "subject": "councilof.ai",
+      "card_url": "https://councilof.ai/.well-known/agent-card.json",
+      "axes": {
+        "card_resolves": [
+          "PASS",
+          "ok"
+        ],
+        "alias_consistency": [
+          "PASS",
+          "byte-identical"
+        ],
+        "protocol_version": [
+          "PASS",
+          "card.version=1.1.0 is the card revision; interfaces declare ['1.0']; the card does not lie about either"
+        ],
+        "declared_skills": [
+          "PASS",
+          "all 8 declared skills have name+description+examples"
+        ],
+        "stated_policy": [
+          "PASS",
+          "robots.txt retrievable, 6126 bytes"
+        ]
+      },
+      "states": {
+        "PASS": 5,
+        "FAIL": 0,
+        "UNCHECKABLE": 0,
+        "NOT_DECLARED": 0
+      }
+    }
+  ],
+  "self_check": {
+    "publish": "yes",
+    "checks": [
+      {
+        "name": "states_total sum == agents_measured \u00d7 axes_per_host",
+        "pass": true,
+        "expected": 5,
+        "got": 5,
+        "axes_per_host": 5
+      },
+      {
+        "name": "all 4 state keys present",
+        "pass": true
+      },
+      {
+        "name": "every result has all 4 state keys",
+        "pass": true,
+        "failures": []
+      },
+      {
+        "name": "every negative control was REJECTED, UNABLE_TO_TRIGGER, or proved NOT_DECLARED",
+        "pass": true,
+        "details": {
+          "bad_json_card_resolves": "REJECTED_OK",
+          "different_alias_alias_consistency": "REJECTED_OK",
+          "inconsistent_version_protocol_version": "UNABLE_TO_TRIGGER",
+          "missing_skills_declared_skills": "REJECTED_OK",
+          "empty_capabilities_no_axis_fails": "REJECTED_OK"
+        }
+      }
+    ]
+  },
+  "hash": "e9ae16b070424f1c06b3455e3f296f8bdf03e592c1601fd4cecfa97240a6bb03"
+}

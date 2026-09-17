@@ -1,7 +1,7 @@
 {
   "schema": "csoai.measurement/1.0",
-  "as_of": "2026-09-17T04:52:34.782412+00:00",
-  "population_source": "TUI_A_17Sep2026/output/population_smoke.json",
+  "as_of": "2026-09-17T04:55:07.382149+00:00",
+  "population_source": "/Users/iokfarm/workspace_for_ai/inspect-lane/gspc-harness/TUI_A_17Sep2026/output/population_smoke.json",
   "agents_in_population": 30,
   "agents_measured": 1,
   "axes_per_host": 5,
@@ -76,5 +76,5 @@
       }
     ]
   },
-  "hash": "9450929932042c454e6dad47c8da971c7cd9a2812ad26b0f9dcb386c55b7395a"
+  "hash": "66725b51b3ee42195291c67dbbdbc50ce2c1fe4f8deab1a59e3ce22ff747f8e4"
 }
