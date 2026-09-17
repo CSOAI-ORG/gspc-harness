@@ -135,41 +135,38 @@ PY
 ## 6. Add a new file to the master without breaking it
 
 Adding a file is the **most common way to make the master stale.** The
-pipeline below must run before any commit that adds a file:
+pipeline below must run before any commit that adds a file. **Order matters**:
+stamp first, then rebuild — the rebuild captures the post-stamp bytes so the
+manifest records what was actually signed.
 
 ```bash
 # 6a — place the file in the right section
 cp /path/to/new.md MASTER/07_crosswalk/
 
-# 6b — rebuild the master index + flat views + package hash
-python3 - << 'PY'
-import json, hashlib, datetime
-from pathlib import Path
-ROOT = Path('MASTER')
-# rebuild MASTER_FILES.json (see scripts/rebuild_master_files.py)
-PY
-python3 scripts/rebuild_master_files.py
-
-# 6c — re-stamp the master package
+# 6b — stamp first (so MASTER_PACKAGE.ots is for current bytes)
 python3 scripts/stamp_master_package.py
 
-# 6d — verify
-python3 - << 'PY'
-import json
-mf = json.loads(open('MASTER/MASTER_FILES.json').read_text())
-import subprocess
-assert int(subprocess.check_output('wc -l < MASTER/MANIFEST.sha256', shell=True)) == len(mf['files'])
-print('OK')
-PY
+# 6c — then rebuild (captures hashes of post-stamp bytes)
+python3 scripts/rebuild_master_files.py
+
+# 6d — verify everything is coherent
+python3 scripts/selfcheck_master.py
+# expected: "OK: 7/7 checks pass on 4774 files"
 
 # 6e — commit
 git add MASTER/ scripts/
 git commit -m "add <description> — reindexed, re-stamped, verified"
 ```
 
-Until `rebuild_master_files.py` lands in `scripts/`, the script in step §1 above
-also rebuilds MASTER_FILES.json — invoke it with `WRITE=1 python3 rebuild_inline.py`
-(see §1 for the read-only variant).
+If `selfcheck_master.py` fails on **step 6** (`MASTER_PACKAGE.json
+package_sha matches MANIFEST.sha256 sha256`), the operator ran the steps
+in the wrong order. Re-run `stamp_master_package.py` then
+`rebuild_master_files.py`. The selfcheck exists precisely to catch this.
+
+The three pipeline scripts are:
+  - `scripts/stamp_master_package.py`  — anchors current bytes in OTS calendars
+  - `scripts/rebuild_master_files.py` — reindexes sha256 of every file
+  - `scripts/selfcheck_master.py`     — 7 assertions across the master
 
 ## 7. Verify the live board has not drifted from our snapshots
 
@@ -212,5 +209,6 @@ A complete audit reads three files:
 2. `MASTER/INDEX_OF_WHATS_NOT_HERE.md` — what is intentionally absent.
 3. `MASTER/MANIFEST.sha256` — every byte accounted for.
 
-Then re-run §1. If that exits 0 and the live §7 fetch is current, the master
+Then run §1 (rehash) and `python3 scripts/selfcheck_master.py` (7
+assertions). If both exit 0 and the live §7 fetch is current, the master
 is sound for the moment it was produced.

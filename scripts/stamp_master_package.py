@@ -7,6 +7,17 @@ to a Bitcoin block header).
 
 The script is idempotent: re-runnable any time, never fakes a Bitcoin
 attestation.
+
+Pipeline order matters:
+  1. operator adds/removes files in MASTER/
+  2. operator runs `python3 scripts/stamp_master_package.py`   (this script)
+  3. operator runs `python3 scripts/rebuild_master_files.py`  (captures new hashes)
+  4. operator runs `python3 scripts/selfcheck_master.py`      (assert coherence)
+
+The stamp is what gets anchored in a calendar; the rebuild captures the
+post-stamp bytes. If you reverse the order, the manifest records a stale
+package_sha and the self-check fails. The self-check explicitly catches
+this drift.
 """
 from __future__ import annotations
 import json, hashlib, datetime, subprocess, sys
@@ -30,9 +41,14 @@ def main():
         print('FAIL: ots CLI not on PATH. Install with: brew install opentimestamps')
         sys.exit(2)
 
-    # Delegate to upgrade_ots.py for the actual stamp (--fresh because the
-    # master manifest changes every rebuild, so a pending stamp from a
-    # previous build is stale even if its own bytes verify).
+    # Document pipeline order so the operator doesn't reverse it. The
+    # stamp-master-then-rebuild order is deliberate: the rebuild captures
+    # the post-stamp bytes, so MASTER_PACKAGE.json records the bytes that
+    # were actually signed.
+    print('Pipeline: stamp -> rebuild -> selfcheck.')
+    print('Stamp first, then rebuild, so the manifest records what was signed.')
+    print()
+
     # Pre-delete the existing stamp so the re-stamp path is taken cleanly
     # (upgrade_ots.py refuses to run if stamp file is absent).
     if STAMP.exists():

@@ -143,13 +143,29 @@ with open('MASTER/MANIFEST.sha256', 'w') as fh:
 # bump package hash
 import hashlib as _h
 PACKAGE_SHA = _h.sha256(Path('MASTER/MANIFEST.sha256').read_bytes()).hexdigest()
+# Preserve the master-package OTS state across rebuilds. The rebuild
+# script does NOT know the OTS state; only stamp_master_package.py
+# and upgrade_ots.py know that. Reading it from the existing
+# MASTER_PACKAGE.json is the cheapest honest preservation.
+PRESERVED = {}
+PKG = Path('MASTER/MASTER_PACKAGE.json')
+if PKG.exists():
+    try:
+        PRESERVED = json.loads(PKG.read_text())
+    except Exception:
+        PRESERVED = {}
+
 pkg = {
     'schema': 'csoai.master-package/1.0',
     'as_of': datetime.datetime.now(datetime.timezone.utc).isoformat(),
     'package_path': 'MASTER/',
-    'package_files_count': len(artifacts),
+    'package_files_count': None,  # filled in below
     'package_files_sha256_of_manifest': PACKAGE_SHA,
-    'note': 'Rebuilt by scripts/rebuild_master_files.py. Re-run scripts/stamp_master_package.py to refresh OTS.',
+    'ots_status': PRESERVED.get('ots_status', 'STAMPED_PENDING_BITCOIN'),
+    'ots_file': 'MASTER_PACKAGE.ots',
+    'ots_source': PRESERVED.get('ots_source', 'ots v0.7.2 CLI via scripts/upgrade_ots.py'),
+    'ots_obtained_at': PRESERVED.get('ots_obtained_at', datetime.datetime.now(datetime.timezone.utc).isoformat()),
+    'not_a_signature': 'This package hash records when the master existed as bytes. Not a signature, not a witness, not a certification. Pending OTS is not Bitcoin confirmation.',
 }
 Path('MASTER/MASTER_PACKAGE.json').write_text(json.dumps(pkg, indent=2))
 
